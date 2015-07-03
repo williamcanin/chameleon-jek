@@ -3,8 +3,8 @@
 # url: "http://localhost:4000" # use this url for DEVELOPMENT
 # baseurl: "" # use this url for DEVELOPMENT
 
-url: "http://williamcanin.github.io"   # use this url for PRODUCTION
-baseurl: "/chameleon-theme-jekyll" # the subpath of your site PRODUCTION
+# url: "http://williamcanin.com"   # use this url for PRODUCTION
+# baseurl: "/chameleon-theme-jekyll" # the subpath of your site PRODUCTION
 
 # Session - Site configuration
 
