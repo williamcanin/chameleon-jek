@@ -21,6 +21,7 @@ var config = {
   build: '_build',
   includes: '_includes',
   fonts_dir: './assets/fonts',
+  sass_cache: '.sass-cache',
   fonts_raleway: 'assets/vendor/fonts-raleway/fonts',
   fonts_awesome: 'assets/vendor/font-awesome-custom/fonts',
   fonts_bootstrap: 'assets/vendor/bootstrap-sass/assets/fonts'
@@ -33,10 +34,17 @@ grunt.initConfig({
 // Inital config path
 config: config,
 
-// Clean paths
+// Clean paths and files
 clean: {
-    build: ['<%= config.build %>'],
-    includes: ['<%= config.includes %>']
+  build: {
+    src: ['<%= config.build %>','<%= config.includes %>','<%= config.sass_cache %>', 'assets/css','assets/javascripts/scripts.min.js'],
+},
+  content: {
+    src: ['_posts','pages','assets/images','README.md','_config.yml','*.sh','CNAME']
+  },
+  configuration: {
+    src: ['.origin.log','.jshintrc','.gitignore','.bowerrc']
+  }  
 },
 
 // Create directory for fonts
@@ -234,6 +242,41 @@ dynamic: {
       }
     },
 
+  // Performs the "backups" from the main content of website
+  compress: {
+  main: {
+    options: {
+      archive: 'backups.tar.gz'
+    },
+    files: [
+    {
+      cwd: 'assets/images',
+      expand: true,
+      src: ['**/*'],
+      dest: 'assets/images'
+    }, {
+      cwd: '_posts',
+      expand: true,
+      src: ['**/*'],
+      dest: '_posts'
+    },
+    {
+      cwd: 'pages',
+      expand: true,
+      src: ['**/*'],
+      dest: 'pages'
+    },
+    {
+      cwd: '.',
+      expand: true,
+      src: ['README.md','_config.yml','*.sh','CNAME'],
+      dest: '.'
+    }
+
+    ]
+  }
+},
+
     // Build server, Init Server and Reset Config
     shell : {
       jekyllServe : {
@@ -247,7 +290,7 @@ dynamic: {
       }
     },
      // Doc - https://www.npmjs.com/package/grunt-ftp-deploy
-    // You can use the grunt-ftpush.  - by William C. Canin
+    // You can use the grunt-ftpush.
 
     'ftpush': {
       build: {
@@ -273,6 +316,7 @@ dynamic: {
             './.ftppass',
             './CNAME',
             './Gemfile',
+            './*.lock',
             './Rakefile',
             './.gitignore',
             'LICENSE',
@@ -313,12 +357,9 @@ dynamic: {
 
   });
 
-    // register custom grunt tasks
-    // grunt.registerTask('server', ['connect:server','watch' ]);
-
-grunt.registerTask('build', 'Build the site, nothing fancy, no minification', function(target) {
+  grunt.registerTask('build', 'Build the site, nothing fancy, no minification', function(target) {
     var tasks = {
-      prep: ['clean','mkdir','copy'],
+      prep: ['clean:build'/*,'mkdir','copy'*/],
       css: ['sass:build'],
       minify: [
         'uglify',
@@ -344,11 +385,13 @@ grunt.registerTask('build', 'Build the site, nothing fancy, no minification', fu
   grunt.registerTask('serve', 'Builds the site, starts a simple node server', function (target) {
     var tasks = {
       dist: [
+        'shell:resetConfiguration',
         'dist',
         'connect:server',
         'watch'
       ],
       default: [
+        'shell:resetConfiguration',
         'build',
         'connect:server',
         'watch'
@@ -359,7 +402,7 @@ grunt.registerTask('build', 'Build the site, nothing fancy, no minification', fu
   });
 
 
-  // Tasks devepmment
+  // Optional tasks
   grunt.registerTask('dist', [
       //'modernizr', //Connect internet
       'shell:resetConfiguration',
@@ -370,8 +413,10 @@ grunt.registerTask('build', 'Build the site, nothing fancy, no minification', fu
       'shell:jekyllBuild'
   ]);
 
-   // Optional tasks
+  // Optional tasks
   grunt.registerTask('ftp-deploy', ['ftpush']);
   grunt.registerTask('imgcompress', [ 'image:dynamic']);
 
+  // Optional tasks
+  grunt.registerTask('backup', [ 'compress']);
 };

@@ -8,6 +8,8 @@ assets/vendor
 .ftppass
 ./**/.DS_Store
 ./**/*.log
+*.tar.gz
+*.zip
 *.log
 assets/css
 assets/fonts

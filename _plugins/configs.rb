@@ -59,7 +59,7 @@ class Configs < Variables
       f = File.new(CONFIG['gitignore'] , "w+")
       f.puts(".sass-cache")
       f.puts("_build")
-       f.puts("_includes")
+      f.puts("_includes")
       f.puts("node_modules")
       f.puts("assets/vendor")
       f.puts(".git")
@@ -67,6 +67,8 @@ class Configs < Variables
       f.puts(".ftppass")
       f.puts("./**/.DS_Store")
       f.puts("./**/*.log")
+      f.puts("*.tar.gz")
+      f.puts("*.zip")
       f.puts("*.log")
       f.puts("assets/css")
       f.puts("assets/fonts")
@@ -150,40 +152,6 @@ def bower_dependences
   cmd = "grunt dist"
   system(cmd)
 end
-
-# def fonts_config
-#   cmd = "grunt fontsconfig"
-#   system(cmd)
-# end
-
-# Fonts config old (shell)
-# def fonts_config
-#   # Create directory if not exists
-#   fontsdir = "#{CONFIG['fonts_dir']}"
-#   unless FileTest.directory?(CONFIG['fonts_dir'])
-#     if FileUtils.mkdir fontsdir
-#       puts "Created directory #{SOURCE} #{CONFIG['fonts_dir']}"
-#     else
-#       puts "Could not create(#{SOURCE} #{CONFIG['fonts_dir']}) directory :("
-#     end
-# end # Create directory if not exists
-
-# if Dir.exists?(CONFIG['fonts_awesome_dir'])
-#   cmd = "cp -rf #{CONFIG['fonts_awesome_dir']} #{CONFIG['fonts_dir']}"
-#   system(cmd)
-#   puts "Fonts Awesome set"
-# end
-# if Dir.exists?(CONFIG['fonts_bootstrap_dir'])
-#   cmd = "cp -rf #{CONFIG['fonts_bootstrap_dir']} #{CONFIG['fonts_dir']}"
-#   system(cmd)
-#   puts "Fonts Bootstrap set"
-# end
-# if Dir.exists?(CONFIG['fonts_raleway_dir'])
-#   cmd = "cp -rf #{CONFIG['fonts_raleway_dir']} #{CONFIG['fonts_dir']}"
-#   system(cmd)
-#   puts "Fonts Raleway set"
-# end
-# end
 
 def theme_confs
   color = ENV["color"]

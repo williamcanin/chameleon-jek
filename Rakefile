@@ -43,8 +43,12 @@ end # task :page
 # Task Deploy GitHub
 desc "Deploy for GitHub Pages - Usage: rake help"
 task :deploygit => [:loadYML] do
-confs = Configs.new
-confs.deploygit
+config = Configs.new
+config.gitignore
+config.bowerrc
+config.ftppass
+config.jshintrc
+config.deploygit
 end # Task Deploy GitHub
 
 # Task preinstall - Responsible for settings
@@ -102,7 +106,7 @@ puts "Compiling Chameleon theme:          rake make_install"
 puts ""
 puts "Cleaning compilation:               rake make_clean"
 puts ""
-puts "Change theme:                       rake theme color={ light | blue | pink | black }"
+puts "Change theme:                       rake theme color={ light | blue | pink | black | green }"
 puts ""
 puts "Deploy project for GitHub Pages:    rake deploygit pull=\"{ y | n }\" type=\"{ source | build }\" branch=\"your_branch\" messagecommit=\"Your_message_commit\""
 puts ""
