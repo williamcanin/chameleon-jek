@@ -1,0 +1,24 @@
+---
+layout: default
+modal-id: 3
+title:  "Hanging chameleon"
+date:   2015-01-22 11:18:03
+img: modal-id3.jpg
+alt: "Hanging chameleon"
+project-date: January 2015
+# =======================
+# Project for client? (yes/no)
+for_client: no
+client:
+url_client:
+# =======================
+# Dimension image (big / medium / small)
+dimension_image: "small"
+# =======================
+type: Photographic
+# Not change ====
+categories: projects
+# ============
+---
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis possimus, inventore at pariatur, quas, hic neque asperiores earum cumque tenetur, aut ipsam corporis mollitia quasi debitis itaque dolorem rerum <<repudiandae!Lorem>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nihil labore mollitia fugiat blanditiis dolores laboriosam, reprehenderit eligendi pariatur debitis deleniti, numquam neque facilis ipsam perferendis culpa rem excepturi vitae.</repudiandae!Lorem></<repudiandae!Lorem>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit fugiat deserunt, harum illum blanditiis amet atque officiis maiores facilis deleniti, quam aut quis ullam minus placeat iure. Natus, dicta, excepturi.</<repudiandae!Lorem>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet voluptates ducimus sapiente. Vitae impedit amet, quidem odit debitis sequi. Rem, dignissimos. Possimus, distinctio. Unde tempore, vel officia ipsam, reiciendis impedit.</repudiandae!Lorem>

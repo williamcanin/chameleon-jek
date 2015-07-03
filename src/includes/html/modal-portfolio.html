@@ -1,0 +1,66 @@
+ <!-- Portfolio Modals -->
+ {% for project in site.categories.projects %}
+ <div class="portfolio-modal modal fade" id="portfolioModal-{{ project.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-body">
+
+            <div class="row">
+
+               {% if project.dimension_image == "big" %}
+                    <div class="col-lg-10 col-lg-offset-1">
+                 {% elsif project.dimension_image == "medium" %}
+                 <div class="col-lg-8 col-lg-offset-2">
+                 {% elsif project.dimension_image == "small" %}
+                 <div class="col-lg-6 col-lg-offset-3">
+                 {% else %}
+                 <div class="col-lg-8 col-lg-offset-2">
+                 {% endif %}
+
+                <h2>{{ project.title }}</h2>
+                <h4 class="portfolio-description"></h4>
+                <hr class="star-primary">
+                <img src="{{ "/assets/images/portfolio" | prepend: site.baseurl | prepend: site.url }}/{{ project.img }}" class="img-responsive img-centered" alt="{{ project.alt }}">
+                <ul class="list-inline item-details">
+                 {% if project.for_client == "yes" %}
+                 <li>{{ site.theme.str_client }}:
+                    <strong><a href="{{ project.url_client }}" target="_blank">{{ project.client }}</a>
+                    </strong>
+                </li>
+                {% endif %}
+                <li>{{ site.theme.str_date }}:
+                    <strong>{{ project.project-date }}</strong>
+                </li>
+                <li>{{ site.theme.str_type }}:
+                    <strong>{{ project.type }}</strong>
+                </li>
+            </ul>
+
+
+
+        </div> <!-- col-lg -->
+    </div> <!-- row -->
+
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <p>{{ project.content }}</p>
+            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+        </div>
+
+
+    </div>
+
+
+</div> <!-- modal-body -->
+
+</div> <!-- modal-content -->
+
+
+</div> <!-- portfolio-modal -->
+{% endfor %}

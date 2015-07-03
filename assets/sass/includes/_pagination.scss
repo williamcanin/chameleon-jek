@@ -1,0 +1,44 @@
+.pager {
+  border: 1px solid transparent;
+  padding: 10% 15% 2%;
+
+  li.previous.disabled {
+    a {
+      background-color: #eaeaea;
+      color: #505050
+    }
+  }
+  li {
+    a, span {
+      border-radius: 0px;
+      font-family: 'Raleway', 'FontAwesome', arial, sans-serif;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400
+    }
+    a {
+      background-color: #505050;
+      color: #fff;
+
+      &:hover {
+        color: #505050;
+        background-color: #fff
+      }
+    }
+    span {
+    }
+  }
+  @media only screen and (min-width:320px) and (max-width:460px) {
+    padding: 15% 0% 2%;
+
+    li {
+      a, span {
+        border-radius: 0px;
+        font-family: 'Raleway', 'FontAwesome', arial, sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400
+      }
+    }
+  }
+}

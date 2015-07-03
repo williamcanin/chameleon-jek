@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pt-br"  id="top">
+{% include html/head.html %}
+<body {% if site.theme.fadeIn == "yes" %} class="animated fade-in"  {% endif %} {% if site.theme.navbar_fixed == "no" %} id="body-color"  {% endif %}>
+  <!-- <div class="container"> -->
+    {% include html/header.html %}
+    <div class="wrapper" {% if page.permalink == "/about/" || page.permalink == "/sobre/" %} id="wrapper-for-about" {% endif %}><div class="page-content">
+
+     <div class="main">
+       {{ content }}
+     </div>
+
+   </div>
+
+   {% include html/footer.html %}
+ <!-- </div> -->
+</div>
+
+{% include html/button-top.html %}
+{% include html/modal-portfolio.html %}
+{% include html/modal-search.html %}
+
+<!-- Script Theme -->
+<script src="{{ "/assets/javascripts/scripts.min.js" | prepend:site.baseurl | prepend:site.url}}"></script>
+
+
+<!--  *******************
+      * Plugins Includes *
+      ******************** -->
+<!-- Script - Facebook share -->
+{% include scripts/share-facebook.html %}
+
+<!-- Script - Google+ share -->
+{% include scripts/share-googleplus.html %}
+
+<!-- Script - Twitter share -->
+{% include scripts/share-twitter.html %}
+
+<!-- Script - LinkedIn share -->
+{% include scripts/share-linkedin.html %}
+
+<!-- Change Avatars -->
+{% include scripts/change-avatars.html %}
+
+
+
+
+
+<!-- Search in Blog - Script -->
+  <script type="text/javascript">
+      SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '{{ "/search.json" | prepend:site.baseurl | prepend:site.url}}',
+        noResultsText: '{{site.theme.str_no_search_results}}',
+        limit: 10,
+        fuzzy: false,
+      })
+    </script>
+</body>
+
+
+</html>

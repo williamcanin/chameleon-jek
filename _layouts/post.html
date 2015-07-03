@@ -1,0 +1,87 @@
+---
+layout: default
+---
+<div class="row post">
+  <div class="wrapper post" {% if site.theme.navbar_fixed == "yes" %} id="navbar-fixed-top" {% endif %} >
+  {% if page.cover != "" || page.cover.empty? %}
+  <img class="img-responsive" src="{{ "/assets/images/covers"  | prepend: site.baseurl | prepend: site.url }}/{{ page.cover }}">
+  {% endif %}
+    <header class="post-header">
+     <article class="article">
+      <div class="row">
+
+        <div class="col-sm-4">
+          <p class="post-meta">
+            <span class="fa fa-calendar"></span>
+              {% include scripts/dates.html %}
+          </p>
+        </div>
+        <div class="col-sm-4">
+         <div class="post-number">{{ site.theme.str_article }}: {{ page.article }}</div>
+        </div>
+        <div class="col-sm-4">
+        {% if page.comment == "true" %}
+          <div id="parallax">
+            <div class="comment-post">
+              <a href="#comments"><span class="fa fa-comments-o animated infinite wobble"></span></a>
+              {{ site.theme.str_icon_comment_post }}
+            </div>
+          </div>
+        {% endif %}
+        </div>
+      </div>
+      <h1 class="post-title">{{ page.title }}</h1>
+      </article>
+    </header>
+    <article class="post-content">
+      <div class="reading-time">{{ page.content | reading_time }}</div>
+      {{ content }}
+
+<div class="wrapper edit-this-post">
+<a class="edit-this-post" href="{{ site.theme.directory_posts_github }}/{{ page.filepath }}" title="Github" target="_blank"><i class="fa fa-github"></i>{{site.theme.str_edit_this_post}}</a>
+</div>
+
+    {% if site.theme.post_sharing == "yes" %}
+    {% include html/shares.html %}
+    {% endif %}
+
+      <div class="row wrapper-author">
+        <div class="col-sm-2">
+         <div class="image-author">
+          {% if site.theme.gravatar %}
+          <img class="avatar-about" src="https://secure.gravatar.com/avatar/{{ site.theme.gravatar }}?s=100" alt=""/>
+          {% else if site.theme.avatar %}
+          <img class="avatar-about" src="{{ "/assets/images/avatar"  | prepend: site.baseurl | prepend: site.url }}/{{ site.theme.avatar }}" alt=""/>
+          {% endif %}
+        </div>
+      </div>
+
+
+
+      <div class="col-lg-10">
+        <p class="post-by-title">{% if site.theme.str_post_by_title %}{{ site.theme.str_post_by_title }}{% endif %}</p>
+        <h1 class="name-author-post"> {% if site.theme.str_name_author_post %}{{ site.theme.str_name_author_post }}{% endif %}</h1>
+        <div class="description">{% if site.theme.author_post_description %} {{ site.theme.author_post_description }} {% endif %}</div>
+      </div>
+    </div>
+
+
+    {% if page.comment == "true" %}
+    {% if site.theme.disqus_shortname %}
+    <h1 class="comments-title">
+      <span class="fa fa-comment"></span>
+      {{ site.theme.str_comments }}
+    </h1>
+    {% endif %}
+  </article>
+  <!-- Disqus -->
+  {% if site.theme.disqus_shortname %}
+  <div id="comments" class="comments">
+    {% include scripts/disqus.html %}
+  </div>
+  {% endif %}
+  {% elsif page.comment == "false" %}
+  <h1 class="nocomments"><span class="fa fa-comment"></span><p> {{site.theme.str_nocomment}}</p></h1>
+  {% endif%}
+  </div>
+</div>

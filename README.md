@@ -1,0 +1,212 @@
+# Theme [Chameleon](https://github.com/williamcanin/chameleon-theme-jekyll) Jekyll (Blog/Portfolio)
+
+![ScreenShot](https://raw.githubusercontent.com/williamcanin/chameleon-theme-jekyll/master/assets/images/preview/preview.png)
+
+## Intro
+
+**Chameleon Theme** is the theme for [Jekyll](http://jekyllrb.com) built especially for those who want to have a blog and a portfolio quickly, lightness and greater ability to customize of theme. Its base is made with [Twitter Bootstrap](http://getbootstrap.com), that gives you greater practicalities to open your page in a mobile device.
+
+Using tools like GruntJS and Bower for their management and creating dependencies, development practitioners will find it easier to manipulate the **Chameleon Theme**.
+
+The **Chameleon Theme** also uses the language [Ruby](https://www.ruby-lang.org) to perform Deploy on GitHub, with deployment options for source code and compiled project (folder: _build) to a branch of his choice on GitHub, change theme (colors), header creation of pages and posts and other functions. 
+
+> You can change the structure of Chameleon Theme as you wish, provided they 
+> do not manipulate the copyright of the project.
+
+This project has the copyright to {[William C. Canin](http://github.com/williamcanin)} - (c) copyright 2015
+
+
+## Requirements
+
+
+| Prerequisite    | How to check 		 | How to install | Version requerited
+| --------------- | -------------------- | -------------- | ------------------ |
+| Git             | `git --version`      | [Git](http://git-scm.com/) | >= 1.9.0 |
+| Ruby            | `ruby -v`    		 | [Ruby](https://www.ruby-lang.org) | >= 1.9.3 |
+| Gem             | `gem -v`             | **Ruby** contains **Gem** | >= 1.8.23 |
+| Python          | `python --version`   | [Python](https://www.python.org/) | Optional |
+| Node.js         | `node -v`    		 | [Nodejs](http://nodejs.org/) | Optional |
+| Npm             | `npm --version`      | **It depends on O.S** | Optional |
+| GruntJs         | `grunt --version`    | `npm install -g grunt grunt-cli` | Optional |
+| Bower           | `bower -v`   		 | `npm install -g bower` | Optional |
+| Bundler         | `bundler -v` 		 | `gem install bundler` | >= 1.9.5 |
+| Rake            | `rake --version` 		 | **It depends on O.S** | >= 10.3.0 |
+
+
+For Windows users, you must install the DevKit and Pygments.
+For more notes of the Dev Kit installation, see: [Devkit Install](https://github.com/oneclick/rubyinstaller/wiki/Development-Kit#installation-instructions)
+
+------
+
+## Users Linux
+
+For you who is Linux user, you can perform the following commands to complete the entire installation requirements of packages:
+
+> commands with superuser (root).
+
+Debian/Ubuntu
+```
+apt-get install git git-core ruby-full rake nodejs npm python -y && ln -s /usr/bin/nodejs /usr/bin/node && npm install -g grunt grunt-cli bower && gem install bundler
+```
+Fedora/Red Hat
+```
+yum install git git-core ruby-full rake nodejs npm python -y && ln -s /usr/bin/nodejs /usr/bin/node && npm install -g grunt grunt-cli bower && gem install bundler
+```
+
+------
+
+## Unloading, installing dependencies, compiling Chameleon Theme and start the server Jekyll.
+
+* 1 - Perform unloading through the **Git**...
+
+```
+$ git clone https://github.com/williamcanin/chameleon-theme-jekyll.git
+```
+
+* 2 - ...and go to the folder:
+
+```
+$ cd chameleon-theme-jekyll
+```
+
+* 3 - Install Bundler:
+
+>Nota: If you use GNU/Linux, you may need superuser(root) permission.
+
+```
+# gem install bundler  
+```
+
+* 3.1 - Install dependences Bundler:
+
+```
+# bundle install
+```
+
+* 4 - Run the command to the dependencies and the compilation of **Chameleon Theme**:
+
+```
+$ rake make_install
+```
+
+* 5 - Run the following command to start the server **Jekyll** and your website run locally:
+
+```
+$ grunt serve
+```
+
+## Deploy for GitHub
+
+* 1 - Open the file **_config.yml**, and in the session **Configuration GitHub Deploy** fill in the details of your remote server on GitHub.
+
+> Meaning of the variables in the session "Configuration GitHub Deploy".
+
+* **project_name**: Your website name
+* **first_last_name**: Your name and surname last
+* **user_email**: Your email to set up Git
+* **github_user**: Important !!! Your user [GitHub](http://github.com)
+* **source_repository_project**: Repository to store the site's source code.
+* **build_repository_project**: Repository to deploy your site built on GitHub. If you do not have one, create in your [New repository](https://help.github.com/articles/creating-a-new-repository/) and then create a branch with the name of `gh-pages` and make deploy this branch.
+* **sshttps**: Use SSH (`git@github.com:`) or https ('https: // github.com / `) to configure the remote address in carrying out the deployment to GitHub. If you use SSH, create a ssh key and exports to GitHub.
+
+* 2.1 - Run the following command to deploy of source code to github:
+```
+$ rake deploygit pull="n" type="source" branch="branch_where_this_code" messagecommit="First commit" [ENTER]
+```
+
+> Nota: Remember to inform the variable **source_repository_project** in
+> `config.yml` file with the same directory name created on GitHub.
+
+* 2.2 - CYou want to make the deployment of the already compiled project, ie the folder **_build**, do: 
+
+> Note: Remember to inform the variable **build_repository_project** in
+> `Config.yml` file to the same directory name created on GitHub.
+> Generally deploy the compiled site is done in the brach' gh-pages`.
+> To learn how to host your website in the branch' gh-pages`, visit: [GitHub  
+> Pages](https://pages.github.com/).
+
+Example:
+
+```
+$ rake deploygit pull="n" type="build" branch="branch_where_the_compiled_source" messagecommit="Commit build site" [ENTER]
+```
+
+> Nota: The parameter "pull" is optional. If you "n", will be the deploy
+> without performing the "pull" if put "s" before performing the "push", will
+> be a "pull". For more information about all command **rake** in **
+> Chameleon theme**, run the command: `rake help`
+
+
+
+## Theme options:
+
+Real chameleon... chameleon pure!. **Six** custom colors to please everyone.
+
+Preview theme color:
+
+![ScreenShot](https://raw.githubusercontent.com/williamcanin/chameleon-theme-jekyll/master/assets/images/preview/greentheme.png)
+
+![ScreenShot](https://raw.githubusercontent.com/williamcanin/chameleon-theme-jekyll/master/assets/images/preview/orangetheme.png)
+
+![ScreenShot](https://raw.githubusercontent.com/williamcanin/chameleon-theme-jekyll/master/assets/images/preview/bluetheme.png)
+
+![ScreenShot](https://raw.githubusercontent.com/williamcanin/chameleon-theme-jekyll/master/assets/images/preview/blacktheme.png)
+
+![ScreenShot](https://raw.githubusercontent.com/williamcanin/chameleon-theme-jekyll/master/assets/images/preview/pinktheme.png)
+
+![ScreenShot](https://raw.githubusercontent.com/williamcanin/chameleon-theme-jekyll/master/assets/images/preview/lighttheme.png)
+
+
+# DEMO 
+
+| Subject                                         | link
+| ----------------------------------------------- | ------------- |
+| To watch the demo of "Chameleon theme", go to > |  [Demo](http://williamcanin.github.io/chameleon-theme-jekyll/) |
+
+
+### As you can see, the "Chameleon Theme" has varieties of colors, and for use a color you like, use the following commands:
+
+```
+$ rake theme color={ green | orange | blue | black | pink | light } [ENTER]
+$ grunt sass-build [ENTER]
+```
+> Example: $ rake theme color=blue [ENTER]
+
+>Nota: For more information about all command **rake** in **Chameleon theme**, run the command: `rake help`
+
+## Effects and configurations
+
+The Chameleon theme, supports effects style settings, languages, and configurations of strings and social networking. To perform these settings,
+set the file "**_config.yml**" in theme root, to your liking.The file **_config.yml** is self explanatory.
+
+**Optimize Images**
+
+To optimize the images of the portfolio and other, use an image optimization task in the "grunt".
+Ex: [grunt-image](https://www.npmjs.com/package/grunt-image).
+
+The Chameleon theme already has the "task" commented the file "Gruntfile.js", see the following:
+
+* 1 - Uncomment tasks "image" in "Gruntfile.js".
+* 2 - Run command: `npm install grunt-image --save-dev`
+* 3 - Run task: `grunt imgcompress`
+
+**Custom Header**
+
+On the theme **Chameleon** the opportunity for the user to customize the header by placing a banner image or just a simple text. For this, the user will have to enable the variable **str_page_heading_text** or **str_page_heading_img** (according to the choice you prefer, image or text) in **_config.yml** file.
+
+# Tools used in the project
+
+* Operating System: [Ubuntu](http://www.ubuntu.com/)
+* Terminal: GNOME Terminal
+* Image Editor: GIMP
+* Text Editor: [Sublime Text 3](http://sublimetext.com/3)
+* Vectoring: InkScape
+* Based on [Twitter Bootstrap](http://getbootstrap.com)
+
+## Issues
+
+Be sure to get in touch.
+
+Make their views on the Chameleon Theme, Issue on:
+
+## [Leave your suggestions, compliments, criticisms or whatever suits you.](https://github.com/williamcanin/chameleon-theme-jekyll/issues/1)

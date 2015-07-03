@@ -1,0 +1,31 @@
+<h1 class="title-shares">
+   <span class="fa fa-share-alt"></span>
+   {{ site.theme.str_shares_title }}
+</h1>
+
+<div class="row shares" {% if site.theme.shares_language == "english" %} style="width: 57%;"{% endif %}>
+    <div class="col-sm-3 sh-facebook">
+     <div class="fb-share-button" data-href="{{ page.url | prepend:site.baseurl | prepend:site.url }}" data-layout="button_count"></div>
+ </div>
+ <div class="col-sm-3 sh-google">
+
+    <div class="g-plus" data-action="share" data-annotation="bubble"></div>
+
+</div>
+<div class="col-sm-3 sh-twitter">
+
+    {% if site.theme.shares_language == "english" %}
+    <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ page.url | prepend:site.baseurl | prepend:site.url }}" data-text="Sharing the post: {{ page.title }}" data-via="{% if site.theme.share_twitter_via %}{{ site.theme.share_twitter_via }}{% endif %}" data-related="{% if site.theme.share_twitter_related %}{{ site.theme.share_twitter_related }}{% endif %}" data-lang="en" data-hashtags="{% for tag in page.tags %}{{ tag }},{% endfor %}">Tweet</a>
+    {% else %}
+    <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ page.url | prepend:site.baseurl | prepend:site.url }}" data-text="Compartilhando o post: {{ page.title }}" data-via="{% if site.theme.share_twitter_via %}{{ site.theme.share_twitter_via }}{% endif %}" data-related="{% if site.theme.share_twitter_related %}{{ site.theme.share_twitter_related }}{% endif %}" data-lang="pt" data-hashtags="{% for tag in page.tags %}{{ tag }},{% endfor %}">Tweetar</a>
+    {% endif %}
+
+</div>
+
+<div class="col-sm-3 sh-linkedin">
+    <script type="IN/Share" data-url="{{ page.url | prepend:site.baseurl | prepend:site.url }}" data-counter="right"></script>
+</div>
+</div>
+
+
+

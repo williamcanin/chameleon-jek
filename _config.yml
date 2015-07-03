@@ -1,0 +1,275 @@
+# Session - Site configuration
+
+# url: "http://localhost:4000" # use this url for DEVELOPMENT
+# baseurl: "" # use this url for DEVELOPMENT
+
+url: "http://williamcanin.github.io"   # use this url for PRODUCTION
+baseurl: "/chameleon-theme-jekyll" # the subpath of your site PRODUCTION
+
+# Session - Site configuration
+
+
+# Session - Configuration GitHub Deploy
+project_name: "Chameleon Theme for Jekyll"
+first_last_name: "WilliamCanin"
+user_email: "william.costa.canin@gmail.com"
+github_user: "williamcanin"
+source_repository_project: "chameleon-theme-jekyll.git"
+build_repository_project: "chameleon-theme-jekyll.git"
+sshttps: "https://github.com/" # For SSH, use: "git@github.com:" For HTTPS. use: "https://github.com/"
+# Configuration GitHub Deploy
+
+
+
+
+
+# Session - Theme specific configuration [BEGIN]
+theme:
+  title: "Chameleon Theme"
+  subtitle_site: "Theme for Jekyll"
+
+
+
+  # ========= Begin Config Effects =============
+  # Navbar Fixed (yes/no)
+  navbar_fixed: "no"
+  # Rotate avatar navbar (yes/no)
+  rotate_avatar: "no"
+  # Shake Site title
+  shake_title_navbar: "no"
+  # Shake menu navbar
+  shake_menus_navbar: "no"
+  # Shake Social Icons NavBar
+  shake_social_icons_navbar: "no"
+  # Effects FadeIn (yes/no)
+  fadeIn: "no"
+  # Shake title posts
+  shake_title_posts: "no"
+ # ========= End Effects =============
+
+
+
+# Session - Index Config
+  #- Post except in index.html
+  post_except: "no"
+  # Model Index (Usage: list or grid )
+  model_index: "list"
+# Session - Index Config
+
+
+
+# Session - Avatar
+  avatar: "out.png"
+  gravatar: # your MD5 email
+  description: "Theme Chameleon" # used by search engines
+# Session - Avatar
+
+
+
+# Session - Date strings languages *support: (english / portuguese)
+  date_strings_language: "english"
+# Session - Date strings languages *support: (english / portuguese)
+
+
+
+# Session - Shares posts config
+  post_sharing: "yes" #(yes/no)
+  # language (portuguese/english)
+  shares_language: "english"
+  # twitter
+  share_twitter_via: "" #ex: william
+  share_twitter_related: "" #ex: stevejobs
+# Session - Shares posts config
+
+
+
+# Session - Posts Author strings
+  str_post_by_title: "Post by:"
+  str_name_author_post: "Theme Chameleon"
+  author_post_description: >
+    <p>In this field you describe a summary about you and what you do. This Jekyll theme is created by  <a href="http://github.com/williamcanin" target="_blank"> William C. Canin</a></p>
+# Session - Posts Author strings
+
+
+
+# Session - Header and footer text
+  # header_text: >
+    # <p>Theme Chameleon.</p>
+
+
+
+# Session - Portfolio description
+  portfolio_description: >
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi est quisquam deleniti architecto voluptatibus similique consectetur incidunt iusto autem ipsa! Temporibus optio architecto distinctio, at fugit. Aspernatur voluptatibus earum nulla.</p>
+# Session - Portfolio description
+
+
+
+# Session - Footer / Copyrights
+  footer_text:
+    str_text1: "Chameleon Theme"
+    str_text2: "Theme made with: "
+    maintence1_link_by: "http://jekyllrb.com"
+    maintence2_link_by: "http://getbootstrap.com/"
+    maintence1_text_by: "Jekyll"
+    maintence2_text_by: "Twitter Bootstrap"
+    str_text3: "Theme made by: "
+    design_layout_link_by: "http://github.com/williamcanin"
+    design_layout_text_by: "William Canin"
+    copyright_initial_year:  "Copyright 2015"
+# Session - Footer / Copyrights
+
+
+
+# Session - Socialize Icons Navbar
+  rss: true
+  email_address: "your_email@gmail.com"
+  behance:
+  bitbucket:
+  dribbble:
+  disqus: "your_user_disqus"
+  facebook: "your_user_facebook"
+  flickr:
+  github: "your_user_github"
+  google_plus: "your_user_google+"
+  instagram:
+  lastfm:
+  linkedin:  "your_url_complete_linkedin"
+  myspace:
+  pinterest:
+  reddit:
+  soundcloud:
+  stack_exchange: "http://stackoverflow.com/users/123456/your_user"
+  steam:
+  skype:
+  tumblr:
+  twitter:
+  wordpress:
+  youtube: "your_user_canal"
+# Session - Socialize Icons Navbar
+
+
+
+# Session - Scripts Google Abalytics and Disqus
+  google_analytics: # tracking id, e.g. "UA-000000-01"
+# Session - Scripts Google Abalytics and Disqus
+
+
+
+# Session - Comments for Disqus
+  disqus_shortname: "your_user_disqus"
+# Session - Comments for Disqus
+
+
+
+# Session - Contact Form - Google Forms
+  google_form_id: "" # Your_ID_Google_Forms
+  str_title_gf: "Send ideas...send reviews."
+  str_text_gf: >
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi est quisquam deleniti architecto voluptatibus similique consectetur incidunt iusto autem ipsa! Temporibus optio architecto distinctio, at fugit. Aspernatur voluptatibus earum nulla.</p>
+
+  str_btn_google_form_text: "Send"
+# Session - Contact Form - Google Forms
+
+
+
+
+# Session - Page heading index
+  page_heading_text: #"<p>Blog</p><p>Check out my latest posts.</p>"
+  page_heading_img: "page-heading-banner.png"
+# Session - Header page index
+
+
+
+
+# Session - Localization strings
+  str_comments: "<p>Comments</p> <p>Leave your comment</p>"
+  str_comments_portfolio: "<p>Comments</p> <p>Leave your comment in portfolio</p>"
+  str_follow_on: "Follow on"
+  str_rss_follow: "Follow RSS feed"
+  str_email: "Email"
+  str_next: "Older"
+  str_prev: "Newer"
+  str_continue_reading: "Continue reading"
+  str_total_pages: "Pages: "
+  str_of: "of"
+  str_client: "Client"
+  str_date: "Date"
+  str_type: "Type project"
+  str_placeholder_search: "Search in blog..."
+  str_no_search_results: "Oh shit! No results found"
+  str_title_result_search: "Results:"
+  str_icon_comment_post: "Comment"
+  str_shares_title: "<p>Share this post in</p>"
+  str_article: "Article"
+  str_nocomment: "Comment disabled"
+  str_edit_this_post: "Edit this post"
+  # Session - Localization strings
+
+# Session - Theme specific configuration [END]
+
+
+
+# Session directory of posts
+# Description > This directory will be the directory where the posts to your GitHub
+#               This variable is for the button "Edit this post" of each post.
+# Important! Do not use the trailing slash
+#
+  directory_posts_github: "https://github.com/williamcanin/chameleon-theme-jekyll/tree/master/_posts/blog"
+# Session directory of posts
+
+
+
+# Session - Pagination
+  # use_pagination: "no" #(yes/no) >>>> Does not enable! Under construction !!! <<<<
+# paginate: 1
+# paginate_file: index.html
+# paginate_path: "/page:num"
+# Session - Pagination
+
+
+
+
+
+
+
+# Session - Build settings
+markdown: kramdown
+highlighter: pygments
+highlighter: true
+permalink: /:title # default: /:categories/:year/:month/:day/:title.html
+destination:    ./_build
+plugins:        ./_plugins
+layouts:        ./_layouts
+# Session - Build settings
+
+
+
+
+
+
+
+# Session - Excludes files and folder build jekyll
+exclude: ['Gruntfile.js',
+'package.json',
+'bower.json',
+'README.md',
+'Gemfile',
+'Rakefile',
+'node_modules',
+'src',
+'assets/vendor',
+'assets/images/preview',
+'assets/images/javascript/vendor',
+'assets/images/javascript/custom',
+'assets/javascripts/custom',
+'assets/sass',
+'install.sh',
+'README-PtBr.md',
+'**/*/.zip',
+'**/*/.log',
+'**/*/.lock',
+'LISENCE'
+]
+# Session - Excludes files and folder build jekyll

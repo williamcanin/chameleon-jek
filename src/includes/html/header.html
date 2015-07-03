@@ -1,0 +1,87 @@
+<header class="wrapper site-header">
+
+  {% if site.theme.navbar_fixed == "yes" %}
+  <nav class="banner navbar navbar-default navbar-fixed-top" role="banner" {% if page.permalink == "/about/" %} id="color-navbar" {% endif %}>
+    {% else %}
+  <nav class="banner navbar navbar-default navbar-static-top" role="banner" {% if page.permalink == "/about/" %} id="color-navbar" {% endif %}>
+  {% endif %}
+
+   <div class="navbar-header">
+       <button type="button" class="navbar-toggle collapsed"
+    data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" role="menu-responsive" >
+
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+
+  </button>
+  <div class="navbar-brand">
+
+  <div class="row brand-icons">
+
+<div class="col-sm-6 col-brand" >
+    {% if site.theme.gravatar %}
+    <a href="{{ site.url }}">
+      <img {% if site.theme.rotate_avatar == "yes" %} id="hover-avatar" {% endif %} class="avatar" src="https://secure.gravatar.com/avatar/{{ site.theme.gravatar }}?s=100" alt=""/>
+    </a>
+    {% else if site.theme.avatar %}
+    <!-- Avatar image -->
+    <a href="{{ site.baseurl | prepend: site.url }}">
+      <img {% if site.theme.rotate_avatar == "yes" %} id="rotate-avatar" {% endif %}
+      class="avatar" src="{{ "/assets/images/avatar"  | prepend: site.baseurl | prepend: site.url }}/{{ site.theme.avatar }}" alt=""/>
+    </a>
+    {% endif %}
+</div>
+
+<div class="col-sm-6 col-title-icons">
+    <div {% if site.theme.shake_title_navbar == "yes" %} id="hover-links-texts" {% endif %} class="site-title"><a href="{{ site.baseurl | prepend: site.url }}">{{ site.theme.title }}</a></div>
+
+    <div class="social-icons" {% if site.theme.shake_social_icons_navbar == "yes" %} id="hover-social-icons" {% endif %}> {% include html/icons.html %}  </div>
+
+    </div> <!-- col-title-icons -->
+
+</div>
+
+  </div> <!-- header -->
+
+
+</div>
+
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  <ul class="nav navbar-nav site-nav">
+
+    {% for page in site.pages %}
+    {% if page.title and page.hide != true %}
+
+    <li {% if site.theme.shake_menus_navbar == "yes" %} id="hover-links-texts" {% endif %}>
+      <a class="page-link" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
+
+        <span class="fa fa-circle-o"></span>
+
+        &nbsp;{{ page.title }}
+      </a>
+    </li>
+    {% endif %}
+    {% endfor %}
+
+<li class="btn-search-container">
+    <a href="#searchModal" class="btn-search" data-toggle="modal">
+        <span class="fa fa-search"><!-- <i>Search</i> --></span>
+    </a>
+</li>
+
+  </ul>
+</div><!-- /.navbar-collapse -->
+
+
+  {% if site.theme.navbar_fixed == "yes" %}
+</nav>
+    {% else %}
+</nav>
+  {% endif %}
+
+
+
+
+</header>

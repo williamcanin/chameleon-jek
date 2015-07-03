@@ -1,0 +1,60 @@
+---
+layout: default
+---
+<div class="home">
+  <div class="wrapper" >
+  {% if site.theme.page_heading_text %}
+    <h1 class="page-heading" {% if site.theme.navbar_fixed == "yes" %} id="navbar-fixed-top" {% else %} id="navbar-fixed-static" {% endif %}>{{ site.theme.page_heading_text }}</h1>
+    <div class="wrapper arrow-page-heading">
+      <div class="arrow-page-heading"></div>
+    </div>
+  {% else if site.theme.page_heading_img %}
+  <div class="page-heading" {% if site.theme.navbar_fixed == "yes" %} id="navbar-fixed-top" {% else %} id="navbar-fixed-static" {% endif %}><img class="img-responsive" src="{{ "/assets/images/header"  | prepend: site.baseurl | prepend: site.url }}/{{site.theme.page_heading_img}}" alt="{{site.theme.title}}"></div>
+  <div class="wrapper arrow-page-heading">
+      <div class="arrow-page-heading"></div>
+    </div>
+  {% endif %}
+    <ul class="post-list">
+
+      <!-- For paging use the loop: "paginator.posts" -->
+      <!-- For NOT paging use the loop: "site.categories['blog']" -->
+
+{% if site.theme.use_pagination == "yes" %}
+    {% assign index_home = paginator.posts %}
+{% else %}
+    {% assign index_home = site.categories['blog'] %}
+{% endif %}
+
+{% for posting in index_home %}
+
+     <div class="wrapper posts">
+        <li class="calendar-post-title">
+          <span class="post-meta"><span class="fa fa-calendar"></span>{% include scripts/dates.html %}</span>
+          <h2 {% if site.theme.shake_title_posts == "yes" %} id="hover-links-texts" {% endif %}>
+            {% if site.theme.post_except == "no" %}
+            <a  class="post-link" href="{{ posting.url | prepend: site.baseurl | prepend: site.url }}">
+              {{ posting.title }}
+            </a>
+            {% else %}
+            {{ posting.title }}
+            {% endif %}
+          </h2>
+        </li>
+        {% if site.theme.post_except == "yes" %}
+        <li class="excerpt">
+         <p> {{ posting.content | truncatewords:50 }} </p>
+          <a class="btn btn-primary pull-right" href="{{ posting.url | prepend: site.baseurl | prepend: site.url }}">
+            {{ site.theme.str_continue_reading }} <span class="fa fa-chevron-right"></span>
+          </a>
+        </li>
+        {% endif %}
+      </div>
+
+      {% endfor %}
+
+    </ul>
+{% if site.theme.use_pagination == "yes" %}
+    {% include html/pagination.html %}
+{% endif %}
+</div>
+</div>

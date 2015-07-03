@@ -1,0 +1,15 @@
+{% if site.theme.google_form_id != "" %}
+{% if page.send_google_forms == true %}
+
+<div class="wrapper google-form">
+
+<h1 class="title-gf"><span class="fa fa-send"></span><p>{{site.theme.str_title_gf}}</p></h1>
+
+<div class="text-gf">{{site.theme.str_text_gf}}</div>
+
+  <div class="wrapper btn-google-form">
+    <a class="btn-google-form" href="https://docs.google.com/forms/d/{{site.theme.google_form_id}}" title="Google Forms" target="_blank"><i class="fa fa-send"></i><i class="btn-text">{{site.theme.str_btn_google_form_text}}</i></a>
+  </div>
+</div>
+{% endif %}
+{% endif %}
