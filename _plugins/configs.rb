@@ -69,6 +69,7 @@ class Configs < Variables
       f.puts("./**/*.log")
       f.puts("*.tar.gz")
       f.puts("*.zip")
+      f.puts("*.*~")
       f.puts("*.log")
       f.puts("assets/css")
       f.puts("assets/fonts")
@@ -343,6 +344,8 @@ def make_install
   cmd = "echo 'Compiling Chameleon theme...'"
   system(cmd)
   cmd = "npm install"
+  system(cmd)
+  cmd = "grunt copy"
   system(cmd)
 end
 
