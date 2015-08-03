@@ -2,6 +2,7 @@
 # Language: Ruby
 # Country/State: Brazil/SP
 # Author : William C. Canin <http://williamcanin.github.com>
+# Page author: http://williamcanin.com
 # Description: Script for theme settings "Snowcreen".
 # Manual tasks:
 # * Deploy to GitHub Pages
@@ -15,6 +16,14 @@ require './_plugins/configs.rb'
 # Task load file _config.yml
 task :loadYML do
   $configyml = YAML::load_file(File.join(File.dirname(File.expand_path(__FILE__)), '_config.yml'))
+end
+
+
+# Task test
+desc "Test"
+   task :test => [:loadYML] do
+    confs = Configs.new
+    confs.test
 end
 
 # Task change theme
@@ -58,6 +67,8 @@ task :preinstall do
     config.gitignore
     config.ftppass
     config.jshintrc
+    cmd = "echo && echo \"Wait ...\""
+    system(cmd)
 end # Task preinstall - Responsible for settings
 
 
@@ -66,7 +77,6 @@ task :postinstall do
   config = Configs.new
   config.inotify_watchers
   config.bower_dependences
-  # config.fonts_config
 end # Task postinstall Bower
 
 
@@ -97,7 +107,7 @@ end
 # Task clean All
 
 # Task help manual tasks
-desc "Help: DeployGit, New post and Theme change."
+desc "Help: DeployGit, New post, New page, theme change...others."
 task :help do
 puts "------------------------------------------------------------"
 puts "Function                               Command"

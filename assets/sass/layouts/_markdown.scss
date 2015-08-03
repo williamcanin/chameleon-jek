@@ -24,6 +24,7 @@
         .basic-alignment {
             width: 180px;
             height: 180px;
+            
             &.left { float: left; margin-right: 1.5em; }
             &.right { float: right; margin-left: 1.5em; }
             &.center { display:block; margin: 0 auto 1.5em; }

@@ -4,11 +4,13 @@ _includes
 node_modules
 assets/vendor
 .git
+deploy.sh
 .grunt
 .ftppass
 ./**/.DS_Store
 ./**/*.log
 *.tar.gz
+.tmp
 *.zip
 *.*~
 *.log

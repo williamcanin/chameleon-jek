@@ -1,7 +1,7 @@
 # File: Configs.rb
 # Language: Ruby
 # Country/State: Brazil/SP
-# Author : William C. Canin <http://williamcanin.github.com>
+# Author : William C. Canin <http://williamcanin.com>
 # Description: Script config for "Chameleon theme".
 
 # Do not change this file #
@@ -41,20 +41,30 @@ end # end Variables
 
 class Configs < Variables
 
-  def test
-    if File.exists?("./.origin.log")
-      puts "existe"
-      cmd = "ls " + $configyml['test']
-      system(cmd)
-    else
-      puts "nao existe"
-    end
+
+   def test
+      resp = $configyml['credential_cache_yesno']
+
+      if resp == "yes"
+        puts "yes"
+      else
+        puts "no"  
+      end 
+
+      if File.exists?("./.origin.log")
+        puts "exist .origin.log"
+      else
+        puts "does not exist .origin.log"
+      end 
   end
+
+
+  
 
 # Create .gitignore
   def gitignore
     if File.exists?(CONFIG['gitignore'])
-      puts "The file " + CONFIG['gitignore'] + " exists!"
+      puts CONFIG['gitignore'] + " set!"
     else
       f = File.new(CONFIG['gitignore'] , "w+")
       f.puts(".sass-cache")
@@ -63,11 +73,13 @@ class Configs < Variables
       f.puts("node_modules")
       f.puts("assets/vendor")
       f.puts(".git")
+      f.puts("deploy.sh")
       f.puts(".grunt")
       f.puts(".ftppass")
       f.puts("./**/.DS_Store")
       f.puts("./**/*.log")
       f.puts("*.tar.gz")
+      f.puts(".tmp")
       f.puts("*.zip")
       f.puts("*.*~")
       f.puts("*.log")
@@ -85,7 +97,7 @@ class Configs < Variables
 # Create .bowerrc
   def bowerrc
     if File.exists?(CONFIG['bowerrc'])
-     puts "The file " + CONFIG['bowerrc'] + " exists!"
+     puts CONFIG['bowerrc'] + " set!"
    else
     f = File.new(CONFIG['bowerrc'] , "w+")
     f.puts("{")
@@ -98,9 +110,9 @@ end # Create .bowerrc
 # Create .ftppass
 def ftppass
   if File.exists?(CONFIG['ftppass'])
-   puts "The file " + CONFIG['ftppass'] + " exists!"
+   puts CONFIG['ftppass'] + " set!"
  else
-  f = File.new("#{SOURCE}" + CONFIG['ftppass'] , "w+")
+  f = File.new(CONFIG['ftppass'] , "w+")
   f.puts("{")
   f.puts("\"key\": {")
   f.puts("\"username\": \"username\",")
@@ -115,7 +127,7 @@ end # Create ftppass
 # Create .jshintrc
 def jshintrc
  if File.exists?(CONFIG['jshintrc'])
-  puts "The file " + CONFIG['jshintrc'] + " exists!"
+  puts CONFIG['jshintrc'] + " set!"
 else
   f = File.new(CONFIG['jshintrc'] , "w+")
   f.puts('{')
@@ -134,23 +146,22 @@ else
   f.puts('"strict": false,')
   f.puts('"trailing": true')
   f.puts('}')
-
 end
 end # Create .jshintrc
 
 def inotify_watchers
 # cmd =
-system("echo")
-system("echo Increasing the amount of inotify watchers (Debian|RedHat). Ctrl+C Cancel")
-system("echo Tell computer administrator password:")
-cmd = "echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysl.conf && sudo sysctl -p"
-system(cmd)
+# system("echo")
+# system("echo Increasing the amount of inotify watchers (Debian|RedHat). Ctrl+C Cancel")
+# system("echo Tell computer administrator password:")
+# cmd = "echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysl.conf && sudo sysctl -p"
+# system(cmd)
 end
 
 def bower_dependences
   cmd = "node node_modules/bower/bin/bower install"
   system(cmd)
-  cmd = "grunt dist"
+  cmd = "grunt build"
   system(cmd)
 end
 
@@ -248,14 +259,14 @@ end
 
 # Usage: rake deploygit pull="{ y | n }" type="{ source | build }" branch="your_branch" messagecommit="Your_message_commit"
 def deploygit
-
+  credential = $configyml['credential_cache_yesno']
   messagecommit = ENV['messagecommit']
   pullsn = ENV['pull']
   branchgit = ENV['branch']
   type = ENV['type']
 
   if type == "build"
-    cmd = "grunt build:css"
+    cmd = "grunt build"
     system(cmd)
     dirdeploy = "#{CONFIG['build_dir']}"
     cyml = $configyml['build_repository_project']
@@ -281,8 +292,18 @@ def deploygit
   system(cmd)
   cmd = "cd #{dirdeploy} && git config --local color.ui true"
   system(cmd)
-  cmd = "cd #{dirdeploy} && git config --local credential.helper cache"
-  system(cmd)
+
+
+
+  if credential == "yes"
+      cmd = "cd #{dirdeploy} && git config --" + $configyml['credential_cache_type'] + " credential.helper 'cache --timeout="+ $configyml['credential_cache_time'] + "'"
+      system(cmd)
+  else
+      cmd = "cd #{dirdeploy} && git credential-cache exit"
+      system(cmd)
+  end
+
+
   cmd = "cd #{dirdeploy} && git config --global http.postBuffer 104857600"
   system(cmd)
 
@@ -347,11 +368,13 @@ def make_install
   system(cmd)
   cmd = "grunt copy"
   system(cmd)
+  # cmd = "grunt build"
+  # system(cmd)
 end
 
 
 def make_clean
-  cmd = "rm -rf assets/css assets/fonts assets/vendor node_modules _build _includes assets/javascripts/scripts.min.js .origin.log .bowerrc .ftppass .gitignore .jshintrc .sass-cache"
+  cmd = "rm -rf assets/css assets/fonts assets/vendor node_modules _build/* _includes assets/javascripts/scripts.min.js .origin.log .bowerrc .ftppass .gitignore .jshintrc .sass-cache"
   system(cmd)
   cmd = "echo Cleaned compilation [Ok]"
   system(cmd)

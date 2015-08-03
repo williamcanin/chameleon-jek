@@ -1,4 +1,4 @@
-# Theme [Chameleon](https://github.com/williamcanin/chameleon-theme-jekyll) Jekyll (Blog/Portfolio)
+# Theme [Chameleon](https://github.com/williamcanin/chameleon-theme-jekyll) Jekyll (Blog/Portfolio) Beta
 
 ![ScreenShot](https://raw.githubusercontent.com/williamcanin/chameleon-theme-jekyll/master/assets/images/preview/preview.png)
 
@@ -19,7 +19,7 @@ This project has the copyright to {[William C. Canin](http://github.com/williamc
 ## Requirements
 
 
-| Prerequisite    | How to check 		 | How to install | Version requerited
+| Prerequisite    | How to check 		 | How to install | Version required 
 | --------------- | -------------------- | -------------- | ------------------ |
 | Git             | `git --version`      | [Git](http://git-scm.com/) | >= 1.9.0 |
 | Ruby            | `ruby -v`    		 | [Ruby](https://www.ruby-lang.org) | >= 1.9.3 |
@@ -38,21 +38,6 @@ For more notes of the Dev Kit installation, see: [Devkit Install](https://github
 
 ------
 
-## Users Linux
-
-For you who is Linux user, you can perform the following commands to complete the entire installation requirements of packages:
-
-> commands with superuser (root).
-
-Debian/Ubuntu
-```
-apt-get install git git-core ruby-full rake nodejs npm python -y && ln -s /usr/bin/nodejs /usr/bin/node && npm install -g grunt grunt-cli bower && gem install bundler
-```
-Fedora/Red Hat
-```
-yum install git git-core ruby-full rake nodejs npm python -y && ln -s /usr/bin/nodejs /usr/bin/node && npm install -g grunt grunt-cli bower && gem install bundler
-```
-
 ------
 
 ## Unloading, installing dependencies, compiling Chameleon Theme and start the server Jekyll.
@@ -69,31 +54,70 @@ $ git clone https://github.com/williamcanin/chameleon-theme-jekyll.git
 $ cd chameleon-theme-jekyll
 ```
 
+## Users Linux
+
+**For you who is Linux user, you have a script shell  that does everything for you.** 
+
+
+* 3 - If you have not installed the applications on your machine, run the script shell **setup.sh** as follows:
+
+```
+$ bash setup.sh -p
+```
+
+> Heads Up! Will ask the root password as this will install packages on your 
+> machine. Be sure you have a root password.
+
+* 4 - After preparing your machine, you need to run the command to resolve dependencies Chameleon Theme and compile it. This way:
+
+```
+$ bash setup.sh -c
+```
+
+For more information: "bash setup.sh help"
+
+## Windows users will have to manually run the commands
+
 * 3 - Install Bundler:
 
 >Nota: If you use GNU/Linux, you may need superuser(root) permission.
 
 ```
-# gem install bundler  
+ gem install bundler  
 ```
 
-* 3.1 - Install dependences Bundler:
+* 4 - Install dependences Bundler:
 
 ```
-# bundle install
+ bundle install
 ```
 
-* 4 - Run the command to the dependencies and the compilation of **Chameleon Theme**:
+* 5 - Run the command to the dependencies and the compilation of **Chameleon Theme**:
 
 ```
 $ rake make_install
 ```
 
-* 5 - Run the following command to start the server **Jekyll** and your website run locally:
+* 6 - Compile Chameleon Theme:
+
+```
+$ grunt build
+```
+
+* 7 - Start server (with watch):
+
+```
+$ grunt spy
+```
+
+or
+
+* 7.1 - Start server (normal):
 
 ```
 $ grunt serve
 ```
+
 
 ## Deploy for GitHub
 
@@ -107,6 +131,9 @@ $ grunt serve
 * **github_user**: Important !!! Your user [GitHub](http://github.com)
 * **source_repository_project**: Repository to store the site's source code.
 * **build_repository_project**: Repository to deploy your site built on GitHub. If you do not have one, create in your [New repository](https://help.github.com/articles/creating-a-new-repository/) and then create a branch with the name of `gh-pages` and make deploy this branch.
+* **credential_cache_yesno**: Active cache credentials for Git.
+* **credential_cache_type**: Kind of like the cache credentials will be stored locally or globally (local / global).
+* **credential_cache_time**: How long the cached credentials will be stored (in seconds)
 * **sshttps**: Use SSH (`git@github.com:`) or https ('https: // github.com / `) to configure the remote address in carrying out the deployment to GitHub. If you use SSH, create a ssh key and exports to GitHub.
 
 * 2.1 - Run the following command to deploy of source code to github:
@@ -117,7 +144,7 @@ $ rake deploygit pull="n" type="source" branch="branch_where_this_code" messagec
 > Nota: Remember to inform the variable **source_repository_project** in
 > `config.yml` file with the same directory name created on GitHub.
 
-* 2.2 - CYou want to make the deployment of the already compiled project, ie the folder **_build**, do: 
+* 2.2 - If you want to make the deploy of the already compiled project, ie the folder **_build**, do: 
 
 > Note: Remember to inform the variable **build_repository_project** in
 > `Config.yml` file to the same directory name created on GitHub.
@@ -186,22 +213,25 @@ Ex: [grunt-image](https://www.npmjs.com/package/grunt-image).
 
 The Chameleon theme already has the "task" commented the file "Gruntfile.js", see the following:
 
-* 1 - Uncomment tasks "image" in "Gruntfile.js".
+* 1 - Uncomment function "image" and task "imgcompress" in "Gruntfile.js".
 * 2 - Run command: `npm install grunt-image --save-dev`
 * 3 - Run task: `grunt imgcompress`
 
 **Custom Header**
 
-On the theme **Chameleon** the opportunity for the user to customize the header by placing a banner image or just a simple text. For this, the user will have to enable the variable **str_page_heading_text** or **str_page_heading_img** (according to the choice you prefer, image or text) in **_config.yml** file.
 
-# Tools used in the project
+The *Chameleon Theme* brings the opportunity for the user to insert an image or just a simple text on the main page. For this, the user will have to activate the variable **str_page_heading_text** or **str_page_heading_img** (according to your preference, image or text) in the file **_ config.yml**. If you prefer the image, put a picture in the *"assets/images/header"* and insert into the variable **str_page_heading_img** more extension of the image.
 
-* Operating System: [Ubuntu](http://www.ubuntu.com/)
-* Terminal: GNOME Terminal
-* Image Editor: GIMP
-* Text Editor: [Sublime Text 3](http://sublimetext.com/3)
-* Vectoring: InkScape
-* Based on [Twitter Bootstrap](http://getbootstrap.com)
+----
+
+# Updates - Stable
+
+| Next update     | Version 
+| --------------- | --------------------
+|
+| 2016/11/10      | 1.0.7                   |
+| 2016/02/10      | Final version - 2.0.0   |
+
 
 ## Issues
 

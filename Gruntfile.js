@@ -1,3 +1,15 @@
+/*
+=========================================================================
+GruntFile - Customization for Chameleon Theme (Jekyll)
+Province: Brazil - SP
+Author: William da Costa Canin <http://williamcanin.com> {WillNux}
+Home page project: https://github.com/williamcanin/chameleon-theme-jekyll
+-------------------------------------------------------------------------
+All Rights Reserved (C) Copyright
+=========================================================================
+*/
+
+
 'use strict';
 module.exports = function (grunt) {
   // Load all tasks
@@ -9,7 +21,7 @@ module.exports = function (grunt) {
   'assets/vendor/jquery/dist/jquery.js',
   'assets/vendor/bootstrap-sass/assets/javascripts/bootstrap.js',
   'assets/vendor/jquery.easing/js/jquery.easing.min.js',
-  // 'assets/javascripts/vendor/modernizr.min.js',
+  // 'assets/javascripts/vendor/modernizr.min.js', // Customization option (Connect internet)
   'assets/vendor/simple-jekyll-search/dest/jekyll-search.js',
   'assets/javascripts/custom/*.js'
   ];
@@ -17,8 +29,10 @@ module.exports = function (grunt) {
   
 // Configurable paths
 var config = {
+  port_jekyll: '9000',
   src: 'src',
-  build: '_build',
+  build_files: '_build/*',
+  build_dir: '_build',
   includes: '_includes',
   fonts_dir: './assets/fonts',
   sass_cache: '.sass-cache',
@@ -37,7 +51,7 @@ config: config,
 // Clean paths and files
 clean: {
   build: {
-    src: ['<%= config.build %>','<%= config.includes %>','<%= config.sass_cache %>', 'assets/css','assets/javascripts/scripts.min.js'],
+    src: ['<%= config.build_files %>','<%= config.includes %>','<%= config.sass_cache %>', 'assets/css','assets/javascripts/scripts.min.js'],
 },
   content: {
     src: ['_posts','pages','assets/images','README.md','_config.yml','*.sh','CNAME']
@@ -51,7 +65,6 @@ clean: {
 mkdir: {
     all: {
       options: {
-        // mode: 777,
         create: ['<%= config.fonts_dir %>']
       },
     },
@@ -172,40 +185,40 @@ htmlcompressor: {
   }
 },
 
+// // Customization option (Connect internet)
+// // Minification of Images
+// // Install: # npm install grunt-image --save-dev
+// // Task:  grunt.registerTask('imgcompress', [ 'image:dynamic']);
+// image: {
+//   static: {
+//     options: {
+//      pngquant: true,
+//      optipng: true,
+//      advpng: true,
+//      zopflipng: true,
+//      pngcrush: true,
+//      pngout: true,
+//      mozjpeg: true,
+//      jpegRecompress: true,
+//      jpegoptim: true,
+//      gifsicle: true,
+//      svgo: true
 
-// Minification of Images
-// Install: # npm install grunt-image --save-dev
-// Task:  grunt.registerTask('imgcompress', [ 'image:dynamic']);
-image: {
-  static: {
-    options: {
-     pngquant: true,
-     optipng: true,
-     advpng: true,
-     zopflipng: true,
-     pngcrush: true,
-     pngout: true,
-     mozjpeg: true,
-     jpegRecompress: true,
-     jpegoptim: true,
-     gifsicle: true,
-     svgo: true
-
-   },
-   files: {
-    'assets/images/avatar/out.png': 'assets/images/avatar/out.png',
-    'assets/images/avatar/over.png': 'assets/images/avatar/over.png'
-  }
-},
-dynamic: {
-  files: [{
-    expand: true,
-    cwd: 'assets/images/',
-    src: ['**/*.{png,jpg,gif,svg}'],
-    dest: 'assets/images/'
-  }]
-}
-},
+//    },
+//    files: {
+//     'assets/images/avatar/out.png': 'assets/images/avatar/out.png',
+//     'assets/images/avatar/over.png': 'assets/images/avatar/over.png'
+//   }
+// },
+// dynamic: {
+//   files: [{
+//     expand: true,
+//     cwd: 'assets/images/',
+//     //src: ['**/*.{png,jpg,gif,svg}'],
+//     dest: 'assets/images/'
+//   }]
+// }
+// },
 
 
    // Concatenate JS
@@ -224,20 +237,6 @@ dynamic: {
       dist: {
         files: {
           'assets/javascripts/scripts.min.js': [jsFileList]
-        }
-      }
-    },
-
-    // Connect with Browser
-    connect: {
-      server: {
-        options: {
-          port: 4000,
-          base: "<%= config.build %>",
-          hostname: "localhost",
-          livereload: true,
-          open: true
-          
         }
       }
     },
@@ -280,7 +279,7 @@ dynamic: {
     // Build server, Init Server and Reset Config
     shell : {
       jekyllServe : {
-        command : 'bundle exec jekyll serve'
+        command : 'bundle exec jekyll serve --port <%= config.port_jekyll %>'
       },
       jekyllBuild : {
         command : 'bundle exec jekyll build'
@@ -289,42 +288,58 @@ dynamic: {
         command : 'rake reset'
       }
     },
-     // Doc - https://www.npmjs.com/package/grunt-ftp-deploy
-    // You can use the grunt-ftpush.
+    //   // Customization option
+    //  // Doc - https://www.npmjs.com/package/grunt-ftp-deploy
+    // // You can use the grunt-ftpush.
 
-    'ftpush': {
-      build: {
-        auth: {
-          host: 'ftp.example.com', // your url ftp
-          port: 21, // port
-          authKey: 'key' // key in file .ftppass
-        },
-        src: './_build',
-        dest: '/public_html/',
-        exclusions: [
-            // Useless Files
-            './node_modules',
-            './**/.DS_Store',
-            './**/*.log',
-            './README.md',
-            './**/*.md',
-            './Gruntfile.js',
-            './Config.rb',
-            './bower.json',
-            './package.json',
-            './**/*.json',
-            './.ftppass',
-            './CNAME',
-            './Gemfile',
-            './*.lock',
-            './Rakefile',
-            './.gitignore',
-            'LICENSE',
-            './.git',
-            './.grunt'
-            ]
-          }
-        },
+
+    // 'ftpush': {
+    //   build: {
+    //     auth: {
+    //       host: 'ftp.example.com', // your url ftp
+    //       port: 21, // port
+    //       authKey: 'key' // key in file .ftppass
+    //     },
+    //     src: './_build',
+    //     dest: '/public_html/',
+    //     exclusions: [
+    //         // Useless Files
+    //         './node_modules',
+    //         './**/.DS_Store',
+    //         './**/*.log',
+    //         './README.md',
+    //         './**/*.md',
+    //         './Gruntfile.js',
+    //         './Config.rb',
+    //         './bower.json',
+    //         './package.json',
+    //         './**/*.json',
+    //         './.ftppass',
+    //         './CNAME',
+    //         './Gemfile',
+    //         './*.lock',
+    //         './Rakefile',
+    //         './.gitignore',
+    //         'LICENSE',
+    //         './.git',
+    //         './.grunt'
+    //         ]
+    //       }
+    //     },
+
+    // Connect with Browser
+    connect: {
+      server: {
+        options: {
+          port: 9000,
+          base: "<%= config.build_dir %>",
+          hostname: "localhost",
+          livereload: true,
+          open: true
+          
+        }
+      }
+    },
 
     // Monitoring edition (automatic updates) - Livereload
     watch : {
@@ -359,11 +374,12 @@ dynamic: {
 
   grunt.registerTask('build', 'Build the site, nothing fancy, no minification', function(target) {
     var tasks = {
-      prep: ['clean:build'/*,'mkdir','copy'*/],
+      prep: ['clean:build','mkdir','copy'],
       css: ['sass:build'],
       minify: [
-        'uglify',
-        'concat'
+        'concat',
+        'uglify'
+        
       ],
       jshint: ['jshint'],
       modernizr: ['modernizr'],
@@ -372,7 +388,7 @@ dynamic: {
         'build:css',
         'build:minify',
         'build:jshint',
-        // 'build:modernizr',
+        // 'build:modernizr',  // Customization option (Connect internet)
         'htmlcompressor',
         'shell:jekyllBuild'
       ]
@@ -382,17 +398,17 @@ dynamic: {
   });
 
 
-  grunt.registerTask('serve', 'Builds the site, starts a simple node server', function (target) {
+  grunt.registerTask('spy', 'Builds the site, starts a simple node server (Spy)', function (target) {
     var tasks = {
       dist: [
         'shell:resetConfiguration',
-        'dist',
+        // 'dist', // Customization option
         'connect:server',
         'watch'
       ],
       default: [
-        'shell:resetConfiguration',
-        'build',
+        // 'shell:resetConfiguration', //Customization option
+        // 'build', //Customization option
         'connect:server',
         'watch'
       ]
@@ -402,21 +418,25 @@ dynamic: {
   });
 
 
-  // Optional tasks
-  grunt.registerTask('dist', [
-      //'modernizr', //Connect internet
-      'shell:resetConfiguration',
-      'htmlcompressor',
-      'sass:build',
-      'concat',
-      'uglify',
-      'shell:jekyllBuild'
-  ]);
+  // // Optional tasks
+  // grunt.registerTask('dist', [
+  //     //'modernizr', // Customization option (Connect internet)
+  //     'shell:resetConfiguration',
+  //     'htmlcompressor',
+  //     'sass:build',
+  //     'concat',
+  //     'uglify',
+  //     'shell:jekyllBuild'
+  // ]);
 
-  // Optional tasks
+/*  // Optional tasks
   grunt.registerTask('ftp-deploy', ['ftpush']);
-  grunt.registerTask('imgcompress', [ 'image:dynamic']);
+  grunt.registerTask('imgcompress', [ 'image:dynamic']);*/
+
+ /* // Optional tasks
+  grunt.registerTask('backup', [ 'compress']);*/
 
   // Optional tasks
-  grunt.registerTask('backup', [ 'compress']);
+  grunt.registerTask('serve', [ 'shell:jekyllServe']);
+
 };

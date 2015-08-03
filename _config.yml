@@ -1,7 +1,7 @@
 # Session - Site configuration
 
-url: "http://localhost:4000" # use this url for DEVELOPMENT
-baseurl: "" # use this url for DEVELOPMENT
+url: "http://localhost:9000" # use this url for DEVELOPMENT
+baseurl: "" # the subpath of your site DEVELOPMENT
 
 # url: "http://williamcanin.com"   # use this url for PRODUCTION
 # baseurl: "/chameleon-theme-jekyll" # the subpath of your site PRODUCTION
@@ -9,13 +9,19 @@ baseurl: "" # use this url for DEVELOPMENT
 # Session - Site configuration
 
 
-# Session - Configuration GitHub Deploy
+# Session - Configuration GitHub Deploy (Git)
 project_name: "Chameleon Theme for Jekyll"
 first_last_name: "WilliamCanin"
 user_email: "william.costa.canin@gmail.com"
 github_user: "williamcanin"
 source_repository_project: "chameleon-theme-jekyll.git"
 build_repository_project: "chameleon-theme-jekyll.git"
+
+# To cancel, use the terminal command > git credential-cache exit
+credential_cache_yesno: "yes"
+credential_cache_type: "local"
+credential_cache_time: "500" # Seconds
+
 sshttps: "https://github.com/" # For SSH, use: "git@github.com:" For HTTPS. use: "https://github.com/"
 # Configuration GitHub Deploy
 
@@ -144,6 +150,7 @@ theme:
   skype:
   tumblr:
   twitter:
+  vivaolinux: "~your_username"
   wordpress:
   youtube: "your_user_canal"
 # Session - Socialize Icons Navbar
@@ -223,10 +230,10 @@ theme:
 
 # Session - Pagination
   # use_pagination: "no" #(yes/no) >>>> Does not enable! Under construction !!! <<<<
-# paginate: 1
+# paginate: 2
 # paginate_file: index.html
 # paginate_path: "/page:num"
-# Session - Pagination
+#Session - Pagination
 
 
 
