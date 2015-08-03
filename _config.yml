@@ -150,7 +150,7 @@ theme:
   skype:
   tumblr:
   twitter:
-  vivaolinux: "~your_username"
+  vivaolinux: "" # Exemple: ~your_username
   wordpress:
   youtube: "your_user_canal"
 # Session - Socialize Icons Navbar
