@@ -74,6 +74,16 @@ $ bash setup.sh -p
 $ bash setup.sh -c
 ```
 
+###Or
+
+You can do all automatic, doing downloaded the script "setup.sh" and running it, see:
+
+```
+$ wget https://github.com/williamcanin/chameleon-theme-jekyll/blob/master/setup.sh
+$ chmod +x setup.sh
+$ bash setup.sh all
+```
+
 For more information: "bash setup.sh help"
 
 ## Windows users will have to manually run the commands
