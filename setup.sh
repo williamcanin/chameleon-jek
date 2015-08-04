@@ -33,7 +33,7 @@ function _install_packages_linux(){
 	elif [[ -f "/usr/bin/pacman" ]]; then
 
 		_permissions
-		pacman -Sy git rubygems nodejs npm python --noconfirm > ./.tmp/tmp.log
+		pacman -Sc git rubygems nodejs npm python --noconfirm > ./.tmp/tmp.log
 		echo "[Ok]"
 		echo "PATH=\"$(ruby -e 'print Gem.user_dir')/bin:$PATH\"" >> ~/.bashrc
 		source ~/.bashrc
