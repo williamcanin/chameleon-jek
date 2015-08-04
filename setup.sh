@@ -1,13 +1,14 @@
 #!/bin/bash
 # File: setup.sh
-# Description: Simple script for, Prepare and resolve dependencies for Chameleon Theme
+# Description: Simple script for, Download, Prepare and resolve dependencies for Chameleon Theme
 # Version: 1.0.4
+# Lisence: MIT
 # Language: Shell script
 # Country/State: Brazil/SP
 # Author : William C. Canin <http://williamcanin.com>
-# Description: Script config for "Chameleon theme".
 
 
+# Permissions for folders
 function _permissions(){
 
 	if [[ -d "/usr/lib/ruby" ]]; then
@@ -16,11 +17,9 @@ function _permissions(){
 
 }
 
+# Function for install requeriments 
 function _install_packages_linux(){
 
-	if [[ ! -d "./.tmp" ]]; then
-		mkdir ./.tmp
-	fi
 
 	if [[ -f "/usr/bin/apt" ]]; then
 		apt-get update 2>&1 >/dev/null
@@ -31,25 +30,48 @@ function _install_packages_linux(){
 		yum install git ruby ruby-devel rubygems rake nodejs npm python -y 2>&1 >/dev/null
 		
 	elif [[ -f "/usr/bin/pacman" ]]; then
-
 		_permissions
-		pacman -Sc git rubygems nodejs npm python --noconfirm > ./.tmp/tmp.log
+		# All installed
+		# pacman -Sy git ruby nodejs npm python --noconfirm 2>&1 >/dev/null
+
+	if [[ ! -n $(pacman -Q ruby) ]]; then
+		pacman -Sy ruby --noconfirm 2>&1 >/dev/null
+	elif [[ ! -n $(pacman -Q git) ]]; then
+		pacman -Sy git --noconfirm 2>&1 >/dev/null
+	elif [[ ! -n $(pacman -Q nodejs) ]]; then
+		pacman -Sy nodejs --noconfirm 2>&1 >/dev/null
+	elif [[ ! -n $(pacman -Q npm) ]]; then
+		pacman -Sy npm --noconfirm 2>&1 >/dev/null
+	fi	
+		
 		echo "[Ok]"
 		echo "PATH=\"$(ruby -e 'print Gem.user_dir')/bin:$PATH\"" >> ~/.bashrc
 		source ~/.bashrc
 		_permissions
 
-		if [[ -d "./.tmp" ]]; then
-			rm -rf ./.tmp
-		fi
-
 	else
-		echo "Script not support their distribution."
+		echo "WARNING! Script not support their distribution Linux."
+		echo ""
+		echo "You will have to manually install the applications "
+		echo "in this Linux distribution."
+		echo "For information on requirements, see:"
+		echo "https://github.com/williamcanin/chameleon-theme-jekyll#requirements"
+		echo ""
 	fi
 
 }
 
+# Automatic
+function _download_prepare_compile(){
 
+	git clone https://github.com/williamcanin/chameleon-theme-jekyll.git
+	cd chameleon-theme-jekyll
+	bash setup.sh -p
+	bash setup.sh -c
+
+}
+
+# Compile dependencies for Chameleon Theme
 function _compile(){
 
 	if [ -f "/usr/bin/node" ] && [ -f "/usr/bin/npm" ]; then
@@ -75,6 +97,7 @@ function _compile(){
 
 }
 
+# Prepare requeriments for distribuition Linux
 function _prepare(){
 
 		echo "Preparing and installing required packages on your machine."
@@ -86,7 +109,7 @@ function _prepare(){
 					
 
 		# Create link simbolic
-	if [ -e "/usr/bin/nodejs" ]; then
+	if [ -e "/usr/bin/nodejs" ] && [ ! -e "/usr/bin/node" ]; then
 		ln -s /usr/bin/nodejs /usr/bin/node
 	fi
 
@@ -106,6 +129,7 @@ function _prepare(){
 
 }
 
+# Help script "setup.sh"
 function _help(){
 
 		echo ""
@@ -120,11 +144,21 @@ function _help(){
 		echo "-c 		Compile. Resolves dependencies of "
 		echo "		\"Chameleon theme\""
 		echo ""
+		echo "all 		Automatic. Download the \"Chameleon Theme\"," 
+		echo "		prepares the requirements for \"Chameleon Theme\""
+		echo "		in your Linux distribution and compile"
+		echo "		dependencies \"Chameleon Theme\"."
+		echo ""
 
 }
 
-# Menu
+# Menu of script script "setup.sh"
+
 	case "$1" in
+
+		all)
+			_download_prepare_compile
+		;;
 
 		-p)
 
@@ -140,9 +174,10 @@ function _help(){
 
 					y|Y)
 
-						echo "Root password - "
+						echo "Root password > "
 						su -c "/bin/bash setup.sh -p"
 						# su - root -c "bash setup.sh"
+						echo ""
 
 					;;
 
@@ -153,9 +188,9 @@ function _help(){
 					;;
 
 					*)
-
+						echo ""
 						echo "Option invalid!"
-
+						echo ""	
 					;;
 
 				esac
@@ -185,9 +220,12 @@ function _help(){
 
 	
 			echo ""
-			echo "Usage: $0  { -p | -c | help }"
+			echo "Usage: $0  { -p | -c | all | help }"
 			echo ""
 
 		;;
 
 	esac
+
+
+
