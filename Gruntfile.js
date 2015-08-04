@@ -29,7 +29,7 @@ module.exports = function (grunt) {
   
 // Configurable paths
 var config = {
-  port_jekyll: '9000',
+  port_jekyll: '4000',
   src: 'src',
   build_files: '_build/*',
   build_dir: '_build',
@@ -331,7 +331,7 @@ htmlcompressor: {
     connect: {
       server: {
         options: {
-          port: 9000,
+          port: 4000,
           base: "<%= config.build_dir %>",
           hostname: "localhost",
           livereload: true,
