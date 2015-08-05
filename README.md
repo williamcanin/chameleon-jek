@@ -158,7 +158,7 @@ $ rake deploygit pull="n" type="source" branch="branch_where_this_code" messagec
 > `Config.yml` file to the same directory name created on GitHub.
 > Generally deploy the compiled site is done in the brach' gh-pages`.
 > To learn how to host your website in the branch' gh-pages`, visit: 
-> [GitHub Pages](https://pages.github.com/). 
+> [GitHub Pages](https://pages.github.com/).
 
 Example:
 
