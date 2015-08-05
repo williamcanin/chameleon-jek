@@ -76,6 +76,7 @@ class Configs < Variables
       f.puts("deploy.sh")
       f.puts(".grunt")
       f.puts(".ftppass")
+      f.puts(".bundle")
       f.puts("./**/.DS_Store")
       f.puts("./**/*.log")
       f.puts("*.tar.gz")
@@ -373,8 +374,10 @@ def make_install
 end
 
 
-def make_clean
+def clean
   cmd = "rm -rf assets/css assets/fonts assets/vendor node_modules _build/* _includes assets/javascripts/scripts.min.js .origin.log .bowerrc .ftppass .gitignore .jshintrc .sass-cache"
+  system(cmd)
+  cmd = "ruby _plugins/gemreset.rb"
   system(cmd)
   cmd = "echo Cleaned compilation [Ok]"
   system(cmd)

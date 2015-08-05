@@ -17,6 +17,12 @@ function _permissions(){
 
 }
 
+function _gems_path(){
+
+
+
+}
+
 # Function for install requeriments 
 function _install_packages_linux(){
 
@@ -24,10 +30,12 @@ function _install_packages_linux(){
 	if [[ -f "/usr/bin/apt" ]]; then
 		apt-get update 2>&1 >/dev/null
 		apt-get install git git-core ruby-full rake nodejs npm python -y 2>&1 >/dev/null
+		echo "`logname` ALL=(ALL) ALL" >> /etc/sudoers
 		
 	elif [[ -f "/usr/bin/yum" ]]; then
 		yum update 2>&1 >/dev/null
 		yum install git ruby ruby-devel rubygems rake nodejs npm python -y 2>&1 >/dev/null
+		echo "`logname` ALL=(ALL) ALL" >> /etc/sudoers
 		
 	elif [[ -f "/usr/bin/pacman" ]]; then
 		_permissions
@@ -46,6 +54,7 @@ function _install_packages_linux(){
 		
 		echo "[Ok]"
 		echo "PATH=\"$(ruby -e 'print Gem.user_dir')/bin:$PATH\"" >> ~/.bashrc
+		echo "`logname` ALL=(ALL) ALL" >> /etc/sudoers
 		source ~/.bashrc
 		_permissions
 
@@ -75,12 +84,16 @@ function _download_prepare_compile(){
 function _compile(){
 
 	if [ -f "/usr/bin/node" ] && [ -f "/usr/bin/npm" ]; then
-		
+
+		echo "Installing Bundler ..."
+		echo "Wait ..."
+		echo ""
+		gem install bundler
 		echo ""
 		echo "Installing dependencies \"Bundler\" for Chameleon Theme."
 		echo "Wait ..."
 		echo ""
-		bundle install
+		bundle install --path ~/.gem
 		echo ""
 		echo "Compiling Chamelen Theme."
 		echo "Wait ..."
@@ -122,10 +135,11 @@ function _prepare(){
 		# npm uninstall -g grunt grunt-cli bower
 		npm install -g grunt grunt-cli bower
 		echo ""
-		echo "Installing Bundler ..."
-		echo "Wait ..."
-		echo ""
-		gem install bundler
+		# Install bundler for Root
+		# echo "Installing Bundler ..."
+		# echo "Wait ..."
+		# echo ""
+		# gem install bundler
 
 }
 

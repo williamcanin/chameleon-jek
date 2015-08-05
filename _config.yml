@@ -277,6 +277,7 @@ exclude: ['Gruntfile.js',
 '**/*/.zip',
 '**/*/.log',
 '**/*/.lock',
+'./.bundle',
 'LISENCE'
 ]
 # Session - Excludes files and folder build jekyll

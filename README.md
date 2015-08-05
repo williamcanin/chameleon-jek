@@ -79,7 +79,7 @@ $ bash setup.sh -c
 You can do all automatic, doing downloaded the script "setup.sh" and running it, see:
 
 ```
-$ wget https://github.com/williamcanin/chameleon-theme-jekyll/blob/master/setup.sh
+$ wget https://raw.githubusercontent.com/williamcanin/chameleon-theme-jekyll/master/setup.sh
 $ chmod +x setup.sh
 $ bash setup.sh all
 ```

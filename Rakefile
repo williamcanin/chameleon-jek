@@ -100,9 +100,9 @@ end
 
 
 # Task clean All
-task :make_clean do
+task :clean do
 config = Configs.new
-config.make_clean
+config.clean
 end
 # Task clean All
 
