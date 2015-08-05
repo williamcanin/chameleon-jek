@@ -90,8 +90,6 @@ For more information: "bash setup.sh help"
 
 * 3 - Install Bundler:
 
->Nota: If you use GNU/Linux, you may need superuser(root) permission.
-
 ```
  gem install bundler  
 ```
