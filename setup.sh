@@ -17,12 +17,6 @@ function _permissions(){
 
 }
 
-function _gems_path(){
-
-
-
-}
-
 # Function for install requeriments 
 function _install_packages_linux(){
 
