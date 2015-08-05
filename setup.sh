@@ -24,12 +24,12 @@ function _install_packages_linux(){
 	if [[ -f "/usr/bin/apt" ]]; then
 		apt-get update 2>&1 >/dev/null
 		apt-get install git git-core ruby-full rake nodejs npm python -y 2>&1 >/dev/null
-		echo "`logname` ALL=(ALL) ALL" >> /etc/sudoers
+		# echo "`logname` ALL=(ALL) ALL" >> /etc/sudoers
 		
 	elif [[ -f "/usr/bin/yum" ]]; then
 		yum update 2>&1 >/dev/null
 		yum install git ruby ruby-devel rubygems rake nodejs npm python -y 2>&1 >/dev/null
-		echo "`logname` ALL=(ALL) ALL" >> /etc/sudoers
+		# echo "`logname` ALL=(ALL) ALL" >> /etc/sudoers
 		
 	elif [[ -f "/usr/bin/pacman" ]]; then
 		_permissions
@@ -48,8 +48,9 @@ function _install_packages_linux(){
 		
 		echo "[Ok]"
 		echo "PATH=\"$(ruby -e 'print Gem.user_dir')/bin:$PATH\"" >> ~/.bashrc
-		echo "`logname` ALL=(ALL) ALL" >> /etc/sudoers
 		source ~/.bashrc
+		# echo "`logname` ALL=(ALL) ALL" >> /etc/sudoers
+		
 		_permissions
 
 	else
