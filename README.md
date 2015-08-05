@@ -232,13 +232,13 @@ The *Chameleon Theme* brings the opportunity for the user to insert an image or 
 
 ----
 
-# Updates
+# Next Versions - Updates
 
-| Date            | Version                 | Update
-| --------------- | ------------------------| ----------
-| 2015/08/04      | 1.0.4                   |   Yes
-| 2015/11/10      | 1.0.7                   |   No
-| 2016/02/10      | Final version - 2.0.0   |   No
+| Date        | Version   | Accomplished update |  Type
+| ----------- | ----------| --------------------|---------
+| 2015/08/04  | 1.0.4     |  Yes                | Beta
+| 2015/11/10  | 1.0.7     |  No                 | Beta
+| 2016/02/10  | 2.0.0     |  No                 | Final
 
 
 ## Issues
