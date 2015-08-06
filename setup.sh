@@ -5,7 +5,7 @@
 # Lisence: MIT
 # Language: Shell script
 # Country/State: Brazil/SP
-# Author : William C. Canin <http://williamcanin.com>
+# Author : William C. Canin <http://williamcanin.com>  
 
 
 # Permissions for folders
