@@ -5,7 +5,7 @@
 # Lisence: MIT
 # Language: Shell script
 # Country/State: Brazil/SP
-# Author : William C. Canin <http://williamcanin.com>  
+# Author : William C. Canin <http://williamcanin.com>
 
 
 # Permissions for folders
@@ -86,9 +86,15 @@ function _download_prepare_compile(){
 	bash setup.sh -p
 	echo "Unloading \"Chameleon Theme\" wait ..."
 	echo ""
-	git clone https://github.com/williamcanin/chameleon-theme-jekyll.git
-	cd chameleon-theme-jekyll
-	bash setup.sh -c
+	source .chameleonconf
+
+	if [ chresp == "y" ]; then
+
+		git clone https://github.com/williamcanin/chameleon-theme-jekyll.git
+		cd chameleon-theme-jekyll
+		bash setup.sh -c
+		rm -f .chameleonconf
+	fi
 
 }
 
@@ -216,9 +222,12 @@ function _help(){
 				echo "Continue? (y/n)"
 				read pass
 
-				case $pass in
+				case "$pass" in
 
 					y|Y)
+	
+						touch .chameleonconf
+						echo "chresp=y" > .chameleonconf
 
 						echo "Root password > "
 						su -c "/bin/bash setup.sh -p"
@@ -227,8 +236,10 @@ function _help(){
 
 					;;
 
-					n|N)
-
+					n|N)	
+						
+						touch .chameleonconf
+						echo "chresp=n" > .chameleonconf
 						exit 0
 
 					;;
@@ -243,9 +254,9 @@ function _help(){
 				
 			else
 
-				_prepare
-				
-				
+					_prepare
+			
+			
 			fi
 		;;
 		
