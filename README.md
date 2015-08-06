@@ -84,6 +84,9 @@ $ chmod +x setup.sh
 $ bash setup.sh all
 ```
 
+### See an example of video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AvwP5Ab9UOc" frameborder="0" allowfullscreen></iframe>
+
 For more information: "bash setup.sh help"
 
 ## Windows users will have to manually run the commands
