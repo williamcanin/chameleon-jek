@@ -84,7 +84,7 @@ function _download_prepare_compile(){
 
 
 	bash setup.sh -p
-	source .chameleonconf
+	source ~/.chameleonconf
 
 	if [ chresp == "y" ]; then
 
@@ -226,8 +226,8 @@ function _help(){
 
 					y|Y)
 	
-						touch .chameleonconf
-						echo "chresp=y" > .chameleonconf
+						touch ~/.chameleonconf
+						echo "chresp=y" > ~/.chameleonconf
 
 						echo "Root password > "
 						su -c "/bin/bash setup.sh -p"
@@ -238,8 +238,8 @@ function _help(){
 
 					n|N)	
 						
-						touch .chameleonconf
-						echo "chresp=n" > .chameleonconf
+						touch ~/.chameleonconf
+						echo "chresp=n" > ~/.chameleonconf
 						exit 0
 
 					;;
