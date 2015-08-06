@@ -95,10 +95,8 @@ function _download_prepare_compile(){
 # Compile dependencies for Chameleon Theme
 function _compile(){
 
-	if [ -f "/usr/bin/node" ] && [ -f "/usr/bin/npm" ]; then
 
-
-		if  [ -f "./README.md" ] && [ -n $(grep -R 'Chameleon Theme' ./README.md) ]; then
+		if  [ -f "./README.md" ] && [ -n "$(grep -R 'Chameleon Theme' ./README.md)" ]; then(
 			
 			echo "Installing Bundler ..."
 			echo "Wait ..."
@@ -115,19 +113,12 @@ function _compile(){
 			echo ""
 			rake make_install
 
-		else
+		)else(
 
 			echo "You are not within the \"Chameleon Theme\" folder. You can only build within the folder."
 		
-		fi
+		)fi
 
-	else
-
-		echo ""
-		echo "Using command: $0  -p"
-		echo ""
-
-	fi
 
 }
 
