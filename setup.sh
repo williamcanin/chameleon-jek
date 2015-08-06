@@ -96,7 +96,7 @@ function _download_prepare_compile(){
 function _compile(){
 
 
-	if [ -f "/usr/bin/gem" ] && [ "$(id -u)" != "0" ];; then
+	if [ -f "/usr/bin/gem" ] && [ "$(id -u)" != "0" ]; then
 		
 
 		if  [ -f "./README.md" ] && [ -n "$(grep -R 'Chameleon Theme' ./README.md)" ]; then
