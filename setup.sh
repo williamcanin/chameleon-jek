@@ -96,7 +96,10 @@ function _download_prepare_compile(){
 function _compile(){
 
 
-		if  [ -f "./README.md" ] && [ -n "$(grep -R 'Chameleon Theme' ./README.md)" ]; then(
+	if [ -f "/usr/bin/gem" ] && [ "$(id -u)" != "0" ];; then
+		
+
+		if  [ -f "./README.md" ] && [ -n "$(grep -R 'Chameleon Theme' ./README.md)" ]; then
 			
 			echo "Installing Bundler ..."
 			echo "Wait ..."
@@ -113,12 +116,25 @@ function _compile(){
 			echo ""
 			rake make_install
 
-		)else(
+		else
 
+			echo ""
 			echo "You are not within the \"Chameleon Theme\" folder. You can only build within the folder."
-		
-		)fi
+			echo ""
 
+		fi
+
+	else
+
+		echo ""
+		echo "Issue! :("
+		echo "Causes of the problem:"
+		echo "1 - \"RubyGems\" is not installed. Please install to proceed."
+		echo "2 - Are you compiled with the account \"root\", please use a regular user account."
+		echo "Installation aborted :("
+		echo ""
+
+	fi
 
 }
 
