@@ -84,12 +84,12 @@ function _download_prepare_compile(){
 
 
 	bash setup.sh -p
-	echo "Unloading \"Chameleon Theme\" wait ..."
-	echo ""
 	source .chameleonconf
 
 	if [ chresp == "y" ]; then
 
+		echo "Unloading \"Chameleon Theme\" wait ..."
+		echo ""
 		git clone https://github.com/williamcanin/chameleon-theme-jekyll.git
 		cd chameleon-theme-jekyll
 		bash setup.sh -c
