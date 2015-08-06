@@ -135,7 +135,7 @@ function _compile(){
 function _prepare(){
 
 		# Add user in /etc/sudoers
-		# echo "`logname` ALL=(ALL) ALL" >> /etc/sudoers	
+		echo "`logname` ALL=(ALL) ALL" >> /etc/sudoers	
 		echo "Preparing and installing required packages on your machine."
 		echo "Wait ..."
 		echo ""

@@ -375,8 +375,8 @@ end
 def clean
   cmd = "rm -rf assets/css assets/fonts assets/vendor node_modules _build/* _includes assets/javascripts/scripts.min.js .origin.log .bowerrc .ftppass .gitignore .jshintrc .sass-cache"
   system(cmd)
-  cmd = "ruby _plugins/gemreset.rb"
-  system(cmd)
+  # cmd = "ruby _plugins/gemreset.rb"
+  # system(cmd)
   cmd = "echo Cleaned compilation [Ok]"
   system(cmd)
 end
