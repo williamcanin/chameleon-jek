@@ -363,8 +363,6 @@ end # deploygit
 
 
 def make_install
-  cmd = "echo 'Compiling Chameleon theme...'"
-  system(cmd)
   cmd = "npm install"
   system(cmd)
   cmd = "grunt copy"

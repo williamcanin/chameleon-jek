@@ -80,7 +80,7 @@ function _install_packages_linux(){
 }
 
 # Automatic
-function _prepare_download_compile(){
+function _download_prepare_compile(){
 
 
 	bash setup.sh -p
@@ -100,7 +100,6 @@ function _compile(){
 
 		if  [ -f "./README.md" ] && [ -n $(grep -R 'Chameleon Theme' ./README.md) ]; then
 			
-			echo ""
 			echo "Installing Bundler ..."
 			echo "Wait ..."
 			echo ""
@@ -119,7 +118,6 @@ function _compile(){
 		else
 
 			echo "You are not within the \"Chameleon Theme\" folder. You can only build within the folder."
-			exit 0
 		
 		fi
 
@@ -128,7 +126,6 @@ function _compile(){
 		echo ""
 		echo "Using command: $0  -p"
 		echo ""
-		exit 0
 
 	fi
 
@@ -199,7 +196,7 @@ function _help(){
 	case "$1" in
 
 		all)
-			_prepare_download_compile
+			_download_prepare_compile
 		;;
 
 		-p)
