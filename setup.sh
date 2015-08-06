@@ -24,12 +24,10 @@ function _install_packages_linux(){
 	if [[ -f "/usr/bin/apt" ]]; then
 		apt-get update 2>&1 >/dev/null
 		apt-get install git git-core ruby-full rake nodejs npm python -y 2>&1 >/dev/null
-		# echo "`logname` ALL=(ALL) ALL" >> /etc/sudoers
 		
 	elif [[ -f "/usr/bin/yum" ]]; then
 		yum update 2>&1 >/dev/null
 		yum install git ruby ruby-devel rubygems rake nodejs npm python -y 2>&1 >/dev/null
-		# echo "`logname` ALL=(ALL) ALL" >> /etc/sudoers
 		
 	elif [[ -f "/usr/bin/pacman" ]]; then
 		_permissions
@@ -38,18 +36,34 @@ function _install_packages_linux(){
 
 	if [[ ! -n $(pacman -Q ruby) ]]; then
 		pacman -Sy ruby --noconfirm 2>&1 >/dev/null
-	elif [[ ! -n $(pacman -Q git) ]]; then
+		echo "Solving ..."
+	fi
+
+	if [[ ! -n $(pacman -Q git) ]]; then
 		pacman -Sy git --noconfirm 2>&1 >/dev/null
-	elif [[ ! -n $(pacman -Q nodejs) ]]; then
+		echo "Solving ..."
+	fi
+
+	if [[ ! -n $(pacman -Q nodejs) ]]; then
 		pacman -Sy nodejs --noconfirm 2>&1 >/dev/null
-	elif [[ ! -n $(pacman -Q npm) ]]; then
+		echo "Solving ..."
+	fi
+
+	if [[ ! -n $(pacman -Q npm) ]]; then
 		pacman -Sy npm --noconfirm 2>&1 >/dev/null
+		echo "Solving ..."
+	fi
+
+	if [[ ! -n $(pacman -Q python) ]]; then
+		pacman -Sy python --noconfirm 2>&1 >/dev/null
+		echo "Solving ..."
 	fi	
 		
+		echo "Packages not found solved !"
 		echo "[Ok]"
 		echo "PATH=\"$(ruby -e 'print Gem.user_dir')/bin:$PATH\"" >> ~/.bashrc
 		source ~/.bashrc
-		# echo "`logname` ALL=(ALL) ALL" >> /etc/sudoers
+		
 		
 		_permissions
 
@@ -66,11 +80,14 @@ function _install_packages_linux(){
 }
 
 # Automatic
-function _download_prepare_compile(){
+function _prepare_download_compile(){
 
+
+	bash setup.sh -p
+	echo "Unloading \"Chameleon Theme\" wait ..."
+	echo ""
 	git clone https://github.com/williamcanin/chameleon-theme-jekyll.git
 	cd chameleon-theme-jekyll
-	bash setup.sh -p
 	bash setup.sh -c
 
 }
@@ -80,26 +97,38 @@ function _compile(){
 
 	if [ -f "/usr/bin/node" ] && [ -f "/usr/bin/npm" ]; then
 
-		echo "Installing Bundler ..."
-		echo "Wait ..."
-		echo ""
-		gem install bundler
-		echo ""
-		echo "Installing dependencies \"Bundler\" for Chameleon Theme."
-		echo "Wait ..."
-		echo ""
-		bundle install --path ~/.gem
-		echo ""
-		echo "Compiling Chamelen Theme."
-		echo "Wait ..."
-		echo ""
-		rake make_install
+
+		if  [ -f "./README.md" ] && [ -n $(grep -R 'Chameleon Theme' ./README.md) ]; then
+			
+			echo ""
+			echo "Installing Bundler ..."
+			echo "Wait ..."
+			echo ""
+			gem install bundler
+			echo ""
+			echo "Installing dependencies \"Bundler\" for Chameleon Theme."
+			echo "Wait ..."
+			echo ""
+			bundle install --path ~/.gem
+			echo ""
+			echo "Compiling Chamelen Theme."
+			echo "Wait ..."
+			echo ""
+			rake make_install
+
+		else
+
+			echo "You are not within the \"Chameleon Theme\" folder. You can only build within the folder."
+			exit 0
+		
+		fi
 
 	else
 
 		echo ""
 		echo "Using command: $0  -p"
 		echo ""
+		exit 0
 
 	fi
 
@@ -108,6 +137,8 @@ function _compile(){
 # Prepare requeriments for distribuition Linux
 function _prepare(){
 
+		# Add user in /etc/sudoers
+		# echo "`logname` ALL=(ALL) ALL" >> /etc/sudoers	
 		echo "Preparing and installing required packages on your machine."
 		echo "Wait ..."
 		echo ""
@@ -168,7 +199,7 @@ function _help(){
 	case "$1" in
 
 		all)
-			_download_prepare_compile
+			_prepare_download_compile
 		;;
 
 		-p)
