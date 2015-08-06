@@ -85,7 +85,7 @@ $ bash setup.sh all
 ```
 
 ### See an example of video
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AvwP5Ab9UOc" frameborder="0" allowfullscreen></iframe>
+[![Demo Install Chameleon Theme in Linux ](http://img.youtube.com/vi/AvwP5Ab9UOc/0.jpg)](http://www.youtube.com/watch?v=AvwP5Ab9UOc)
 
 For more information: "bash setup.sh help"
 
