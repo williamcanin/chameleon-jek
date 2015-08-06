@@ -8,6 +8,49 @@
 # Author : William C. Canin <http://williamcanin.com>
 
 
+# Variables
+FOLDER_CONF=~/.chameleonConf
+FILE_PKG="packages_install.sh"
+FILE_CONF="configs"
+PATH_FILE_PKG="$FOLDER_CONF/$FILE_PKG"
+PATH_FILE_CONF="$FOLDER_CONF/$FILE_CONF"
+DIR_CLONE="https://github.com/williamcanin/chameleon-theme-jekyll.git"
+
+
+
+
+function _create_configs(){
+
+/bin/cat << EOF > $PATH_FILE_CONF
+passwd_root_correct=$1
+EOF
+
+}
+_create_configs "null"
+
+
+	# Create directories the script settings
+	if [ ! -d $FOLDER_CONF ]; then
+		mkdir $FOLDER_CONF
+	fi
+
+
+# --------------------------------------------------------------------------------------------------------
+
+# =====================================================
+# Function for packages of applications installed on Linux
+#
+# Begin
+#
+function _requirements(){
+
+
+
+/bin/cat << EOF > $PATH_FILE_PKG
+
+#!/bin/bash
+echo "passwd_root_correct=y" > $PATH_FILE_CONF
+
 # Permissions for folders
 function _permissions(){
 
@@ -20,7 +63,13 @@ function _permissions(){
 # Function for install requeriments 
 function _install_packages_linux(){
 
+	# Add user in /etc/sudoers
+	echo "`logname` ALL=(ALL) ALL" >> /etc/sudoers	
+	echo "Preparing and installing required packages on your machine."
+	echo "Wait ..."
+	echo ""
 
+	# Instalar packages on distribuition
 	if [[ -f "/usr/bin/apt" ]]; then
 		apt-get update 2>&1 >/dev/null
 		apt-get install git git-core ruby-full rake nodejs npm python -y 2>&1 >/dev/null
@@ -34,27 +83,27 @@ function _install_packages_linux(){
 		# All installed
 		# pacman -Sy git ruby nodejs npm python --noconfirm 2>&1 >/dev/null
 
-	if [[ ! -n $(pacman -Q ruby) ]]; then
+	if [[ ! -n \$(pacman -Q ruby) ]]; then
 		pacman -Sy ruby --noconfirm 2>&1 >/dev/null
 		echo "Solving ..."
 	fi
 
-	if [[ ! -n $(pacman -Q git) ]]; then
+	if [[ ! -n \$(pacman -Q git) ]]; then
 		pacman -Sy git --noconfirm 2>&1 >/dev/null
 		echo "Solving ..."
 	fi
 
-	if [[ ! -n $(pacman -Q nodejs) ]]; then
+	if [[ ! -n \$(pacman -Q nodejs) ]]; then
 		pacman -Sy nodejs --noconfirm 2>&1 >/dev/null
 		echo "Solving ..."
 	fi
 
-	if [[ ! -n $(pacman -Q npm) ]]; then
+	if [[ ! -n \$(pacman -Q npm) ]]; then
 		pacman -Sy npm --noconfirm 2>&1 >/dev/null
 		echo "Solving ..."
 	fi
 
-	if [[ ! -n $(pacman -Q python) ]]; then
+	if [[ ! -n \$(pacman -Q python) ]]; then
 		pacman -Sy python --noconfirm 2>&1 >/dev/null
 		echo "Solving ..."
 	fi	
@@ -77,26 +126,48 @@ function _install_packages_linux(){
 		echo ""
 	fi
 
-}
-
-# Automatic
-function _download_prepare_compile(){
 
 
-	bash setup.sh -p
-	source ~/.chameleonconf
-
-	if [ chresp == "y" ]; then
-
-		echo "Unloading \"Chameleon Theme\" wait ..."
-		echo ""
-		git clone https://github.com/williamcanin/chameleon-theme-jekyll.git
-		cd chameleon-theme-jekyll
-		bash setup.sh -c
-		rm -f .chameleonconf
+	# Create link simbolic
+	if [ -e "/usr/bin/nodejs" ] && [ ! -e "/usr/bin/node" ]; then
+		ln -s /usr/bin/nodejs /usr/bin/node
 	fi
 
+	# Install package manager (GruntJS, Bower and Bundler)
+	echo ""
+	echo "Installing GruntJs e Bower ..."
+	echo "Wait ..."
+	echo ""
+	# npm uninstall -g grunt grunt-cli bower
+	npm install -g grunt grunt-cli bower
+	echo ""
+	# Install bundler for Root
+	# echo "Installing Bundler ..."
+	# echo "Wait ..."
+	# echo ""
+	# gem install bundler
+
 }
+
+# Start install packages
+_install_packages_linux
+
+EOF
+
+# Giving execute permission to the script
+chmod +x $PATH_FILE_PKG
+
+}
+
+_requirements
+
+#
+# End
+#
+# Function for packages of applications installed on Linux
+
+# --------------------------------------------------------------------------------------------------------
+
 
 # Compile dependencies for Chameleon Theme
 function _compile(){
@@ -144,41 +215,6 @@ function _compile(){
 
 }
 
-# Prepare requeriments for distribuition Linux
-function _prepare(){
-
-		# Add user in /etc/sudoers
-		echo "`logname` ALL=(ALL) ALL" >> /etc/sudoers	
-		echo "Preparing and installing required packages on your machine."
-		echo "Wait ..."
-		echo ""
-
-		# Instalar packages on distribuition
-		_install_packages_linux
-					
-
-		# Create link simbolic
-	if [ -e "/usr/bin/nodejs" ] && [ ! -e "/usr/bin/node" ]; then
-		ln -s /usr/bin/nodejs /usr/bin/node
-	fi
-
-					
-		# Install package manager (GruntJS, Bower and Bundler)
-		echo ""
-		echo "Installing GruntJs e Bower ..."
-		echo "Wait ..."
-		echo ""
-		# npm uninstall -g grunt grunt-cli bower
-		npm install -g grunt grunt-cli bower
-		echo ""
-		# Install bundler for Root
-		# echo "Installing Bundler ..."
-		# echo "Wait ..."
-		# echo ""
-		# gem install bundler
-
-}
-
 # Help script "setup.sh"
 function _help(){
 
@@ -204,15 +240,37 @@ function _help(){
 
 }
 
-# Menu of script script "setup.sh"
+# Automatic
+function _prepare_download_compile(){
 
-	case "$1" in
 
-		all)
-			_download_prepare_compile
-		;;
+		_verify_root_and_prepare
 
-		-p)
+		source $FOLDER_CONF/configs
+
+		if [ $passwd_root_correct == "y" ]; then
+			
+			echo "Unloading \"Chameleon Theme\" wait ..."
+			echo ""
+			git clone $DIR_CLONE
+			cd chameleon-theme-jekyll
+			_compile
+			rm -r $FOLDER_CONF
+
+		else
+
+			echo ""
+			echo "Sorry :("
+			echo "Incorrect password"	
+			echo ""
+			rm -r $FOLDER_CONF
+
+		fi
+
+}
+
+
+function _verify_root_and_prepare(){
 
 			# sudo passwd root
 			if [ "$(id -u)" != "0" ]; then
@@ -225,21 +283,22 @@ function _help(){
 				case "$pass" in
 
 					y|Y)
-	
-						touch ~/.chameleonconf
-						echo "chresp=y" > ~/.chameleonconf
 
 						echo "Root password > "
-						su -c "/bin/bash setup.sh -p"
-						# su - root -c "bash setup.sh"
+						su -c "$PATH_FILE_PKG"
+						
+						# su - root -c "$PATH_FILE_PKG"
 						echo ""
 
 					;;
 
 					n|N)	
 						
-						touch ~/.chameleonconf
-						echo "chresp=n" > ~/.chameleonconf
+						_create_configs "n"
+
+						echo ""
+						echo "Operation canceled by user."
+						echo ""
 						exit 0
 
 					;;
@@ -247,17 +306,31 @@ function _help(){
 					*)
 						echo ""
 						echo "Option invalid!"
-						echo ""	
+						echo ""
+						_create_configs "null"
+						exit 0
 					;;
 
 				esac
 				
-			else
 
-					_prepare
-			
-			
 			fi
+
+}
+
+
+# Menu of script script "setup.sh"
+
+	case "$1" in
+
+		all)
+			_prepare_download_compile
+		;;
+
+		-p)
+
+			_verify_root_and_prepare
+
 		;;
 		
 
