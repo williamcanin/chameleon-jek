@@ -33,6 +33,7 @@ sshttps: "https://github.com/" # For SSH, use: "git@github.com:" For HTTPS. use:
 theme:
   title: "Chameleon Theme"
   subtitle_site: "Theme for Jekyll"
+  navbar_icon: "nav-icon-white.svg"
 
 
 

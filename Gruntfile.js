@@ -37,7 +37,7 @@ module.exports = function (grunt) {
     dir_avatar: './assets/images/avatar',
     dir_covers: './assets/images/covers',
     dir_favicons: './assets/images/favicons',
-    dir_header: './assets/images/header',
+    dir_header: './assets/images/header/navbar',
     dir_pages_img: './assets/images/pages',
     dir_portfolio: './assets/images/portfolio',
     dir_posts_img: './assets/images/posts',
