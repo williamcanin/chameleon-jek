@@ -147,12 +147,13 @@
       }
 
       .row.shares {
-        width: 77%;
-        margin: 0 auto;
+        width: 70%;
+        margin: 0px auto;
         clear: both;
 
         .col-sm-3 {
           width: auto;
+          margin-left: 0.5%;
           @media only screen and (min-width:320px) and (max-width:640px) {
             text-align: center;
           }

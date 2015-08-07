@@ -11,9 +11,6 @@
 /* Variables */
 @import 'base/variables';
 
-/* Global */
-@import 'base/global';
-
 /* Utility */
 @import 'base/utility';
 
@@ -36,13 +33,11 @@
 @import 'includes/search';
 @import 'includes/contact';
 
+/* Global */
+@import 'base/global';
+
+/* Resets */
+@import 'base/reset';
 
 /* Themes- Style */
 @import 'layouts/themes/themes';
-
-
-/* Test */
-/*
-@import 'test/header';
-@import 'test/base/content';
-@import 'test/theme'; */
