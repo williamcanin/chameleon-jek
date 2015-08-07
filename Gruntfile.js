@@ -43,7 +43,7 @@ module.exports = function (grunt) {
     dir_posts_img: './assets/images/posts',
     dir_file_posts_portfolio: './_posts/portfolio',
     dir_file_posts_blog: './_posts/blog',
-    dir_file_pages: './_pages',
+    dir_file_pages: './pages',
 
     sass_cache: '.sass-cache',
     fonts_raleway: 'assets/vendor/fonts-raleway/fonts',
