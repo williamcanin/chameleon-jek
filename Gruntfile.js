@@ -279,7 +279,9 @@ compress: {
     {
       cwd: '.',
       expand: true,
-      src: ['README.md','_config.yml','deploy.sh','feed.xml','Gemfile','Gruntfile.js','CNAME','index.html','LICENSE','Rakefile','README-PtBr.md','search.json','package.json','setup.sh','bower.json'],
+      src: ['README.md','_config.yml','deploy.sh','feed.xml','Gemfile','Gruntfile.js',
+      'CNAME','index.html','LICENSE','Rakefile','README-PtBr.md','search.json',
+      'package.json','setup.sh','bower.json', '_layouts/page.html', '_layouts/post.html'],
       dest: '.'
     }
 
