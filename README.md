@@ -54,7 +54,7 @@ $ git clone https://github.com/williamcanin/chameleon-theme-jekyll.git
 $ cd chameleon-theme-jekyll
 ```
 
-## Users Linux/Mac
+## Users Linux
 
 **For you who is Linux user, you have a script shell  that does everything for you.** 
 
@@ -77,7 +77,7 @@ $ bash setup.sh -c
 ###Or
 
 You can do all automatic, doing downloaded the script "setup.sh" and running it, see:
-> Make sure that the "Curl" is installed.
+> Note: Make sure that the "Curl" is installed, or use wget.
 ```
 $ curl -O https://raw.githubusercontent.com/williamcanin/chameleon-theme-jekyll/master/setup.sh
 $ chmod +x setup.sh
