@@ -213,7 +213,7 @@ Preview theme color:
 
 ![ScreenShot](https://raw.githubusercontent.com/williamcanin/chameleon-theme-jekyll/master/assets/images/preview/lighttheme.png)
 
-### Responsive mobile
+### Responsive to dispositives mobile
 
 ![ScreenShot](https://raw.githubusercontent.com/williamcanin/chameleon-theme-jekyll/master/assets/images/preview/responsive-mobile.jpg)
 
