@@ -77,12 +77,26 @@ $ bash setup.sh -c
 ###Or
 
 You can do all automatic, doing downloaded the script "setup.sh" and running it, see:
+
 > Note: Make sure that the "Curl" is installed, or use wget.
+
 ```
 $ curl -O https://raw.githubusercontent.com/williamcanin/chameleon-theme-jekyll/master/setup.sh
 $ chmod +x setup.sh
 $ bash setup.sh all
 ```
+
+
+* 5 - Start server (with watch):
+
+$ grunt spy
+
+or
+
+* 5.1 - Start server (normal):
+
+$ grunt serve
+
 
 ### See an example of video
 
@@ -129,6 +143,10 @@ or
 ```
 $ grunt serve
 ```
+
+## Users Mac OS X
+
+After making the clone with "Git" of "Chameleon Theme" between the folder and follow the same steps for user "Windows".
 
 
 ## Deploy for GitHub
