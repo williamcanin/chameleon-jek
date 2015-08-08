@@ -14,7 +14,11 @@
 <!--     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
     <span class="icon-bar"></span> -->
+    {% if page.permalink == "/about/" %}
+      <img src="{{ "/assets/images/header/navbar/nav-icon-white.svg"  | prepend: site.baseurl | prepend: site.url }}" alt="">
+      {% else %}
     <img src="{{ "/assets/images/header/navbar"  | prepend: site.baseurl | prepend: site.url }}//{{ site.theme.navbar_icon }}" alt="">
+    {% endif %}
 
 
 
@@ -78,11 +82,11 @@
 </div><!-- /.navbar-collapse -->
 
 
-  {% if site.theme.navbar_fixed == "yes" %}
+
 </nav>
-    {% else %}
-</nav>
-  {% endif %}
+
+
+
 
 
 

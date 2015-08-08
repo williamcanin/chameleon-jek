@@ -272,6 +272,7 @@ button[role=menu-responsive]{
 }
 
 
+@media only screen and (max-width : 640px)  {
   .navbar-collapse {
        // border-top: 0.1em groove $primary-color;
        border-top: 1px solid rgba(56, 49, 49, 0.5);
@@ -294,10 +295,10 @@ button[role=menu-responsive]{
     color: #FFF;
   }
 
-
   .fa-search::before {
      font-size: 30px;
    }
 
+}
 
 }
