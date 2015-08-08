@@ -77,9 +77,9 @@ $ bash setup.sh -c
 ###Or
 
 You can do all automatic, doing downloaded the script "setup.sh" and running it, see:
-
+> Make sure that the "Curl" is installed.
 ```
-$ wget https://raw.githubusercontent.com/williamcanin/chameleon-theme-jekyll/master/setup.sh
+$ curl -O https://raw.githubusercontent.com/williamcanin/chameleon-theme-jekyll/master/setup.sh
 $ chmod +x setup.sh
 $ bash setup.sh all
 ```
