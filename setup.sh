@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # File: setup.sh
 # Description: Simple script for, Download, Prepare and resolve dependencies for Chameleon Theme
 # Version: 1.0.4

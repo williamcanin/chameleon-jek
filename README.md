@@ -54,7 +54,7 @@ $ git clone https://github.com/williamcanin/chameleon-theme-jekyll.git
 $ cd chameleon-theme-jekyll
 ```
 
-## Users Linux
+## Users Linux/Mac
 
 **For you who is Linux user, you have a script shell  that does everything for you.** 
 
