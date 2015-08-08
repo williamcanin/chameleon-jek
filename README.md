@@ -54,7 +54,7 @@ $ git clone https://github.com/williamcanin/chameleon-theme-jekyll.git
 $ cd chameleon-theme-jekyll
 ```
 
-## Users Linux
+### Users Linux
 
 **For you who is Linux user, you have a script shell  that does everything for you.** 
 
@@ -74,7 +74,7 @@ $ bash setup.sh -p
 $ bash setup.sh -c
 ```
 
-###Or
+**Or**
 
 You can do all automatic, doing downloaded the script "setup.sh" and running it, see:
 
@@ -98,13 +98,13 @@ or
 $ grunt serve
 
 
-### See an example of video
+ **See an example of video**
 
 [![Demo Install Chameleon Theme in Linux](http://share.gifyoutube.com/y3VqB7.gif)](https://www.youtube.com/watch?v=AvwP5Ab9UOc)
 
 For more information: "bash setup.sh help"
 
-## Windows users will have to manually run the commands
+### Windows users will have to manually run the commands
 
 * 3 - Install Bundler:
 
@@ -144,7 +144,7 @@ or
 $ grunt serve
 ```
 
-## Users Mac OS X
+### Users Mac OS X
 
 After making the clone with "Git" of "Chameleon Theme" between the folder and follow the same steps for user "Windows".
 
