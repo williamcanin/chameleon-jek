@@ -1,10 +1,10 @@
 # Session - Site configuration
 
-url: "http://localhost:4000" # use this url for DEVELOPMENT
-baseurl: "" # the subpath of your site DEVELOPMENT
+# url: "http://localhost:4000" # use this url for DEVELOPMENT
+# baseurl: "" # the subpath of your site DEVELOPMENT
 
-# url: "http://williamcanin.com"  # use this url for PRODUCTION
-# baseurl: "/chameleon-theme-jekyll" # the subpath of your site PRODUCTION
+url: "http://williamcanin.com"  # use this url for PRODUCTION
+baseurl: "/chameleon-theme-jekyll" # the subpath of your site PRODUCTION
 
 # Session - Site configuration
 
@@ -255,14 +255,14 @@ layouts:        ./_layouts
 
 # Session - Markdown
 # markdown: kramdown
-# highlighter: pygments
-# highlighter: true
+highlighter: pygments
+highlighter: true
 # markdown: redcarpet
 # redcarpet:
 #   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 markdown: kramdown
 kramdown:
-    extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 # Session - Markdown
 
 
@@ -275,6 +275,7 @@ exclude: ['Gruntfile.js',
 'Rakefile',
 'node_modules',
 'src',
+'_gist_cache',
 'assets/vendor',
 'assets/images/preview',
 'assets/images/javascript/vendor',
