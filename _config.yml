@@ -129,7 +129,7 @@ theme:
 
 
 # Session - Socialize Icons Navbar
-  rss: true
+  rss:  #Your FeedBurner feed. Ex. williamcanin
   email_address: "your_email@gmail.com"
   behance:
   bitbucket:
@@ -195,7 +195,11 @@ theme:
   str_comments: "<p>Comments</p> <p>Leave your comment</p>"
   str_comments_portfolio: "<p>Comments</p> <p>Leave your comment in portfolio</p>"
   str_follow_on: "Follow on"
-  str_rss_follow: "Follow RSS feed"
+  # str_rss_follow: "Follow RSS/Feed"
+  str_modal_feed_title: "Follow RSS/Feed of"
+  str_form_feed_input: "Enter your email address"
+  str_form_feed_submit: "Subscribe"
+  str_feed_reader: "Subscribe in a reader"
   str_email: "Email"
   str_next: "Older"
   str_prev: "Newer"

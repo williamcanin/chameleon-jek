@@ -175,6 +175,7 @@ module.exports = function (grunt) {
         '_includes/html/header.html': 'src/includes/html/header.html',
         '_includes/html/icons.html': 'src/includes/html/icons.html',
         '_includes/html/modal-portfolio.html': 'src/includes/html/modal-portfolio.html',
+        '_includes/html/modal-feedburner.html': 'src/includes/html/modal-feedburner.html',
         '_includes/html/modal-search.html': 'src/includes/html/modal-search.html',
         '_includes/html/pagination.html': 'src/includes/html/pagination.html',
         '_includes/html/portfolio.html': 'src/includes/html/portfolio.html',
