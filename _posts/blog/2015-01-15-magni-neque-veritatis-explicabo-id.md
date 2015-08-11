@@ -1,31 +1,33 @@
 ---
 layout: post
-title:  "Consectetur adipiscing elit."
+title:  "Magni neque veritatis explicabo id."
 author: "William C. Canin"
-article: "#1"
+article: "#3"
 published: "true"
-filepath: "2015-01-13-Consectetur-adipiscing-elit2.md"
+filepath: "2015-01-15-magni-neque-veritatis-explicabo-id.md"
 comment: "false"
-cover: ""
-date:   2015-01-13 17:07:19
-tags: ["consectetur", "elit"]
-categories: "blog"
+cover: "post-cover-chameleon.png"
+date:   2015-01-15 18:07:21
+tags: ["magni", "veritatis", "neque"]
+categories: blog
 ---
 
+> NOTE: This is a sample page with banner.
+
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi maxime explicabo ducimus maiores, possimus veniam, pariatur, voluptatem fugit animi et, aut molestiae unde perspiciatis facilis ab quam quia. Optio, Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-Reprehenderit non tempora qui, at fugiat assumenda adipisci ipsam, sapiente repudiandae molestias dolorum atque aut recusandae est nostrum, in aliquam mollitia, deleniti? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni neque veritatis explicabo id. Error doloribus suscipit aliquid culpa, voluptatum ab! Voluptatum dignissimos debitis optio minus, repellat eaque tempora incidunt. Lorem
+Reprehenderit non tempora qui, at fugiat assumenda adipisci ipsam, sapiente repudiandae molestias dolorum atque aut recusandae est nostrum, in aliquam mollitia, deleniti? Lorem ipsum dolor sit amet, consectetur adipisicing elit. `Magni neque veritatis explicabo id`. Error doloribus suscipit aliquid culpa, voluptatum ab! Voluptatum dignissimos debitis optio minus, repellat eaque tempora incidunt
 
 ## Example video Youtube (Plugins):
 > Using: { % youtube ID_VIDEO % } **no spaces in the keys**
 
-
 {% youtube w9ecX8PRPSw %}
 
 >  <span class="fa fa-info-circle" style="font-size: 30px;"></span> Plugins on GitHub Pages
->
+> 
 > GitHub Pages is powered by Jekyll. However, all Pages sites are generated using the --safe option to disable custom plugins for security reasons.Unfortunately, this means your plugins won’t work if you’re deploying to GitHub Pages.
 >
 >You can still use GitHub Pages to publish your site, but you’ll need to convert the site locally and push the generated static files to your GitHub repository instead of the Jekyll source files.
+
 
 ## Lorem ipsum dolor sit amet
 
@@ -38,13 +40,12 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla sunt optio magni
 
 > Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste blanditiis dicta porro numquam temporibus eum, laboriosam quos rem aliquam nobis nemo, voluptatibus facere, minus itaque mollitia quod fuga impedit adipisci!
 
-
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia esse minus quod numquam molestiae corporis recusandae deleniti repellendus atque, iste dolore, libero totam consequatur culpa optio excepturi ullam vel quidem!
 
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+| First Header                | Second Header |
+| ----------------------------| ------------- |
+| Content from cell 1         | Content from cell 2 |
+| Content in the first column | Content in the second column |
 
 {% highlight python %}
 from datetime import datetime
@@ -61,15 +62,18 @@ print_hi('Tom')
 
 {% highlight java %}
 public class HelloWorld
-{
-    public static void main(String args[])
-    {
-        System.out.println("Hello, World!!!");
-    }
-}
+{  
+    public static void main(String args[])  
+    {  
+        System.out.println("Hello, World!!!");  
+    }  
+} 
 {% endhighlight %}
 
 
-Author theme [William Canin][Author]{:target="_blank"}
 
-[Author]: http://williamcanin.github.io
+Project: [Chameleon Theme][ctj]{:target="_blank"}
+Author of theme: [William Canin][Author]{:target="_blank"}
+
+[ctj]: https://github.com/williamcanin/chameleon-theme-jekyll
+[Author]: http://williamcanin.com

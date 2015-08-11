@@ -1,32 +1,34 @@
 ---
 layout: post
-title:  "Lorem ipsum dolor sit amet."
+title:  "Consectetur adipiscing elit."
 author: "William C. Canin"
-article: "#2"
+article: "#1"
 published: "true"
-filepath: "2015-01-14-Lorem-ipsum-dolor-sit-amet.md"
+filepath: "2015-01-13-consectetur-adipiscing-elit2.md"
 comment: "false"
 cover: ""
-date:   2015-01-14 17:13:27
-tags: ["lorem", "dolor"]
-categories: blog
+date:   2015-01-13 17:07:19
+tags: ["consectetur", "elit"]
+categories: "blog"
 ---
-<img src="{{ "/assets/images/posts/img-logo-theme-post.png" | prepend:site.baseurl | prepend:site.url }}" alt="Logo Snowcreen"  class="basic-alignment left" />
 
-`Lorem ipsum dolor sit amet`, consectetur adipisicing elit. Nisi maxime explicabo ducimus maiores, possimus veniam, pariatur, voluptatem fugit animi et, aut molestiae unde perspiciatis facilis ab quam quia. Optio, Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-Reprehenderit non tempora qui, at fugiat assumenda adipisci ipsam, sapiente repudiandae molestias dolorum atque aut recusandae est nostrum, in aliquam mollitia, deleniti? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni neque veritatis explicabo id. Error doloribus suscipit aliquid culpa, voluptatum ab! Voluptatum dignissimos debitis optio minus, repellat eaque tempora incidunt
+> NOTE: This is a sample page. Simple.
+
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi maxime explicabo ducimus maiores, possimus veniam, pariatur, voluptatem fugit animi et, aut molestiae unde perspiciatis facilis ab quam quia. Optio, Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+Reprehenderit non tempora qui, at fugiat assumenda adipisci ipsam, sapiente repudiandae molestias dolorum atque aut recusandae est nostrum, in aliquam mollitia, deleniti? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni neque veritatis explicabo id. Error doloribus suscipit aliquid culpa, voluptatum ab! Voluptatum dignissimos debitis optio minus, repellat eaque tempora incidunt. Lorem
 
 ## Example video Youtube (Plugins):
 > Using: { % youtube ID_VIDEO % } **no spaces in the keys**
 
+
 {% youtube w9ecX8PRPSw %}
 
 >  <span class="fa fa-info-circle" style="font-size: 30px;"></span> Plugins on GitHub Pages
-> 
+>
 > GitHub Pages is powered by Jekyll. However, all Pages sites are generated using the --safe option to disable custom plugins for security reasons.Unfortunately, this means your plugins won’t work if you’re deploying to GitHub Pages.
 >
 >You can still use GitHub Pages to publish your site, but you’ll need to convert the site locally and push the generated static files to your GitHub repository instead of the Jekyll source files.
-
 
 ## Lorem ipsum dolor sit amet
 
@@ -62,15 +64,17 @@ print_hi('Tom')
 
 {% highlight java %}
 public class HelloWorld
-{  
-    public static void main(String args[])  
-    {  
-        System.out.println("Hello, World!!!");  
-    }  
-} 
+{
+    public static void main(String args[])
+    {
+        System.out.println("Hello, World!!!");
+    }
+}
 {% endhighlight %}
 
 
-Author theme [William Canin][Author]{:target="_blank"}
+Project: [Chameleon Theme][ctj]{:target="_blank"}
+Author of theme: [William Canin][Author]{:target="_blank"}
 
-[Author]: http://williamcanin.github.io
+[ctj]: https://github.com/williamcanin/chameleon-theme-jekyll
+[Author]: http://williamcanin.com
