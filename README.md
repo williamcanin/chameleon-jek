@@ -263,7 +263,7 @@ The *Chameleon Theme* brings the opportunity for the user to insert an image or 
 
 | Date        | Version   | Accomplished update |  Type
 | ----------- | ----------| --------------------|---------
-| 2015/08/10  | 1.0.4     |  No                | Beta
+| 2015/08/10  | 1.0.4     |  Yes                | Beta
 | 2015/11/10  | 1.0.7     |  No                 | Beta
 | 2016/02/10  | 2.0.0     |  No                 | Final
 
