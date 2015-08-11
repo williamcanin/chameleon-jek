@@ -1,6 +1,7 @@
 .sass-cache
 _build
 _includes
+_gist_cache
 node_modules
 assets/vendor
 .git

@@ -70,6 +70,7 @@ class Configs < Variables
       f.puts(".sass-cache")
       f.puts("_build")
       f.puts("_includes")
+      f.puts("_gist_cache")
       f.puts("node_modules")
       f.puts("assets/vendor")
       f.puts(".git")

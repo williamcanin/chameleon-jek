@@ -15,23 +15,26 @@ categories: blog
 
 ###Check out the new version of "Chameleon Theme" for Jekyll, in:
 
-<div class="wrapper" style="width: 280px; height:auto; margin: 0 auto; clear: both; margin-top:80px;">
-<a class="down-chameleon" style="padding: 15px; background-color:#378D3D; color:#fff;width:180px; height:70px; font-size:40px;text-decoration:none;" href="https://github.com/williamcanin/chameleon-theme-jekyll/releases/tag/v1.0.4" target="_blank" alt="Download of Chamelen Theme via Github"><span class="fa fa-github" style="margin-right:8px;"></span>Download version 1.0.4</a>
+<div class="centered" style="text-align:center; margin: 80px 0px;">
+    <a href="https://github.com/williamcanin/chameleon-theme-jekyll/releases/tag/v1.0.4" target="_blank" alt="Download of Chamelen Theme via Github" class="btn btn-primary btn-success" style="font-size: 30px;"><span class="fa fa-github"></span>
+         Version 1.0.4
+</a>
+</div>
+
+#Back to top, subscribe! You will have information of new versions..
+
+<div class="centered" style="margin: 80px 0px;">
+    <img class="img-responsive center-block" src="https://raw.githubusercontent.com/williamcanin/chameleon-theme-jekyll/master/assets/images/posts/rss-feed.png" alt="See how to apply">
 </div>
 
 
-## Subscribe! Will have news of new versions!
-
-![ScreenShot](https://raw.githubusercontent.com/williamcanin/chameleon-theme-jekyll/master/assets/images/posts/rss-feed.png)
-
-
-###Take a tour: [Demo][demo]{:target="_blank"}
 
 -----
 
 Project: [Chameleon Theme][ctj]{:target="_blank"}
+
 Author theme [William Canin][Author]{:target="_blank"}
 
 [ctj]: https://github.com/williamcanin/chameleon-theme-jekyll
-[demo]: http://williamcanin.com/chameleon-theme-jekyll
+
 [Author]: http://williamcanin.com

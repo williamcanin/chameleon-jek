@@ -10,12 +10,12 @@ baseurl: "" # the subpath of your site DEVELOPMENT
 
 
 # Session - Configuration GitHub Deploy (Git)
-project_name: "Chameleon Theme for Jekyll"
-first_last_name: "WilliamCanin"
-user_email: "william.costa.canin@gmail.com"
-github_user: "williamcanin"
-source_repository_project: "chameleon-theme-jekyll.git"
-build_repository_project: "chameleon-theme-jekyll.git"
+project_name: "Chameleon Theme for Jekyll" # IMPORTANT !!!
+first_last_name: "WilliamCanin" # IMPORTANT !!!
+user_email: "william.costa.canin@gmail.com" # IMPORTANT !!!
+github_user: "williamcanin" # IMPORTANT !!!
+source_repository_project: "chameleon-theme-jekyll.git" # IMPORTANT !!!
+build_repository_project: "chameleon-theme-jekyll.git" # IMPORTANT !!!
 
 # To cancel, use the terminal command > git credential-cache exit
 credential_cache_yesno: "yes"
@@ -247,19 +247,23 @@ theme:
 
 
 # Session - Build settings
-markdown: kramdown
-highlighter: pygments
-highlighter: true
 permalink: /:title # default: /:categories/:year/:month/:day/:title.html
 destination:    ./_build
 plugins:        ./_plugins
 layouts:        ./_layouts
 # Session - Build settings
 
-
-
-
-
+# Session - Markdown
+# markdown: kramdown
+# highlighter: pygments
+# highlighter: true
+# markdown: redcarpet
+# redcarpet:
+#   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+markdown: kramdown
+kramdown:
+    extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+# Session - Markdown
 
 
 # Session - Excludes files and folder build jekyll

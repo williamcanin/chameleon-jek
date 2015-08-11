@@ -1,7 +1,43 @@
 /**
  * Syntax highlighting styles
  */
+
+
 .highlight {
+
+/**
+ * Code formatting
+ */
+
+pre,
+code {
+    font-size: 15px;
+    border-radius: 3px;
+    background-color: #eef;
+    line-height: 1.7;
+    font-family: "Raleway", arial, sans-serif;
+    font-weight: 400;
+    font-size: 13.5px;
+    white-space: pre;
+    // white-space: pre-wrap;  // This disables overflow
+}
+
+code {
+    padding: 1px 5px;
+}
+
+pre {
+    padding: 8px 12px;
+    overflow-x: scroll;
+
+    > code {
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+
     background: #fff;
     @extend %vertical-rhythm;
 
