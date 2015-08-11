@@ -129,7 +129,7 @@ theme:
 
 
 # Session - Socialize Icons Navbar
-  rss:  #Your FeedBurner feed. Ex. williamcanin
+  rss: "chameleon-theme-jekyll" #Your FeedBurner feed. Ex. williamcanin
   email_address: "your_email@gmail.com"
   behance:
   bitbucket:
