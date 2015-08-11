@@ -1,13 +1,10 @@
-# Session - Site configuration
-
-# url: "http://localhost:4000" # use this url for DEVELOPMENT
-# baseurl: "" # the subpath of your site DEVELOPMENT
-
-url: "http://williamcanin.com"  # use this url for PRODUCTION
-baseurl: "/chameleon-theme-jekyll" # the subpath of your site PRODUCTION
-
-# Session - Site configuration
-
+# Place the address where the site is hosted, and the base 
+# of website. If there is no base, leave blank.
+#
+website: "williamcanin.com" # IMPORTANT! Do not place HTTP://
+base_website: "/chameleon-theme-jekyll" # IMPORTANT !
+#
+#==========================================================
 
 # Session - Configuration GitHub Deploy (Git)
 project_name: "Chameleon Theme for Jekyll" # IMPORTANT !!!
@@ -247,6 +244,8 @@ theme:
 
 
 # Session - Build settings
+url: 'http://localhost:4000'
+baseurl: ''
 permalink: /:title # default: /:categories/:year/:month/:day/:title.html
 destination:    ./_build
 plugins:        ./_plugins

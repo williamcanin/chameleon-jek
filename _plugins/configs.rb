@@ -70,7 +70,6 @@ class Configs < Variables
       f.puts(".sass-cache")
       f.puts("_build")
       f.puts("_includes")
-      f.puts("_gist_cache")
       f.puts("node_modules")
       f.puts("assets/vendor")
       f.puts(".git")
@@ -261,6 +260,8 @@ end
 
 # Usage: rake deploygit pull="{ y | n }" type="{ source | build }" branch="your_branch" messagecommit="Your_message_commit"
 def deploygit
+  website = $configyml['website']
+  base_website = $configyml['base_website']
   credential = $configyml['credential_cache_yesno']
   messagecommit = ENV['messagecommit']
   pullsn = ENV['pull']
@@ -268,11 +269,19 @@ def deploygit
   type = ENV['type']
 
   if type == "build"
+    cmd = "sed -i \"s|^url:.*|url: 'http:\/\/#{website}'|g\" _config.yml"
+    system(cmd)
+    cmd = "sed -i \"s|^baseurl:.*|baseurl: '#{base_website}'|g\" _config.yml"
+    system(cmd)
     cmd = "grunt build"
     system(cmd)
     dirdeploy = "#{CONFIG['build_dir']}"
     cyml = $configyml['build_repository_project']
   elsif type == "source"
+    cmd = "sed -i \"s|^url:.*|url: 'http:\/\/localhost:4000'|g\" _config.yml"
+    system(cmd)
+    cmd = "sed -i \"s|^baseurl:.*|baseurl: ''|g\" _config.yml"
+    system(cmd)
     dirdeploy = "."
     cyml = $configyml['source_repository_project']
   else
@@ -383,4 +392,3 @@ def clean
 end
 
 end # end Configs
-
