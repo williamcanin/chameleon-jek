@@ -18,6 +18,11 @@ DIR_CLONE="https://github.com/williamcanin/chameleon-theme-jekyll.git"
 
 
 
+# Create directories the script settings
+if [ ! -d $FOLDER_CONF ]; then
+	mkdir $FOLDER_CONF
+fi
+
 
 function _create_configs(){
 
@@ -28,11 +33,6 @@ EOF
 }
 _create_configs "null"
 
-
-	# Create directories the script settings
-	if [ ! -d $FOLDER_CONF ]; then
-		mkdir $FOLDER_CONF
-	fi
 
 
 # --------------------------------------------------------------------------------------------------------
