@@ -19,7 +19,7 @@ credential_cache_yesno: "yes"
 credential_cache_type: "local"
 credential_cache_time: "28800" # Seconds
 
-sshttps: "https://github.com/" # For SSH, use: "git@github.com:" For HTTPS. use: "https://github.com/"
+sshttps: "git@github.com:" # For SSH, use: "git@github.com:" For HTTPS. use: "https://github.com/"
 # Configuration GitHub Deploy
 
 
