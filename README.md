@@ -1,16 +1,16 @@
-# Theme [Chameleon](https://github.com/williamcanin/chameleon-theme-jekyll) Jekyll (Blog/Portfolio) Beta
+# Theme [Chameleon Jek](https://github.com/williamcanin/chameleon-jek) Jekyll (Blog/Portfolio) Beta
 
-![ScreenShot](https://raw.githubusercontent.com/williamcanin/chameleon-theme-jekyll/master/assets/images/preview/preview.png)
+![ScreenShot](https://raw.githubusercontent.com/williamcanin/chameleon-jek/master/assets/images/preview/preview.png)
 
 ## Intro
 
-**Chameleon Theme** is the theme for [Jekyll](http://jekyllrb.com) built especially for those who want to have a blog and a portfolio quickly, lightness and greater ability to customize of theme. Its base is made with [Twitter Bootstrap](http://getbootstrap.com), that gives you greater practicalities to open your page in a mobile device.
+**Chameleon Jek** is the theme for [Jekyll](http://jekyllrb.com) built especially for those who want to have a blog and a portfolio quickly, lightness and greater ability to customize of theme. Its base is made with [Twitter Bootstrap](http://getbootstrap.com), that gives you greater practicalities to open your page in a mobile device.
 
-Using tools like GruntJS and Bower for their management and creating dependencies, development practitioners will find it easier to manipulate the **Chameleon Theme**.
+Using tools like GruntJS and Bower for their management and creating dependencies, development practitioners will find it easier to manipulate the **Chameleon Jek**.
 
-The **Chameleon Theme** also uses the language [Ruby](https://www.ruby-lang.org) to perform Deploy on GitHub, with deployment options for source code and compiled project (folder: _build) to a branch of his choice on GitHub, change theme (colors), header creation of pages and posts and other functions. 
+The **Chameleon Jek** also uses the language [Ruby](https://www.ruby-lang.org) to perform Deploy on GitHub, with deployment options for source code and compiled project (folder: _build) to a branch of his choice on GitHub, change theme (colors), header creation of pages and posts and other functions. 
 
-> You can change the structure of Chameleon Theme as you wish, provided they 
+> You can change the structure of Chameleon Jek as you wish, provided they 
 > do not manipulate the copyright of the project.
 
 This project has the copyright to {[William C. Canin](http://github.com/williamcanin)} - (c) copyright 2015
@@ -40,18 +40,18 @@ For more notes of the Dev Kit installation, see: [Devkit Install](https://github
 
 ------
 
-## Unloading, installing dependencies, compiling Chameleon Theme and start the server Jekyll.
+## Unloading, installing dependencies, compiling Chameleon Jek and start the server Jekyll.
 
 * 1 - Perform unloading through the **Git**...
 
 ```
-$ git clone https://github.com/williamcanin/chameleon-theme-jekyll.git
+$ git clone https://github.com/williamcanin/chameleon-jek.git
 ```
 
 * 2 - ...and go to the folder:
 
 ```
-$ cd chameleon-theme-jekyll
+$ cd chameleon-jek
 ```
 
 * 3 - Install Bundler:
@@ -66,13 +66,13 @@ $ cd chameleon-theme-jekyll
  bundle install
 ```
 
-* 5 - Run the command to the dependencies and the compilation of **Chameleon Theme**:
+* 5 - Run the command to the dependencies and the compilation of **Chameleon Jek**:
 
 ```
 $ rake make_install
 ```
 
-* 6 - Compile Chameleon Theme:
+* 6 - Compile Chameleon Jek:
 
 ```
 $ grunt build
@@ -134,7 +134,7 @@ $ rake deploygit pull="n" type="build" branch="branch_where_the_compiled_source"
 > Nota: The parameter "pull" is optional. If you "n", will be the deploy
 > without performing the "pull" if put "s" before performing the "push", will
 > be a "pull". For more information about all command **rake** in **
-> Chameleon theme**, run the command: `rake help`
+> Chameleon Jek**, run the command: `rake help`
 
 
 
@@ -144,21 +144,21 @@ Real chameleon... chameleon pure!. **Six** custom colors to please everyone.
 
 Preview theme color:
 
-![ScreenShot](https://raw.githubusercontent.com/williamcanin/chameleon-theme-jekyll/master/assets/images/preview/greentheme.png)
+![ScreenShot](https://raw.githubusercontent.com/williamcanin/chameleon-jek/master/assets/images/preview/greentheme.png)
 
-![ScreenShot](https://raw.githubusercontent.com/williamcanin/chameleon-theme-jekyll/master/assets/images/preview/orangetheme.png)
+![ScreenShot](https://raw.githubusercontent.com/williamcanin/chameleon-jek/master/assets/images/preview/orangetheme.png)
 
-![ScreenShot](https://raw.githubusercontent.com/williamcanin/chameleon-theme-jekyll/master/assets/images/preview/bluetheme.png)
+![ScreenShot](https://raw.githubusercontent.com/williamcanin/chameleon-jek/master/assets/images/preview/bluetheme.png)
 
-![ScreenShot](https://raw.githubusercontent.com/williamcanin/chameleon-theme-jekyll/master/assets/images/preview/blacktheme.png)
+![ScreenShot](https://raw.githubusercontent.com/williamcanin/chameleon-jek/master/assets/images/preview/blacktheme.png)
 
-![ScreenShot](https://raw.githubusercontent.com/williamcanin/chameleon-theme-jekyll/master/assets/images/preview/pinktheme.png)
+![ScreenShot](https://raw.githubusercontent.com/williamcanin/chameleon-jek/master/assets/images/preview/pinktheme.png)
 
-![ScreenShot](https://raw.githubusercontent.com/williamcanin/chameleon-theme-jekyll/master/assets/images/preview/lighttheme.png)
+![ScreenShot](https://raw.githubusercontent.com/williamcanin/chameleon-jek/master/assets/images/preview/lighttheme.png)
 
 ### Responsive to dispositives mobile
 
-![ScreenShot](https://raw.githubusercontent.com/williamcanin/chameleon-theme-jekyll/master/assets/images/preview/responsive-mobile.jpg)
+![ScreenShot](https://raw.githubusercontent.com/williamcanin/chameleon-jek/master/assets/images/preview/responsive-mobile.jpg)
 
 
 
@@ -166,10 +166,10 @@ Preview theme color:
 
 | Subject                                         | link
 | ----------------------------------------------- | ------------- |
-| To watch the demo of "Chameleon theme", go to > |  [Demo](http://williamcanin.github.io/chameleon-theme-jekyll/) |
+| To watch the demo of "Chameleon Jek", go to > |  [Demo](http://williamcanin.github.io/chameleon-jek/) |
 
 
-### As you can see, the "Chameleon Theme" has varieties of colors, and for use a color you like, use the following commands:
+### As you can see, the "Chameleon Jek" has varieties of colors, and for use a color you like, use the following commands:
 
 ```
 $ rake theme color={ green | orange | blue | black | pink | light } [ENTER]
@@ -177,11 +177,11 @@ $ grunt sass-build [ENTER]
 ```
 > Example: $ rake theme color=blue [ENTER]
 
->Nota: For more information about all command **rake** in **Chameleon theme**, run the command: `rake help`
+>Nota: For more information about all command **rake** in **Chameleon Jek**, run the command: `rake help`
 
 ## Effects and configurations
 
-The Chameleon theme, supports effects style settings, languages, and configurations of strings and social networking. To perform these settings,
+The Chameleon Jek, supports effects style settings, languages, and configurations of strings and social networking. To perform these settings,
 set the file "**_config.yml**" in theme root, to your liking.The file **_config.yml** is self explanatory.
 
 **Optimize Images**
@@ -189,7 +189,7 @@ set the file "**_config.yml**" in theme root, to your liking.The file **_config.
 To optimize the images of the portfolio and other, use an image optimization task in the "grunt".
 Ex: [grunt-image](https://www.npmjs.com/package/grunt-image).
 
-The Chameleon theme already has the "task" commented the file "Gruntfile.js", see the following:
+The Chameleon Jek already has the "task" commented the file "Gruntfile.js", see the following:
 
 * 1 - Uncomment function "image" and task "imgcompress" in "Gruntfile.js".
 * 2 - Run command: `npm install grunt-image --save-dev`
@@ -198,7 +198,7 @@ The Chameleon theme already has the "task" commented the file "Gruntfile.js", se
 **Custom Header**
 
 
-The *Chameleon Theme* brings the opportunity for the user to insert an image or just a simple text on the main page. For this, the user will have to activate the variable **str_page_heading_text** or **str_page_heading_img** (according to your preference, image or text) in the file **_ config.yml**. If you prefer the image, put a picture in the *"assets/images/header"* and insert into the variable **str_page_heading_img** more extension of the image.
+The *Chameleon Jek* brings the opportunity for the user to insert an image or just a simple text on the main page. For this, the user will have to activate the variable **str_page_heading_text** or **str_page_heading_img** (according to your preference, image or text) in the file **_ config.yml**. If you prefer the image, put a picture in the *"assets/images/header"* and insert into the variable **str_page_heading_img** more extension of the image.
 
 ----
 
@@ -215,6 +215,6 @@ The *Chameleon Theme* brings the opportunity for the user to insert an image or 
 
 Be sure to get in touch.
 
-Make their views on the Chameleon Theme, Issue on:
+Make their views on the Chameleon Jek, Issue on:
 
-## [Leave your suggestions, compliments, criticisms or whatever suits you.](https://github.com/williamcanin/chameleon-theme-jekyll/issues/1)
+## [Leave your suggestions, compliments, criticisms or whatever suits you.](https://github.com/williamcanin/chameleon-jek/issues/1)

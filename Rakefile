@@ -3,7 +3,7 @@
 # Country/State: Brazil/SP
 # Author : William C. Canin <http://williamcanin.github.com>
 # Page author: http://williamcanin.com
-# Description: Script for theme settings "Snowcreen".
+# Description: Script for theme settings "Chameleon Jek".
 # Manual tasks:
 # * Deploy to GitHub Pages
 # * Change the theme

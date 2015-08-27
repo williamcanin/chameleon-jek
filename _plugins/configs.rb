@@ -2,7 +2,7 @@
 # Language: Ruby
 # Country/State: Brazil/SP
 # Author : William C. Canin <http://williamcanin.com>
-# Description: Script config for "Chameleon theme".
+# Description: Script config for "Chameleon Jek".
 
 # Do not change this file #
 
@@ -48,18 +48,18 @@ class Configs < Variables
       if resp == "yes"
         puts "yes"
       else
-        puts "no"  
-      end 
+        puts "no"
+      end
 
       if File.exists?("./.origin.log")
         puts "exist .origin.log"
       else
         puts "does not exist .origin.log"
-      end 
+      end
   end
 
 
-  
+
 
 # Create .gitignore
   def gitignore

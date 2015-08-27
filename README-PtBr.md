@@ -1,17 +1,17 @@
-# Theme [Chameleon](https://github.com/williamcanin/chameleon-theme-jekyll) Jekyll (Blog/Portfolio) Beta
+# Theme [Chameleon Jek](https://github.com/williamcanin/chameleon-jek) Jekyll (Blog/Portfolio) Beta
 
 Apresents:
-![ScreenShot](https://raw.githubusercontent.com/williamcanin/chameleon-theme-jekyll/master/assets/images/preview/preview.png)
+![ScreenShot](https://raw.githubusercontent.com/williamcanin/chameleon-jek/master/assets/images/preview/preview.png)
 
 ## Intro
 
-Chameleon Theme, é o tema para [Jekyll](http://jekyllrb.com) construído especialmente para quem deseja ter um blog e um portfólio com rapidez e leveza e com maior possibilidade de customização em temas. Sua base é feita com [Twitter Bootstrap](http://getbootstrap.com), que lhe da maiores praticidades ao abrir sua página em um dispositivo Mobile.
+Chameleon Jek, é o tema para [Jekyll](http://jekyllrb.com) construído especialmente para quem deseja ter um blog e um portfólio com rapidez e leveza e com maior possibilidade de customização em temas. Sua base é feita com [Twitter Bootstrap](http://getbootstrap.com), que lhe da maiores praticidades ao abrir sua página em um dispositivo Mobile.
 
-Usando ferramentas como GruntJS e Bower para seu gerenciamento e criação de dependências, os praticantes de desenvolvimento terá maior facilidade em manipular o Chameleon Theme. 
+Usando ferramentas como GruntJS e Bower para seu gerenciamento e criação de dependências, os praticantes de desenvolvimento terá maior facilidade em manipular o Chameleon Jek. 
 
-O Chameleon Theme usa também a linguagem [Ruby](https://www.ruby-lang.org) para realização de Deploy no GitHub, com opções de deploy do código fonte e do projeto compilado (pasta _build_) para um ramo de sua escolha no GitHub, alteração do tema (cores), criação do cabeçalho das páginas e posts e outras mais funções. 
+O Chameleon Jek usa também a linguagem [Ruby](https://www.ruby-lang.org) para realização de Deploy no GitHub, com opções de deploy do código fonte e do projeto compilado (pasta _build_) para um ramo de sua escolha no GitHub, alteração do tema (cores), criação do cabeçalho das páginas e posts e outras mais funções. 
 
-> Você pode alterar a estrutura do Chameleon Theme como desejar, desde que não manipule os direitos autorais do projeto.
+> Você pode alterar a estrutura do Chameleon Jek como desejar, desde que não manipule os direitos autorais do projeto.
 
 Este projeto tem os direitos autorais para: [William C. Canin](http://github.com/williamcanin) - (c) copyright 2015
 

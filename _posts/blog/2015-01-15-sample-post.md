@@ -21,7 +21,7 @@ categories: blog
 > publications.
 > 
 > You have the possibility to show youtube videos easily through the 
-> "Chameleon Theme" with its plugin "youtube".
+> "Chameleon Jek" with its plugin "youtube".
 
 ## Image left
 
@@ -137,7 +137,7 @@ For more information [Here][infomark]{:target="_blank"}
 
 ---
 
-Project: [Chameleon Theme][ctj]{:target="_blank"}
+Project: [Chameleon Jek][ctj]{:target="_blank"}
 
 Author of theme: [William Canin][Author]{:target="_blank"}
 

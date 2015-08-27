@@ -1,5 +1,5 @@
 {
-  "name": "Chameleon-Theme",
+  "name": "Chameleon-Jek",
   "version": "1.0.4",
    "keywords": [
     "jekyll",
@@ -15,12 +15,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/williamcanin/chameleon-theme-jekyll.git"
+    "url": "git://github.com/williamcanin/chameleon-jek.git"
   },
      "bugs": {
-    "url": "https://github.com/williamcanin/chameleon-theme-jekyll/issues"
+    "url": "https://github.com/williamcanin/chameleon-jek/issues"
   },
-  "description": "Chameleon Theme for Jekyll",
+  "description": "Chameleon Jek for Jekyll",
   "license":"ISC",
   "licenses": [
     {

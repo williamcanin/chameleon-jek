@@ -1,9 +1,9 @@
 /*
 =========================================================================
-GruntFile - Customization for Chameleon Theme (Jekyll)
+GruntFile - Customization for Chameleon Jek (Jekyll)
 Province: Brazil - SP
 Author: William da Costa Canin <http://williamcanin.com>
-Home page project: https://github.com/williamcanin/chameleon-theme-jekyll
+Home page project: https://github.com/williamcanin/chameleon-jek
 -------------------------------------------------------------------------
 All Rights Reserved (C) Copyright
 =========================================================================
@@ -24,7 +24,7 @@ module.exports = function (grunt) {
     'assets/javascripts/custom/*.js'
   ];
 
-  
+
 // Configurable paths
   var config = {
     port_jekyll: '4000',
@@ -55,7 +55,7 @@ module.exports = function (grunt) {
   // =====================================================================================
   // Begin - initConfig
   // -------------------------------------------------------------------------------------
-  grunt.initConfig({ 
+  grunt.initConfig({
 
   // Inital config path
   config: config,
@@ -63,7 +63,7 @@ module.exports = function (grunt) {
   // Clean paths and files
   clean: {
     build: {
-      src: ['<%= config.build_files %>','<%= config.includes %>','<%= config.sass_cache %>', 
+      src: ['<%= config.build_files %>','<%= config.includes %>','<%= config.sass_cache %>',
       'assets/css','assets/javascripts/scripts.min.js'],
     },
     content: {
@@ -71,7 +71,7 @@ module.exports = function (grunt) {
     },
     configuration: {
       src: ['.origin.log','.jshintrc','.gitignore','.bowerrc']
-    }  
+    }
   },
 
   // Create directory for fonts
@@ -231,7 +231,7 @@ module.exports = function (grunt) {
       resetConfiguration: {
         command : 'rake reset'
       }
-  }, 
+  },
 
   // Connect with Browser
   connect: {
@@ -242,7 +242,7 @@ module.exports = function (grunt) {
         hostname: "localhost",
         livereload: true,
         open: true
-          
+
       }
     }
   },
@@ -431,7 +431,7 @@ compress: {
   });
   // -------------------------------------------
   // End - initConfig
-  //============================================ 
+  //============================================
 
 
 
@@ -442,7 +442,7 @@ compress: {
       minify: [
         'concat',
         'uglify'
-        
+
       ],
       jshint: ['jshint'],
       modernizr: ['modernizr'],

@@ -1,18 +1,18 @@
-# Place the address where the site is hosted, and the base 
+# Place the address where the site is hosted, and the base
 # of website. If there is no base, leave blank.
 #
 website: "williamcanin.com" # IMPORTANT! Do not place HTTP://
-base_website: "/chameleon-theme-jekyll" # IMPORTANT !
+base_website: "/chameleon-jek" # IMPORTANT !
 #
 #==========================================================
 
 # Session - Configuration GitHub Deploy (Git)
-project_name: "Chameleon Theme for Jekyll" # IMPORTANT !!!
+project_name: "Chameleon Jek for Jekyll" # IMPORTANT !!!
 first_last_name: "WilliamCanin" # IMPORTANT !!!
 user_email: "william.costa.canin@gmail.com" # IMPORTANT !!!
 github_user: "williamcanin" # IMPORTANT !!!
-source_repository_project: "chameleon-theme-jekyll.git" # IMPORTANT !!!
-build_repository_project: "chameleon-theme-jekyll.git" # IMPORTANT !!!
+source_repository_project: "chameleon-jek.git" # IMPORTANT !!!
+build_repository_project: "chameleon-jek.git" # IMPORTANT !!!
 
 # To cancel, use the terminal command > git credential-cache exit
 credential_cache_yesno: "yes"
@@ -20,7 +20,7 @@ credential_cache_type: "local"
 credential_cache_time: "28800" # Seconds
 
 sshttps: "https://github.com/" # For SSH, use: "git@github.com:" For HTTPS. use: "https://github.com/"
-# Configuration GitHub Deploy 
+# Configuration GitHub Deploy
 
 
 
@@ -28,9 +28,9 @@ sshttps: "https://github.com/" # For SSH, use: "git@github.com:" For HTTPS. use:
 
 # Session - Theme specific configuration [BEGIN]
 theme:
-  title: "Chameleon Theme"
+  title: "Chameleon Jek"
   subtitle_site: "Theme for Jekyll"
-  navbar_icon: "nav-icon-white.svg" 
+  navbar_icon: "nav-icon-white.svg"
 
 
 
@@ -65,7 +65,7 @@ theme:
 # Session - Avatar
   avatar: "out.png"
   gravatar: # your MD5 email
-  description: "Theme Chameleon" # used by search engines
+  description: "Chameleon Jek" # used by search engines
 # Session - Avatar
 
 
@@ -89,7 +89,7 @@ theme:
 
 # Session - Posts Author strings
   str_post_by_title: "Post by:"
-  str_name_author_post: "Theme Chameleon"
+  str_name_author_post: "Chameleon Jek"
   author_post_description: >
     <p>In this field you describe a summary about you and what you do. This Jekyll theme is created by  <a href="http://github.com/williamcanin" target="_blank"> William C. Canin</a></p>
 # Session - Posts Author strings
@@ -98,7 +98,7 @@ theme:
 
 # Session - Header and footer text
   # header_text: >
-    # <p>Theme Chameleon.</p>
+    # <p>Chameleon Jek.</p>
 
 
 
@@ -111,7 +111,7 @@ theme:
 
 # Session - Footer / Copyrights
   footer_text:
-    str_text1: "Chameleon Theme"
+    str_text1: "Chameleon Jek"
     str_text2: "Theme made with: "
     maintence1_link_by: "http://jekyllrb.com"
     maintence2_link_by: "http://getbootstrap.com/"
@@ -126,7 +126,7 @@ theme:
 
 
 # Session - Socialize Icons Navbar
-  rss: "chameleon-theme-jekyll" #Your FeedBurner feed. Ex. williamcanin
+  rss: "chameleon-jek" #Your FeedBurner feed. Ex. williamcanin
   email_address: "your_email@gmail.com"
   behance:
   bitbucket:
@@ -225,7 +225,7 @@ theme:
 #               This variable is for the button "Edit this post" of each post.
 # Important! Do not use the trailing slash
 #
-  directory_posts_github: "https://github.com/williamcanin/chameleon-theme-jekyll/tree/master/_posts/blog"
+  directory_posts_github: "https://github.com/williamcanin/chameleon-jek/tree/master/_posts/blog"
 # Session directory of posts
 
 
