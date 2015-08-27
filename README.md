@@ -30,7 +30,7 @@ This project has the copyright to {[William C. Canin](http://github.com/williamc
 | GruntJs         | `grunt --version`    | `npm install -g grunt grunt-cli` | Optional |
 | Bower           | `bower -v`   		 | `npm install -g bower` | Optional |
 | Bundler         | `bundler -v` 		 | `gem install bundler` | >= 1.9.5 |
-| Rake            | `rake --version` 		 | `gem install bundler` | >= 10.3.0 |
+| Rake            | `rake --version` 		 | `gem install bundler` | >= 10.3.|
 
 
 For Windows users, you must install the DevKit and Pygments.
