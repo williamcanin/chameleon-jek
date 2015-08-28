@@ -244,8 +244,8 @@ theme:
 
 
 # Session - Build settings
-url: 'http://williamcanin.com'
-baseurl: '/chameleon-jek'
+url: 'http://localhost:4000'
+baseurl: ''
 permalink: /:title # default: /:categories/:year/:month/:day/:title.html
 destination:    ./_build
 plugins:        ./_plugins

@@ -204,11 +204,11 @@ The *Chameleon Jek* brings the opportunity for the user to insert an image or ju
 
 # Next Versions - Updates
 
-| Date        | Version   | Accomplished update |  Type
-| ----------- | ----------| --------------------|---------
-| 2015/08/10  | 1.0.4     |  Yes                | Beta
-| 2015/11/10  | 1.0.7     |  No                 | Beta
-| 2016/02/10  | 2.0.0     |  No                 | Stable (Final)
+| Date          | Version   | Accomplished update |  Type
+| --------------| ----------| --------------------|---------
+| 2015/08/10    | 1.0.4     |  Yes                | Alfa
+| unpredictable | 1.0.7     |  No                 | Beta
+| unpredictable | 2.0.0     |  No                 | Final
 
 
 ## Issues
