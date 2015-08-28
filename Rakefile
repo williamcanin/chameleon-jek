@@ -10,7 +10,7 @@
 # * Create a new post header
 # To learn the commands of the manual tasks, use: rake help
 
-require './_plugins/configs.rb'
+require './libs/configs.rb'
 
 
 # Task load file _config.yml
