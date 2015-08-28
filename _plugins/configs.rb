@@ -91,7 +91,7 @@ class Configs < Variables
       f.puts("*.lock")
       f.puts(".bowerrc")
       f.puts(".jshintrc")
-      f.puts(".administration")
+      f.puts("administration")
 
     end
   end # Create .gitignore
