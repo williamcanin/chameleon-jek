@@ -254,8 +254,8 @@ layouts:        ./_layouts
 
 # Session - Markdown
 # markdown: kramdown
-highlighter: pygments
-highlighter: true
+# highlighter: pygments
+# highlighter: true
 # markdown: redcarpet
 # redcarpet:
 #   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
