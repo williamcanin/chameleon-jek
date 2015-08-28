@@ -218,3 +218,7 @@ Be sure to get in touch.
 Make their views on the Chameleon Jek, Issue on:
 
 ## [Leave your suggestions, compliments, criticisms or whatever suits you.](https://github.com/williamcanin/chameleon-jek/issues/1)
+
+# License
+
+[![CC0](https://licensebuttons.net/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
