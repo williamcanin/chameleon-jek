@@ -30,8 +30,6 @@ This project has the copyright to {[William C. Canin](http://github.com/williamc
 | GruntJs         | `grunt --version`    | `npm install -g grunt grunt-cli` | Optional |
 | Bower           | `bower -v`   		 | `npm install -g bower` | Optional |
 | Bundler         | `bundler -v` 		 | `gem install bundler` | >= 1.9.5 |
-| Rake            | `rake --version` 		 | `gem install rake` | >= 10.3.|
-
 
 For Windows users, you must install the DevKit and Pygments.
 For more notes of the Dev Kit installation, see: [Devkit Install](https://github.com/oneclick/rubyinstaller/wiki/Development-Kit#installation-instructions)
@@ -53,6 +51,58 @@ $ git clone https://github.com/williamcanin/chameleon-jek.git
 ```
 $ cd chameleon-jek
 ```
+
+### Users Linux
+
+**For you who is Linux user, you have a script shell  that does everything for you.** 
+
+
+* 3 - If you have not installed the applications on your machine, run the script shell **setup.sh** as follows:
+
+```
+$ bash setup.sh -p
+```
+
+> Heads Up! Will ask the root password as this will install packages on your 
+> machine. Be sure you have a root password.
+
+* 4 - After preparing your machine, you need to run the command to resolve dependencies Chameleon Jek and compile it. This way:
+
+```
+$ bash setup.sh -c
+```
+
+**Or**
+
+You can do all automatic, doing downloaded the script "setup.sh" and running it, see:
+
+> Note: Make sure that the "Curl" is installed, or use wget.
+
+```
+$ curl -O https://raw.githubusercontent.com/williamcanin/chameleon-jek/master/setup.sh
+$ chmod +x setup.sh
+$ bash setup.sh all
+```
+
+
+* 5 - Start server (with watch):
+
+$ grunt spy
+
+or
+
+* 5.1 - Start server (normal):
+
+$ grunt serve
+
+
+ **See an example of video**
+
+[![Demo Install Chameleon Jek in Linux](http://share.gifyoutube.com/y3VqB7.gif)](https://www.youtube.com/watch?v=AvwP5Ab9UOc)
+
+For more information: "bash setup.sh help"
+
+### Windows users will have to manually run the commands
 
 * 3 - Install Bundler:
 
@@ -91,6 +141,11 @@ or
 ```
 $ grunt serve
 ```
+
+### Users Mac OS X
+
+After making the clone with "Git" of "Chameleon Jek" between the folder and follow the same steps for user "Windows".
+
 
 ## Deploy for GitHub
 
@@ -208,7 +263,7 @@ The *Chameleon Jek* brings the opportunity for the user to insert an image or ju
 | ----------- | ----------| --------------------|---------
 | 2015/08/10  | 1.0.4     |  Yes                | Beta
 | 2015/11/10  | 1.0.7     |  No                 | Beta
-| 2016/02/10  | 2.0.0     |  No                 | Stable (Final)
+| 2016/02/10  | 2.0.0     |  No                 | Final
 
 
 ## Issues
