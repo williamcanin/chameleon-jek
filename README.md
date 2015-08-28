@@ -13,7 +13,7 @@ The **Chameleon Jek** also uses the language [Ruby](https://www.ruby-lang.org) t
 > You can change the structure of Chameleon Jek as you wish, provided they 
 > do not manipulate the copyright of the project.
 
-This project has the copyright to {[William C. Canin](http://github.com/williamcanin)} - (c) copyright 2015
+This project has the copyright to {[William C. Canin](http://github.com/williamcanin)} - (c) [copyright](https://github.com/williamcanin/chameleon-jek#license) 2015
 
 
 ## Requirements
