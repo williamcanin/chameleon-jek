@@ -222,3 +222,5 @@ Make their views on the Chameleon Jek, Issue on:
 # License
 
 [![CC0](https://licensebuttons.net/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
+
+To the extent possible under law, [William Canin](https://github.com/williamcanin) has waived all copyright and related or neighboring rights to this work.
