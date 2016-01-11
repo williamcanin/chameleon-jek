@@ -1,24 +1,20 @@
 ---
 layout: default
-modal-id: 2
-title:  "Green chameleon"
+modal_id: 2
+title: Green chameleon
 date:   2015-01-22 10:06:10
 img: modal-id2.jpg
 alt: "green chameleon"
-project-date: January 2015
-# =======================
-# Project for client? (yes/no)
-for_client: no
-client:
-url_client:
-# =======================
-# Dimension image (big / medium / small)
-dimension_image: "medium"
-# =======================
+project_date: January 2015
+published: true
+#
+# It is a project? Place the customer's address.
+show_client: "yes"
+name_client: William C. Canin
+url_client: http://williamcanin.com
+#
+# "dimension_image" is It is the image size: big, medium or small.
+dimension_image: medium
 type: Photographic
-# Not change ====
-categories: projects
-# ============
+categories: portfolio
 ---
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis possimus, inventore at pariatur, quas, hic neque asperiores earum cumque tenetur, aut ipsam corporis mollitia quasi debitis itaque dolorem rerum <<repudiandae!Lorem>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nihil labore mollitia fugiat blanditiis dolores laboriosam, reprehenderit eligendi pariatur debitis deleniti, numquam neque facilis ipsam perferendis culpa rem excepturi vitae.</repudiandae!Lorem></repudiandae!Lorem>

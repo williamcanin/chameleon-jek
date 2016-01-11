@@ -1,115 +1,104 @@
 # Place the address where the site is hosted, and the base
 # of website. If there is no base, leave blank.
 #
-website: "williamcanin.com" # IMPORTANT! Do not place HTTP://
-base_website: "/chameleon-jek" # IMPORTANT !
+site_url: "http://williamcanin.com" # the base hostname & protocol for your site
+site_baseurl: "/chameleon-jek/" # the subpath of your site, e.g. /blog/
 #
 #==========================================================
 
-# Session - Configuration GitHub Deploy (Git)
-project_name: "Chameleon Jek for Jekyll" # IMPORTANT !!!
-first_last_name: "WilliamCanin" # IMPORTANT !!!
-user_email: "william.costa.canin@gmail.com" # IMPORTANT !!!
-github_user: "williamcanin" # IMPORTANT !!!
-source_repository_project: "chameleon-jek.git" # IMPORTANT !!!
-build_repository_project: "chameleon-jek.git" # IMPORTANT !!!
 
-# To cancel, use the terminal command > git credential-cache exit
-credential_cache_yesno: "yes"
-credential_cache_type: "local"
-credential_cache_time: "28800" # Seconds
+# Meta tag for Expires / Cache Control - Max 1 Year
+expires: "Sat, 24 Dec 2016 00:10:00 GMT"
+cache_control: "max-age=120"
+# Meta tag for Expires / Cache Control - Max 1 Year
 
-sshttps: "git@github.com:" # For SSH, use: "git@github.com:" For HTTPS. use: "https://github.com/"
-# Configuration GitHub Deploy
+# Language support (english / portuguese )
+language: "english"
+# Language support
 
 
 
-
-
-# Session - Theme specific configuration [BEGIN]
+# Section - Theme specific configuration [BEGIN]
 theme:
+  # language: "portuguese" #support: (english / portuguese)
   title: "Chameleon Jek"
-  subtitle_site: "Theme for Jekyll"
-  navbar_icon: "nav-icon-white.svg"
-
+  subtitle_site: "Blog & Portfolio for Jekyll"
+  navbar_collapse_icon: "nav-icon-white.svg"
 
 
   # ========= Begin Config Effects =============
   # Navbar Fixed (yes/no)
-  navbar_fixed: "no"
-  # Rotate avatar navbar (yes/no)
-  rotate_avatar: "no"
+  navbar_fixed: "yes"
   # Shake Site title
-  shake_title_navbar: "no"
+  shake_title_navbar: "yes"
   # Shake menu navbar
-  shake_menus_navbar: "no"
-  # Shake Social Icons NavBar
-  shake_social_icons_navbar: "no"
+  shake_menus_navbar: "yes"
   # Effects FadeIn (yes/no)
-  fadeIn: "no"
+  fadeIn: "yes"
   # Shake title posts
-  shake_title_posts: "no"
+  shake_title_posts: "yes"
  # ========= End Effects =============
 
 
+# Section - FakeLoader
+# fakeLoader (yes/no)
+  fakeLoader: "yes"
+  fl_local: "all" # { all }
+  fl_timeToHide: "1500" # milliseconds, default 1500
+  # Default fl_bgColor: #2D4F25
+  fl_bgColor: "#BF589D"
+  fl_spinner: "spinner4" # Default, spinner4
+  fl_spinnerColor: "#fff"
+  fl_hideNav: "yes" # Default yes
+  # fl_textSpinner: "Please wait, loading page..." # construction
+# Section - FakeLoader
 
-# Session - Index Config
-  #- Post except in index.html
-  post_except: "no"
-  # Model Index (Usage: list or grid )
-  model_index: "list"
-# Session - Index Config
 
 
 
-# Session - Avatar
+# Section - Avatar
   avatar: "out.png"
   gravatar: # your MD5 email
   description: "Chameleon Jek" # used by search engines
-# Session - Avatar
+# Section - Avatar
 
 
 
-# Session - Date strings languages *support: (english / portuguese)
-  date_strings_language: "english"
-# Session - Date strings languages *support: (english / portuguese)
-
-
-
-# Session - Shares posts config
+# Section - Shares posts config
   post_sharing: "yes" #(yes/no)
-  # language (portuguese/english)
-  shares_language: "english"
-  # twitter
-  share_twitter_via: "" #ex: william
-  share_twitter_related: "" #ex: stevejobs
-# Session - Shares posts config
+# Section - Shares posts config
 
 
 
-# Session - Posts Author strings
+# Section - Posts Author
+  # Image
+  author_image: "william.png"
+  # String
   str_post_by_title: "Post by:"
-  str_name_author_post: "Chameleon Jek"
+  # str_name_author_post: "Chameleon Jek"
   author_post_description: >
-    <p>In this field you describe a summary about you and what you do. This Jekyll theme is created by  <a href="http://github.com/williamcanin" target="_blank"> William C. Canin</a></p>
-# Session - Posts Author strings
+    <p>In this field you describe a summary about you and what you do.
+      This Jekyll theme is created by
+        <a href="http://github.com/williamcanin" target="_blank">
+          William C. Canin
+        </a>
+    </p>
+# Section - Posts Author
 
 
 
-# Session - Header and footer text
-  # header_text: >
-    # <p>Chameleon Jek.</p>
-
-
-
-# Session - Portfolio description
+# Section - Portfolio description
   portfolio_description: >
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi est quisquam deleniti architecto voluptatibus similique consectetur incidunt iusto autem ipsa! Temporibus optio architecto distinctio, at fugit. Aspernatur voluptatibus earum nulla.</p>
-# Session - Portfolio description
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+       Excepturi est quisquam deleniti architecto voluptatibus similique
+       consectetur incidunt iusto autem ipsa! Temporibus optio architecto
+       distinctio, at fugit. Aspernatur voluptatibus earum nulla.
+    </p>
+# Section - Portfolio description
 
 
 
-# Session - Footer / Copyrights
+# Section - Footer / Copyrights
   footer_text:
     str_text1: "Chameleon Jek"
     str_text2: "Theme made with: "
@@ -121,11 +110,11 @@ theme:
     design_layout_link_by: "http://github.com/williamcanin"
     design_layout_text_by: "William Canin"
     copyright_initial_year:  "Copyright 2015"
-# Session - Footer / Copyrights
+# Section - Footer / Copyrights
 
 
 
-# Session - Socialize Icons Navbar
+# Section - Socialize Icons Navbar
   rss: "chameleon-jek" #Your FeedBurner feed. Ex. williamcanin
   email_address: "your_email@gmail.com"
   behance:
@@ -143,7 +132,7 @@ theme:
   pinterest:
   reddit:
   soundcloud:
-  stack_exchange: "http://stackoverflow.com/users/123456/your_user"
+  stack_exchange: "http://stackoverflow.com/users/123456/your_user_stack_exchange"
   steam:
   skype:
   tumblr:
@@ -151,62 +140,76 @@ theme:
   vivaolinux: "" # Exemple: ~your_username
   wordpress:
   youtube: "your_user_canal"
-# Session - Socialize Icons Navbar
+# Section - Socialize Icons Navbar
 
 
-
-# Session - Scripts Google Abalytics and Disqus
-  google_analytics: # tracking id, e.g. "UA-000000-01"
-# Session - Scripts Google Abalytics and Disqus
-
-
-
-# Session - Comments for Disqus
-  disqus_shortname: "your_user_disqus"
-# Session - Comments for Disqus
+# Section - Project posts
+# Their projects '_posts/portfolio' will be for customers?
+  client_yesno: "yes"
+# Section - Project posts
 
 
+# Section - Scripts Google Abalytics
+  google_analytics: "UA-XXXXXX-0X" # tracking id, e.g. "UA-000000-01"
+# Section - Scripts Google Abalytics
 
-# Session - Contact Form - Google Forms
-  google_form_id: "" # Your_ID_Google_Forms
-  str_title_gf: "Send ideas...send reviews."
-  str_text_gf: >
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi est quisquam deleniti architecto voluptatibus similique consectetur incidunt iusto autem ipsa! Temporibus optio architecto distinctio, at fugit. Aspernatur voluptatibus earum nulla.</p>
-
-  str_btn_google_form_text: "Send"
-# Session - Contact Form - Google Forms
+# Section - Google AdSense
+  Include_AdSense: "no" #[ yes | no ]
+  Style: "display:block"
+  Ad_Client: "ca-pub-XXXXXXXXXXXXXXXXXX"
+  Ad_Slot: "XXXXXXXXXX" #ID
+  Ad_Format: "auto"
+# Section - Google AdSense
 
 
 
 
-# Session - Page heading index
-  page_heading_text: #"<p>Blog</p><p>Check out my latest posts.</p>"
-  page_heading_img: "page-heading-banner.png"
-# Session - Header page index
+# Section - Comments for Disqus
+  disqus_shortname:  # Your User of Disqus. ex: "william"
+# Section - Comments for Disqus
 
 
 
+# Section - Adorned Header in Index
 
-# Session - Localization strings
-  str_comments: "<p>Comments</p> <p>Leave your comment</p>"
-  str_comments_portfolio: "<p>Comments</p> <p>Leave your comment in portfolio</p>"
+  adorned_header_enable: "yes" # ( yes | no )
+  adorned_header_type: "text" # ( img | text )
+  adorned_header_img: "page-heading-banner.png"
+  adorned_header_text: >
+    <p>
+      Hello, I am the theme Chameleon Jek
+    </p>
+    <p>
+      Welcome to the home page.
+    </p>
+#Section - Adorned Header in Index
+
+
+
+# Section - Localization strings
+  str_comments: >
+    <p>
+      Comments
+    </p>
+    <p>
+      Leave your comment
+    </p>
+  str_comments_portfolio: >
+    <p>
+      Comments
+    </p>
+    <p>
+      Leave your comment in portfolio
+    </p>
   str_follow_on: "Follow on"
-  # str_rss_follow: "Follow RSS/Feed"
   str_modal_feed_title: "Follow RSS/Feed of"
   str_form_feed_input: "Enter your email address"
   str_form_feed_submit: "Subscribe"
   str_feed_reader: "Subscribe in a reader"
-  str_email: "Email"
-  str_next: "Older"
-  str_prev: "Newer"
   str_continue_reading: "Continue reading"
   str_total_pages: "Pages: "
-  str_of: "of"
-  str_client: "Client"
-  str_date: "Date"
-  str_type: "Type project"
-  str_placeholder_search: "Search in blog..."
+  str_placeholder_search: "Search in "
   str_no_search_results: "Oh shit! No results found"
   str_title_result_search: "Results:"
   str_icon_comment_post: "Comment"
@@ -214,59 +217,119 @@ theme:
   str_article: "Article"
   str_nocomment: "Comment disabled"
   str_edit_this_post: "Edit this post"
-  # Session - Localization strings
+  # Section - Localization strings
 
-# Session - Theme specific configuration [END]
+# Section - Theme specific configuration [END]
 
 
 
-# Session directory of posts
+# Section directory of posts
 # Description > This directory will be the directory where the posts to your GitHub
 #               This variable is for the button "Edit this post" of each post.
 # Important! Do not use the trailing slash
 #
   directory_posts_github: "https://github.com/williamcanin/chameleon-jek/tree/master/_posts/blog"
-# Session directory of posts
+# Section directory of posts
 
 
 
-# Session - Pagination
-  # use_pagination: "no" #(yes/no) >>>> Does not enable! Under construction !!! <<<<
-# paginate: 2
-# paginate_file: index.html
-# paginate_path: "/page:num"
-#Session - Pagination
+# Section - Includes files and folder build jekyll
+include: ['_pages']
+# Section - Includes files and folder build jekyll
+
+
+
+# Section - Build settings
+url: "http://0.0.0.0:4000"
+baseurl: ""
+# Permalink Default: /:categories/:year/:month/:day/:title/
+# Permalink optional: /:title/
+permalink: /:title/
+destination: ./_site
+# Section - Build settings
 
 
 
 
-
-
-
-# Session - Build settings
-url: 'http://localhost:4000'
-baseurl: ''
-permalink: /:title # default: /:categories/:year/:month/:day/:title.html
-destination:    ./_build
-plugins:        ./_plugins
-layouts:        ./_layouts
-# Session - Build settings
-
-# Session - Markdown
-# markdown: kramdown
+# Section - Markdown
 # highlighter: pygments
 # highlighter: true
-# markdown: redcarpet
-# redcarpet:
-#   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
-markdown: kramdown
+markdown: kramdown # { kramdown | redcarpet }
 kramdown:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
-# Session - Markdown
+  extensions: ["no_intra_emphasis",
+    "fenced_code_blocks",
+    "autolink",
+    "tables",
+    "strikethrough",
+    "superscript",
+    "with_toc_data"
+  ]
+# Section - Markdown
 
 
-# Session - Excludes files and folder build jekyll
-exclude: ['Gruntfile.js',
+
+
+
+# Section - Excludes files and folder build jekyll
+exclude: [
+# Animate Css
+'assets/vendor/animate.css/source',
+'assets/vendor/animate.css/*.js',
+'assets/vendor/animate.css/*.json',
+# Bootstrap
+'assets/vendor/bootstrap/fonts',
+'assets/vendor/bootstrap/grunt',
+'assets/vendor/bootstrap/less',
+'assets/vendor/bootstrap/js',
+'assets/vendor/bootstrap/Gruntfile.js',
+'assets/vendor/bootstrap/*.json',
+'assets/vendor/bootstrap/*.md',
+'assets/vendor/bootstrap/package.js',
+# Bootstrap Drawer
+'assets/vendor/bootstrap-drawer/docs',
+'assets/vendor/bootstrap-drawer/example',
+'assets/vendor/bootstrap-drawer/js',
+'assets/vendor/bootstrap-drawer/less',
+'assets/vendor/bootstrap-drawer/gulpfile.js',
+'assets/vendor/bootstrap-drawer/*.json',
+'assets/vendor/bootstrap-drawer/*.md',
+'assets/vendor/bootstrap-drawer/*.html',
+# Font Awesome
+'assets/vendor/font-awesome-custom/less',
+'assets/vendor/font-awesome-custom/scss',
+'assets/vendor/font-awesome-custom/*.html',
+'assets/vendor/font-awesome-custom/*.js',
+'assets/vendor/font-awesome-custom/*.map',
+'assets/vendor/font-awesome-custom/*.json',
+# Fonts Raleway
+'assets/vendor/fonts-raleway/less',
+'assets/vendor/fonts-raleway/scss',
+'assets/vendor/fonts-raleway/dev',
+'assets/vendor/fonts-raleway/*.html',
+'assets/vendor/fonts-raleway/*.js',
+'assets/vendor/fonts-raleway/*.map',
+'assets/vendor/fonts-raleway/*.json',
+'assets/vendor/fonts-raleway/*.md',
+# JQuery
+'assets/vendor/jquery/src',
+'assets/vendor/jquery/bower.json',
+'assets/vendor/jquery/*.txt',
+# JQuery Easing
+'assets/vendor/jquery.easing/*.json',
+'assets/vendor/jquery.easing/*.md',
+# Modernizr
+'assets/vendor/modernizr/**/*',
+'assets/vendor/modernizr/grunt.js',
+'assets/vendor/modernizr/*.md',
+'!assets/vendor/modernizr/modernizr.js',
+# Simple Jekyll Search
+'assets/vendor/simple-jekyll-search/*.json',
+'assets/vendor/simple-jekyll-search/*.md',
+
+# Defaults
+'/**/*/LICENSE',
+'Gruntfile.js',
+'Gulpfile.js',
 'package.json',
 'bower.json',
 'README.md',
@@ -275,18 +338,19 @@ exclude: ['Gruntfile.js',
 'node_modules',
 'src',
 '_gist_cache',
-'assets/vendor',
 'assets/images/preview',
-'assets/images/javascript/vendor',
-'assets/images/javascript/custom',
-'assets/javascripts/custom',
-'assets/sass',
-'install.sh',
 'README-PtBr.md',
 '**/*/.zip',
 '**/*/.log',
+'nohup.out',
 '**/*/.lock',
 './.bundle',
-'LISENCE'
+'AUTHORS',
+'docs',
+'CREDITS',
+'gh-pages',
+'CHANGELOG.md',
+'COPYING',
+'administration'
 ]
-# Session - Excludes files and folder build jekyll
+# Section - Excludes files and folder build jekyll

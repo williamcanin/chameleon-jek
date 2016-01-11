@@ -1,0 +1,56 @@
+#!/bin/bash
+
+function _CLEAN(){
+  if [[ "$(id -u)" == 0 ]]; then
+    msg_warning "You cannot apply using 'root(superuser)'."
+    exit 1
+  else
+    rm -f Gemfile.lock
+    rm -f nohup.out
+  fi
+}
+
+function _CONFIG_BASHRC(){
+  if [[ "$(id -u)" == 0 ]]; then
+    msg_warning "You cannot apply using 'root(superuser)'"
+    exit 1
+  else
+    sed -i '/# Path Ruby on Rails/,/# Path Ruby on Rails/d' ~/.bashrc
+    msg_header "Setting \"~/.bashrc\". Wait ..."
+cat << EOF >> ~/.bashrc
+
+# Path Ruby on Rails
+PATH=\$HOME/.gems/bin:\$PATH
+GEM_HOME=\$HOME/.gems
+GEM_SPEC_CACHE=\$GEM_HOME/specs
+GEM_PATH=\$HOME/.gems
+export PATH GEM_HOME GEM_PATH GEM_SPEC_CACHE
+# Path Ruby on Rails
+EOF
+    msg_finish "Setting \"~/.bashrc\". Done!"
+  fi
+}
+
+function _CONFIG_GEMRC(){
+  if [[ "$(id -u)" == 0 ]]; then
+    msg_warning "You cannot apply using 'root(superuser)'"
+    exit 1
+  else
+    msg_header "Setting \"~/.gemrc\". Wait ..."
+cat << EOF > ~/.gemrc
+---
+gem: --no-ri --no-rdoc
+gemhome: $HOME_USER/.gems
+gempath:
+- $HOME_USER/.gems
+:benchmark: false
+:update_sources: true
+:verbose: false
+:backtrace: false
+:sources:
+- https://rubygems.org
+:bulk_threshold: 1000
+EOF
+    msg_finish "Setting \"~/.gemrc\". Done!"
+  fi
+}

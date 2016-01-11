@@ -1,0 +1,18 @@
+#!/bin/bash
+function _INSTALLS(){
+  if [[ "$(id -u)" == 0 ]]; then
+    msg_warning "You cannot apply using 'root(superuser)'"
+    exit 1
+  else
+    msg_header "Install Bundler. Wait ..."
+    gem install bundler
+    msg_finish "Install Bundler. Done!"
+    # _INSECURE_WORLD_WRITABLE
+    msg_header "Install Jekyll and dependences. Wait ..."
+    bundle install
+    msg_finish "Install Jekyll and dependences. Done!"
+    msg_header "Install Gulp, Bower and build project. Wait ..."
+    npm install
+    msg_finish "Install Gulp, Bower and build project. Done!"
+  fi
+}

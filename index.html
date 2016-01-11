@@ -1,60 +1,103 @@
 ---
 layout: default
 ---
-<div class="home">
-  <div class="wrapper" >
-  {% if site.theme.page_heading_text %}
-    <h1 class="page-heading" {% if site.theme.navbar_fixed == "yes" %} id="navbar-fixed-top" {% else %} id="navbar-fixed-static" {% endif %}>{{ site.theme.page_heading_text }}</h1>
-    <div class="wrapper arrow-page-heading">
-      <div class="arrow-page-heading"></div>
-    </div>
-  {% else if site.theme.page_heading_img %}
-  <div class="page-heading" {% if site.theme.navbar_fixed == "yes" %} id="navbar-fixed-top" {% else %} id="navbar-fixed-static" {% endif %}><img class="img-responsive" src="{{ "/assets/images/header"  | prepend: site.baseurl | prepend: site.url }}/{{site.theme.page_heading_img}}" alt="{{site.theme.title}}"></div>
-  <div class="wrapper arrow-page-heading">
-      <div class="arrow-page-heading"></div>
-    </div>
-  {% endif %}
-    <ul class="post-list">
-
-      <!-- For paging use the loop: "paginator.posts" -->
-      <!-- For NOT paging use the loop: "site.categories['blog']" -->
-
-{% if site.theme.use_pagination == "yes" %}
-    {% assign index_home = paginator.posts %}
-{% else %}
-    {% assign index_home = site.categories['blog'] %}
+<!-- FakeLoader Home -->
+{% if site.theme.fl_local == "home" %}
+<div class="fakeloader"></div>
 {% endif %}
 
-{% for posting in index_home %}
+<div class="home">
+  <div class="wrapper" >
 
-     <div class="wrapper posts">
+<!-- Adorned Header -->
+
+  {% if site.theme.adorned_header_enable == "yes" %}
+    {% if site.theme.adorned_header_type == "text" %}
+      <h1 class="adorned-header" {% if site.theme.navbar_fixed == "yes" %} id="navbar-fixed-top" {% else %} id="navbar-fixed-static" {% endif %}>{{ site.theme.adorned_header_text }}</h1>
+      <div class="wrapper arrow-adorned-header">
+        <div class="arrow-adorned-header"></div>
+      </div>
+    {% elsif site.theme.adorned_header_type == "img" %}
+      <div class="adorned-header" {% if site.theme.navbar_fixed == "yes" %} id="navbar-fixed-top" {% else %} id="navbar-fixed-static" {% endif %}>
+        <img class="img-responsive" src="{{ "/assets/images/header"  | prepend: site.baseurl | prepend: site.url }}/{{ site.theme.adorned_header_img }}" alt="{{site.theme.title}}"/>
+      </div>
+      <div class="wrapper arrow-adorned-header">
+        <div class="arrow-adorned-header"></div>
+      </div>
+
+
+    {% else %}
+      <h3 style="margin-top: 100px;"> Error variable 'adorned_header_type' in '_config.yml' </h3>
+    {% endif %}
+  {% endif %}
+
+
+
+  <!-- Include AdSense -->
+  {% if site.theme.Include_AdSense == "yes" %}
+    {% include scripts/google_adsense.html %}
+  {% endif %}
+
+  <ul class="post-list">
+    <!-- Variable in Ruby 'assign index_home' -->
+    {% assign index_home = site.categories['blog'] and site.published['true'] %}
+    {% for posting in index_home %}
+    {% if posting.introduction %}
+    <div class="wrapper animate infinite bounce posts" id="scroll">
+      <div class="box-posts">
         <li class="calendar-post-title">
-          <span class="post-meta"><span class="fa fa-calendar"></span>{% include scripts/dates.html %}</span>
+          <span class="post-meta"><span class="fa fa-calendar"></span>
+            {% if site.language == "english" %}
+            <span>{% include date/lang/en_US/en_US.jk %}</span>
+            {% else %}
+            <span>{% include date/lang/pt_PT/pt_PT.jk %}</span>
+            {% endif %}
+          </span>
+
           <h2 {% if site.theme.shake_title_posts == "yes" %} id="hover-links-texts" {% endif %}>
-            {% if site.theme.post_except == "no" %}
             <a  class="post-link" href="{{ posting.url | prepend: site.baseurl | prepend: site.url }}">
               {{ posting.title }}
             </a>
-            {% else %}
-            {{ posting.title }}
-            {% endif %}
           </h2>
+          <hr/>
         </li>
-        {% if site.theme.post_except == "yes" %}
-        <li class="excerpt">
-         <p> {{ posting.content | truncatewords:50 }} </p>
-          <a class="btn btn-primary pull-right" href="{{ posting.url | prepend: site.baseurl | prepend: site.url }}">
+
+         <div class="post-introduction"> {{ posting.introduction }} </div>
+
+          <div class="row">
+            <div class="col-sm-8 post-tags">
+              <i class="fa fa-tag icon-tag"></i>
+              {% for tag in posting.tags %}
+              <label>{{ tag }}</label>
+              {% endfor %}
+            </div>
+            {% if posting.comment == true %}
+              {% if site.theme.disqus_shortname %}
+              <div class="col-sm-4 qtd-comment-index">
+                <i class="fa fa-comment"></i> <a href="{{ posting.url }}#disqus_thread" data-disqus-identifier="{{posting.url}}"></a>
+              </div>
+              {% endif %}
+            {% endif %}
+          </div>
+
+          <a href="{{ posting.url | prepend: site.baseurl | prepend: site.url }}">
             {{ site.theme.str_continue_reading }} <span class="fa fa-chevron-right"></span>
           </a>
-        </li>
-        {% endif %}
+
       </div>
+    </div>
+    {% else %}
+      <h3 style="margin-top: 100px;padding:12%;">
+        <p style="background-color:#D8890E; color: #fff; padding: 3%;">
+          [ WARNING! ] There posting without an introduction. Place introduction at all!
+        </p>
+      </h3>
+    {% endif %}
+    {% endfor %}
+  </ul>
 
-      {% endfor %}
+  </div>
+</div>
 
-    </ul>
-{% if site.theme.use_pagination == "yes" %}
-    {% include html/pagination.html %}
-{% endif %}
-</div>
-</div>
+<!-- Count Disqus -->
+{% include scripts/disqus-count.html %}

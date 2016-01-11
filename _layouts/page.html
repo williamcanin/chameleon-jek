@@ -28,7 +28,7 @@ layout: default
     <div id="wrapper-post-content">
       <div id="stop-parallax-about"></div>
       <section id="post-content">
-      {% if page.cover != "" || page.cover.empty? %}
+      {% if !page.cover[''] %}
         <img class="img-responsive img-cover" src="{{ "/assets/images/pages"  | prepend: site.baseurl | prepend: site.url }}/{{ page.cover }}">
       {% endif %}
         {{ content }}

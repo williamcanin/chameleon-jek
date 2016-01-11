@@ -1,0 +1,86 @@
+<header class="wrapper site-header">
+
+  {% if site.theme.navbar_fixed == "yes" %}
+    <nav class="banner navbar navbar-default navbar-fixed-top" role="banner" {% if page.permalink == "/about/" %} id="color-navbar" {% endif %}>
+  {% else %}
+    <nav class="banner navbar navbar-default navbar-static-top" role="banner" {% if page.permalink == "/about/" %} id="color-navbar" {% endif %}>
+  {% endif %}
+
+  <div class="navbar-header">
+
+    <!-- Insert drawer -->
+
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" role="menu-responsive" >
+      <span class="sr-only">Toggle navigation</span>
+      {% if page.permalink == "/about/" %}
+        <img src="{{ "/assets/images/header/navbar/nav-icon-white.svg"  | prepend: site.baseurl | prepend: site.url }}" alt="">
+      {% else %}
+        <img src="{{ "/assets/images/header/navbar"  | prepend: site.baseurl | prepend: site.url }}//{{ site.theme.navbar_collapse_icon }}" alt="">
+      {% endif %}
+    </button>
+
+    <div class="navbar-brand">
+      <div class="row brand-icons">
+        <div class="col-sm-6 col-brand" >
+          {% if site.theme.gravatar %}
+            <a href="{{ site.url }}">
+              <img class="avatar" src="https://secure.gravatar.com/avatar/{{ site.theme.gravatar }}?s=100" alt=""/>
+            </a>
+          {% else if site.theme.avatar %}
+             <a href="{{ site.baseurl | prepend: site.url }}">
+                <img {% if site.theme.rotate_avatar == "yes" %} id="rotate-avatar" {% endif %}
+                class="avatar" src="{{ "/assets/images/avatar"  | prepend: site.baseurl | prepend: site.url }}/{{ site.theme.avatar }}" alt=""/>
+             </a>
+          {% endif %}
+        </div>
+        <div class="col-sm-6 col-title-icons">
+          <div {% if site.theme.shake_title_navbar == "yes" %} id="hover-links-texts" {% endif %} class="site-title">
+            <a href="{{ site.baseurl | prepend: site.url }}">{{ site.theme.title }}</a>
+          </div>
+          <div class="social-icons"> {% include html/social-icons.html %}  </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav site-nav">
+      {% assign pages_type = site.pages %}
+      {% for page in pages_type %}
+        {% if page.title %}
+          <li {% if site.theme.shake_menus_navbar == "yes" %} id="hover-links-texts" {% endif %}>
+            <a class="page-link" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
+              <span class="fa fa-circle-o"></span>&nbsp;{{ page.title }}
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+
+      <!-- Social for Responsive - In Development -->
+      <!-- <li class="dropdown social-responsive">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-comment"></span> Social<span class="caret"></span></a>
+          <ul class="dropdown-menu wrapper-icons-social">
+            {% include html/social-icons.html %}
+          </ul>
+      </li> -->
+
+      <li class="btn-search-container">
+        <a href="#searchModal" class="btn-search" data-toggle="modal">
+          <span class="fa fa-search"></span>
+        </a>
+      </li>
+
+
+
+    </ul>
+  </div>
+
+
+  </nav>
+</header>
+

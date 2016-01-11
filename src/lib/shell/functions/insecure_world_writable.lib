@@ -1,0 +1,19 @@
+#!/bin/bash
+function _INSECURE_WORLD_WRITABLE(){
+   if [[ "$(id -u)" == 0 ]]; then
+    msg_warning "You cannot apply using 'root(superuser)'"
+    exit 1
+   else
+    msg_header "Correcting insecure writable ..."
+    sudo chmod go-w -R "/usr/local"
+    # # Optional
+    sudo chmod go-w -R "."
+    # sudo chmod go-w -R "$HOME"
+    sudo chmod go-w -R "$HOME/.gems"
+    # sudo chmod go-w -R "/home"
+    # sudo chmod go-w -R "/$(pwd | cut -d'/' -f2)"
+    # #
+    msg_finish "Correcting insecure writable. Done!"
+   fi
+}
+

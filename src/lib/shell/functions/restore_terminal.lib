@@ -1,0 +1,21 @@
+#!/bin/bash
+function _RESTORE_TERMINAL(){
+  if [[ "$(id -u)" == 0 ]]; then
+    msg_warning "You cannot apply using 'root(superuser)'"
+  else
+    if [[ ! -z "$GNOME_TERMINAL" ]]; then
+      TERMINAL="gnome-terminal"
+    elif [[ ! -z "$XFCE4_TERMINAL" ]]; then
+      TERMINAL="xfce4-terminal"
+    elif [[ ! -z "$KONSOLE" ]]; then
+      TERMINAL="konsole"
+    else
+      msg_error "Error variable 'TERMINAL'"
+      exit 1
+    fi
+
+    msg_warning "Restart terminal \"$TERMINAL\". Wait ..."
+    sleep 2
+    nohup pkill $TERMINAL && nohup $TERMINAL -e /bin/bash &
+  fi
+}

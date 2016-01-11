@@ -1,0 +1,38 @@
+<!-- Begin -Insertion date by: Plugin Date Lang Jekyll -->
+<span>
+{% assign m = posting.date | date: "%-m" %}
+  {% case m %}
+    {% when '1' %}января
+    {% when '2' %}февраль
+    {% when '3' %}март
+    {% when '4' %}апреля
+    {% when '5' %}мая
+    {% when '6' %}Июнь
+    {% when '7' %}июль
+    {% when '8' %}август
+    {% when '9' %}Сентябрь
+    {% when '10' %}октября
+    {% when '11' %}ноября
+    {% when '12' %}декабрь
+  {% endcase %}
+{{ posting.date | date: "%d," }}
+{{ posting.date | date: "%-Y" }}
+{% assign m = page.date | date: "%-m" %}
+  {% case m %}
+    {% when '1' %}января
+    {% when '2' %}февраль
+    {% when '3' %}март
+    {% when '4' %}апреля
+    {% when '5' %}мая
+    {% when '6' %}Июнь
+    {% when '7' %}июль
+    {% when '8' %}август
+    {% when '9' %}Сентябрь
+    {% when '10' %}октября
+    {% when '11' %}ноября
+    {% when '12' %}декабрь
+  {% endcase %}
+{{ page.date | date: "%d," }}
+{{ page.date | date: "%-Y" }}
+</span>
+<!-- End - Plugin Date Lang Jekyll -->

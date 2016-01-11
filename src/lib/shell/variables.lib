@@ -1,0 +1,8 @@
+#!/bin/bash
+function _INCLUDE_VARIABLES(){
+DIR_SRC="src/lib"
+HOME_USER="$HOME"
+GNOME_TERMINAL="$(ps -e | grep gnome-terminal | cut -d'?' -f1)"
+XFCE4_TERMINAL="$(ps -e | grep xfce4-terminal | cut -d'?' -f1)"
+KONSOLE="$(ps -e | grep konsole | cut -d'?' -f1)"
+}

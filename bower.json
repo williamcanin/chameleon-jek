@@ -1,18 +1,27 @@
 {
   "name": "Chameleon-Jek",
-  "version": "1.0.4",
+  "version": "1.0.7",
   "authors": [
     "WilliamCanin <william.costa.canin@gmail.com>"
   ],
-  "description": "Blog",
+  "description": "Chameleon Jeky - Blog & Portfolio for Jekyll",
   "main": "assets/javascripts/scripts.min.js",
   "moduleType": [
     "node"
   ],
   "keywords": [
-    "snowcreen"
+    "chameleon",
+    "blog",
+    "jekyll",
+    "portfolio"
   ],
-  "license": "MIT",
+  "licenses": [
+    {
+      "covers": "software",
+      "type": "CC0",
+      "url": "http://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
   "private": true,
   "ignore": [
     "**/.*",
@@ -25,10 +34,12 @@
     "jquery": "~2.1.3",
     "jquery.easing": "~1.3.1",
     "modernizr": "~2.8.3",
-    "animate.scss": "*",
+    "animate.css": "~3.4.0",
     "simple-jekyll-search": "~1.0.3",
-    "bootstrap-sass": "~3.3.3",
+    "bootstrap": "~3.3.5",
     "fonts-raleway": "~0.0.1",
-    "font-awesome-custom": "~1.0.3"
+    "font-awesome-custom": "~1.0.3",
+    "bootstrap-drawer": "~1.0.4",
+    "malihu-custom-scrollbar-plugin": "~3.1.3"
   }
 }

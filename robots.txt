@@ -1,0 +1,7 @@
+# robotstxt.org/
+
+User-agent: *
+Disallow: /assets/javascripts/
+Disallow: /assets/stylesheets/
+Disallow: /assets/images/author/
+Disallow: /assets/images/avatar/

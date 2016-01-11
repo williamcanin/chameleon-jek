@@ -1,0 +1,573 @@
+@import 'config';
+
+@if $theme == 'blue' {
+
+/* Background color */
+$background-color: #fff !default;
+
+/* Primary color */
+$primary-color: #384047 !default;
+$primary-color-hover: #414950 !default;
+
+/* Text color */
+$text-color: #333 !default;
+$text-color-hover: #414950 !default;
+
+/* Title content color */
+$title-color: #384047 !default;
+
+/* Links color */
+$links-color: #1e72f0 !default;
+$links-color-hover: #384047 !default;
+
+/* Links Navbar Color */
+$links-navbar-color: #fff !default;
+$links-navbar-color-hover: #f1f1f1 !default;
+
+/* Background page About - default color */
+$bg-title-about: #384047 !default;
+
+/* adorned-header */
+$adorned-header-background: #384047 !default;
+$adorned-header-color: #fff !default;
+
+/* Background navbar color */
+$bg-navbar-color: #384047 !default;
+
+/* Background navbar (Page About ) */
+$bg-navbar-color-about: #292D31 !default;
+
+/* Button top color */
+$bg-button-top-color: #384047 !default;
+$button-top-color: #fff !default;
+
+/* Color Right and Left body Navbar Static */
+$body-right-left-color: #fff !default;
+
+/* Color menu responsive */
+$fill-nav-icon: #fff !default;
+
+/* Color Bg Search */
+$color-bg-search: lighten(#384047, 15%) !important;
+
+/* Color border box posts */
+$color-border-box-posts: 0.1rem solid lighten( #384047, 60%);
+
+/* Footer background  */
+$footer-background: #384047;
+
+/* Texts footer */
+$footer-text-color: #fff;
+
+/* Mixins Default */
+@include global($background-color,$bg-navbar-color-about,$body-right-left-color,$links-navbar-color-hover,$links-navbar-color,$primary-color-hover,$bg-navbar-color);
+
+/* Utility */
+@include utility($text-color,$title-color);
+
+/* Style customize */
+/* layouts */
+@include post($primary-color);
+@include page($links-navbar-color,$bg-title-about,$primary-color);
+@include markdown($primary-color);
+@include index($color-border-box-posts,$text-color,$adorned-header-color,$adorned-header-background,$primary-color,$title-color,$text-color-hover);
+
+/* Includes */
+@include header($bg-navbar-color,$links-navbar-color,$links-navbar-color-hover,$primary-color);
+@include color-nav-icon($fill-nav-icon);
+@include button-top($bg-button-top-color, $button-top-color);
+@include footer($footer-background,$footer-text-color);
+@include portfolio($primary-color);
+@include search($primary-color,$color-bg-search);
+
+
+} @else if $theme == 'red'{
+
+
+/* Background color */
+$background-color: #fff !default;
+
+/* Primary color */
+$primary-color: #A9181A !default;
+$primary-color-hover: #484848 !default;
+
+/* Text color */
+$text-color: #333 !default;
+$text-color-hover: #BB3D3F !default;
+
+/* Title content color */
+$title-color: #A9181A !default;
+
+/* Links color */
+$links-color: #1e72f0 !default;
+$links-color-hover: #384047 !default;
+
+/* Links Navbar Color */
+$links-navbar-color: #fff !default;
+$links-navbar-color-hover: #fff !default;
+
+/* Background page About - default color */
+$bg-title-about: #A9181A !default;
+
+/* adorned-header */
+$adorned-header-background: #A9181A !default;
+$adorned-header-color: #fff !default;
+
+/* Background navbar color */
+$bg-navbar-color: #A9181A !default;
+
+/* Background navbar (Page About ) */
+$bg-navbar-color-about: #A9181A !default;
+
+/* Button top color */
+$bg-button-top-color: #A9181A !default;
+$button-top-color: #fff !default;
+
+/* Color Right and Left body Navbar Static */
+$body-right-left-color: #fff !default;
+
+/* Color menu responsive */
+$fill-nav-icon: #fff !default;
+
+/* Color Bg Search */
+$color-bg-search: lighten(#A9181A, 10%) !important;
+
+/* Color border box posts */
+$color-border-box-posts: 0.1rem solid lighten( #A9181A, 47%);
+
+/* Footer background  */
+$footer-background: #A9181A;
+
+/* Texts footer */
+$footer-text-color: #fff;
+
+/* Mixins Default */
+@include global($background-color,$bg-navbar-color-about,$body-right-left-color,$links-navbar-color-hover,$links-navbar-color,$primary-color-hover,$bg-navbar-color);
+
+/* Utility */
+@include utility($text-color,$title-color);
+
+/* Style customize */
+/* layouts */
+@include post($primary-color);
+@include page($links-navbar-color,$bg-title-about,$primary-color);
+@include markdown($primary-color);
+@include index($color-border-box-posts,$text-color,$adorned-header-color,$adorned-header-background,$primary-color,$title-color,$text-color-hover);
+
+/* Includes */
+@include header($bg-navbar-color,$links-navbar-color,$links-navbar-color-hover,$primary-color);
+@include color-nav-icon($fill-nav-icon);
+@include button-top($bg-button-top-color, $button-top-color);
+@include footer($footer-background,$footer-text-color);
+@include portfolio($primary-color);
+@include search($primary-color,$color-bg-search);
+
+
+} @else if $theme == 'pink' {
+
+    /* Background color */
+$background-color: #fff !default;
+
+/* Primary color */
+$primary-color: #BF589D !default;
+$primary-color-hover: #484848 !default;
+
+/* Text color */
+$text-color: #333 !default;
+$text-color-hover: #BF589D !default;
+
+/* Title content color */
+$title-color: #E046AD !default;
+
+/* Links color */
+$links-color: #1e72f0 !default;
+$links-color-hover: #384047 !default;
+
+/* Links Navbar Color */
+$links-navbar-color: #fff !default;
+$links-navbar-color-hover: #fff !default;
+
+/* Background page About - default color */
+$bg-title-about: #E046AD !default;
+
+/* adorned-header */
+$adorned-header-background: #E046AD !default;
+$adorned-header-color: #fff !default;
+
+/* Background navbar color */
+$bg-navbar-color: #E046AD !default;
+
+/* Background navbar (Page About ) */
+$bg-navbar-color-about: #E046AD !default;
+
+/* Button top color */
+$bg-button-top-color: #E046AD !default;
+$button-top-color: #fff !default;
+
+/* Color Right and Left body Navbar Static */
+$body-right-left-color: #fff !default;
+
+/* Color menu responsive */
+$fill-nav-icon: #fff !default;
+
+/* Color Bg Search */
+$color-bg-search: lighten(#E046AD, 15%) !important;
+
+/* Color border box posts */
+$color-border-box-posts: 0.1rem solid lighten( #E046AD, 32%);
+
+/* Footer background  */
+$footer-background: #E046AD;
+
+/* Texts footer */
+$footer-text-color: #fff;
+
+/* Mixins Default */
+@include global($background-color,$bg-navbar-color-about,$body-right-left-color,$links-navbar-color-hover,$links-navbar-color,$primary-color-hover,$bg-navbar-color);
+
+/* Utility */
+@include utility($text-color,$title-color);
+
+/* Style customize */
+/* layouts */
+@include post($primary-color);
+@include page($links-navbar-color,$bg-title-about,$primary-color);
+@include markdown($primary-color);
+@include index($color-border-box-posts,$text-color,$adorned-header-color,$adorned-header-background,$primary-color,$title-color,$text-color-hover);
+
+/* Includes */
+@include header($bg-navbar-color,$links-navbar-color,$links-navbar-color-hover,$primary-color);
+@include color-nav-icon($fill-nav-icon);
+@include button-top($bg-button-top-color, $button-top-color);
+@include footer($footer-background,$footer-text-color);
+@include portfolio($primary-color);
+@include search($primary-color,$color-bg-search);
+
+} @else if $theme == 'black' {
+
+    /* Background color */
+$background-color: #fff !default;
+
+/* Primary color */
+$primary-color: #000 !default;
+$primary-color-hover: #484848 !default;
+
+/* Text color */
+$text-color: #333 !default;
+$text-color-hover: #1D1D1D !default;
+
+/* Title content color */
+$title-color: #000 !default;
+
+/* Links color */
+$links-color: #1e72f0 !default;
+$links-color-hover: #384047 !default;
+
+/* Links Navbar Color */
+$links-navbar-color: #fff !default;
+$links-navbar-color-hover: #f1f1f1 !default;
+
+/* Background page About - default color */
+$bg-title-about: #141414 !default;
+
+/* adorned-header */
+$adorned-header-background: #000 !default;
+$adorned-header-color: #fff !default;
+
+/* Background navbar color */
+$bg-navbar-color: #000 !default;
+
+/* Background navbar (Page About ) */
+$bg-navbar-color-about: #000 !default;
+
+/* Button top color */
+$bg-button-top-color: #000 !default;
+$button-top-color: #fff !default;
+
+/* Color Right and Left body Navbar Static */
+$body-right-left-color: #fff !default;
+
+/* Color menu responsive */
+$fill-nav-icon: #fff !default;
+
+/* Color Bg Search */
+$color-bg-search: lighten(#000, 8%) !important;
+
+/* Color border box posts */
+$color-border-box-posts: 0.1rem solid lighten( #000, 85%);
+
+/* Footer background  */
+$footer-background: #000;
+
+/* Texts footer */
+$footer-text-color: #fff;
+
+/* Mixins Default */
+@include global($background-color,$bg-navbar-color-about,$body-right-left-color,$links-navbar-color-hover,$links-navbar-color,$primary-color-hover,$bg-navbar-color);
+
+/* Utility */
+@include utility($text-color,$title-color);
+
+/* Style customize */
+/* layouts */
+@include post($primary-color);
+@include page($links-navbar-color,$bg-title-about,$primary-color);
+@include markdown($primary-color);
+@include index($color-border-box-posts,$text-color,$adorned-header-color,$adorned-header-background,$primary-color,$title-color,$text-color-hover);
+
+/* Includes */
+@include header($bg-navbar-color,$links-navbar-color,$links-navbar-color-hover,$primary-color);
+@include color-nav-icon($fill-nav-icon);
+@include button-top($bg-button-top-color, $button-top-color);
+@include footer($footer-background,$footer-text-color);
+@include portfolio($primary-color);
+@include search($primary-color,$color-bg-search);
+
+} @else if $theme == 'green' {
+
+       /* Background color */
+$background-color: #fff !default;
+
+/* Primary color */
+$primary-color: #2D4F25 !default;
+$primary-color-hover: #484848 !default;
+
+/* Text color */
+$text-color: #333 !default;
+$text-color-hover: #4D7544 !default;
+
+/* Title content color */
+$title-color: #2D4F25 !default;
+
+/* Links color */
+$links-color: #1e72f0 !default;
+$links-color-hover: #384047 !default;
+
+/* Links Navbar Color */
+$links-navbar-color: #fff !default;
+$links-navbar-color-hover: #f1f1f1 !default;
+
+/* Background page About - default color */
+$bg-title-about: #2D4F25 !default;
+
+/* adorned-header */
+$adorned-header-background: #2D4F25 !default;
+$adorned-header-color: #fff !default;
+
+/* Background navbar color */
+$bg-navbar-color: #2D4F25 !default;
+
+/* Background navbar (Page About ) */
+$bg-navbar-color-about: #1C3017 !default;
+
+/* Button top color */
+$bg-button-top-color: #2D4F25 !default;
+$button-top-color: #fff !default;
+
+/* Color Right and Left body Navbar Static */
+$body-right-left-color: #fff !default;
+
+/* Color menu responsive */
+$fill-nav-icon: #fff !default;
+
+/* Color Bg Search */
+$color-bg-search: lighten(#2D4F25, 15%) !important;
+
+/* Color border box posts */
+$color-border-box-posts: 0.1rem solid lighten( #2D4F25, 60%);
+
+/* Footer background  */
+$footer-background: #2D4F25;
+
+/* Texts footer */
+$footer-text-color: #fff;
+
+/* Mixins Default */
+@include global($background-color,$bg-navbar-color-about,$body-right-left-color,$links-navbar-color-hover,$links-navbar-color,$primary-color-hover,$bg-navbar-color);
+
+/* Utility */
+@include utility($text-color,$title-color);
+
+/* Style customize */
+/* layouts */
+@include post($primary-color);
+@include page($links-navbar-color,$bg-title-about,$primary-color);
+@include markdown($primary-color);
+@include index($color-border-box-posts,$text-color,$adorned-header-color,$adorned-header-background,$primary-color,$title-color,$text-color-hover);
+
+/* Includes */
+@include header($bg-navbar-color,$links-navbar-color,$links-navbar-color-hover,$primary-color);
+@include color-nav-icon($fill-nav-icon);
+@include button-top($bg-button-top-color, $button-top-color);
+@include footer($footer-background,$footer-text-color);
+@include portfolio($primary-color);
+@include search($primary-color,$color-bg-search);
+
+} @else if $theme == 'orange' {
+
+/* Background color */
+$background-color: #fff !default;
+
+/* Primary color */
+$primary-color: #BD3F15 !default;
+$primary-color-hover: #484848 !default;
+
+/* Text color */
+$text-color: #333 !default;
+$text-color-hover: #DC5C32 !default;
+
+/* Title content color */
+$title-color: #BD3F15 !default;
+
+/* Links color */
+$links-color: #1e72f0 !default;
+$links-color-hover: #384047 !default;
+
+/* Links Navbar Color */
+$links-navbar-color: #fff !default;
+$links-navbar-color-hover: #f1f1f1 !default;
+
+/* Background page About - default color */
+$bg-title-about: #BD3F15 !default;
+
+/* adorned-header */
+$adorned-header-background: #BD3F15 !default;
+$adorned-header-color: #fff !default;
+
+/* Background navbar color */
+$bg-navbar-color: #BD3F15 !default;
+
+/* Background navbar (Page About ) */
+$bg-navbar-color-about: #A83611 !default;
+
+/* Button top color */
+$bg-button-top-color: #BD3F15 !default;
+$button-top-color: #fff !default;
+
+/* Color Right and Left body Navbar Static */
+$body-right-left-color: #fff !default;
+
+/* Color menu responsive */
+$fill-nav-icon: #fff !default;
+
+/* Color Bg Search */
+$color-bg-search: lighten(#BD3F15, 15%) !important;
+
+/* Color border box posts */
+$color-border-box-posts: 0.1rem solid lighten( #BD3F15, 47%);
+
+/* Footer background  */
+$footer-background: #BD3F15;
+
+/* Texts footer */
+$footer-text-color: #fff;
+
+/* Mixins Default */
+@include global($background-color,$bg-navbar-color-about,$body-right-left-color,$links-navbar-color-hover,$links-navbar-color,$primary-color-hover,$bg-navbar-color);
+
+/* Utility */
+@include utility($text-color,$title-color);
+
+/* Style customize */
+/* layouts */
+@include post($primary-color);
+@include page($links-navbar-color,$bg-title-about,$primary-color);
+@include markdown($primary-color);
+@include index($color-border-box-posts,$text-color,$adorned-header-color,$adorned-header-background,$primary-color,$title-color,$text-color-hover);
+
+/* Includes */
+@include header($bg-navbar-color,$links-navbar-color,$links-navbar-color-hover,$primary-color);
+@include color-nav-icon($fill-nav-icon);
+@include button-top($bg-button-top-color, $button-top-color);
+@include footer($footer-background,$footer-text-color);
+@include portfolio($primary-color);
+@include search($primary-color,$color-bg-search);
+
+} @else if $theme == 'light' {
+
+/* Background color */
+$background-color: #fff !default;
+
+/* Primary color */
+$primary-color: #333 !default;
+$primary-color-hover: #484848 !default;
+
+/* Text color */
+$text-color: #333 !default;
+$text-color-hover: #484848 !default;
+
+/* Title content color */
+$title-color: #424242 !default;
+
+/* Links color */
+$links-color: #1e72f0 !default;
+$links-color-hover: #fff !default;
+
+/* Links Navbar Color */
+$links-navbar-color: #424242 !default;
+$links-navbar-color-hover: #484848 !default;
+
+/* Background page About - default color */
+$bg-title-about: #333 !default;
+
+/* adorned-header */
+$adorned-header-background: #F1F1F1 !default;
+$adorned-header-color: #424242 !default;
+
+/* Background navbar color */
+$bg-navbar-color: #F1F1F1 !default;
+
+/* Background navbar (Page About ) */
+$bg-navbar-color-about: #333 !default;
+
+/* Button top color */
+$bg-button-top-color: #505050 !default;
+$button-top-color: #fff !default;
+
+/* Color Right and Left body Navbar Static */
+$body-right-left-color: #fff !default;
+
+/* Color menu responsive */
+$fill-nav-icon: #333 !default;
+
+/* Color Bg Search */
+$color-bg-search: lighten(#424242, 15%) !important;
+
+/* Color border box posts */
+$color-border-box-posts: 0.1rem solid lighten( #505050, 55%);
+
+/* Footer background  */
+$footer-background: #ECECEC;
+
+/* Texts footer */
+$footer-text-color: #505050;
+
+
+/* Mixins Default */
+@include global($background-color,$bg-navbar-color-about,$body-right-left-color,$links-navbar-color-hover,$links-navbar-color,$primary-color-hover,$bg-navbar-color);
+
+/* Utility */
+@include utility($text-color,$title-color);
+
+/* Style customize */
+/* layouts */
+@include post($primary-color);
+@include page($links-navbar-color,$bg-title-about,$primary-color);
+@include markdown($primary-color);
+@include index($color-border-box-posts,$text-color,$adorned-header-color,$adorned-header-background,$primary-color,$title-color,$text-color-hover);
+
+/* Includes */
+@include header($bg-navbar-color,$links-navbar-color,$links-navbar-color-hover,$primary-color);
+@include color-nav-icon($fill-nav-icon);
+@include button-top($bg-button-top-color, $button-top-color);
+@include footer($footer-background,$footer-text-color);
+@include portfolio($primary-color);
+@include search($primary-color,$color-bg-search);
+
+}
+
+/* correcting error */
+// .row{
+// 	margin-left: 0 !important;
+// 	margin-right: 0 !important;
+// }

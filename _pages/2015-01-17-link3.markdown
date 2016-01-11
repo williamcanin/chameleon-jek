@@ -1,0 +1,43 @@
+---
+layout: page
+title: About
+date: 2015-01-17 00:00:01
+comment: false
+published: true
+cover: page-cover-chameleon.png
+permalink: /about/
+categories: about
+---
+
+# **Chameleon Jek**, the blog & portfolio chamaleon !
+
+
+**Chameleon Jek** is the theme for [Jekyll](http://jekyllrb.com) built especially for those who want to have a blog and a portfolio quickly, lightness and greater ability to customize of theme. A true chameleon!
+
+**Chameleon Jek** use [Twitter Bootstrap](http://getbootstrap.com), that gives you greater practicalities to open your page in a mobile device.
+
+Using tools like GulpJS and Bower for their management and creating dependencies, development practitioners will find it easier to manipulate the **Chameleon Jek**.
+
+The **Chameleon Jak** perform Deploy source code and compiled project (gh-pages folder) to GitHub. To do this, just use the "$ rake help" and view the available commands such as:
+
+* Perform deploy to branch "gh-pages"
+* Perform deploy to master branch.
+* Creating header posts (blog / portfolio) and pages.
+* Start Server (Browser Sync - Livereload) for development.
+* Compile SASS file, Images, Javascripts.
+
+
+> You can use the **Chameleon Jek** provided you agree to the license: [![CC0](https://licensebuttons.net/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
+
+
+<a href="{{ prepend: site.baseurl | prepend: site.url }}/sample-post.html">See an example of post</a>
+
+# Issues
+
+Be sure to get in touch.
+
+Make their views on the Chameleon Jek, Issue on:
+
+## [Leave your suggestions, compliments, criticisms or whatever suits you.](https://github.com/williamcanin/chameleon-jek/issues/1)
+
+This project has the copyright to {[William C. Canin](http://github.com/williamcanin)} - (c) copyright 2015 - 2016
