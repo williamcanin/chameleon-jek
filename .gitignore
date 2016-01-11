@@ -2,22 +2,25 @@
 /**/.DS_Store
 /**/*.log
 /**/*.lock
-.publish
 .ftppass
-assets/javascripts/*.min.js
+assets/javascripts/*.js
+assets/stylesheets/*.css
 *.tar.gz
 *.zip
 /**/*.*~
+
 # Default gitignore folders
-.tmp
-.sass-cache
-_build
-_site
 node_modules
 .git
 .bundle
+_site
+.publish
+.sass-cache
+_build
 gh-pages
+.tmp
 .grunt
+
 # Default gitignore development
 administration
 assets/vendor

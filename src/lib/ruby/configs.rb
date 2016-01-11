@@ -30,12 +30,12 @@ class Main < Variables
 
   # Configuration theme
   def theme_confs
-    color = ENV["COLOR"] || "green"
-    # if color != 'green' or color != 'red' or color != 'blue' or color != 'black' or
+    color = ENV["COLOR"]
+    # if color != 'green' or color != 'red' or color != 'blue' or color != 'dark' or
     #    color != 'orange' or color != 'pink' or color != 'light'
     #     puts
     #     puts ("\"Chameleon Jeky\" does not support this theme color.")
-    #     puts ("Use: color={ green | blue | black | red | orange | pink | light }")
+    #     puts ("Use: color={ green | blue | dark | red | orange | pink | light }")
     #     abort("rake aborted!")
     # end
     if Dir.exists?(CONFIG['theme_dir'])
@@ -51,7 +51,7 @@ class Main < Variables
        elsif color == 'pink'
          system('sed -i \'s|^  fl_bgColor: .*|  fl_bgColor: "#BF589D"|g\' _config.yml')
          system('sed -i \'s|^  fl_spinnerColor: .*|  fl_spinnerColor: "#fff"|g\' _config.yml')
-       elsif color == 'black'
+       elsif color == 'dark'
          system('sed -i \'s|^  fl_bgColor: .*|  fl_bgColor: "#000"|g\' _config.yml')
          system('sed -i \'s|^  fl_spinnerColor: .*|  fl_spinnerColor: "#fff"|g\' _config.yml')
        elsif color == 'orange'

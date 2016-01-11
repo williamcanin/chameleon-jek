@@ -59,6 +59,7 @@ case "$1" in
     else
       if [[ "$CONFIG" != "true" ]]; then
         _INCLUDE_VARIABLES
+        _CREATE_BOWERRC
         _CONFIG_BASHRC
         _CONFIG_GEMRC
         _INSECURE_WORLD_WRITABLE

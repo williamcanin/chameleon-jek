@@ -30,7 +30,7 @@ layout: default
          <div class="post-number">{{ site.theme.str_article }}: {{ page.article }}</div>
         </div>
         <div class="col-sm-4">
-        {% if page.comment == true %}
+        {% if site.theme.disqus_shortname and page.comment == true %}
           <div id="parallax">
             <div class="comment-post">
               <a href="#comments"><span class="fa fa-comments-o animated infinite wobble"></span></a>

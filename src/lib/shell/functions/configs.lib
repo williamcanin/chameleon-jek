@@ -10,6 +10,14 @@ function _CLEAN(){
   fi
 }
 
+function _CREATE_BOWERRC(){
+cat <<EOF > .bowerrc
+{
+"directory": "./assets/vendor"
+}
+EOF
+}
+
 function _CONFIG_BASHRC(){
   if [[ "$(id -u)" == 0 ]]; then
     msg_warning "You cannot apply using 'root(superuser)'"

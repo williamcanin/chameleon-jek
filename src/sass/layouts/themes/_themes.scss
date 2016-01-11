@@ -59,6 +59,9 @@ $footer-background: #384047;
 /* Texts footer */
 $footer-text-color: #fff;
 
+/* Portfolio Capitan Bg */
+$portfolio-caption-bg: rgba(56,64,71,.5);
+
 /* Mixins Default */
 @include global($background-color,$bg-navbar-color-about,$body-right-left-color,$links-navbar-color-hover,$links-navbar-color,$primary-color-hover,$bg-navbar-color);
 
@@ -77,7 +80,7 @@ $footer-text-color: #fff;
 @include color-nav-icon($fill-nav-icon);
 @include button-top($bg-button-top-color, $button-top-color);
 @include footer($footer-background,$footer-text-color);
-@include portfolio($primary-color);
+@include portfolio($primary-color,$portfolio-caption-bg);
 @include search($primary-color,$color-bg-search);
 
 
@@ -141,6 +144,9 @@ $footer-background: #A9181A;
 /* Texts footer */
 $footer-text-color: #fff;
 
+/* Portfolio Capitan Bg */
+$portfolio-caption-bg: rgba(168,24,26,.5);
+
 /* Mixins Default */
 @include global($background-color,$bg-navbar-color-about,$body-right-left-color,$links-navbar-color-hover,$links-navbar-color,$primary-color-hover,$bg-navbar-color);
 
@@ -159,7 +165,7 @@ $footer-text-color: #fff;
 @include color-nav-icon($fill-nav-icon);
 @include button-top($bg-button-top-color, $button-top-color);
 @include footer($footer-background,$footer-text-color);
-@include portfolio($primary-color);
+@include portfolio($primary-color,$portfolio-caption-bg);
 @include search($primary-color,$color-bg-search);
 
 
@@ -211,7 +217,7 @@ $body-right-left-color: #fff !default;
 $fill-nav-icon: #fff !default;
 
 /* Color Bg Search */
-$color-bg-search: lighten(#E046AD, 15%) !important;
+$color-bg-search: lighten(#E046AD, 12%) !important;
 
 /* Color border box posts */
 $color-border-box-posts: 0.1rem solid lighten( #E046AD, 32%);
@@ -221,6 +227,9 @@ $footer-background: #E046AD;
 
 /* Texts footer */
 $footer-text-color: #fff;
+
+/* Portfolio Capitan Bg */
+$portfolio-caption-bg: rgba(224,70,173,.5);
 
 /* Mixins Default */
 @include global($background-color,$bg-navbar-color-about,$body-right-left-color,$links-navbar-color-hover,$links-navbar-color,$primary-color-hover,$bg-navbar-color);
@@ -240,10 +249,10 @@ $footer-text-color: #fff;
 @include color-nav-icon($fill-nav-icon);
 @include button-top($bg-button-top-color, $button-top-color);
 @include footer($footer-background,$footer-text-color);
-@include portfolio($primary-color);
+@include portfolio($primary-color,$portfolio-caption-bg);
 @include search($primary-color,$color-bg-search);
 
-} @else if $theme == 'black' {
+} @else if $theme == 'dark' {
 
     /* Background color */
 $background-color: #fff !default;
@@ -302,6 +311,9 @@ $footer-background: #000;
 /* Texts footer */
 $footer-text-color: #fff;
 
+/* Portfolio Capitan Bg */
+$portfolio-caption-bg: rgba(0,0,0,.6);
+
 /* Mixins Default */
 @include global($background-color,$bg-navbar-color-about,$body-right-left-color,$links-navbar-color-hover,$links-navbar-color,$primary-color-hover,$bg-navbar-color);
 
@@ -320,7 +332,7 @@ $footer-text-color: #fff;
 @include color-nav-icon($fill-nav-icon);
 @include button-top($bg-button-top-color, $button-top-color);
 @include footer($footer-background,$footer-text-color);
-@include portfolio($primary-color);
+@include portfolio($primary-color,$portfolio-caption-bg);
 @include search($primary-color,$color-bg-search);
 
 } @else if $theme == 'green' {
@@ -382,6 +394,9 @@ $footer-background: #2D4F25;
 /* Texts footer */
 $footer-text-color: #fff;
 
+/* Portfolio Capitan Bg */
+$portfolio-caption-bg: rgba(45,79,37,.5);
+
 /* Mixins Default */
 @include global($background-color,$bg-navbar-color-about,$body-right-left-color,$links-navbar-color-hover,$links-navbar-color,$primary-color-hover,$bg-navbar-color);
 
@@ -400,7 +415,7 @@ $footer-text-color: #fff;
 @include color-nav-icon($fill-nav-icon);
 @include button-top($bg-button-top-color, $button-top-color);
 @include footer($footer-background,$footer-text-color);
-@include portfolio($primary-color);
+@include portfolio($primary-color,$portfolio-caption-bg);
 @include search($primary-color,$color-bg-search);
 
 } @else if $theme == 'orange' {
@@ -462,6 +477,9 @@ $footer-background: #BD3F15;
 /* Texts footer */
 $footer-text-color: #fff;
 
+/* Portfolio Capitan Bg */
+$portfolio-caption-bg: rgba(189,63,21,.5);
+
 /* Mixins Default */
 @include global($background-color,$bg-navbar-color-about,$body-right-left-color,$links-navbar-color-hover,$links-navbar-color,$primary-color-hover,$bg-navbar-color);
 
@@ -480,7 +498,7 @@ $footer-text-color: #fff;
 @include color-nav-icon($fill-nav-icon);
 @include button-top($bg-button-top-color, $button-top-color);
 @include footer($footer-background,$footer-text-color);
-@include portfolio($primary-color);
+@include portfolio($primary-color,$portfolio-caption-bg);
 @include search($primary-color,$color-bg-search);
 
 } @else if $theme == 'light' {
@@ -542,6 +560,9 @@ $footer-background: #ECECEC;
 /* Texts footer */
 $footer-text-color: #505050;
 
+/* Portfolio Capitan Bg */
+$portfolio-caption-bg: rgba(66,66,66,.5);
+
 
 /* Mixins Default */
 @include global($background-color,$bg-navbar-color-about,$body-right-left-color,$links-navbar-color-hover,$links-navbar-color,$primary-color-hover,$bg-navbar-color);
@@ -561,7 +582,7 @@ $footer-text-color: #505050;
 @include color-nav-icon($fill-nav-icon);
 @include button-top($bg-button-top-color, $button-top-color);
 @include footer($footer-background,$footer-text-color);
-@include portfolio($primary-color);
+@include portfolio($primary-color,$portfolio-caption-bg);
 @include search($primary-color,$color-bg-search);
 
 }

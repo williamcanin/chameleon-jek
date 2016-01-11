@@ -46,7 +46,7 @@ theme:
   fl_local: "all" # { all }
   fl_timeToHide: "1500" # milliseconds, default 1500
   # Default fl_bgColor: #2D4F25
-  fl_bgColor: "#BF589D"
+  fl_bgColor: "#2D4F25"
   fl_spinner: "spinner4" # Default, spinner4
   fl_spinnerColor: "#fff"
   fl_hideNav: "yes" # Default yes
