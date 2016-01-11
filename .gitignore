@@ -1,4 +1,6 @@
 .sass-cache
+_site
+METAS.txt
 _build
 _includes
 _gist_cache
