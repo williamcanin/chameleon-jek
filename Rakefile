@@ -17,7 +17,7 @@ end
 # git init
 # git remote add [<options>] <name> <url>
 # # Dependences plugin: gulp-gh-pages
-desc "Deploy for GitHub"
+desc "Deploy for GitHub - Usage: rake help"
 namespace :deploy do
   task :ghpages => [:load_config_yml] do
     config = Main.new
@@ -34,16 +34,44 @@ namespace :deploy do
   end
 end
 
-
 # Task change theme
-# Usage: rake theme color={ light | blue | pink | black | green | orange }
-desc "Begin change theme - Usage: rake help"
-task :theme do
-  confs = Main.new
-  confs.theme_confs
-end # Task change theme
+desc "Change color theme"
+namespace :theme do
+  namespace :color do
+    task :green  do
+      config = Main.new
+      config.theme_confs("green")
+    end
+    task :blue  do
+      config = Main.new
+      config.theme_confs("blue")
+    end
+    task :dark  do
+      config = Main.new
+      config.theme_confs("dark")
+    end
+    task :red  do
+      config = Main.new
+      config.theme_confs("red")
+    end
+    task :orange  do
+      config = Main.new
+      config.theme_confs("orange")
+    end
+    task :light  do
+      config = Main.new
+      config.theme_confs("light")
+    end
+    task :pink  do
+      config = Main.new
+      config.theme_confs("pink")
+    end
+  end
+end
+# Task change theme
 
-#"Usage: rake post TITLE='' AUTHOR='' ARTICLE='#number' PUBLISHED={true|false} COMMENT={true|false} TAGS=[tag1,tag2]
+
+#Task create header Post
 desc "Create new post (Blog|Portfolio) - Usage: rake help"
 namespace :post do
   task :blog do
@@ -56,8 +84,8 @@ namespace :post do
   end
 end
 
-#"Usage: rake page CATEGORIES={ normal | projects | about }"
-desc "Create new page Collapse - Usage: rake help"
+#Task create header Page
+desc "Create new page - Usage: rake help"
 namespace :page do
   task :normal do
     confs = Main.new
@@ -74,7 +102,7 @@ namespace :page do
 end
 
  # Commands Gulp in Rakefile
-desc "Commands Gulp"
+desc "Commands Gulp - Usage: rake help"
 namespace :gulp do
   task :dev do
     confs = Main.new
@@ -96,6 +124,12 @@ namespace :gulp do
     confs = Main.new
     confs.gulp("imageminify")
   end
+end
+
+desc "Help"
+task :help  do
+  confs = Main.new
+  confs.help
 end
 
 # Default configuration

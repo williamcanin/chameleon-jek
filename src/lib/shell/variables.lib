@@ -1,5 +1,6 @@
 #!/bin/bash
 function _INCLUDE_VARIABLES(){
+PWD=$(pwd)
 DIR_SRC="src/lib"
 HOME_USER="$HOME"
 GNOME_TERMINAL="$(ps -e | grep gnome-terminal | cut -d'?' -f1)"

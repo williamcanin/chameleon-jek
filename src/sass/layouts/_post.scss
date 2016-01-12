@@ -7,6 +7,14 @@
   .wrapper.post {
     padding: 7% 15% 7%;
 
+    blockquote{
+      border: 0.1rem solid rgba(45, 79, 37,0.4);
+      border-left: 0.7rem solid rgba(45, 79, 37,0.4);
+      background-color: #f1f1f1;
+      border-radius: 5px;
+      margin: 20px 0px;
+    }
+
     @media only screen and (min-width:768px) and (max-width:1024px) {
       padding: 5% 9% 9%
     }
@@ -14,8 +22,13 @@
       padding: 16% 7% 7%
     }
 
-    img.img-responsive {
-    margin-bottom: 40px;
+    img.banner-post {
+      margin-bottom: 40px;
+      border: 0.5rem solid #D3D3D3;
+      border-radius: 0px;
+      border-top: 0.1rem solid lightgray;
+      border-bottom: 0.1rem solid #D3D3D3;
+      padding: 2%;
     }
 
     header.post-header {
@@ -31,31 +44,44 @@
         text-transform: uppercase;
       }
 
+// border: 0.5rem solid #D3D3D3;
+// border-radius: 10px;
+// border-top: 0.1rem solid lightgray;
+// border-bottom: 0.1rem solid #D3D3D3;
+// padding: 2%;
+
+
       #parallax {
         .comment-post {
-          float: right;
           @media only screen and (min-width:320px) and (max-width:670px) {
             float: none;
             text-align: center;
             margin-top: 10px;
           }
-          font-family: 'Raleway', arial, sans-serif;
-          font-weight: 400;
-          font-style: normal;
-          color: $primary-color;
-          top: 0;
-          text-transform: uppercase;
+           top: 0;
+           text-align: center;
+
+          i{
+            margin-right: 8px;
+          }
 
           a{
-              width: 20px;
-              height: 20px;
+            font-family: 'Raleway', arial, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 16px;
+            text-decoration: underline;
+            color: $primary-color;
+            // width: 20px;
+            // height: 20px;
 
-              &:focus{
+              &:focus,&:visited{
                 outline: 0;
               }
-              &:visited {
-                outline: 0;
+              &:hover {
+                text-decoration: none;
               }
+
           }
 
           .fa.fa-comments-o {
@@ -79,7 +105,8 @@
         font-weight: 400;
         font-style: normal;
         color: $primary-color;
-        text-transform: uppercase
+        text-transform: uppercase;
+        text-align: center;
       }
     }
     article.post-content {
@@ -96,42 +123,10 @@
         color: $primary-color;
       }
 
-      .wrapper.edit-this-post {
-        $width-all: 200px;
-        @media only screen and (min-width:320px) and (max-width:360px) {
-          width: $width-all;
-          height: auto;
-          margin: 0 auto;
-          clear: both;
-        }
-        a.edit-this-post {
-          margin-top: 10px;
-          @media only screen and (min-width:320px) and (max-width:360px) {
-            width: 130px;
-            margin-left: ($width-all / 2) - (130px/2);
-          }
-          @media only screen and (min-width:480px) {
-              float: right;
-          }
-          background-color: #DF5151;
-          padding: 10px 15px;
-          color: #fff;
-          text-decoration: none;
-          &:hover {
-            background-color: #DF6666;
-            outline: 0;
-            text-decoration: none;
-          }
-          &:focus {
-            outline: 0;
-          }
-          &:visited {
-            outline: 0;
-          }
-          i.fa.fa-github {
-            margin-right: 4px;
-            color: #fff;
-          }
+      .edit-this-post {
+        outline: none;
+        &:hover,&:active,&:focus{
+          outline: none;
         }
       }
       @extend %font-content;
@@ -211,6 +206,10 @@
 
       .row.wrapper-author {
         margin-top:  80px;
+        padding: 2%;
+        background-color: $primary-color;
+        color: #fff;
+        // box-shadow: 5px 5px 5px solid #000;
         .col-sm-2 {
           .image-author{
             margin-top: 40px;
@@ -263,6 +262,13 @@
               font-weight: 300;
               font-style: normal;
               font-size: 22px;
+              a{
+                color: #fff;
+                text-decoration: underline;
+                &:hover{
+                  text-decoration: none;
+                }
+              }
           }
         }
       }
@@ -284,7 +290,6 @@
           color: $primary-color;
         }
       }
-
 
     }
   }

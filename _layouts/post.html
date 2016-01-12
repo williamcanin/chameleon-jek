@@ -6,16 +6,14 @@ layout: default
   <div class="wrapper post" {% if site.theme.navbar_fixed == "yes" %} id="navbar-fixed-top" {% endif %} >
 
   {% if page.cover != nil %}
-
-    <img class="img-responsive" src="{{ "/assets/images/covers"  | prepend: site.baseurl | prepend: site.url }}/{{ page.cover }}">
-
+    <img class="img-responsive banner-post" src="{{ "/assets/images/covers"  | prepend: site.baseurl | prepend: site.url }}/{{ page.cover }}">
   {% endif %}
 
     <header class="post-header">
 
      <article class="article">
+     <h1 class="post-title">{{ page.title }}</h1>
       <div class="row">
-
         <div class="col-sm-4">
           <p class="post-meta">
             <span class="fa fa-calendar"></span>
@@ -33,14 +31,13 @@ layout: default
         {% if site.theme.disqus_shortname and page.comment == true %}
           <div id="parallax">
             <div class="comment-post">
-              <a href="#comments"><span class="fa fa-comments-o animated infinite wobble"></span></a>
-              {{ site.theme.str_icon_comment_post }}
+              <i class="fa fa-comments-o animated infinite wobble"></i><a href="#comments" data-disqus-identifier="{{page.url}}"></a>
             </div>
           </div>
         {% endif %}
         </div>
       </div>
-      <h1 class="post-title">{{ page.title }}</h1>
+
       </article>
     </header>
 
@@ -55,9 +52,7 @@ layout: default
 
       {{ content }}
 
-<div class="wrapper edit-this-post">
-  <a class="edit-this-post" href="{{ site.theme.directory_posts_github }}/{{ page.filepath }}" title="Github" target="_blank"><i class="fa fa-github"></i>{{site.theme.str_edit_this_post}}</a>
-</div>
+  <a href="{{ site.theme.directory_posts_github }}/{{ page.filepath }}" class="btn btn-default edit-this-post pull-right" title="Github" target="_blank"><i style="font-size: 25px;" class="fa fa-github"></i>&nbsp;&nbsp;{{site.theme.str_edit_this_post}}</a>
 
   {% if site.theme.post_sharing == "yes" %}
     {% include html/shares.html %}
@@ -95,6 +90,7 @@ layout: default
         {{ site.theme.str_comments }}
       </h1>
     {% endif %}
+    <!-- Disqus Comments -->
     {% include scripts/disqus-comments.html %}
   {% elsif page.comment == false %}
     <h1 class="nocomments"><span class="fa fa-comment"></span><p> {{site.theme.str_nocomment}}</p></h1>
@@ -103,3 +99,6 @@ layout: default
   </article>
   </div>
 </div>
+
+<!-- Count Disqus -->
+{% include scripts/disqus-count.html %}

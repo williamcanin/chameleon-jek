@@ -1,9 +1,6 @@
 <!-- Portfolio Grid Section -->
 <div class="wrapper portfolio">
     <div class="row">
-        {% if site.theme.portfolio_description %}
-        <div class="call-out-portfolio">{{ site.theme.portfolio_description }}</div>
-        {% endif %}
         {% for project in site.categories['portfolio'] and site.published['true']%}
         <div class="col-sm-4 portfolio-item">
             <a href="#portfolioModal-{{ project.modal_id }}" class="portfolio-link" data-toggle="modal">

@@ -1,0 +1,19 @@
+---
+layout: post
+title: Um teste
+author: author-post
+#
+# NOTE: Article must be in single quotation marks and start with # (hashtag)
+# and then immediately the number of his post.
+article: '#'
+published: false
+comment: false
+cover: 
+filepath: 2016-01-11-um-teste.markdown
+date: 2016-01-11 23:25:56
+tags: ["tag1","tag2"]
+categories: blog
+#
+# An introduction is mandatory !!!
+introduction: 
+---

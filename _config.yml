@@ -42,11 +42,11 @@ theme:
 
 # Section - FakeLoader
 # fakeLoader (yes/no)
-  fakeLoader: "yes"
+  fakeLoader: "no"
   fl_local: "all" # { all }
   fl_timeToHide: "1500" # milliseconds, default 1500
   # Default fl_bgColor: #2D4F25
-  fl_bgColor: "#2D4F25"
+  fl_bgColor: "#000"
   fl_spinner: "spinner4" # Default, spinner4
   fl_spinnerColor: "#fff"
   fl_hideNav: "yes" # Default yes
@@ -85,16 +85,6 @@ theme:
     </p>
 # Section - Posts Author
 
-
-
-# Section - Portfolio description
-  portfolio_description: >
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-       Excepturi est quisquam deleniti architecto voluptatibus similique
-       consectetur incidunt iusto autem ipsa! Temporibus optio architecto
-       distinctio, at fugit. Aspernatur voluptatibus earum nulla.
-    </p>
-# Section - Portfolio description
 
 
 
@@ -166,7 +156,7 @@ theme:
 
 
 # Section - Comments for Disqus
-  disqus_shortname:  # Your User of Disqus. ex: "william"
+  disqus_shortname: "williamcanin" # Your User of Disqus. ex: "william"
 # Section - Comments for Disqus
 
 
@@ -210,7 +200,7 @@ theme:
   str_continue_reading: "Continue reading"
   str_total_pages: "Pages: "
   str_placeholder_search: "Search in "
-  str_no_search_results: "Oh shit! No results found"
+  str_no_search_results: "Oh Gosh! No results found"
   str_title_result_search: "Results:"
   str_icon_comment_post: "Comment"
   str_shares_title: "<p>Share this post in</p>"

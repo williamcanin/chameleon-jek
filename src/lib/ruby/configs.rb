@@ -28,44 +28,41 @@ end
 
 class Main < Variables
 
-  # Configuration theme
-  def theme_confs
-    color = ENV["COLOR"]
-    # if color != 'green' or color != 'red' or color != 'blue' or color != 'dark' or
-    #    color != 'orange' or color != 'pink' or color != 'light'
-    #     puts
-    #     puts ("\"Chameleon Jeky\" does not support this theme color.")
-    #     puts ("Use: color={ green | blue | dark | red | orange | pink | light }")
-    #     abort("rake aborted!")
-    # end
+  def theme_confs(color)
+    if color == 'green'
+      system('sed -i \'s|^  fl_bgColor: .*|  fl_bgColor: "#2D4F25"|g\' _config.yml')
+      system('sed -i \'s|^  fl_spinnerColor: .*|  fl_spinnerColor: "#fff"|g\' _config.yml')
+    elsif color == 'blue'
+      system('sed -i \'s|^  fl_bgColor: .*|  fl_bgColor: "#2D4F25"|g\' _config.yml')
+      system('sed -i \'s|^  fl_spinnerColor: .*|  fl_spinnerColor: "#fff"|g\' _config.yml')
+     elsif color == 'pink'
+      system('sed -i \'s|^  fl_bgColor: .*|  fl_bgColor: "#BF589D"|g\' _config.yml')
+      system('sed -i \'s|^  fl_spinnerColor: .*|  fl_spinnerColor: "#fff"|g\' _config.yml')
+     elsif color == 'dark'
+      system('sed -i \'s|^  fl_bgColor: .*|  fl_bgColor: "#000"|g\' _config.yml')
+      system('sed -i \'s|^  fl_spinnerColor: .*|  fl_spinnerColor: "#fff"|g\' _config.yml')
+     elsif color == 'orange'
+      system('sed -i \'s|^  fl_bgColor: .*|  fl_bgColor: "#BD3F15"|g\' _config.yml')
+      system('sed -i \'s|^  fl_spinnerColor: .*|  fl_spinnerColor: "#fff"|g\' _config.yml')
+     elsif color == 'light'
+      system('sed -i \'s|^  fl_bgColor: .*|  fl_bgColor: "#F1F1F1"|g\' _config.yml')
+      system('sed -i \'s|^  fl_spinnerColor: .*|  fl_spinnerColor: "#333"|g\' _config.yml')
+     elsif color == 'red'
+      system('sed -i \'s|^  fl_bgColor: .*|  fl_bgColor: "#A9181A"|g\' _config.yml')
+      system('sed -i \'s|^  fl_spinnerColor: .*|  fl_spinnerColor: "#fff"|g\' _config.yml')
+     else
+      puts
+      puts ("\"Chameleon Jeky\" does not support this theme color.")
+      puts ("Use: color={ green | blue | dark | red | orange | pink | light }")
+      abort("rake aborted!")
+    end
+
     if Dir.exists?(CONFIG['theme_dir'])
-      if color == 'red'
-         system('sed -i \'s|^  fl_bgColor: .*|  fl_bgColor: "#A9181A"|g\' _config.yml')
-         system('sed -i \'s|^  fl_spinnerColor: .*|  fl_spinnerColor: "#fff"|g\' _config.yml')
-       elsif color == 'green'
-         system('sed -i \'s|^  fl_bgColor: .*|  fl_bgColor: "#2D4F25"|g\' _config.yml')
-         system('sed -i \'s|^  fl_spinnerColor: .*|  fl_spinnerColor: "#fff"|g\' _config.yml')
-       elsif color == 'blue'
-         system('sed -i \'s|^  fl_bgColor: .*|  fl_bgColor: "#414950"|g\' _config.yml')
-         system('sed -i \'s|^  fl_spinnerColor: .*|  fl_spinnerColor: "#fff"|g\' _config.yml')
-       elsif color == 'pink'
-         system('sed -i \'s|^  fl_bgColor: .*|  fl_bgColor: "#BF589D"|g\' _config.yml')
-         system('sed -i \'s|^  fl_spinnerColor: .*|  fl_spinnerColor: "#fff"|g\' _config.yml')
-       elsif color == 'dark'
-         system('sed -i \'s|^  fl_bgColor: .*|  fl_bgColor: "#000"|g\' _config.yml')
-         system('sed -i \'s|^  fl_spinnerColor: .*|  fl_spinnerColor: "#fff"|g\' _config.yml')
-       elsif color == 'orange'
-         system('sed -i \'s|^  fl_bgColor: .*|  fl_bgColor: "#BD3F15"|g\' _config.yml')
-         system('sed -i \'s|^  fl_spinnerColor: .*|  fl_spinnerColor: "#fff"|g\' _config.yml')
-       elsif color == 'light'
-         system('sed -i \'s|^  fl_bgColor: .*|  fl_bgColor: "#F1F1F1"|g\' _config.yml')
-         system('sed -i \'s|^  fl_spinnerColor: .*|  fl_spinnerColor: "#333"|g\' _config.yml')
-      end
       f = File.new(CONFIG['theme_dir'] + "_config.scss", "w+")
       f.puts("$theme: \"#{color}\" !default;")
-      puts "Succesfully changed theme!"
+      system("printf \"\n$(tput setaf 76)✔ Succesfully! Chameleon Jek changed to color: $(tput sgr0)" + color +"\n\n\"")
     end
-  end # end Configuration theme
+  end
 
   # Create post
   def post_create(category, dir_post)
@@ -166,7 +163,6 @@ class Main < Variables
     permalink = ENV["PERMALINK"] || "permalink-page"
     published = ENV["PUBLISHED"] || false
     categories = ENV["CATEGORIES"] || ""
-    navbar = ENV["NAVBAR"] || ""
     categories = "#{categories.gsub(/-/,' ')}" if !categories.empty?
     slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
     begin
@@ -277,6 +273,11 @@ class Main < Variables
     end
     puts
     puts "✔ Finished!"
+  end
+
+
+  def help
+    system("src/lib/shell/rake/rake_help.lib")
   end
 
 end # End Main

@@ -1,0 +1,98 @@
+#!/bin/bash
+
+cat << EOT
+
+------------------------------------------------------------------------------
+Help - Chameleon Jek - Blog & Portfolio for Jekyll.
+------------------------------------------------------------------------------
+
+
+$(tput setaf 38)→ HELP: $(tput sgr0)
+
+Usage: rake [options]
+
+  Options:
+    help              output instructions
+
+
+$(tput setaf 38)→ CHANGE COLOR CHAMELEON JEK: $(tput sgr0)
+
+Usage: rake [options]
+
+  Options:
+    theme:color:green     changes the color Chameleon Jek for 'green'.
+    theme:color:blue      changes the color Chameleon Jek for 'blue'.
+    theme:color:dark      changes the color Chameleon Jek for 'dark'.
+    theme:color:red       changes the color Chameleon Jek for 'red'.
+    theme:color:pink      changes the color Chameleon Jek for 'pink'.
+    theme:color:orange    changes the color Chameleon Jek for 'orange'.
+    theme:color:light     changes the color Chameleon Jek for 'light'.
+
+
+$(tput setaf 38)→ TAKS OF GULP: $(tput sgr0)
+
+Usage: rake [options]
+
+  Options:
+    gulp:dev            compile SASS, Javascripts e build Chameleon Jek.
+    gulp:serve          compile SASS, Javascripts, build Chameleon Jek
+                        and start server Jekyll.
+    gulp:jekyllbuild    compile Chameleon Jek (Does not compile SASS and Javascripts).
+    gulp:imageminify    minify all images in folder 'assets/images'.
+    deploy:master       deploy for GitHub in branch 'master'.
+    deploy:dev          deploy for GitHub in branch 'dev' (development).
+    deploy:ghpages      deploy for GitHub in branch 'gh-pages' (development).
+
+
+$(tput setaf 3)NOTE: $(tput sgr0) Before using commands of 'deploy', do:
+          1) \$git init
+          2) \$git remote add [<options>] <name> <url>
+
+
+$(tput setaf 38)→ CREATE HEADER FOR POSTS: $(tput sgr0)
+
+Usage: rake [options] [attributes]
+
+$(tput setaf 3)NOTE: $(tput sgr0) Attributes are optional.
+
+  Options:
+    post:blog          create header post for category 'Blog'.
+    post:portfolio     create header post for category 'Portfolio'.
+
+  Attributes:
+    TITLE="<value>"     create post header with personalized title.
+    AUTHOR="<value>"    create post header with name author of post.
+    PUBLISHED="<value>" if post will be published or not. Value { true | false }.
+    COMMENT="<value>"   if post will be commented or not. Value { true | false }.
+    ARTICLE="#<value>"  numeration of post. Value: '# + number'.
+    TAGS="<value>"      tag cloud for the post in index
+                        You can load several separate tags with commas.
+
+$(tput setaf 3)Example: $(tput sgr0) \$rake post:blog TITLE="First My Post" ARTICLE="#1" AUTHOR="Your Name" PUBLISHED="true" COMMENT="true" TAGS="first,example"
+
+
+$(tput setaf 38)→ CREATE HEADER FOR PAGE: $(tput sgr0)
+
+Usage: rake [options] [attributes]
+
+$(tput setaf 3)NOTE: $(tput sgr0) Attributes are optional.
+
+  Options:
+    page:normal     create header page for category 'normal'.
+    page:about      create header for page 'about'.
+    page:portfolio  create header for page 'portfolio'.
+
+  Attributes:
+    TITLE="<value>"     create page header with personalized title.
+    PUBLISHED="<value>" if page will be published or not. Value { true | false }.
+    PERMALINK="<value>" Indicates what the page the permalink.
+
+$(tput setaf 3)Example: $(tput sgr0) \$rake page:normal TITLE="First My Page" PUBLISHED="true" PERMALINK="/myfirstpage/"
+
+
+------------------------------------------------------------------------------
+Copyright (c) William C. Canin
+Licensed under the MIT license.
+------------------------------------------------------------------------------
+
+EOT

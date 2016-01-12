@@ -64,7 +64,7 @@
         padding:7% 15% 2%;
         .box-posts{
         border: $color-border-box-posts;
-        padding: 10%;
+        padding: 7%;
         border-radius: 1%;
         background-color: #F6F6F6;
         li.calendar-post-title {
@@ -137,12 +137,19 @@
         .qtd-comment-index{
            a{
             color: $primary-color;
+            text-decoration: underline;
             &:hover{
-              text-decoration: underline;
+              text-decoration: none;
             }
             }
           i{
             color: $primary-color;
+          }
+        }
+        .btn-continue-reading{
+          outline: none;
+          &:hover,&:active,&:focus{
+            outline: none;
           }
         }
 
