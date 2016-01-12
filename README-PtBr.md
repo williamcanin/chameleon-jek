@@ -2,6 +2,20 @@
 
 # Chameleon Jek - Blog & Portfolio para Jekyll <img src="https://raw.githubusercontent.com/williamcanin/chameleon-jek/dev/assets/images/avatar/out.png" alt="jekyll cv creator image" width="7%" height="7%"/>
 
+
+## Indíce
+
+* [Introdução](https://github.com/williamcanin/chameleon-jek/blob/dev/README-PtBr.md#introdu%C3%A7%C3%A3o)
+* [Requerimentos](https://github.com/williamcanin/chameleon-jek/blob/dev/README-PtBr.md#requerimentos)
+* [Usando - Linux](https://github.com/williamcanin/chameleon-jek/blob/dev/README-PtBr.md#usu%C3%A1rios-linux)
+* [Usando - Windows ou Mac OS X](https://github.com/williamcanin/chameleon-jek/blob/dev/README-PtBr.md#usu%C3%A1rios-windows-e-mac-os-x)
+* [Configurações do Chameleon Jek](https://github.com/williamcanin/chameleon-jek/blob/dev/README-PtBr.md#configura%C3%A7%C3%B5es)
+* [Deploy - GitHub](https://github.com/williamcanin/chameleon-jek/blob/dev/README-PtBr.md#deploy-para-o-github)
+* [Demo](https://github.com/williamcanin/chameleon-jek/blob/dev/README-PtBr.md#demo)
+* [Questões](https://github.com/williamcanin/chameleon-jek/blob/dev/README-PtBr.md#issues)
+* [Licença](https://github.com/williamcanin/chameleon-jek/blob/dev/README-PtBr.md#licen%C3%A7a)
+
+
 ## Introdução
 
 Chameleon Jek, é o template para [Jekyll](http://jekyllrb.com) construído especialmente para quem deseja ter um blog e um portfólio com rapidez e leveza e com maior possibilidade de customização em cores.
@@ -95,6 +109,10 @@ O mínimo que você precisa ter instalado em sua máquina Windows ou Mac OS X é
 
 Com o Git instalado, siga as etapas abaixo:
 
+> IMPORTANTE: É recomendável que se use o terminal do Git no Windows, pois o 
+> Git contém programas Linux, como 'sed', 'cat', ...etc, que são necessários 
+> para a manipulação do **Chameleon Jek**.
+
 * 1 - Faça o clone do **Chameleon Jek** e entre na pasta do mesmo:
 
 ```
@@ -105,10 +123,6 @@ $ cd "chameleon-jek"
 * 2 - Para os usuários Windows e Mac OS X, não existe um script configurador e instalador para o **Chameleon Jek**. Os Usuários terão que instalar manualmente os requerimentos (tabela de requerimentos no topo) de acordo com os instaladores dos Sistema Operativo
 
 Após instalar os requerimentos, continue com os passos abaixo:
-
-> IMPORTANTE: É recomendável que se use o terminal do Git, pois o Git contém
-> programas Linux, como 'sed', 'cat', ...etc, que são necessários para a
-> manipulação do **Chameleon Jek**.
 
 * 3 - Instalando o Bundler:
 
@@ -141,10 +155,9 @@ As configurações estão no arquivo **"_config.yml"**.
 Esse arquivo é repartido por duas seções que contém variáveis, onde os seus valores serão impostos no template **Chameleon Jek**. Essas seções são:
 
 * *SECTION CONFIG PUBLIC*: Nessa seção você deve configurar o valor de cada uma delas variáveis de acordo com sua necessidade.
-* *SECTION CONFIG PRIVATE*: Nessa seção você não deve alterar nada, exeto que saiba o que está fazendo. Ela contém variáveis que serão manipuladas pelo **Chameleon Jek**, se fazer uma alteração sem saber, pode aparecer erros ou tirar a performace do **Chameleon Jek**.
+* *SECTION CONFIG PRIVATE*: Nessa seção você **NÃO** deve alterar nada, exeto que saiba o que está fazendo. Ela contém variáveis que serão manipuladas pelo **Chameleon Jek**, se fazer uma alteração sem saber, pode aparecer erros ou tirar a performace do **Chameleon Jek**.
 
-> IMPORTANTE: Não modifique as variáveis de lugar em nenhuma das seções, 
-> apenas os valores (em amarelo).
+> IMPORTANTE: Não modifique as variáveis de lugar em nenhuma das seções.
 
 ## Deploy para o GitHub
 
@@ -155,7 +168,7 @@ Veja uma demonstração de como o **Chameleon Jek** irá se comportar no navegad
 [Chameleon Jek- Demo](http://williamcanin.github.io/chameleon-jek/)
 
 
-## Issues
+## Questões - (Issues)
 
 Faça as suas opiniões sobre o **Chameleon Jek**, em:
 
