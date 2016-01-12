@@ -64,17 +64,26 @@ class Main < Variables
     end
   end
 
+
   # Create post
   def post_create(category, dir_post)
+
+    count_posts = Dir.glob(CONFIG['posts_blog']+"/*.*").size
+    next_number_post = count_posts + 1
 
     # Variables for post/blog
     abort("rake aborted: '#{CONFIG['posts_blog']}' directory not found.") unless FileTest.directory?(CONFIG['posts_blog'])
     title = ENV["TITLE"] || "new-post"
     author = ENV["AUTHOR"] || "author-post"
     tags = ENV["TAGS"] || '["tag1","tag2"]'
-    article = ENV["ARTICLE"] || '#'
+    # article = ENV["ARTICLE"] || '#'
+    article = next_number_post
     published = ENV["PUBLISHED"] || false
     comment = ENV["COMMENT"] || false
+
+
+
+
 
     # Variables for post/portfolio
     modal_id = ENV["MODAL_ID"] || ''
@@ -104,10 +113,10 @@ class Main < Variables
       file.puts("layout: post")
       file.puts("title: #{title.gsub(/-/,' ')}")
       file.puts("author: #{author}")
-      file.puts("#")
-      file.puts("# NOTE: Article must be in single quotation marks and start with # (hashtag)")
-      file.puts("# and then immediately the number of his post.")
-      file.puts("article: '#{article}'")
+      # file.puts("#")
+      # file.puts("# NOTE: Article must be in single quotation marks and start with # (hashtag)")
+      # file.puts("# and then immediately the number of his post.")
+      file.puts("article: '##{article}'")
       file.puts("published: #{published}")
       file.puts("comment: #{comment}")
       file.puts("cover: ")
@@ -115,9 +124,9 @@ class Main < Variables
       file.puts("date: #{date_hour}")
       file.puts("tags: #{tags}")
       file.puts("categories: #{category}")
-      file.puts("#")
       file.puts("# An introduction is mandatory !!!")
-      file.puts("introduction: ")
+      file.puts("introduction: >")
+      file.puts("   Informe a introdução aqui! Tell the introduction here!")
       file.puts("---")
     end
     puts

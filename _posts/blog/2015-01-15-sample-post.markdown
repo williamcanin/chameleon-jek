@@ -1,10 +1,7 @@
 ---
 layout: post
 title:  Sample Post for example
-#
 author: William C. Canin
-# NOTE: Article must be in single quotation marks and start with # (hashtag)
-# and then immediately the number of his post.
 article: '#1'
 published: true
 filepath: 2015-01-15-sample-post.md
@@ -13,7 +10,6 @@ cover: post-cover-chameleon.png
 date:   2015-01-15 18:07:21
 tags: ["sample","example","post"]
 categories: blog
-
 # An introduction is mandatory !!!
 introduction: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus in corrupti, saepe tempore soluta deserunt quas doloremque aut libero maxime, quod impedit iste, voluptas atque consectetur, facere optio! Itaque, omnis!"
 ---

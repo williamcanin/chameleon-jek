@@ -22,6 +22,7 @@ The **Chameleon Jak** perform Deploy source code and compiled project (gh-pages 
 
 * Perform deploy to branch "gh-pages"
 * Perform deploy to master branch.
+* * Perform deploy to branch dev (development).
 * Creating header posts (blog / portfolio) and pages.
 * Start Server (Browser Sync - Livereload) for development.
 * Compile SASS file, Images, Javascripts.

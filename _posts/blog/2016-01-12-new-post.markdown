@@ -1,0 +1,16 @@
+---
+layout: post
+title: new post
+author: author-post
+article: '#5'
+published: false
+comment: false
+cover:
+filepath: 2016-01-12-new-post.markdown
+date: 2016-01-12 16:40:29
+tags: ["tag1","tag2"]
+categories: blog
+# An introduction is mandatory !!!
+introduction: >
+   Informe a introdução aqui! Tell the introduction here!
+---

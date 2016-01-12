@@ -3,8 +3,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible"content="IE=edge">
   <meta http-equiv="Pragma" content="public">
+  {% if  site.cache_control %}
   <meta http-equiv="Cache-Control" content="{{ site.cache_control }}"/>
+  {% endif %}
+  {% if  site.expires %}
   <meta http-equiv="expires" content="{{ site.expires }}">
+  {% endif %}
   <meta name="viewport"content="width=device-width, initial-scale=1">
   <meta name="description"content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <!-- Title -->

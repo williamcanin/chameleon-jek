@@ -3,18 +3,21 @@
 #
 site_url: "http://williamcanin.com" # the base hostname & protocol for your site
 site_baseurl: "/chameleon-jek/" # the subpath of your site, e.g. /blog/
-#
-#==========================================================
-
+ # description: used by search engines
+description: >
+  Chameleon Jek - Blog &'Portfolio for Jekyll
 
 # Meta tag for Expires / Cache Control - Max 1 Year
 expires: "Sat, 24 Dec 2016 00:10:00 GMT"
-cache_control: "max-age=120"
+cache_control: "max-age=120" # Default: public
 # Meta tag for Expires / Cache Control - Max 1 Year
 
 # Language support (english / portuguese )
 language: "english"
 # Language support
+
+#
+#==========================================================
 
 
 
@@ -59,7 +62,6 @@ theme:
 # Section - Avatar
   avatar: "out.png"
   gravatar: # your MD5 email
-  description: "Chameleon Jek" # used by search engines
 # Section - Avatar
 
 

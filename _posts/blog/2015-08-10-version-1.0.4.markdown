@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  Version v1.0.4 Beta
-#
 author: William C. Canin
 article: '#2'
 published: true
@@ -11,7 +10,6 @@ cover:
 date:   2015-08-10 23:00:00
 tags: ["release","1.0.4","beta"]
 categories: blog
-#
 # An introduction is mandatory !!!
 introduction: >
   <p>The 1.0.4 release is the release of Chameleon Jek. This version is designated as the Beta version. Starting this version is all stable releases.</p>

@@ -2,9 +2,6 @@
 layout: post
 title: Version 1.0.7 Stable
 author: author-post
-#
-# NOTE: Article must be in single quotation marks and start with # (hashtag)
-# and then immediately the number of his post.
 article: '#3'
 published: true
 comment: false
@@ -14,7 +11,6 @@ date: 2016-01-09 01:29:00
 main_class: "release"
 tags: ["release","1.0.7","stable"]
 categories: blog
-#
 # An introduction is mandatory !!!
 introduction: >
   <p>Version 1.0.7 released! New installation features, new process manager (Gulp), new way to deploy ... this are some new features of version 1.0.7. Use now!
