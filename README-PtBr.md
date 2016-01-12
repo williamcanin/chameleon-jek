@@ -1,12 +1,12 @@
 [Read in English](https://github.com/williamcanin/chameleon-jek/blob/master/README-en_US.md)
 
-# Chameleon Jek - Blog & Portfolio para Jekyll <img src="https://raw.githubusercontent.com/williamcanin/chameleon-jek/master/assets/images/avatar/out.png" alt="jekyll cv creator image" width="7%" height="7%"/>
+# Chameleon Jek - Blog & Portfolio para Jekyll <img src="https://raw.githubusercontent.com/williamcanin/chameleon-jek/raw/dev/assets/images/avatar/out.png" alt="jekyll cv creator image" width="7%" height="7%"/>
 
 ## Introdução
 
 Chameleon Jek, é o template para [Jekyll](http://jekyllrb.com) construído especialmente para quem deseja ter um blog e um portfólio com rapidez e leveza e com maior possibilidade de customização em cores.
 
-[![Demo Chameleon Jeky Colors](https://raw.githubusercontent.com/williamcanin/chameleon-jek/assets/images/preview/animation-no-border.gif)](https://raw.githubusercontent.com/williamcanin/chameleon-jek/assets/images/preview/animation-no-border.gif)
+[![Demo Chameleon Jeky Colors](https://raw.githubusercontent.com/williamcanin/chameleon-jek/raw/dev/assets/images/preview/animation-no-border.gif)](https://raw.githubusercontent.com/williamcanin/chameleon-jek/raw/dev/assets/images/preview/animation-no-border.gif)
 
 **Chameleon Jek** usa com [Twitter Bootstrap](http://getbootstrap.com), que lhe da maiores praticidades ao abrir sua página em um dispositivo Mobile em modo responsivo.
 
