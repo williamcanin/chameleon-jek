@@ -12,6 +12,7 @@ expires: "Sat, 24 Dec 2016 00:10:00 GMT"
 cache_control: "max-age=120" # Default: public
 # Meta tag for Expires / Cache Control - Max 1 Year
 
+
 # Language support (english / portuguese )
 language: "english"
 # Language support
@@ -49,7 +50,7 @@ theme:
   fl_local: "all" # { all }
   fl_timeToHide: "1500" # milliseconds, default 1500
   # Default fl_bgColor: #2D4F25
-  fl_bgColor: "#000"
+  fl_bgColor: "#2D4F25"
   fl_spinner: "spinner4" # Default, spinner4
   fl_spinnerColor: "#fff"
   fl_hideNav: "yes" # Default yes
@@ -57,12 +58,10 @@ theme:
 # Section - FakeLoader
 
 
-
-
-# Section - Avatar
+# Section Avatar Image
   avatar: "out.png"
-  gravatar: # your MD5 email
-# Section - Avatar
+  avatar_mouse_hover: "over.png"
+# Section Avatar Image
 
 
 
@@ -92,7 +91,7 @@ theme:
 
 # Section - Footer / Copyrights
   footer_text:
-    str_text1: "Chameleon Jek"
+    str_text1: "Chameleon Jek - Blog & Portfolio for Jekyll"
     str_text2: "Theme made with: "
     maintence1_link_by: "http://jekyllrb.com"
     maintence2_link_by: "http://getbootstrap.com/"
@@ -243,12 +242,25 @@ destination: ./_site
 
 
 
+
+# Section - Gravatar avatar to your site.
+# Add your email gravatar. Exemple: "william.costa.canin@gmail.com"
+email_gravatar: "william.costa.canin@gmail.com"
+# Adds nothing to 'gravatar_md5' !!!
+# To insert the MD5, use: $rake gravatar:md5 - $rake help
+gravatar_md5: 
+# Section - Gravatar avatar to your site.
+
+
+
+
 # Section - Markdown
 # highlighter: pygments
 # highlighter: true
 markdown: kramdown # { kramdown | redcarpet }
 kramdown:
-  extensions: ["no_intra_emphasis",
+  extensions: [
+    "no_intra_emphasis",
     "fenced_code_blocks",
     "autolink",
     "tables",

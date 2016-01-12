@@ -5,6 +5,7 @@
 # Description: Script config.rb for Deploy, change Theme , Create header Post and Page.
 
 require 'yaml'
+require 'digest/md5'
 # require "rubygems"
 # require 'rake'
 # require 'time'
@@ -163,6 +164,32 @@ class Main < Variables
   end
 
   end # Create post
+
+
+  # Generator MD5 Email of Gravatar
+  def generator_md5_gravatar_email(action)
+    if action == 'generator_md5'
+      email = $config_yml['email_gravatar']
+      if email.empty?
+        system('sed -i \'s|^gravatar_md5:.*|gravatar_md5: |g\' _config.yml')
+        puts "The Email gravatar is empty in 'config.yml'"
+      else
+        email_md5 = Digest::MD5.hexdigest(email)
+        system('sed -i \'s|^gravatar_md5:.*|gravatar_md5: "'+ email_md5 +'"|g\' _config.yml')
+        puts "Email: #{email}"
+        puts "MD5: #{email_md5}"
+        puts "Done!"
+      end
+    elsif action == 'clean'
+      system('sed -i \'s|^gravatar_md5:.*|gravatar_md5: |g\' _config.yml')
+      puts "Clean. Done!"
+    else
+      puts "Error"
+    end
+
+  end
+  # Generator MD5 Email of Gravatar
+
 
   # Create page
   def page_create(category, dir_page)

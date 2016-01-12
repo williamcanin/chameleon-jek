@@ -22,11 +22,11 @@
     <div class="navbar-brand">
       <div class="row brand-icons">
         <div class="col-sm-6 col-brand" >
-          {% if site.theme.gravatar %}
+          {% if site.gravatar_md5 %}
             <a href="{{ site.url }}">
-              <img class="avatar" src="https://secure.gravatar.com/avatar/{{ site.theme.gravatar }}?s=100" alt=""/>
+              <img class="avatar" src="https://secure.gravatar.com/avatar/{{ site.gravatar_md5 }}?s=100" alt=""/>
             </a>
-          {% else if site.theme.avatar %}
+          {% elsif site.theme.avatar %}
              <a href="{{ site.baseurl | prepend: site.url }}">
                 <img {% if site.theme.rotate_avatar == "yes" %} id="rotate-avatar" {% endif %}
                 class="avatar" src="{{ "/assets/images/avatar"  | prepend: site.baseurl | prepend: site.url }}/{{ site.theme.avatar }}" alt=""/>

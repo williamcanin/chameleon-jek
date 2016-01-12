@@ -68,7 +68,7 @@ namespace :theme do
     end
   end
 end
-# Task change theme
+
 
 
 #Task create header Post
@@ -126,11 +126,28 @@ namespace :gulp do
   end
 end
 
+
+# Generator MD5 Email of Gravatar
+desc "Generator MD5 for email gravatar - Usage: rake help"
+namespace :gravatar do
+  task :md5 => [:load_config_yml] do
+    confs = Main.new
+    confs.generator_md5_gravatar_email('generator_md5')
+  end
+  task :clean do
+    confs = Main.new
+    confs.generator_md5_gravatar_email('clean')
+  end
+end
+
+
+# Help
 desc "Help"
 task :help  do
   confs = Main.new
   confs.help
 end
+
 
 # Default configuration
 def ask(message, valid_options)

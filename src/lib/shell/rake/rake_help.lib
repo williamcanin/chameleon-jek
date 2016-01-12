@@ -41,7 +41,7 @@ Usage: rake [options]
     gulp:imageminify    minify all images in folder 'assets/images'.
     deploy:master       deploy for GitHub in branch 'master'.
     deploy:dev          deploy for GitHub in branch 'dev' (development).
-    deploy:ghpages      deploy for GitHub in branch 'gh-pages' (development).
+    deploy:ghpages      deploy for GitHub in branch 'gh-pages'.
 
 
 $(tput setaf 3)NOTE: $(tput sgr0) Before using commands of 'deploy', do:
@@ -89,6 +89,14 @@ $(tput setaf 3)NOTE: $(tput sgr0) Attributes are optional.
 
 $(tput setaf 3)Example: $(tput sgr0) \$rake page:normal TITLE="First My Page" PUBLISHED="true" PERMALINK="/myfirstpage/"
 
+
+$(tput setaf 38)→ MD5 FOR GRAVATAR (IN AVATAR): $(tput sgr0)
+
+Usage: rake [options]
+
+  Options:
+    gravatar:md5    generates the md5 email GRAVATAR
+    gravatar:clean  clean the md5 email gravatar. This makes using the site avatar.
 
 ------------------------------------------------------------------------------
 Copyright (c) William C. Canin
