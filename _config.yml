@@ -1,3 +1,7 @@
+# ================================================================== #
+# ------------------------- SECTION CONFIG PUBLIC ------------------ #
+# ================================================================== #
+#
 # Place the address where the site is hosted, and the base
 # of website. If there is no base, leave blank.
 #
@@ -22,7 +26,7 @@ language: "english"
 
 
 
-# Section - Theme specific configuration [BEGIN]
+# Block - Theme specific configuration [BEGIN]
 theme:
   # language: "portuguese" #support: (english / portuguese)
   title: "Chameleon Jek"
@@ -44,7 +48,7 @@ theme:
  # ========= End Effects =============
 
 
-# Section - FakeLoader
+# Block - FakeLoader
 # fakeLoader (yes/no)
   fakeLoader: "no"
   fl_local: "all" # { all }
@@ -55,23 +59,23 @@ theme:
   fl_spinnerColor: "#fff"
   fl_hideNav: "yes" # Default yes
   # fl_textSpinner: "Please wait, loading page..." # construction
-# Section - FakeLoader
+# Block - FakeLoader
 
 
-# Section Avatar Image
+# Block Avatar Image
   avatar: "out.png"
   avatar_mouse_hover: "over.png"
-# Section Avatar Image
+# Block Avatar Image
 
 
 
-# Section - Shares posts config
+# Block - Shares posts config
   post_sharing: "yes" #(yes/no)
-# Section - Shares posts config
+# Block - Shares posts config
 
 
 
-# Section - Posts Author
+# Block - Posts Author
   # Image
   author_image: "william.png"
   # String
@@ -84,12 +88,12 @@ theme:
           William C. Canin
         </a>
     </p>
-# Section - Posts Author
+# Block - Posts Author
 
 
 
 
-# Section - Footer / Copyrights
+# Block - Footer / Copyrights
   footer_text:
     str_text1: "Chameleon Jek - Blog & Portfolio for Jekyll"
     str_text2: "Theme made with: "
@@ -101,11 +105,11 @@ theme:
     design_layout_link_by: "http://github.com/williamcanin"
     design_layout_text_by: "William Canin"
     copyright_initial_year:  "Copyright 2015"
-# Section - Footer / Copyrights
+# Block - Footer / Copyrights
 
 
 
-# Section - Socialize Icons Navbar
+# Block - Socialize Icons Navbar
   rss: "chameleon-jek" #Your FeedBurner feed. Ex. williamcanin
   email_address: "your_email@gmail.com"
   behance:
@@ -131,38 +135,38 @@ theme:
   vivaolinux: "" # Exemple: ~your_username
   wordpress:
   youtube: "your_user_canal"
-# Section - Socialize Icons Navbar
+# Block - Socialize Icons Navbar
 
 
-# Section - Project posts
+# Block - Project posts
 # Their projects '_posts/portfolio' will be for customers?
   client_yesno: "yes"
-# Section - Project posts
+# Block - Project posts
 
 
-# Section - Scripts Google Abalytics
+# Block - Scripts Google Abalytics
   google_analytics: "UA-XXXXXX-0X" # tracking id, e.g. "UA-000000-01"
-# Section - Scripts Google Abalytics
+# Block - Scripts Google Abalytics
 
 
-# Section - Google AdSense
+# Block - Google AdSense
   Include_AdSense: "no" #[ yes | no ]
   Style: "display:block"
   Ad_Client: "ca-pub-XXXXXXXXXXXXXXXXXX"
   Ad_Slot: "XXXXXXXXXX" #ID
   Ad_Format: "auto"
-# Section - Google AdSense
+# Block - Google AdSense
 
 
 
 
-# Section - Comments for Disqus
+# Block - Comments for Disqus
   disqus_shortname: "williamcanin" # Your User of Disqus. ex: "william"
-# Section - Comments for Disqus
+# Block - Comments for Disqus
 
 
 
-# Section - Adorned Header in Index
+# Block - Adorned Header in Index
 
   adorned_header_enable: "yes" # ( yes | no )
   adorned_header_type: "text" # ( img | text )
@@ -174,11 +178,11 @@ theme:
     <p>
       Welcome to the home page.
     </p>
-#Section - Adorned Header in Index
+#Block - Adorned Header in Index
 
 
 
-# Section - Localization strings
+# Block - Localization strings
   str_comments: >
     <p>
       Comments
@@ -208,53 +212,61 @@ theme:
   str_article: "Article"
   str_nocomment: "Comment disabled"
   str_edit_this_post: "Edit this post"
-  # Section - Localization strings
+  # Block - Localization strings
 
-# Section - Theme specific configuration [END]
+# Block - Theme specific configuration [END]
 
 
 
-# Section directory of posts
+# Block directory of posts
 # Description > This directory will be the directory where the posts to your GitHub
 #               This variable is for the button "Edit this post" of each post.
 # Important! Do not use the trailing slash
 #
   directory_posts_github: "https://github.com/williamcanin/chameleon-jek/tree/master/_posts/blog"
-# Section directory of posts
+# Block directory of posts
+
+
+# Block - Email of Gravatar for avatar to your site.
+# Add your email gravatar. Exemple: "william.costa.canin@gmail.com"
+# To insert the MD5, use: $rake gravatar:md5 - $rake help
+email_gravatar: "william.costa.canin@gmail.com"
+# Block - Email of Gravatar for avatar to your site.
 
 
 
-# Section - Includes files and folder build jekyll
+
+
+
+
+
+
+# ================================================================== #
+# ------------------------- SECTION CONFIG PRIVATE ----------------- #
+# ================================================================== #
+#
+#
+# Block - Includes files and folder build jekyll
 include: ['_pages']
-# Section - Includes files and folder build jekyll
+# Block - Includes files and folder build jekyll
 
 
-
-# Section - Build settings
+# Block - Build settings
 url: "http://0.0.0.0:4000"
 baseurl: ""
 # Permalink Default: /:categories/:year/:month/:day/:title/
 # Permalink optional: /:title/
 permalink: /:title/
 destination: ./_site
-# Section - Build settings
+# Block - Build settings
 
 
+# Block - MD5 EMail of Gravatar.
+gravatar_md5:
+# Block - MD5 EMail of Gravatar.
 
 
-
-# Section - Gravatar avatar to your site.
-# Add your email gravatar. Exemple: "william.costa.canin@gmail.com"
-email_gravatar: "william.costa.canin@gmail.com"
-# Adds nothing to 'gravatar_md5' !!!
-# To insert the MD5, use: $rake gravatar:md5 - $rake help
-gravatar_md5: 
-# Section - Gravatar avatar to your site.
-
-
-
-
-# Section - Markdown
+# Block - Markdown
 # highlighter: pygments
 # highlighter: true
 markdown: kramdown # { kramdown | redcarpet }
@@ -268,13 +280,13 @@ kramdown:
     "superscript",
     "with_toc_data"
   ]
-# Section - Markdown
+# Block - Markdown
 
 
 
 
 
-# Section - Excludes files and folder build jekyll
+# Block - Excludes files and folder build jekyll
 exclude: [
 # Animate Css
 'assets/vendor/animate.css/source',
@@ -357,4 +369,4 @@ exclude: [
 'COPYING',
 'administration'
 ]
-# Section - Excludes files and folder build jekyll
+# Block - Excludes files and folder build jekyll
