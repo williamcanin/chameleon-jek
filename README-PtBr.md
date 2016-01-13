@@ -182,6 +182,9 @@ Faça as suas opiniões sobre o **Chameleon Jek**, em:
 > Você pode alterar a estrutura do **Chameleon Jek** como desejar, desde que 
 > não manipule os direitos autorais do projeto.
 
+---
+
+[Voltar para topo](https://github.com/williamcanin/chameleon-jek/blob/dev/README-PtBr.md)
 
 
 
