@@ -1,21 +1,22 @@
 [Read in English](https://github.com/williamcanin/chameleon-jek/blob/dev/README-en_US.md)
 
-# Chameleon Jek - Blog & Portfólio para Jekyll <img src="https://raw.githubusercontent.com/williamcanin/chameleon-jek/dev/assets/images/avatar/out.png" alt="jekyll cv creator image" width="7%" height="7%"/>
+# Chameleon Jek - Blog & Portfólio para Jekyll <img src="https://raw.githubusercontent.com/williamcanin/chameleon-jek/dev/assets/images/avatar/out.png" alt="Chameleon Jek Logotype" width="7%" height="7%"/>
 
+<img src="https://raw.githubusercontent.com/williamcanin/chameleon-jek/dev/assets/images/preview/cj-logo.png" alt="Chameleon Jek Logotype" width="7%" height="7%"/>
 
 ## Indíce
 
 * [Introdução](https://github.com/williamcanin/chameleon-jek/blob/dev/README-PtBr.md#introdu%C3%A7%C3%A3o)
 * [Requerimentos](https://github.com/williamcanin/chameleon-jek/blob/dev/README-PtBr.md#requerimentos)
-* [Usando - Linux](https://github.com/williamcanin/chameleon-jek/blob/dev/README-PtBr.md#usu%C3%A1rios-linux)
+* [Usando - Linux](https://github.com/williamcanin/chameleon-jek/tree/dev#usando)
 * [Usando - Windows ou Mac OS X](https://github.com/williamcanin/chameleon-jek/blob/dev/README-PtBr.md#usu%C3%A1rios-windows-e-mac-os-x)
 * [Configurações do Chameleon Jek](https://github.com/williamcanin/chameleon-jek/blob/dev/README-PtBr.md#configura%C3%A7%C3%B5es)
-* [Deploy - GitHub](https://github.com/williamcanin/chameleon-jek/blob/dev/README-PtBr.md#deploy-para-o-github)
-* [Demo](https://github.com/williamcanin/chameleon-jek/blob/dev/README-PtBr.md#demo)
-* [Questões](https://github.com/williamcanin/chameleon-jek/blob/dev/README-PtBr.md#issues)
-* [Versões](https://github.com/williamcanin/chameleon-jek/blob/dev/README-PtBr.md#vers%C3%B5es)
-* [Licença & Direitos Autorais](https://github.com/williamcanin/chameleon-jek/blob/dev/README-PtBr.md#licen%C3%A7a)
-* [Créditos]()
+* [Deploy - GitHub](https://github.com/williamcanin/chameleon-jek/tree/dev#deploy---github)
+* [Demo](https://github.com/williamcanin/chameleon-jek/tree/dev#demo)
+* [Questões](https://github.com/williamcanin/chameleon-jek/tree/dev#quest%C3%B5es---issues)
+* [Versões](https://github.com/williamcanin/chameleon-jek/tree/dev#vers%C3%B5es)
+* [Licença & Direitos Autorais](https://github.com/williamcanin/chameleon-jek/tree/dev#licen%C3%A7a--direitos-autorais)
+* [Créditos](https://github.com/williamcanin/chameleon-jek/tree/dev#cr%C3%89ditos)
 
 
 ## Introdução
