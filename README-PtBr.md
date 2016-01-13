@@ -18,7 +18,9 @@
 
 ## Introdução
 
-Chameleon Jek, é o template para [Jekyll](http://jekyllrb.com) construído especialmente para quem deseja ter um blog e um portfólio com rapidez e leveza e com maior possibilidade de customização em cores.
+**Chameleon Jek**, é o template para [Jekyll](http://jekyllrb.com) construído especialmente para quem deseja ter um blog e um portfólio com rapidez e leveza e com maior possibilidade de customização em cores.
+
+O **Chameleon Jek** possui até 7(sete) cores diferentes para customizar:
 
 [![Demo Chameleon Jeky Colors](https://raw.githubusercontent.com/williamcanin/chameleon-jek/dev/assets/images/preview/animation-no-border.gif)](https://raw.githubusercontent.com/williamcanin/chameleon-jek/dev/assets/images/preview/animation-no-border.gif)
 
@@ -150,7 +152,9 @@ $ rake gulp:serve
 
 ## Configurações
 
-As configurações estão no arquivo **"_config.yml"**. 
+**Texto**
+
+As configurações de textos estão no arquivo **"_config.yml"**. 
 
 Esse arquivo é repartido por duas seções que contém variáveis, onde os seus valores serão impostos no template **Chameleon Jek**. Essas seções são:
 
@@ -159,7 +163,84 @@ Esse arquivo é repartido por duas seções que contém variáveis, onde os seus
 
 > IMPORTANTE: Não modifique as variáveis de lugar em nenhuma das seções.
 
-## Deploy para o GitHub
+**Aparência de cores**
+
+As configurações de aparência de cores, é aplicada por comando Rake.
+
+Para alterar a cor do **Chameleon Jek**, faça:
+
+Exemplo:
+
+```
+$ rake theme:color:dark
+```
+
+Use `$ rake help` e veja como se aplica outras diferentes cores.
+
+
+
+## Deploy - GitHub
+
+Como **Chameleon Jek** você pode fazer deploy para o GitHub com apenas uma linha de comando. Siga os passos abaixo:
+
+* 1 - Preparando ambiente de deploy.
+ 
+Antes de fazer o deploy, entre na pasta do **Chameleon Jek** e remova a pasta **".git"** que foi gerada pelo clone do **Chameleon Jek**.
+
+[ Se não sabe pra serve a pasta ".git", leia mais sobre o Git [Aqui](https://git-scm.com/book/pt-br/v1) ]
+
+* 2 - Inicie um novo ambiente para o Git com o comando:
+
+```
+$ git init
+```
+
+
+* 3 - Adicione o endereço remoto do seu repositório no GiHub, exemplo:
+
+```
+$ git add remote origin <url do repositório>
+```
+
+
+* 4 - Agora o seu **Chameleon Jek** já está pronto para ser enviado para o seu repositório no GitHub.
+
+Vamos entender mais quais recursos de deploy que o **Chameleon Jek** dispoe:
+
+-> O recurso de deploy do **Chameleon Jek**, são para 3(três) tipos de branch:
+
+* master
+* dev
+* gh-pages
+
+* 4.1 - Para fazer deploy para a branch **master**, use o comando:
+
+```
+$ rake deploy:master
+```
+
+* 4.2 - Para fazer deploy para a branch **dev**, use o comando:
+
+```
+$ rake deploy:dev
+```
+
+*Caso queira utilizar um nome diferente em vez de **dev**, execute o comando:*
+
+```
+$ rake deploy:dev BRANCH="name_branch"
+```
+
+> NOTA: Essa branch **dev** (development) é especialmente para desenvolver o 
+> projeto, para poder fazer um *merge* futuramente na branch **master**.
+
+* 4.3 - Para fazer deploy para a branch **gh-pages**, use o comando:
+
+```
+$ rake deploy:ghpages
+```
+
+A branch **gh-pages** é uma branch no qual o seu site será visível, ou seja, já será possivel ver o **Chameleon Jek** funcionar na web através do navegador (com o seu endereço claro). 
 
 ## DEMO 
 
@@ -167,6 +248,14 @@ Veja uma demonstração de como o **Chameleon Jek** irá se comportar no navegad
 
 [Chameleon Jek- Demo](http://williamcanin.github.io/chameleon-jek/)
 
+
+## Versões e Atualizações
+
+| Lançamento    | Versão    | Atualização relizada? |  Tipo
+| --------------| ----------| --------------------|---------
+| 2015/08/10    | 1.0.4     |  Sim                | Beta
+| unpredictable | 1.0.7     |  Sim                | Stable
+| unpredictable | 2.0.0     |  No                 | Final
 
 ## Questões - (Issues)
 
