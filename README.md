@@ -2,7 +2,7 @@
 
 # Chameleon Jek - Blog & Portfólio para Jekyll <img src="https://raw.githubusercontent.com/williamcanin/chameleon-jek/dev/assets/images/avatar/out.png" alt="Chameleon Jek Logotype" width="7%" height="7%"/>
 
-<img src="https://raw.githubusercontent.com/williamcanin/chameleon-jek/dev/assets/images/preview/cj-logo.png" alt="Chameleon Jek Logotype" width="7%" height="7%"/>
+<img src="https://raw.githubusercontent.com/williamcanin/chameleon-jek/dev/assets/images/preview/cj-logo.png" alt="Chameleon Jek Logotype" width="55%" height="55%"/>
 
 ## Indíce
 
