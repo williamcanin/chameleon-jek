@@ -9,27 +9,27 @@ permalink: /about/
 categories: about
 ---
 
-# **Chameleon Jek**, the blog & portfolio chamaleon !
+# **Chameleon Jek**, the Blog & Portfolio for Jekyll!
 
 
-**Chameleon Jek** is the theme for [Jekyll](http://jekyllrb.com) built especially for those who want to have a blog and a portfolio quickly, lightness and greater ability to customize of theme. A true chameleon!
+**Chameleon Jek**, it is the template for [Jekyll](http://jekyllrb.com) built especially for those who want a blog and a portfolio with speed, lightness and greater ability to customize color.
 
-**Chameleon Jek** use [Twitter Bootstrap](http://getbootstrap.com), that gives you greater practicalities to open your page in a mobile device.
+The **Chameleon Jek** it has seven(7) different colors to customize:
 
-Using tools like GulpJS and Bower for their management and creating dependencies, development practitioners will find it easier to manipulate the **Chameleon Jek**.
+[![Demo Chameleon Jeky Colors](https://raw.githubusercontent.com/williamcanin/chameleon-jek/dev/assets/images/preview/animation-no-border.gif)](https://raw.githubusercontent.com/williamcanin/chameleon-jek/dev/assets/images/preview/animation-no-border.gif)
 
-The **Chameleon Jak** perform Deploy source code and compiled project (gh-pages folder) to GitHub. To do this, just use the "$ rake help" and view the available commands such as:
+**Chameleon Jek** use [Twitter Bootstrap](http://getbootstrap.com), that gives you greater practicalities when you open your page in a mobile device in responsive mode.
 
-* Perform deploy to branch "gh-pages"
-* Perform deploy to master branch.
-* Perform deploy to branch dev (development).
-* Creating header posts (blog / portfolio) and pages.
-* Start Server (Browser Sync - Livereload) for development.
-* Compile SASS file, Images, Javascripts.
+Using tools like Gulp, Bower and Rake for your management, creating dependencies, and configuration **Chameleon Jek**, users and development practitioners, will find it easier to handle your project.
 
+The **Chameleon Jek** does deploy the compiled code (folder gh-pages) GitHub for the branch "gh-pages". Also deploys the branch "master". If the user wants to implement as **Chameleon Jek**, it is also possible to deploy for a branch of development (dev).
 
-> You can use the **Chameleon Jek** provided you agree to the license: [![CC0](https://licensebuttons.net/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
+These and other features, they are present through the Rakefile.
+To learn which commands the **Chameleon Jek** boasts, run:
 
+```
+$ rake help
+```
 
 <a href="{{ prepend: site.baseurl | prepend: site.url }}/sample-post.html">See an example of post</a>
 

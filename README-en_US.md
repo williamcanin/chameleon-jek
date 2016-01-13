@@ -1,47 +1,50 @@
 [Leia em português - Brasil](https://github.com/williamcanin/chameleon-jek/blob/dev/README.md)
 
-# Chameleon Jek - Blog & Portfolio for Jekyll <img src="https://raw.githubusercontent.com/williamcanin/chameleon-jek/dev/assets/images/avatar/out.png" alt="jekyll cv creator image" width="7%" height="7%"/>
+# Chameleon Jek - Blog & Portfolio for Jekyll <img src="https://raw.githubusercontent.com/williamcanin/chameleon-jek/dev/assets/images/avatar/out.png" alt="Chameleon Jek Logotype" width="7%" height="7%"/>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/williamcanin/chameleon-jek/dev/assets/images/preview/cj-logo.png" alt="Chameleon Jek Logotype" width="500px" height="55%"/>
+</p>
+
+## Index
+
+* [Introduction](https://github.com/williamcanin/chameleon-jek/blob/dev/README-en_US.md#introduction)
+* [Requirements](https://github.com/williamcanin/chameleon-jek/blob/dev/README-en_US.md#requirements)
+* [Using - Linux](https://github.com/williamcanin/chameleon-jek/tree/dev#)
+* [Using - Windows ou Mac OS X](https://github.com/williamcanin/chameleon-jek/blob/dev/README-PtBr.md#)
+* [Settings Chameleon Jek]()
+* [Deploy - GitHub]()
+* [Demo]()
+* [Issues](https://github.com/williamcanin/chameleon-jek/tree/dev#issues)
+* [Versions](https://github.com/williamcanin/chameleon-jek/tree/dev#versions)
+* [License & Copyright]()
+* [Credits](https://github.com/williamcanin/chameleon-jek/tree/dev#credits)
 
 
-## Indíce
+## Introduction
 
-* [Introdução](https://github.com/williamcanin/chameleon-jek/blob/dev/README-PtBr.md#introdu%C3%A7%C3%A3o)
-* [Requerimentos](https://github.com/williamcanin/chameleon-jek/blob/dev/README-PtBr.md#requerimentos)
-* [Usando - Linux](https://github.com/williamcanin/chameleon-jek/tree/dev#usando)
-* [Usando - Windows ou Mac OS X](https://github.com/williamcanin/chameleon-jek/blob/dev/README-PtBr.md#usu%C3%A1rios-windows-e-mac-os-x)
-* [Configurações do Chameleon Jek](https://github.com/williamcanin/chameleon-jek/blob/dev/README-PtBr.md#configura%C3%A7%C3%B5es)
-* [Deploy - GitHub](https://github.com/williamcanin/chameleon-jek/tree/dev#deploy---github)
-* [Demo](https://github.com/williamcanin/chameleon-jek/tree/dev#demo)
-* [Questões](https://github.com/williamcanin/chameleon-jek/tree/dev#quest%C3%B5es---issues)
-* [Versões](https://github.com/williamcanin/chameleon-jek/tree/dev#vers%C3%B5es)
-* [Licença & Direitos Autorais](https://github.com/williamcanin/chameleon-jek/tree/dev#licen%C3%A7a--direitos-autorais)
-* [Créditos](https://github.com/williamcanin/chameleon-jek/tree/dev#cr%C3%89ditos)
+**Chameleon Jek**, it is the template for [Jekyll](http://jekyllrb.com) built especially for those who want a blog and a portfolio with speed, lightness and greater ability to customize color.
 
+The **Chameleon Jek** it has seven (7) different colors to customize:
 
-## Introdução
+[![Demo Chameleon Jeky Colors](https://raw.githubusercontent.com/williamcanin/chameleon-jek/dev/assets/images/preview/animation-no-border.gif)](https://raw.githubusercontent.com/williamcanin/chameleon-jek/dev/assets/images/preview/demo-colors.gif)
 
-**Chameleon Jek**, é o template para [Jekyll](http://jekyllrb.com) construído especialmente para quem deseja ter um blog e um portfólio com rapidez e leveza e com maior possibilidade de customização em cores.
+**Chameleon Jek** use [Twitter Bootstrap](http://getbootstrap.com), that gives you greater practicalities when you open your page in a mobile device in responsive mode.
 
-O **Chameleon Jek** possui até 7(sete) cores diferentes para customizar:
+Using tools like Gulp, Bower and Rake for your management, creating dependencies, and configuration **Chameleon Jek**, users and development practitioners, will find it easier to handle your project. 
 
-[![Demo Chameleon Jeky Colors](https://raw.githubusercontent.com/williamcanin/chameleon-jek/dev/assets/images/preview/animation-no-border.gif)](https://raw.githubusercontent.com/williamcanin/chameleon-jek/dev/assets/images/preview/animation-no-border.gif)
+The **Chameleon Jek** does deploy the compiled code (folder gh-pages) GitHub for the branch "gh-pages". Also deploys the branch "master". If the user wants to implement as **Chameleon Jek**, it is also possible to deploy for a branch of development (dev). 
 
-**Chameleon Jek** usa [Twitter Bootstrap](http://getbootstrap.com), que lhe da maiores praticidades ao abrir sua página em um dispositivo Mobile em modo responsivo.
-
-Usando ferramentas como Gulp, Bower e Rake para seu gerenciamento, criação de dependências, e configuração do **Chameleon Jek**, os usuários e praticantes de desenvolvimento, terão maior facilidade em manipular seu projeto. 
-
-O **Chameleon Jek** faz o deploy do código compilado (pasta gh-pages) para GitHub na branch "gh-pages". Também faz deploy da branch "master". Caso o usuário queira implementar mais o **Chameleon Jek**, também é possível fazer o deploy para uma branch de desenvolvimento (dev). 
-
-Essas funcionalidades e outros, estão presente através do Rakefile.
-Para saber mais quais comandos os **Chameleon Jek** dispoe, execute:
+These and other features, they are present through the Rakefile.
+To learn which commands the **Chameleon Jek** boasts, run:
 
 ```
 $ rake help
 ```
 
-## Requerimentos
+## Requirements
 
-| Requerido       | Como verificar      | Como instalar  |
+| Required        | Checking            | How to install  |
 | --------------- | ------------------- | -------------- | 
 | Git             | `git --version`     | [Git](http://git-scm.com/) |
 | Ruby            | `ruby -v`           | [Ruby](https://www.ruby-lang.org) |
@@ -54,25 +57,24 @@ $ rake help
 | Bundler         | `bundler -v`        | `gem install bundler` |
 
 
-## Usando
+## Using
 
-### Usuários Linux
+### Users Linux
 
-Se você é usuário Linux, terá mais facilidade em instalar o **Chameleon Jek** e todas as dependências do mesmo. O mínimo que você precisa ter instalado em sua máquina Linux é o [Git para Linux](https://git-scm.com/download/linux).
+If you are Linux user, You will find it easier to install **Chameleon Jek** and all dependencies of the same. The least you need to have installed on your Linux machine is [Git for Linux](https://git-scm.com/download/linux).
 
-Com o Git instalado, siga as etapas abaixo:
+With the installed Git, follow the steps below:
 
-* 1 - Faça o clone do **Chameleon Jek** e entre na pasta do mesmo:
+* 1 - Make Clone **Chameleon Jek** and enter the same folder:
 
 ```
 $ git clone https://github.com/williamcanin/chameleon-jek.git "chameleon-jek"
 $ cd "chameleon-jek"
 ```
 
+* - 2 - Now, simply run the three (3) following commands (neatly):
 
-* 2 - Agora, simplismente execute os 3(três) comandos abaixo (ordenadamente):
-
-> NOTA: Aguarde o final de cada comando!
+> NOTE: Wait for the end of each command!
 
 
 ```
@@ -81,201 +83,202 @@ $ bash linux.sh init
 $ bash linux.sh install
 ```
 
-**Perguntas importantes:**
+**Important Questions:**
 
-*O que os comandos acima faz?*
+*What the above commands do?*
 
-O primeiro comando: Deve ser executado com root (superusuário). Ele é responsável por instalar os Requerimentos (tabela acima) exigidos para rodar um projeto Jekyll.
+The first command: Must be run as root (superuser). He is responsible for installing the requirements (table above) required to run a Jekyll project.
 
-O segundo comando: Deve ser executado com usuário normal, e não root.
-Ele é responsavel por configurar o ambiente RubyGems para o usuário local e adicionar PATH para as Gems que serão instaladas com o terceiro comando.
+The second command: Must be run with normal user, **NOT** root.
+He is responsible for setting up the RubyGems environment for the local user  PATH and add to the Gems will be installed with the third command.
 
-O terceiro comando: Deve ser executado com usuário normal, e não root.
-É o comando final, que irá instalar as Gems necessárias para o **Chameleon Jek**, as dependências (Bower), as compactação e minificação de "stylesheets" e "javascripts" e compilação do **Chameleon Jek**. 
+The third command: Must be run with normal user, **NOT** root.
+It is the final drive, which will install the Gems necessary for **Chameleon Jek**, dependencies (Bower), the compression and minification "stylesheets" and "javascripts", and compilation of **Chameleon Jek**. 
 
-> NOTA: Após executar os 3(três) comandos acima, o script "linux.sh" será 
-> bloquedo, impedindo que usuário executa os comandos novamente. 
-> SE QUISER EXECUTAR OS COMANDOS NOVAMENTE, EXECUTE O COMANDO: 
-> "$ bash linux.sh reconfigure" PARA DESBLOQUEAR.
+> NOTE: After running the three (3) above command, o script "linux.sh" the
+> script "linux.sh" will be blocked, preventing user executes the commands 
+> again. IF YOU WANT TO EXECUTE THE CONTROLS AGAIN, EXECUTE COMMAND 
+> "$ bash linux.sh reconfigure" TO UNLOCK.
 
-* 3 - Iniciando o servidor Jekyll (com Livereload) no **Chameleon Jek**:
+* 3 - Starting Jekyll server (with Livereload) in **Chameleon Jek**:
 
 ```
 $ rake gulp:serve
 ```
 
-### Usuários Windows e Mac OS X
+### Users Windows and Mac OS X
 
-O mínimo que você precisa ter instalado em sua máquina Windows ou Mac OS X é o Git.
+The least you need to have installed on your Windows or Mac OS X machine is Git.
 
 [Git - Windows](https://git-scm.com/download/win)
 
 [Git - Mac OS X](https://git-scm.com/download/mac)
 
-Com o Git instalado, siga as etapas abaixo:
+With Git installed, follow the steps below:
 
-> IMPORTANTE: É recomendável que se use o terminal do Git no Windows, pois o 
-> Git contém programas Linux, como 'sed', 'cat', ...etc, que são necessários 
-> para a manipulação do **Chameleon Jek**.
+> IMPORTANT!: It is recommended to use the terminal Git on Windows, for the 
+> Git contains Linux programs, such as 'sed', 'cat', ...etc, that are required
+> for handling **Chameleon Jek**.
 
-* 1 - Faça o clone do **Chameleon Jek** e entre na pasta do mesmo:
+* 1 - Make Clone **Chameleon Jek** and enter the same folder:
 
 ```
 $ git clone https://github.com/williamcanin/chameleon-jek.git "chameleon-jek"
 $ cd "chameleon-jek"
 ```
 
-* 2 - Para os usuários Windows e Mac OS X, não existe um script configurador e instalador para o **Chameleon Jek**. Os Usuários terão que instalar manualmente os requerimentos (tabela de requerimentos no topo) de acordo com os instaladores dos Sistema Operativo
+* 2 - For Windows and Mac OS X users, there is no configurator and installer script for **Chameleon Jek**. Users will have to manually install the applications (requirements table top) according to installers of Operating System.
 
-Após instalar os requerimentos, continue com os passos abaixo:
+After installing the applications, continue with the steps below:
 
-* 3 - Instalando o Bundler:
+* 3 - Installing Bundler:
 
 ```
 $ gem install bundler  
 ```
 
-* 4 - Instalando Gems necessárias para o **Chameleon Jek**:
+* 4 - Installing "Gems" necessary for **Chameleon Jek**:
 
 ```
 $ bundle install
 ```
 
-* 5 - Instalando as dependências do **Chameleon Jek** (Bower), compactando e minificando "stylesheets" e "javascripts", e compilando **Chameleon Jek**:
+* 5 - Installing dependencies (Bower), compressing and minificando "stylesheets" and "javascript", and compiling **Chameleon Jek**:
 
 ```
 $ npm install
 ```
 
-* 6 - Iniciando o servidor Jekyll (com Livereload) no **Chameleon Jek**:
+* 6 - Starting Jekyll server (with Livereload) at the **Chameleon Jek**:
 
 ```
 $ rake gulp:serve
 ```
 
-## Configurações
+## Configurations
 
-**Texto**
+**Text**
 
-As configurações de textos estão no arquivo **"_config.yml"**. 
+The text settings are on file **"_config.yml"**. 
 
-Esse arquivo é repartido por duas seções que contém variáveis, onde os seus valores serão impostos no template **Chameleon Jek**. Essas seções são:
+This file is divided into two sections containing variables, where the values are implemented in the template **Chameleon Jek**. These sections are:
 
-* *SECTION CONFIG PUBLIC*: Nessa seção você deve configurar o valor de cada uma dessas variáveis de acordo com sua necessidade.
-* *SECTION CONFIG PRIVATE*: Nessa seção você **NÃO** deve alterar nenhuma variável (exeto que saiba o que está fazendo). Essa seção contém variáveis que serão manipuladas pelo **Chameleon Jek**, se fazer uma alteração sem saber, pode aparecer erros ou tirar a performace do **Chameleon Jek**.
+* *SECTION CONFIG PUBLIC*: In this section you should set the value of each of these variables according to your need.
+* *SECTION CONFIG PRIVATE*: In this section you will **NOT** must change any variable (except you know what you're doing). This section contains variables that will be handled by **Chameleon Jek**, making a change without knowing, you may see errors or take the performace of **Chameleon Jek**.
 
-> IMPORTANTE: Não modifique as variáveis de lugar em nenhuma das seções.
+> IMPORTANT: Do not modify the place of variables in any of the sections.
 
-**Aparência de cores**
+**Appearance color**
 
-As configurações de cores na aparência do **Chameleon Jek**, é aplicada por comando Rake.
+Color settings in the appearance of **Chameleon Jek**, it is applied by Rake command.
 
-Para alterar a cor do **Chameleon Jek**, faça:
+To change the color of the **Chameleon Jek**, do it:
 
-Exemplo:
+Example:
 
 ```
 $ rake theme:color:dark
 ```
 
-Use `$ rake help` e veja como se aplica outras diferentes cores.
+Use `$ rake help` and see how it applies other than colors.
 
 
 
 ## Deploy - GitHub
 
-Como **Chameleon Jek** você pode fazer deploy para o GitHub com apenas uma linha de comando. Siga os passos abaixo:
+With **Chameleon Jek** you can deploy to GitHub with only a command line. Follow the steps below:
 
-* 1 - Preparando ambiente de deploy.
+* 1 - Preparing deploy environment.
  
-Antes de fazer o deploy, entre na pasta do **Chameleon Jek** e remova a pasta **".git"** que foi gerada pelo clone do **Chameleon Jek**.
+Before you deploy, enter the folder **Chameleon Jek** and remove the folder **".git"** which was generated by the clone  **Chameleon Jek**.
 
-[ Se não sabe pra serve a pasta ".git", leia mais sobre o Git [Aqui](https://git-scm.com/book/pt-br/v1) ]
+[ If you do not know to serve the folder ".git", read more about the Git [Here](https://git-scm.com/book/en/v1) ]
 
-* 2 - Inicie um novo ambiente para o Git com o comando:
+* 2 - Start a new environment for Git with the command:
 
 ```
 $ git init
 ```
 
 
-* 3 - Adicione o endereço remoto do seu repositório no GiHub, exemplo:
+* 3 - Add the remote address of your repository on GitHub. Example:
 
 ```
 $ git add remote origin <url do repositório>
 ```
 
 
-* 4 - Agora o seu **Chameleon Jek** já está pronto para ser enviado para o seu repositório no GitHub.
+* 4 - Now your  **Chameleon Jek** is ready to be sent to your repository on GitHub.
 
-Vamos entender mais quais recursos de deploy que o **Chameleon Jek** dispoe:
+Let us understand but which deploy resources that the **Chameleon Jek** boasts:
 
--> O recurso de deploy do **Chameleon Jek**, são para 3(três) tipos de branch:
+-> The deploy feature **Chameleon Jek**, are three (3) types of branch:
 
 * master
 * dev
 * gh-pages
 
-* 4.1 - Para fazer deploy para a branch **master**, use o comando:
+* 4.1 - To deploy to the **master** branch, use the command:
 
 ```
 $ rake deploy:master
 ```
 
-* 4.2 - Para fazer deploy para a branch **dev**, use o comando:
+* 4.2 - To deploy to the **dev** branch, use the command:
 
 ```
 $ rake deploy:dev
 ```
 
-*Caso queira utilizar um nome diferente em vez de **dev**, execute o comando:*
+*If you want to use a different name instead of **dev**, use the command:*
 
 ```
 $ rake deploy:dev BRANCH="name_branch"
 ```
 
-> NOTA: Essa branch **dev** (development) é especialmente para desenvolver o 
-> projeto, para poder fazer um *merge* futuramente na branch **master**.
+> NOTE: This branch **dev** (development) it is especially to develop 
+> project in order to make a *merge* future in the branch **master**.
 
-* 4.3 - Para fazer deploy para a branch **gh-pages**, use o comando:
+* 4.3 - To deploy to the **gh-pages** branch, use the command:
 
 ```
 $ rake deploy:ghpages
 ```
 
-A branch **gh-pages** é uma branch no qual o seu site será visível, ou seja, já será possivel ver o **Chameleon Jek** funcionar na web através do navegador (com o seu endereço claro). 
+The branch **gh-pages** it is a branch in which your site will be visible, so, longer be possible to see the **Chameleon Jek** work through the web browser 
+(with the address of your GitHub Pages, of course :)). 
 
 ## DEMO 
 
-Veja uma demonstração de como o **Chameleon Jek** irá se comportar no navegador.
+See a demonstration of how the  **Chameleon Jek** will behave in the browser.
 
 [Chameleon Jek- Demo](http://williamcanin.github.io/chameleon-jek/)
 
-## Questões - (Issues)
+## Issues
 
-Faça as suas opiniões sobre o **Chameleon Jek**, em:
+Make your views on the **Chameleon Jek**, in:
 
 ## [Leave your suggestions, compliments, criticisms or whatever suits you.](https://github.com/williamcanin/chameleon-jek/issues/1)
 
-## Versões
+## Versions
 
-| Lançamento    | Versão    | Atualização relizada? |  Tipo
+| Launch    | Version   | Held update? |  Type version
 | --------------| ----------| --------------------|---------
-| 2015/08/10    | 1.0.4     |  Sim                | Beta
-| 2016/01/15    | 1.0.7     |  Sim                | Stable
+| 2015/08/10    | 1.0.4     |  Yes                | Beta
+| 2016/01/15    | 1.0.7     |  Yes                | Stable
 
 
-## Licença & Direitos Autorais
+## License & Copyright
 
-Licença: [MIT License (MIT)](https://opensource.org/licenses/MIT)
+License: [MIT License (MIT)](https://opensource.org/licenses/MIT)
 
-Direitos Autorais: William C. Canin
+William C. Canin | © Copyright 2015 - 2016
 
-*Você pode alterar a estrutura do Chameleon Jek como desejar, desde que não manipule os direitos autorais de William C.Canin no projeto*
+*You can change the structure of Chameleon Jek as you wish, provided they do not manipulate the copyrights of William C.Canin the project*
 
-## CRÉDITOS:
+## CREDITS:
 
-* Name: William C.Canin 
+* Name: William C. Canin 
 * Country: Brazil - SP
 * EMail: william.costa.canin@gmail.com    
 * GitHub: [williamcanin](http://github.com/williamcanin)
@@ -283,4 +286,4 @@ Direitos Autorais: William C. Canin
 
 ---
 
-[Voltar para topo](https://github.com/williamcanin/chameleon-jek/blob/dev/README-PtBr.md)
+[Voltar para topo](https://github.com/williamcanin/chameleon-jek/blob/dev/README-en_US.md)
