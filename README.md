@@ -1,6 +1,6 @@
-[Read in English](https://github.com/williamcanin/chameleon-jek/blob/master/README-en_US.md)
+[Read in English](https://github.com/williamcanin/chameleon-jek/blob/dev/README-en_US.md)
 
-# Chameleon Jek - Blog & Portfolio para Jekyll <img src="https://raw.githubusercontent.com/williamcanin/chameleon-jek/dev/assets/images/avatar/out.png" alt="jekyll cv creator image" width="7%" height="7%"/>
+# Chameleon Jek - Blog & Portfólio para Jekyll <img src="https://raw.githubusercontent.com/williamcanin/chameleon-jek/dev/assets/images/avatar/out.png" alt="jekyll cv creator image" width="7%" height="7%"/>
 
 
 ## Indíce
@@ -13,7 +13,9 @@
 * [Deploy - GitHub](https://github.com/williamcanin/chameleon-jek/blob/dev/README-PtBr.md#deploy-para-o-github)
 * [Demo](https://github.com/williamcanin/chameleon-jek/blob/dev/README-PtBr.md#demo)
 * [Questões](https://github.com/williamcanin/chameleon-jek/blob/dev/README-PtBr.md#issues)
-* [Licença](https://github.com/williamcanin/chameleon-jek/blob/dev/README-PtBr.md#licen%C3%A7a)
+* [Versões](https://github.com/williamcanin/chameleon-jek/blob/dev/README-PtBr.md#vers%C3%B5es)
+* [Licença & Direitos Autorais](https://github.com/williamcanin/chameleon-jek/blob/dev/README-PtBr.md#licen%C3%A7a)
+* [Créditos]()
 
 
 ## Introdução
@@ -107,6 +109,7 @@ $ rake gulp:serve
 O mínimo que você precisa ter instalado em sua máquina Windows ou Mac OS X é o Git.
 
 [Git - Windows](https://git-scm.com/download/win)
+
 [Git - Mac OS X](https://git-scm.com/download/mac)
 
 Com o Git instalado, siga as etapas abaixo:
@@ -158,8 +161,8 @@ As configurações de textos estão no arquivo **"_config.yml"**.
 
 Esse arquivo é repartido por duas seções que contém variáveis, onde os seus valores serão impostos no template **Chameleon Jek**. Essas seções são:
 
-* *SECTION CONFIG PUBLIC*: Nessa seção você deve configurar o valor de cada uma delas variáveis de acordo com sua necessidade.
-* *SECTION CONFIG PRIVATE*: Nessa seção você **NÃO** deve alterar nada, exeto que saiba o que está fazendo. Ela contém variáveis que serão manipuladas pelo **Chameleon Jek**, se fazer uma alteração sem saber, pode aparecer erros ou tirar a performace do **Chameleon Jek**.
+* *SECTION CONFIG PUBLIC*: Nessa seção você deve configurar o valor de cada uma dessas variáveis de acordo com sua necessidade.
+* *SECTION CONFIG PRIVATE*: Nessa seção você **NÃO** deve alterar nenhuma variável (exeto que saiba o que está fazendo). Essa seção contém variáveis que serão manipuladas pelo **Chameleon Jek**, se fazer uma alteração sem saber, pode aparecer erros ou tirar a performace do **Chameleon Jek**.
 
 > IMPORTANTE: Não modifique as variáveis de lugar em nenhuma das seções.
 
@@ -248,8 +251,13 @@ Veja uma demonstração de como o **Chameleon Jek** irá se comportar no navegad
 
 [Chameleon Jek- Demo](http://williamcanin.github.io/chameleon-jek/)
 
+## Questões - (Issues)
 
-## Versões e Atualizações
+Faça as suas opiniões sobre o **Chameleon Jek**, em:
+
+## [Leave your suggestions, compliments, criticisms or whatever suits you.](https://github.com/williamcanin/chameleon-jek/issues/1)
+
+## Versões
 
 | Lançamento    | Versão    | Atualização relizada? |  Tipo
 | --------------| ----------| --------------------|---------
@@ -257,19 +265,22 @@ Veja uma demonstração de como o **Chameleon Jek** irá se comportar no navegad
 | unpredictable | 1.0.7     |  Sim                | Stable
 | unpredictable | 2.0.0     |  No                 | Final
 
-## Questões - (Issues)
 
-Faça as suas opiniões sobre o **Chameleon Jek**, em:
+## Licença & Direitos Autorais
 
-## [Leave your suggestions, compliments, criticisms or whatever suits you.](https://github.com/williamcanin/chameleon-jek/issues/1)
+Licença: [MIT License (MIT)](https://opensource.org/licenses/MIT)
 
-## Licença 
+Direitos Autorais: William C. Canin
 
-[MIT License (MIT)](https://opensource.org/licenses/MIT)
-[Direitos autorais](http://github.com/williamcanin)
+*Você pode alterar a estrutura do Chameleon Jek como desejar, desde que não manipule os direitos autorais de William C.Canin no projeto*
 
-> Você pode alterar a estrutura do **Chameleon Jek** como desejar, desde que 
-> não manipule os direitos autorais do projeto.
+## CRÉDITOS:
+
+* Name: William C.Canin 
+* Country: Brazil - SP
+* EMail: william.costa.canin@gmail.com    
+* GitHub: [williamcanin](http://github.com/williamcanin)
+* Home page: [http://williamcanin.com](http://williamcanin.com)
 
 ---
 
