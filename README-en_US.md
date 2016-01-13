@@ -10,15 +10,15 @@
 
 * [Introduction](https://github.com/williamcanin/chameleon-jek/blob/dev/README-en_US.md#introduction)
 * [Requirements](https://github.com/williamcanin/chameleon-jek/blob/dev/README-en_US.md#requirements)
-* [Using - Linux](https://github.com/williamcanin/chameleon-jek/tree/dev#)
-* [Using - Windows ou Mac OS X](https://github.com/williamcanin/chameleon-jek/blob/dev/README-PtBr.md#)
-* [Settings Chameleon Jek]()
-* [Deploy - GitHub]()
-* [Demo]()
-* [Issues](https://github.com/williamcanin/chameleon-jek/tree/dev#issues)
-* [Versions](https://github.com/williamcanin/chameleon-jek/tree/dev#versions)
-* [License & Copyright]()
-* [Credits](https://github.com/williamcanin/chameleon-jek/tree/dev#credits)
+* [Users - Linux](https://github.com/williamcanin/chameleon-jek/blob/dev/README-en_US.md#using)
+* [Users - Windows and Mac OS X](https://github.com/williamcanin/chameleon-jek/blob/dev/README-en_US.md#users-windows-and-mac-os-x)
+* [Settings](https://github.com/williamcanin/chameleon-jek/blob/dev/README-en_US.md#settings)
+* [Deploy - GitHub](https://github.com/williamcanin/chameleon-jek/blob/dev/README-en_US.md#deploy---github)
+* [Demo](https://github.com/williamcanin/chameleon-jek/blob/dev/README-en_US.md#demo)
+* [Issues](https://github.com/williamcanin/chameleon-jek/tree/dev/README-en_US.md#issues)
+* [Versions](https://github.com/williamcanin/chameleon-jek/tree/dev/README-en_US.md#versions)
+* [License & Copyright](https://github.com/williamcanin/chameleon-jek/blob/dev/README-en_US.md#license--copyright)
+* [Credits](https://github.com/williamcanin/chameleon-jek/tree/dev/README-en_US.md#credits)
 
 
 ## Introduction

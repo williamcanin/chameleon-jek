@@ -8,11 +8,11 @@
 
 ## Indíce
 
-* [Introdução](https://github.com/williamcanin/chameleon-jek/blob/master/README-PtBr.md#introdu%C3%A7%C3%A3o)
-* [Requerimentos](https://github.com/williamcanin/chameleon-jek/blob/master/README-PtBr.md#requerimentos)
+* [Introdução](https://github.com/williamcanin/chameleon-jek/tree/dev#introdu%C3%A7%C3%A3o)
+* [Requerimentos](https://github.com/williamcanin/chameleon-jek/tree/dev#requerimentos)
 * [Usando - Linux](https://github.com/williamcanin/chameleon-jek/tree/dev#usando)
-* [Usando - Windows ou Mac OS X](https://github.com/williamcanin/chameleon-jek/blob/master/README-PtBr.md#usu%C3%A1rios-windows-e-mac-os-x)
-* [Configurações do Chameleon Jek](https://github.com/williamcanin/chameleon-jek/blob/master/README-PtBr.md#configura%C3%A7%C3%B5es)
+* [Usando - Windows e Mac OS X](https://github.com/williamcanin/chameleon-jek/tree/dev#usu%C3%A1rios-windows-e-mac-os-x)
+* [Configurações](https://github.com/williamcanin/chameleon-jek/blob/master/README-PtBr.md#configura%C3%A7%C3%B5es)
 * [Deploy - GitHub](https://github.com/williamcanin/chameleon-jek/tree/dev#deploy---github)
 * [Demo](https://github.com/williamcanin/chameleon-jek/tree/dev#demo)
 * [Questões](https://github.com/williamcanin/chameleon-jek/tree/dev#quest%C3%B5es---issues)
