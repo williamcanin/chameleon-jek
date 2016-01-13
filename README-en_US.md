@@ -1,7 +1,5 @@
 [Leia em português - Brasil](https://github.com/williamcanin/chameleon-jek/blob/dev/README.md)
 
-# Sorry! This document is being developed. :(
-
 # Chameleon Jek - Blog & Portfolio for Jekyll <img src="https://raw.githubusercontent.com/williamcanin/chameleon-jek/dev/assets/images/avatar/out.png" alt="jekyll cv creator image" width="7%" height="7%"/>
 
 

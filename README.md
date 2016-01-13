@@ -26,7 +26,7 @@ O **Chameleon Jek** possui até 7(sete) cores diferentes para customizar:
 
 [![Demo Chameleon Jeky Colors](https://raw.githubusercontent.com/williamcanin/chameleon-jek/dev/assets/images/preview/animation-no-border.gif)](https://raw.githubusercontent.com/williamcanin/chameleon-jek/dev/assets/images/preview/animation-no-border.gif)
 
-**Chameleon Jek** usa com [Twitter Bootstrap](http://getbootstrap.com), que lhe da maiores praticidades ao abrir sua página em um dispositivo Mobile em modo responsivo.
+**Chameleon Jek** usa [Twitter Bootstrap](http://getbootstrap.com), que lhe da maiores praticidades ao abrir sua página em um dispositivo Mobile em modo responsivo.
 
 Usando ferramentas como Gulp, Bower e Rake para seu gerenciamento, criação de dependências, e configuração do **Chameleon Jek**, os usuários e praticantes de desenvolvimento, terão maior facilidade em manipular seu projeto. 
 
@@ -141,7 +141,7 @@ $ gem install bundler
 $ bundle install
 ```
 
-* 5 - Instalando as dependências do **Chameleon Jek** (Bower), compactando e minificando "stylesheets" e "javascripts", compilando **Chameleon Jek**:
+* 5 - Instalando as dependências do **Chameleon Jek** (Bower), compactando e minificando "stylesheets" e "javascripts", e compilando **Chameleon Jek**:
 
 ```
 $ npm install
@@ -168,7 +168,7 @@ Esse arquivo é repartido por duas seções que contém variáveis, onde os seus
 
 **Aparência de cores**
 
-As configurações de aparência de cores, é aplicada por comando Rake.
+As configurações de cores na aparência do **Chameleon Jek**, é aplicada por comando Rake.
 
 Para alterar a cor do **Chameleon Jek**, faça:
 
@@ -262,8 +262,7 @@ Faça as suas opiniões sobre o **Chameleon Jek**, em:
 | Lançamento    | Versão    | Atualização relizada? |  Tipo
 | --------------| ----------| --------------------|---------
 | 2015/08/10    | 1.0.4     |  Sim                | Beta
-| unpredictable | 1.0.7     |  Sim                | Stable
-| unpredictable | 2.0.0     |  No                 | Final
+| 2016/01/15    | 1.0.7     |  Sim                | Stable
 
 
 ## Licença & Direitos Autorais
