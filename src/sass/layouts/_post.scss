@@ -8,11 +8,14 @@
     padding: 7% 15% 7%;
 
     blockquote{
-      border: 0.1rem solid rgba(45, 79, 37,0.4);
+      // border: 0.1rem solid rgba(45, 79, 37,0.4);
+      border: none;
       border-left: 0.7rem solid rgba(45, 79, 37,0.4);
       background-color: #f1f1f1;
-      border-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-top-left-radius: 5px;
       margin: 20px 0px;
+
     }
 
     @media only screen and (min-width:768px) and (max-width:1024px) {
