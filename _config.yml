@@ -9,7 +9,7 @@ site_url: "http://williamcanin.com" # the base hostname & protocol for your site
 site_baseurl: "/chameleon-jek/" # the subpath of your site, e.g. /blog/
  # description: used by search engines
 description: >
-  Chameleon Jek - Blog &'Portfolio for Jekyll
+  Chameleon Jek - Blog & Portfolio for Jekyll
 
 # Meta tag for Expires / Cache Control - Max 1 Year
 expires: "Sat, 24 Dec 2016 00:10:00 GMT"
@@ -24,6 +24,28 @@ language: "english"
 #
 #==========================================================
 
+
+# Block - Formspree
+#
+# Enable/Disable Form Contact
+enable_formspree: "yes" # ( yes | no)
+msg_disable_formspree: "Sorry! Sending message has been disabled."
+#
+# Your email registered in Formspree. Example: "your_email@domain.com"
+email_formspree:
+#
+# Texts Form Send
+subject_formspree: "New submission!"
+send_by_formspree: "Send by"
+reply_to_formspree: "Reply To"
+content_formspree: "Content"
+message_sent_formspree: "Thanks for contacting us. We will reply as soon as possible."
+#
+# Placeholder Form
+placeholder_name_formspree: "Your Name"
+placeholder_email_formspree: "EMail Address"
+placeholder_content_formspree: "What would you like to say?"
+# Block - Formspree
 
 
 # Block - Theme specific configuration [BEGIN]
@@ -50,7 +72,7 @@ theme:
 
 # Block - FakeLoader
 # fakeLoader (yes/no)
-  fakeLoader: "no"
+  fakeLoader: "yes"
   fl_local: "all" # { all }
   fl_timeToHide: "1500" # milliseconds, default 1500
   # Default fl_bgColor: #2D4F25

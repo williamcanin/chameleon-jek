@@ -31,7 +31,7 @@ To learn which commands the **Chameleon Jek** boasts, run:
 $ rake help
 ```
 
-<a href="{{ prepend: site.baseurl | prepend: site.url }}/sample-post.html">See an example of post</a>
+<a href="{{ prepend: site.baseurl | prepend: site.url }}/sample-post/">See an example of post</a>
 
 # Issues
 

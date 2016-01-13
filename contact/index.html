@@ -1,0 +1,36 @@
+---
+layout: page
+title: Contact
+date: 2015-01-17 00:00:01
+comment: false
+published: true
+cover: ''
+permalink: /contact/
+categories: normal
+---
+
+{% if site.enable_formspree == "yes" and site.email_formspree %}
+<div class="row wrapper formspree">
+  <form action="https://formspree.io/{{ site.email_formspree }}" method="POST">
+      <div class="row name-fs">
+        <input type="text" class="form-control" name="{{ site.send_by_formspree }}" placeholder="{{ site.placeholder_name_formspree }}">
+      </div>
+      <div class="row email-fs">
+        <input type="email" class="form-control" name="{{ site.reply_to_formspree }}" placeholder="{{ site.placeholder_email_formspree }}">
+      </div>
+      <div class="row content-fs">
+          <textarea type="text" class="form-control" name="{{ site.content_formspree }}"  rows="7" cols="50" placeholder="{{ site.placeholder_content_formspree }}"></textarea>
+      </div>
+      <div class="row wrapper btn-fs">
+        <input class="btn btn-success btn-send-fs" type="submit" value="Send">
+      </div>
+      <input type="hidden" name="_next" value="{{ prepend: site.baseurl | prepend: site.url }}/contact/thanks/"  data-toggle="modal"/>
+      <input type="hidden" name="_subject" value="{{ site.subject_formspree }} - {{ site.site_url }}{{ site.site_baseurl }}" />
+      <input type="text" name="_gotcha" style="display:none" />
+  </form>
+</div>
+{% else %}
+  <div class="row wrapper warning-disable-fs">
+      <h3><i class="fa fa-paper-plane"></i>{{ site.msg_disable_formspree }}</h3>
+  </div>
+{% endif %}

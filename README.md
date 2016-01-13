@@ -14,6 +14,7 @@
 * [Usando - Windows e Mac OS X](https://github.com/williamcanin/chameleon-jek/tree/dev#usu%C3%A1rios-windows-e-mac-os-x)
 * [Configurações](https://github.com/williamcanin/chameleon-jek/blob/master/README-PtBr.md#configura%C3%A7%C3%B5es)
 * [Deploy - GitHub](https://github.com/williamcanin/chameleon-jek/tree/dev#deploy---github)
+* [Contacto](https://github.com/williamcanin/chameleon-jek/tree/dev#contacto)
 * [Demo](https://github.com/williamcanin/chameleon-jek/tree/dev#demo)
 * [Questões](https://github.com/williamcanin/chameleon-jek/tree/dev#quest%C3%B5es---issues)
 * [Versões](https://github.com/williamcanin/chameleon-jek/tree/dev#vers%C3%B5es)
@@ -248,6 +249,16 @@ $ rake deploy:ghpages
 
 A branch **gh-pages** é uma branch no qual o seu site será visível, ou seja, já será possivel ver o **Chameleon Jek** funcionar na web através do navegador (com o endereço do seu GitHub Pages, claro :)). 
 
+## Contacto
+
+O recurso de contacto do **Chameleon Jek**, é um formulário no qual o remetente lhe envia uma mensagem que será redirecionado para seu E-Mail.
+
+A mensagem é enviada através do [Formspree](https://formspree.io/).
+
+Então se deseja utilizar este recurso, tem que se cadastrar no [Formspree](http://formspree.io/register).
+
+Após o cadastro, insira o E-Mail cadastrado no Bloco **"Formspree"** no arquivo ***_config.yml** e também faça as demais configurações que lhe agradar nas variáveis.
+
 ## DEMO 
 
 Veja uma demonstração de como o **Chameleon Jek** irá se comportar no navegador.
@@ -265,7 +276,7 @@ Faça as suas opiniões sobre o **Chameleon Jek**, em:
 | Lançamento    | Versão    | Atualização realizada? |  Tipo versão
 | --------------| ----------| --------------------|---------
 | 2015/08/10    | 1.0.4     |  Sim                | Beta
-| 2016/01/15    | 1.0.7     |  Sim                | Stable
+| 2016/01/13    | 1.0.7     |  Sim                | Stable
 
 
 ## Licença & Direitos Autorais
@@ -286,4 +297,4 @@ Direitos Autorais: William C. Canin | Copyright © 2015 - 2016
 
 ---
 
-[Voltar para topo](https://github.com/williamcanin/chameleon-jek/blob/master/README-PtBr.md)
+[Voltar para topo](https://github.com/williamcanin/chameleon-jek/blob/master/README.md)

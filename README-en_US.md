@@ -14,6 +14,7 @@
 * [Users - Windows and Mac OS X](https://github.com/williamcanin/chameleon-jek/blob/dev/README-en_US.md#users-windows-and-mac-os-x)
 * [Settings](https://github.com/williamcanin/chameleon-jek/blob/dev/README-en_US.md#settings)
 * [Deploy - GitHub](https://github.com/williamcanin/chameleon-jek/blob/dev/README-en_US.md#deploy---github)
+* [Contact](https://github.com/williamcanin/chameleon-jek/tree/dev/README-en_US.md#contact)
 * [Demo](https://github.com/williamcanin/chameleon-jek/blob/dev/README-en_US.md#demo)
 * [Issues](https://github.com/williamcanin/chameleon-jek/tree/dev/README-en_US.md#issues)
 * [Versions](https://github.com/williamcanin/chameleon-jek/tree/dev/README-en_US.md#versions)
@@ -248,6 +249,17 @@ $ rake deploy:ghpages
 The branch **gh-pages** it is a branch in which your site will be visible, so, longer be possible to see the **Chameleon Jek** work through the web browser 
 (with the address of your GitHub Pages, of course :)). 
 
+## Contact
+
+Contact feature **Chameleon Jek**, it is a form in which the sender sends a message you will be redirected to your E-Mail.
+
+The message is sent through the [Formspree](https://formspree.io/).
+
+So if you want to use this feature, You have to register in [Formspree](http://formspree.io/register).
+
+After registering, enter the registered EMail in Block **"Formspree"** in file ***_config.yml** and also make other settings you please in the variables.
+
+
 ## DEMO 
 
 See a demonstration of how the  **Chameleon Jek** will behave in the browser.
@@ -265,7 +277,7 @@ Make your views on the **Chameleon Jek**, in:
 | Launch    | Version   | Held update? |  Type version
 | --------------| ----------| --------------------|---------
 | 2015/08/10    | 1.0.4     |  Yes                | Beta
-| 2016/01/15    | 1.0.7     |  Yes                | Stable
+| 2016/01/13    | 1.0.7     |  Yes                | Stable
 
 
 ## License & Copyright

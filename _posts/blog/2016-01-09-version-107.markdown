@@ -19,3 +19,45 @@ introduction: >
       Nova forma de deploy...essa são algumas novidades da versão 1.0.7. Use agorá!
   </p>
 ---
+
+# Check the news!
+
+## 1 - Visual modified
+
+The **Chameleon Jek** it passed a modest change in parts of the layout, which makes the issue even more attractive.
+
+One is the [Fakeloader.JS](http://joaopereirawd.github.io/fakeLoader.js/), that simulates the loader of the page, where the user can configure how long Loader is active and what animations you want.
+
+## 2 - New way of Linux Installation
+
+Installing **Chameleon Jek** in Linux, it became easy and simplified..
+
+With an installer script and Configurator, where three (3) commands are responsible for installing all dependencies for the **Chameleon Jek** and requirements.
+
+## 3 - A form for conducting contact shipping!
+
+This is the new feature of this version 1.0.7 of **Chameleon Jek**.
+
+Using the [Formspre](https://formspree.io), now it's easy to get your message through email.
+
+> NOTE: By default the form is disabled. Enable it in **_config.yml**.
+
+## 4 - New process manager
+
+The **Chameleon Jek** He began to use what's new. Gulp is now the new process manager of **Chameleon Jek**.
+
+## 5 - New commands in Rakefile
+
+Now it's even easier to manage the  **Chameleon Jek** in a simpler form with command in Rakefile, you can do:
+
+* Conducting deploys
+* Setting colors  **Chameleon Jek**.
+* Creating header posts and pages.
+* And other more than you can know using the command: `$ rake help`.
+
+
+# Use now!
+
+<p align="center">
+<a style="font-size: 30px;margin-bottom:200px;" href="https://github.com/williamcanin/chameleon-jek" class="btn btn-success" target="_blank">Download</a>
+</p>

@@ -34,7 +34,7 @@ class Main < Variables
       system('sed -i \'s|^  fl_bgColor: .*|  fl_bgColor: "#2D4F25"|g\' _config.yml')
       system('sed -i \'s|^  fl_spinnerColor: .*|  fl_spinnerColor: "#fff"|g\' _config.yml')
     elsif color == 'blue'
-      system('sed -i \'s|^  fl_bgColor: .*|  fl_bgColor: "#2D4F25"|g\' _config.yml')
+      system('sed -i \'s|^  fl_bgColor: .*|  fl_bgColor: "#414950"|g\' _config.yml')
       system('sed -i \'s|^  fl_spinnerColor: .*|  fl_spinnerColor: "#fff"|g\' _config.yml')
      elsif color == 'pink'
       system('sed -i \'s|^  fl_bgColor: .*|  fl_bgColor: "#BF589D"|g\' _config.yml')

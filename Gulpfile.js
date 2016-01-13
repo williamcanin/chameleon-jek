@@ -30,7 +30,7 @@ var paths = {
     stylesheets: ['assets/stylesheets'],
     gh_pages: ['gh-pages'],
     build_site: ['_site'],
-    jekyll: [ '_config.yml' ,'index.html', './category/**/*', './tags/**/*', '_layouts/**/*.html', '_posts/**/*', '_pages/**/*', './_includes/**/*.html']
+    jekyll: [ '_config.yml' ,'index.html', './contact/**/*', './category/**/*', './tags/**/*', '_layouts/**/*.html', '_posts/**/*', '_pages/**/*', './_includes/**/*.html']
 
 };
 
