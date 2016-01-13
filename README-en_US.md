@@ -155,7 +155,7 @@ $ npm install
 $ rake gulp:serve
 ```
 
-## Configurations
+## Settings
 
 **Text**
 
