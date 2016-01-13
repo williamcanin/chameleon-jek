@@ -1,4 +1,4 @@
-@mixin index($color-border-box-posts,$text-color, $adorned-header-color,$adorned-header-background,$primary-color,$title-color,$text-color-hover) {
+@mixin index($bg-color-box-posts,$color-border-box-posts,$text-color, $adorned-header-color,$adorned-header-background,$primary-color,$title-color,$text-color-hover) {
 
 .home {
   .wrapper {
@@ -66,7 +66,7 @@
         border: $color-border-box-posts;
         padding: 7%;
         border-radius: 1%;
-        background-color: #F6F6F6;
+        background-color: $bg-color-box-posts;
         li.calendar-post-title {
           list-style: none;
 

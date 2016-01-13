@@ -26,7 +26,7 @@
 
 **Chameleon Jek**, it is the template for [Jekyll](http://jekyllrb.com) built especially for those who want a blog and a portfolio with speed, lightness and greater ability to customize color.
 
-The **Chameleon Jek** it has seven (7) different colors to customize:
+The **Chameleon Jek** it has eight (8) different colors to customize:
 
 [![Demo Chameleon Jeky Colors](https://raw.githubusercontent.com/williamcanin/chameleon-jek/dev/assets/images/preview/animation-no-border.gif)](https://raw.githubusercontent.com/williamcanin/chameleon-jek/dev/assets/images/preview/demo-colors.gif)
 
@@ -257,7 +257,7 @@ The message is sent through the [Formspree](https://formspree.io/).
 
 So if you want to use this feature, You have to register in [Formspree](http://formspree.io/register).
 
-After registering, enter the registered EMail in Block **"Formspree"** in file ***_config.yml** and also make other settings you please in the variables.
+After registering, enter the registered EMail in Block **"Formspree"** in file **_config.yml** and also make other settings you please in the variables.
 
 
 ## DEMO 

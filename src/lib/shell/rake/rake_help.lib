@@ -27,6 +27,7 @@ Usage: rake [options]
     theme:color:pink      changes the color Chameleon Jek for 'pink'.
     theme:color:orange    changes the color Chameleon Jek for 'orange'.
     theme:color:light     changes the color Chameleon Jek for 'light'.
+    theme:color:white     changes the color Chameleon Jek for 'white'.
 
 
 $(tput setaf 38)→ TAKS OF GULP: $(tput sgr0)

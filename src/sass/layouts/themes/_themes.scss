@@ -2,11 +2,14 @@
 
 @if $theme == 'blue' {
 
+$color_blue: #384047;
+$color_blue_rgba: rgba(56,64,71,.5);
+
 /* Background color */
 $background-color: #fff !default;
 
 /* Primary color */
-$primary-color: #384047 !default;
+$primary-color: $color_blue !default;
 $primary-color-hover: #414950 !default;
 
 /* Text color */
@@ -14,31 +17,31 @@ $text-color: #333 !default;
 $text-color-hover: #414950 !default;
 
 /* Title content color */
-$title-color: #384047 !default;
+$title-color: $color_blue !default;
 
 /* Links color */
 $links-color: #1e72f0 !default;
-$links-color-hover: #384047 !default;
+$links-color-hover: $color_blue !default;
 
 /* Links Navbar Color */
 $links-navbar-color: #fff !default;
 $links-navbar-color-hover: #f1f1f1 !default;
 
 /* Background page About - default color */
-$bg-title-about: #384047 !default;
+$bg-title-about: $color_blue !default;
 
 /* adorned-header */
-$adorned-header-background: #384047 !default;
+$adorned-header-background: $color_blue !default;
 $adorned-header-color: #fff !default;
 
 /* Background navbar color */
-$bg-navbar-color: #384047 !default;
+$bg-navbar-color: $color_blue !default;
 
 /* Background navbar (Page About ) */
 $bg-navbar-color-about: #292D31 !default;
 
 /* Button top color */
-$bg-button-top-color: #384047 !default;
+$bg-button-top-color: $color_blue !default;
 $button-top-color: #fff !default;
 
 /* Color Right and Left body Navbar Static */
@@ -48,19 +51,22 @@ $body-right-left-color: #fff !default;
 $fill-nav-icon: #fff !default;
 
 /* Color Bg Search */
-$color-bg-search: lighten(#384047, 15%) !important;
+$color-bg-search: lighten($color_blue, 15%) !important;
 
 /* Color border box posts */
-$color-border-box-posts: 0.1rem solid lighten( #384047, 60%);
+$color-border-box-posts: 0.1rem solid lighten($color_blue, 60%);
+
+/* Bg Box posts index */
+$bg-color-box-posts: #F6F6F6;
 
 /* Footer background  */
-$footer-background: #384047;
+$footer-background: $color_blue;
 
 /* Texts footer */
 $footer-text-color: #fff;
 
 /* Portfolio Capitan Bg */
-$portfolio-caption-bg: rgba(56,64,71,.5);
+$portfolio-caption-bg: $color_blue_rgba;
 
 /* Mixins Default */
 @include global($background-color,$bg-navbar-color-about,$body-right-left-color,$links-navbar-color-hover,$links-navbar-color,$primary-color-hover,$bg-navbar-color);
@@ -73,7 +79,7 @@ $portfolio-caption-bg: rgba(56,64,71,.5);
 @include post($primary-color);
 @include page($links-navbar-color,$bg-title-about,$primary-color);
 @include markdown($primary-color);
-@include index($color-border-box-posts,$text-color,$adorned-header-color,$adorned-header-background,$primary-color,$title-color,$text-color-hover);
+@include index($bg-color-box-posts,$color-border-box-posts,$text-color,$adorned-header-color,$adorned-header-background,$primary-color,$title-color,$text-color-hover);
 
 /* Includes */
 @include header($bg-navbar-color,$links-navbar-color,$links-navbar-color-hover,$primary-color);
@@ -87,11 +93,14 @@ $portfolio-caption-bg: rgba(56,64,71,.5);
 } @else if $theme == 'red'{
 
 
+$color_red: #A9181A;
+$color_red_rgba: rgba(168,24,26,.5);
+
 /* Background color */
 $background-color: #fff !default;
 
 /* Primary color */
-$primary-color: #A9181A !default;
+$primary-color: $color_red !default;
 $primary-color-hover: #484848 !default;
 
 /* Text color */
@@ -99,7 +108,7 @@ $text-color: #333 !default;
 $text-color-hover: #BB3D3F !default;
 
 /* Title content color */
-$title-color: #A9181A !default;
+$title-color: $color_red !default;
 
 /* Links color */
 $links-color: #1e72f0 !default;
@@ -110,20 +119,20 @@ $links-navbar-color: #fff !default;
 $links-navbar-color-hover: #fff !default;
 
 /* Background page About - default color */
-$bg-title-about: #A9181A !default;
+$bg-title-about: $color_red !default;
 
 /* adorned-header */
-$adorned-header-background: #A9181A !default;
+$adorned-header-background: $color_red !default;
 $adorned-header-color: #fff !default;
 
 /* Background navbar color */
-$bg-navbar-color: #A9181A !default;
+$bg-navbar-color: $color_red !default;
 
 /* Background navbar (Page About ) */
-$bg-navbar-color-about: #A9181A !default;
+$bg-navbar-color-about: $color_red !default;
 
 /* Button top color */
-$bg-button-top-color: #A9181A !default;
+$bg-button-top-color: $color_red !default;
 $button-top-color: #fff !default;
 
 /* Color Right and Left body Navbar Static */
@@ -133,19 +142,22 @@ $body-right-left-color: #fff !default;
 $fill-nav-icon: #fff !default;
 
 /* Color Bg Search */
-$color-bg-search: lighten(#A9181A, 10%) !important;
+$color-bg-search: lighten($color_red, 10%) !important;
 
 /* Color border box posts */
-$color-border-box-posts: 0.1rem solid lighten( #A9181A, 47%);
+$color-border-box-posts: 0.1rem solid lighten($color_red, 47%);
+
+/* Bg Box posts index */
+$bg-color-box-posts: #F6F6F6;
 
 /* Footer background  */
-$footer-background: #A9181A;
+$footer-background: $color_red;
 
 /* Texts footer */
 $footer-text-color: #fff;
 
 /* Portfolio Capitan Bg */
-$portfolio-caption-bg: rgba(168,24,26,.5);
+$portfolio-caption-bg: $color_red_rgba;
 
 /* Mixins Default */
 @include global($background-color,$bg-navbar-color-about,$body-right-left-color,$links-navbar-color-hover,$links-navbar-color,$primary-color-hover,$bg-navbar-color);
@@ -158,7 +170,7 @@ $portfolio-caption-bg: rgba(168,24,26,.5);
 @include post($primary-color);
 @include page($links-navbar-color,$bg-title-about,$primary-color);
 @include markdown($primary-color);
-@include index($color-border-box-posts,$text-color,$adorned-header-color,$adorned-header-background,$primary-color,$title-color,$text-color-hover);
+@include index($bg-color-box-posts,$color-border-box-posts,$text-color,$adorned-header-color,$adorned-header-background,$primary-color,$title-color,$text-color-hover);
 
 /* Includes */
 @include header($bg-navbar-color,$links-navbar-color,$links-navbar-color-hover,$primary-color);
@@ -171,19 +183,22 @@ $portfolio-caption-bg: rgba(168,24,26,.5);
 
 } @else if $theme == 'pink' {
 
+$color_pink: #BF589D;
+$color_pink_rgba: rgba(224,70,173,.5);
+
     /* Background color */
 $background-color: #fff !default;
 
 /* Primary color */
-$primary-color: #BF589D !default;
+$primary-color: $color_pink !default;
 $primary-color-hover: #484848 !default;
 
 /* Text color */
 $text-color: #333 !default;
-$text-color-hover: #BF589D !default;
+$text-color-hover: $color_pink !default;
 
 /* Title content color */
-$title-color: #E046AD !default;
+$title-color: $color_pink !default;
 
 /* Links color */
 $links-color: #1e72f0 !default;
@@ -194,20 +209,20 @@ $links-navbar-color: #fff !default;
 $links-navbar-color-hover: #fff !default;
 
 /* Background page About - default color */
-$bg-title-about: #E046AD !default;
+$bg-title-about: $color_pink !default;
 
 /* adorned-header */
-$adorned-header-background: #E046AD !default;
+$adorned-header-background: $color_pink !default;
 $adorned-header-color: #fff !default;
 
 /* Background navbar color */
-$bg-navbar-color: #E046AD !default;
+$bg-navbar-color: $color_pink !default;
 
 /* Background navbar (Page About ) */
-$bg-navbar-color-about: #E046AD !default;
+$bg-navbar-color-about: $color_pink !default;
 
 /* Button top color */
-$bg-button-top-color: #E046AD !default;
+$bg-button-top-color: $color_pink !default;
 $button-top-color: #fff !default;
 
 /* Color Right and Left body Navbar Static */
@@ -217,19 +232,22 @@ $body-right-left-color: #fff !default;
 $fill-nav-icon: #fff !default;
 
 /* Color Bg Search */
-$color-bg-search: lighten(#E046AD, 12%) !important;
+$color-bg-search: lighten($color_pink, 12%) !important;
 
 /* Color border box posts */
-$color-border-box-posts: 0.1rem solid lighten( #E046AD, 32%);
+$color-border-box-posts: 0.1rem solid lighten($color_pink, 32%);
+
+/* Bg Box posts index */
+$bg-color-box-posts: #F6F6F6;
 
 /* Footer background  */
-$footer-background: #E046AD;
+$footer-background: $color_pink;
 
 /* Texts footer */
 $footer-text-color: #fff;
 
 /* Portfolio Capitan Bg */
-$portfolio-caption-bg: rgba(224,70,173,.5);
+$portfolio-caption-bg: $color_pink_rgba;
 
 /* Mixins Default */
 @include global($background-color,$bg-navbar-color-about,$body-right-left-color,$links-navbar-color-hover,$links-navbar-color,$primary-color-hover,$bg-navbar-color);
@@ -242,7 +260,7 @@ $portfolio-caption-bg: rgba(224,70,173,.5);
 @include post($primary-color);
 @include page($links-navbar-color,$bg-title-about,$primary-color);
 @include markdown($primary-color);
-@include index($color-border-box-posts,$text-color,$adorned-header-color,$adorned-header-background,$primary-color,$title-color,$text-color-hover);
+@include index($bg-color-box-posts,$color-border-box-posts,$text-color,$adorned-header-color,$adorned-header-background,$primary-color,$title-color,$text-color-hover);
 
 /* Includes */
 @include header($bg-navbar-color,$links-navbar-color,$links-navbar-color-hover,$primary-color);
@@ -254,11 +272,14 @@ $portfolio-caption-bg: rgba(224,70,173,.5);
 
 } @else if $theme == 'dark' {
 
+$color_dark: #000;
+$color_dark_rgba: rgba(0,0,0,.6);
+
     /* Background color */
 $background-color: #fff !default;
 
 /* Primary color */
-$primary-color: #000 !default;
+$primary-color: $color_dark !default;
 $primary-color-hover: #484848 !default;
 
 /* Text color */
@@ -266,7 +287,7 @@ $text-color: #333 !default;
 $text-color-hover: #1D1D1D !default;
 
 /* Title content color */
-$title-color: #000 !default;
+$title-color: $color_dark !default;
 
 /* Links color */
 $links-color: #1e72f0 !default;
@@ -280,17 +301,17 @@ $links-navbar-color-hover: #f1f1f1 !default;
 $bg-title-about: #141414 !default;
 
 /* adorned-header */
-$adorned-header-background: #000 !default;
+$adorned-header-background: $color_dark !default;
 $adorned-header-color: #fff !default;
 
 /* Background navbar color */
-$bg-navbar-color: #000 !default;
+$bg-navbar-color: $color_dark !default;
 
 /* Background navbar (Page About ) */
-$bg-navbar-color-about: #000 !default;
+$bg-navbar-color-about: $color_dark !default;
 
 /* Button top color */
-$bg-button-top-color: #000 !default;
+$bg-button-top-color: $color_dark !default;
 $button-top-color: #fff !default;
 
 /* Color Right and Left body Navbar Static */
@@ -300,19 +321,22 @@ $body-right-left-color: #fff !default;
 $fill-nav-icon: #fff !default;
 
 /* Color Bg Search */
-$color-bg-search: lighten(#000, 8%) !important;
+$color-bg-search: lighten($color_dark, 8%) !important;
 
 /* Color border box posts */
-$color-border-box-posts: 0.1rem solid lighten( #000, 85%);
+$color-border-box-posts: 0.1rem solid lighten($color_dark, 85%);
+
+/* Bg Box posts index */
+$bg-color-box-posts: #F6F6F6;
 
 /* Footer background  */
-$footer-background: #000;
+$footer-background: $color_dark;
 
 /* Texts footer */
 $footer-text-color: #fff;
 
 /* Portfolio Capitan Bg */
-$portfolio-caption-bg: rgba(0,0,0,.6);
+$portfolio-caption-bg: $color_dark_rgba;
 
 /* Mixins Default */
 @include global($background-color,$bg-navbar-color-about,$body-right-left-color,$links-navbar-color-hover,$links-navbar-color,$primary-color-hover,$bg-navbar-color);
@@ -325,7 +349,7 @@ $portfolio-caption-bg: rgba(0,0,0,.6);
 @include post($primary-color);
 @include page($links-navbar-color,$bg-title-about,$primary-color);
 @include markdown($primary-color);
-@include index($color-border-box-posts,$text-color,$adorned-header-color,$adorned-header-background,$primary-color,$title-color,$text-color-hover);
+@include index($bg-color-box-posts,$color-border-box-posts,$text-color,$adorned-header-color,$adorned-header-background,$primary-color,$title-color,$text-color-hover);
 
 /* Includes */
 @include header($bg-navbar-color,$links-navbar-color,$links-navbar-color-hover,$primary-color);
@@ -337,19 +361,22 @@ $portfolio-caption-bg: rgba(0,0,0,.6);
 
 } @else if $theme == 'green' {
 
+$color_green: #2D4F25;
+$color_green_rgba: rgba(45,79,37,.5);
+
        /* Background color */
 $background-color: #fff !default;
 
 /* Primary color */
-$primary-color: #2D4F25 !default;
+$primary-color: $color_green !default;
 $primary-color-hover: #484848 !default;
 
 /* Text color */
 $text-color: #333 !default;
-$text-color-hover: #4D7544 !default;
+$text-color-hover: $color_green !default;
 
 /* Title content color */
-$title-color: #2D4F25 !default;
+$title-color: $color_green !default;
 
 /* Links color */
 $links-color: #1e72f0 !default;
@@ -363,17 +390,17 @@ $links-navbar-color-hover: #f1f1f1 !default;
 $bg-title-about: #2D4F25 !default;
 
 /* adorned-header */
-$adorned-header-background: #2D4F25 !default;
+$adorned-header-background: $color_green !default;
 $adorned-header-color: #fff !default;
 
 /* Background navbar color */
-$bg-navbar-color: #2D4F25 !default;
+$bg-navbar-color: $color_green !default;
 
 /* Background navbar (Page About ) */
 $bg-navbar-color-about: #1C3017 !default;
 
 /* Button top color */
-$bg-button-top-color: #2D4F25 !default;
+$bg-button-top-color: $color_green !default;
 $button-top-color: #fff !default;
 
 /* Color Right and Left body Navbar Static */
@@ -383,19 +410,22 @@ $body-right-left-color: #fff !default;
 $fill-nav-icon: #fff !default;
 
 /* Color Bg Search */
-$color-bg-search: lighten(#2D4F25, 15%) !important;
+$color-bg-search: lighten($color_green, 15%) !important;
 
 /* Color border box posts */
-$color-border-box-posts: 0.1rem solid lighten( #2D4F25, 60%);
+$color-border-box-posts: 0.1rem solid lighten($color_green, 60%);
+
+/* Bg Box posts index */
+$bg-color-box-posts: #F6F6F6;
 
 /* Footer background  */
-$footer-background: #2D4F25;
+$footer-background: $color_green;
 
 /* Texts footer */
 $footer-text-color: #fff;
 
 /* Portfolio Capitan Bg */
-$portfolio-caption-bg: rgba(45,79,37,.5);
+$portfolio-caption-bg: $color_green_rgba;
 
 
 /* Mixins Default */
@@ -409,7 +439,7 @@ $portfolio-caption-bg: rgba(45,79,37,.5);
 @include post($primary-color);
 @include page($links-navbar-color,$bg-title-about,$primary-color);
 @include markdown($primary-color);
-@include index($color-border-box-posts,$text-color,$adorned-header-color,$adorned-header-background,$primary-color,$title-color,$text-color-hover);
+@include index($bg-color-box-posts,$color-border-box-posts,$text-color,$adorned-header-color,$adorned-header-background,$primary-color,$title-color,$text-color-hover);
 
 /* Includes */
 @include header($bg-navbar-color,$links-navbar-color,$links-navbar-color-hover,$primary-color);
@@ -421,11 +451,14 @@ $portfolio-caption-bg: rgba(45,79,37,.5);
 
 } @else if $theme == 'orange' {
 
+$color_orange: #BD3F15;
+$color_orange_rgba: rgba(189,63,21,.5);
+
 /* Background color */
 $background-color: #fff !default;
 
 /* Primary color */
-$primary-color: #BD3F15 !default;
+$primary-color: $color_orange !default;
 $primary-color-hover: #484848 !default;
 
 /* Text color */
@@ -433,7 +466,7 @@ $text-color: #333 !default;
 $text-color-hover: #DC5C32 !default;
 
 /* Title content color */
-$title-color: #BD3F15 !default;
+$title-color: $color_orange !default;
 
 /* Links color */
 $links-color: #1e72f0 !default;
@@ -444,20 +477,20 @@ $links-navbar-color: #fff !default;
 $links-navbar-color-hover: #f1f1f1 !default;
 
 /* Background page About - default color */
-$bg-title-about: #BD3F15 !default;
+$bg-title-about: $color_orange!default;
 
 /* adorned-header */
-$adorned-header-background: #BD3F15 !default;
+$adorned-header-background: $color_orange !default;
 $adorned-header-color: #fff !default;
 
 /* Background navbar color */
-$bg-navbar-color: #BD3F15 !default;
+$bg-navbar-color: $color_orange !default;
 
 /* Background navbar (Page About ) */
-$bg-navbar-color-about: #A83611 !default;
+$bg-navbar-color-about: $color_orange !default;
 
 /* Button top color */
-$bg-button-top-color: #BD3F15 !default;
+$bg-button-top-color: $color_orange !default;
 $button-top-color: #fff !default;
 
 /* Color Right and Left body Navbar Static */
@@ -467,19 +500,22 @@ $body-right-left-color: #fff !default;
 $fill-nav-icon: #fff !default;
 
 /* Color Bg Search */
-$color-bg-search: lighten(#BD3F15, 15%) !important;
+$color-bg-search: lighten($color_orange, 15%) !important;
 
 /* Color border box posts */
-$color-border-box-posts: 0.1rem solid lighten( #BD3F15, 47%);
+$color-border-box-posts: 0.1rem solid lighten($color_orange, 47%);
+
+/* Bg Box posts index */
+$bg-color-box-posts: #F6F6F6;
 
 /* Footer background  */
-$footer-background: #BD3F15;
+$footer-background: $color_orange;
 
 /* Texts footer */
 $footer-text-color: #fff;
 
 /* Portfolio Capitan Bg */
-$portfolio-caption-bg: rgba(189,63,21,.5);
+$portfolio-caption-bg: $color_orange_rgba;
 
 /* Mixins Default */
 @include global($background-color,$bg-navbar-color-about,$body-right-left-color,$links-navbar-color-hover,$links-navbar-color,$primary-color-hover,$bg-navbar-color);
@@ -492,7 +528,7 @@ $portfolio-caption-bg: rgba(189,63,21,.5);
 @include post($primary-color);
 @include page($links-navbar-color,$bg-title-about,$primary-color);
 @include markdown($primary-color);
-@include index($color-border-box-posts,$text-color,$adorned-header-color,$adorned-header-background,$primary-color,$title-color,$text-color-hover);
+@include index($bg-color-box-posts,$color-border-box-posts,$text-color,$adorned-header-color,$adorned-header-background,$primary-color,$title-color,$text-color-hover);
 
 /* Includes */
 @include header($bg-navbar-color,$links-navbar-color,$links-navbar-color-hover,$primary-color);
@@ -503,6 +539,9 @@ $portfolio-caption-bg: rgba(189,63,21,.5);
 @include search($primary-color,$color-bg-search);
 
 } @else if $theme == 'light' {
+
+$color_light: #F1F1F1;
+$color_light_rgba: rgba(66,66,66,.5);
 
 /* Background color */
 $background-color: #fff !default;
@@ -530,11 +569,11 @@ $links-navbar-color-hover: #484848 !default;
 $bg-title-about: #333 !default;
 
 /* adorned-header */
-$adorned-header-background: #F1F1F1 !default;
+$adorned-header-background: $color_light !default;
 $adorned-header-color: #424242 !default;
 
 /* Background navbar color */
-$bg-navbar-color: #F1F1F1 !default;
+$bg-navbar-color: $color_light !default;
 
 /* Background navbar (Page About ) */
 $bg-navbar-color-about: #333 !default;
@@ -555,14 +594,17 @@ $color-bg-search: lighten(#424242, 15%) !important;
 /* Color border box posts */
 $color-border-box-posts: 0.1rem solid lighten( #505050, 55%);
 
+/* Bg Box posts index */
+$bg-color-box-posts: #F6F6F6;
+
 /* Footer background  */
-$footer-background: #ECECEC;
+$footer-background: $color_light;
 
 /* Texts footer */
 $footer-text-color: #505050;
 
 /* Portfolio Capitan Bg */
-$portfolio-caption-bg: rgba(66,66,66,.5);
+$portfolio-caption-bg: $color_light_rgba;
 
 
 /* Mixins Default */
@@ -576,7 +618,97 @@ $portfolio-caption-bg: rgba(66,66,66,.5);
 @include post($primary-color);
 @include page($links-navbar-color,$bg-title-about,$primary-color);
 @include markdown($primary-color);
-@include index($color-border-box-posts,$text-color,$adorned-header-color,$adorned-header-background,$primary-color,$title-color,$text-color-hover);
+@include index($bg-color-box-posts,$color-border-box-posts,$text-color,$adorned-header-color,$adorned-header-background,$primary-color,$title-color,$text-color-hover);
+
+/* Includes */
+@include header($bg-navbar-color,$links-navbar-color,$links-navbar-color-hover,$primary-color);
+@include color-nav-icon($fill-nav-icon);
+@include button-top($bg-button-top-color, $button-top-color);
+@include footer($footer-background,$footer-text-color);
+@include portfolio($primary-color,$portfolio-caption-bg);
+@include search($primary-color,$color-bg-search);
+
+} @else if $theme == 'white' {
+
+$color_white: #fff;
+$color_white_rgba: rgba(255,255,255,.5);
+
+/* Background color */
+$background-color: #fff !default;
+
+/* Primary color */
+$primary-color: #333 !default;
+$primary-color-hover: #484848 !default;
+
+/* Text color */
+$text-color: #333 !default;
+$text-color-hover: #484848 !default;
+
+/* Title content color */
+$title-color: #424242 !default;
+
+/* Links color */
+$links-color: #1e72f0 !default;
+$links-color-hover: #fff !default;
+
+/* Links Navbar Color */
+$links-navbar-color: #424242 !default;
+$links-navbar-color-hover: #484848 !default;
+
+/* Background page About - default color */
+$bg-title-about: #333 !default;
+
+/* adorned-header */
+$adorned-header-background: $color_white !default;
+$adorned-header-color: #424242 !default;
+
+/* Background navbar color */
+$bg-navbar-color: $color_white !default;
+
+/* Background navbar (Page About ) */
+$bg-navbar-color-about: #333 !default;
+
+/* Button top color */
+$bg-button-top-color: #505050 !default;
+$button-top-color: #fff !default;
+
+/* Color Right and Left body Navbar Static */
+$body-right-left-color: #fff !default;
+
+/* Color menu responsive */
+$fill-nav-icon: #333 !default;
+
+/* Color Bg Search */
+$color-bg-search: lighten(#222222, 3%) !important;
+
+/* Color border box posts */
+$color-border-box-posts: 0.1rem solid lighten($color_white, 55%);
+
+/* Bg Box posts index */
+$bg-color-box-posts: $color_white;
+
+/* Footer background  */
+$footer-background: $color_white;
+
+/* Texts footer */
+$footer-text-color: #505050;
+
+/* Portfolio Capitan Bg */
+$portfolio-caption-bg: $color_white_rgba;
+
+
+/* Mixins Default */
+@include global($background-color,$bg-navbar-color-about,$body-right-left-color,$links-navbar-color-hover,$links-navbar-color,$primary-color-hover,$bg-navbar-color);
+
+/* Utility */
+@include utility($text-color,$title-color);
+
+/* Style customize */
+/* layouts */
+@include post($primary-color);
+@include page($links-navbar-color,$bg-title-about,$primary-color);
+@include markdown($primary-color);
+@include index($bg-color-box-posts,$color-border-box-posts,$text-color,$adorned-header-color,$adorned-header-background,$primary-color,$title-color,$text-color-hover);
 
 /* Includes */
 @include header($bg-navbar-color,$links-navbar-color,$links-navbar-color-hover,$primary-color);
@@ -587,9 +719,3 @@ $portfolio-caption-bg: rgba(66,66,66,.5);
 @include search($primary-color,$color-bg-search);
 
 }
-
-/* correcting error */
-// .row{
-// 	margin-left: 0 !important;
-// 	margin-right: 0 !important;
-// }

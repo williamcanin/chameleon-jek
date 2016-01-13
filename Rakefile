@@ -62,6 +62,10 @@ namespace :theme do
       config = Main.new
       config.theme_confs("light")
     end
+    task :white  do
+      config = Main.new
+      config.theme_confs("white")
+    end
     task :pink  do
       config = Main.new
       config.theme_confs("pink")
