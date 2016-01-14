@@ -2,9 +2,9 @@
 layout: page
 title: Contact
 date: 2016-01-13 16:40:30
-comment:
+comment: false
 published: false
-cover: ''
+cover:
 permalink: /contact/
 categories: normal
 ---

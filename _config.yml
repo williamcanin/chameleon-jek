@@ -48,15 +48,26 @@ placeholder_content_formspree: "What would you like to say?"
 # Block - Formspree
 
 
-# Block - Theme specific configuration [BEGIN]
 theme:
   # language: "portuguese" #support: (english / portuguese)
   title: "Chameleon Jek"
   subtitle_site: "Blog & Portfolio for Jekyll"
+
+  # Block - Menu
+  #
+  # Recommended: "manual"
+  menu_type: "manual" # ( auto | manual )
+
+  # If manual, assign the title page
+  title_page_contact: "Contact"
+  title_page_about: "About"
+  title_page_portfolio: "Portfolio"
+
   navbar_collapse_icon: "nav-icon-white.svg"
+  # Block - Menu
 
 
-  # ========= Begin Config Effects =============
+  # Block - Config Effects
   # Navbar Fixed (yes/no)
   navbar_fixed: "yes"
   # Shake Site title
@@ -67,7 +78,7 @@ theme:
   fadeIn: "yes"
   # Shake title posts
   shake_title_posts: "yes"
- # ========= End Effects =============
+ # Block - Config Effects
 
 
 # Block - FakeLoader
@@ -97,12 +108,11 @@ theme:
 
 
 
-# Block - Posts Author
+# Block - Author of post
   # Image
-  author_image: "william.png"
+  author_image: "author.png"
   # String
   str_post_by_title: "Post by:"
-  # str_name_author_post: "Chameleon Jek"
   author_post_description: >
     <p>In this field you describe a summary about you and what you do.
       This Jekyll theme is created by
@@ -110,7 +120,7 @@ theme:
           William C. Canin
         </a>
     </p>
-# Block - Posts Author
+# Block - Author of post
 
 
 
@@ -189,7 +199,6 @@ theme:
 
 
 # Block - Adorned Header in Index
-
   adorned_header_enable: "yes" # ( yes | no )
   adorned_header_type: "text" # ( img | text )
   adorned_header_img: "page-heading-banner.png"
@@ -236,7 +245,6 @@ theme:
   str_edit_this_post: "Edit this post"
   # Block - Localization strings
 
-# Block - Theme specific configuration [END]
 
 
 
@@ -250,9 +258,9 @@ theme:
 
 
 # Block - Email of Gravatar for avatar to your site.
-# Add your email gravatar. Exemple: "william.costa.canin@gmail.com"
+# Add your email gravatar. Exemple: "your_name@domain.com"
 # To insert the MD5, use: $rake gravatar:md5 - $rake help
-email_gravatar: "william.costa.canin@gmail.com"
+email_gravatar: ""
 # Block - Email of Gravatar for avatar to your site.
 
 

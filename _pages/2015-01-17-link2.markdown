@@ -3,12 +3,8 @@ layout: page
 title: Portfolio
 date: 2015-01-17 00:00:02
 comment: false
+published: true
 cover:
 permalink: /portfolio/
 categories: portfolio
 ---
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-Excepturi est quisquam deleniti architecto voluptatibus similique
-consectetur incidunt iusto autem ipsa! Temporibus optio architecto
-distinctio, at fugit. Aspernatur voluptatibus earum nulla.

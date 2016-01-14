@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Version v1.0.4 Beta
-author: William C. Canin
+author: Chameleon Jek
 article: '#2'
 published: true
 filepath: 2015-08-10-new-version-1.0.4.md

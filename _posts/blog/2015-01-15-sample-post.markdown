@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Sample Post for example
-author: William C. Canin
+author: Chameleon Jek
 article: '#1'
 published: true
 filepath: 2015-01-15-sample-post.md
