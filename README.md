@@ -8,18 +8,18 @@
 
 ## Indíce
 
-* [Introdução](https://github.com/williamcanin/chameleon-jek/tree/dev#introdu%C3%A7%C3%A3o)
-* [Requerimentos](https://github.com/williamcanin/chameleon-jek/tree/dev#requerimentos)
-* [Usando - Linux](https://github.com/williamcanin/chameleon-jek/tree/dev#usando)
-* [Usando - Windows e Mac OS X](https://github.com/williamcanin/chameleon-jek/tree/dev#usu%C3%A1rios-windows-e-mac-os-x)
+* [Introdução](https://github.com/williamcanin/chameleon-jek/tree/master/#introdu%C3%A7%C3%A3o)
+* [Requerimentos](https://github.com/williamcanin/chameleon-jek/tree/master/#requerimentos)
+* [Usando - Linux](https://github.com/williamcanin/chameleon-jek/tree/master/#usando)
+* [Usando - Windows e Mac OS X](https://github.com/williamcanin/chameleon-jek/tree/master/#usu%C3%A1rios-windows-e-mac-os-x)
 * [Configurações](https://github.com/williamcanin/chameleon-jek/blob/master/README-PtBr.md#configura%C3%A7%C3%B5es)
-* [Deploy - GitHub](https://github.com/williamcanin/chameleon-jek/tree/dev#deploy---github)
-* [Contacto](https://github.com/williamcanin/chameleon-jek/tree/dev#contacto)
-* [Demo](https://github.com/williamcanin/chameleon-jek/tree/dev#demo)
-* [Questões](https://github.com/williamcanin/chameleon-jek/tree/dev#quest%C3%B5es---issues)
-* [Versões](https://github.com/williamcanin/chameleon-jek/tree/dev#vers%C3%B5es)
-* [Licença & Direitos Autorais](https://github.com/williamcanin/chameleon-jek/tree/dev#licen%C3%A7a--direitos-autorais)
-* [Créditos](https://github.com/williamcanin/chameleon-jek/tree/dev#cr%C3%89ditos)
+* [Deploy - GitHub](https://github.com/williamcanin/chameleon-jek/tree/master/#deploy---github)
+* [Contacto](https://github.com/williamcanin/chameleon-jek/tree/master/#contacto)
+* [Demo](https://github.com/williamcanin/chameleon-jek/tree/master/#demo)
+* [Questões](https://github.com/williamcanin/chameleon-jek/tree/master/#quest%C3%B5es---issues)
+* [Versões](https://github.com/williamcanin/chameleon-jek/tree/master/#vers%C3%B5es)
+* [Licença & Direitos Autorais](https://github.com/williamcanin/chameleon-jek/tree/master/#licen%C3%A7a--direitos-autorais)
+* [Créditos](https://github.com/williamcanin/chameleon-jek/tree/master/#cr%C3%89ditos)
 
 
 ## Introdução

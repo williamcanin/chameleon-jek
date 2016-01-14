@@ -13,7 +13,7 @@
 #   Home page: http://williamcanin.com
 
 # License:
-# The MIT License (MIT) for Oracle JDK Get (ojdk-get)
+# The MIT License (MIT) for Chameleon Jek
 
 # Copyright (c) 2015 William C. Canin <william.costa.canin@gmail.com>
 

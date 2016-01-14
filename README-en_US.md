@@ -1,25 +1,25 @@
-[Leia em português - Brasil](https://github.com/williamcanin/chameleon-jek/blob/dev/README.md)
+[Leia em português - Brasil](https://github.com/williamcanin/chameleon-jek/blob/master/README.md)
 
-# Chameleon Jek - Blog & Portfolio for Jekyll <img src="https://raw.githubusercontent.com/williamcanin/chameleon-jek/dev/assets/images/avatar/out.png" alt="Chameleon Jek Logotype" width="7%" height="7%"/>
+# Chameleon Jek - Blog & Portfolio for Jekyll <img src="https://raw.githubusercontent.com/williamcanin/chameleon-jek/master/assets/images/avatar/out.png" alt="Chameleon Jek Logotype" width="7%" height="7%"/>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/williamcanin/chameleon-jek/dev/assets/images/preview/cj-logo.png" alt="Chameleon Jek Logotype" width="500px" height="55%"/>
+  <img src="https://raw.githubusercontent.com/williamcanin/chameleon-jek/master/assets/images/preview/cj-logo.png" alt="Chameleon Jek Logotype" width="500px" height="55%"/>
 </p>
 
 ## Index
 
-* [Introduction](https://github.com/williamcanin/chameleon-jek/blob/dev/README-en_US.md#introduction)
-* [Requirements](https://github.com/williamcanin/chameleon-jek/blob/dev/README-en_US.md#requirements)
-* [Users - Linux](https://github.com/williamcanin/chameleon-jek/blob/dev/README-en_US.md#using)
-* [Users - Windows and Mac OS X](https://github.com/williamcanin/chameleon-jek/blob/dev/README-en_US.md#users-windows-and-mac-os-x)
-* [Settings](https://github.com/williamcanin/chameleon-jek/blob/dev/README-en_US.md#settings)
-* [Deploy - GitHub](https://github.com/williamcanin/chameleon-jek/blob/dev/README-en_US.md#deploy---github)
-* [Contact](https://github.com/williamcanin/chameleon-jek/tree/dev/README-en_US.md#contact)
-* [Demo](https://github.com/williamcanin/chameleon-jek/blob/dev/README-en_US.md#demo)
-* [Issues](https://github.com/williamcanin/chameleon-jek/tree/dev/README-en_US.md#issues)
-* [Versions](https://github.com/williamcanin/chameleon-jek/tree/dev/README-en_US.md#versions)
-* [License & Copyright](https://github.com/williamcanin/chameleon-jek/blob/dev/README-en_US.md#license--copyright)
-* [Credits](https://github.com/williamcanin/chameleon-jek/tree/dev/README-en_US.md#credits)
+* [Introduction](https://github.com/williamcanin/chameleon-jek/blob/master/README-en_US.md#introduction)
+* [Requirements](https://github.com/williamcanin/chameleon-jek/blob/master/README-en_US.md#requirements)
+* [Users - Linux](https://github.com/williamcanin/chameleon-jek/blob/master/README-en_US.md#using)
+* [Users - Windows and Mac OS X](https://github.com/williamcanin/chameleon-jek/blob/master/README-en_US.md#users-windows-and-mac-os-x)
+* [Settings](https://github.com/williamcanin/chameleon-jek/blob/master/README-en_US.md#settings)
+* [Deploy - GitHub](https://github.com/williamcanin/chameleon-jek/blob/master/README-en_US.md#deploy---github)
+* [Contact](https://github.com/williamcanin/chameleon-jek/tree/master/README-en_US.md#contact)
+* [Demo](https://github.com/williamcanin/chameleon-jek/blob/master/README-en_US.md#demo)
+* [Issues](https://github.com/williamcanin/chameleon-jek/tree/master/README-en_US.md#issues)
+* [Versions](https://github.com/williamcanin/chameleon-jek/tree/master/README-en_US.md#versions)
+* [License & Copyright](https://github.com/williamcanin/chameleon-jek/blob/master/README-en_US.md#license--copyright)
+* [Credits](https://github.com/williamcanin/chameleon-jek/tree/master/README-en_US.md#credits)
 
 
 ## Introduction
@@ -28,7 +28,7 @@
 
 The **Chameleon Jek** it has eight (8) different colors to customize:
 
-[![Demo Chameleon Jeky Colors](https://raw.githubusercontent.com/williamcanin/chameleon-jek/dev/assets/images/preview/animation-no-border.gif)](https://raw.githubusercontent.com/williamcanin/chameleon-jek/dev/assets/images/preview/demo-colors.gif)
+[![Demo Chameleon Jeky Colors](https://raw.githubusercontent.com/williamcanin/chameleon-jek/master/assets/images/preview/animation-no-border.gif)](https://raw.githubusercontent.com/williamcanin/chameleon-jek/master/assets/images/preview/demo-colors.gif)
 
 **Chameleon Jek** use [Twitter Bootstrap](http://getbootstrap.com), that gives you greater practicalities when you open your page in a mobile device in responsive mode.
 
@@ -298,4 +298,4 @@ William C. Canin | © Copyright 2015 - 2016
 
 ---
 
-[Voltar para topo](https://github.com/williamcanin/chameleon-jek/blob/dev/README-en_US.md)
+[Voltar para topo](https://github.com/williamcanin/chameleon-jek/blob/master/README-en_US.md)
