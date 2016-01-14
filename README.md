@@ -89,7 +89,10 @@ $ bash linux.sh install
 
 *O que os comandos acima faz?*
 
-O primeiro comando: Deve ser executado com root (superusuário). Ele é responsável por instalar os Requerimentos (tabela acima) exigidos para rodar um projeto Jekyll.
+O primeiro comando: Deve ser executado com root (superusuário). Ele é responsável por instalar os Requerimentos (tabela acima) exigidos para rodar um projeto Jekyll. 
+
+APÓS EXECUTAR ESSE COMANDO VOCÊ DEVE FECHAR O TERMINAL E ABRIR NOVAMENTE PARA ATUALIZAR O **.bashrc**, OU SIMPLESMENTE, EXECUTE O COMANDO: 
+`$ source ~/.bashrc`.
 
 O segundo comando: Deve ser executado com usuário normal, e **NÃO** root.
 Ele é responsavel por configurar o ambiente RubyGems para o usuário local e adicionar PATH para as Gems que serão instaladas com o terceiro comando.
