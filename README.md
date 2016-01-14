@@ -91,11 +91,11 @@ $ bash linux.sh install
 
 O primeiro comando: Deve ser executado com root (superusuário). Ele é responsável por instalar os Requerimentos (tabela acima) exigidos para rodar um projeto Jekyll. 
 
-APÓS EXECUTAR ESSE COMANDO VOCÊ DEVE FECHAR O TERMINAL E ABRIR NOVAMENTE PARA ATUALIZAR O **.bashrc**, OU SIMPLESMENTE, EXECUTE O COMANDO: 
-`$ source ~/.bashrc`.
-
 O segundo comando: Deve ser executado com usuário normal, e **NÃO** root.
 Ele é responsavel por configurar o ambiente RubyGems para o usuário local e adicionar PATH para as Gems que serão instaladas com o terceiro comando.
+
+APÓS EXECUTAR ESSE COMANDO VOCÊ DEVE FECHAR O TERMINAL E ABRIR NOVAMENTE PARA ATUALIZAR O **.bashrc**, OU SIMPLESMENTE, EXECUTE O COMANDO: 
+`$ source ~/.bashrc`.
 
 O terceiro comando: Deve ser executado com usuário normal, e não root.
 É o comando final, que irá instalar as Gems necessárias para o **Chameleon Jek**, as dependências (Bower), as compactação e minificação de "stylesheets" e "javascripts", e compilação do **Chameleon Jek**. 
