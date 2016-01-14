@@ -5,7 +5,8 @@
 # Place the address where the site is hosted, and the base
 # of website. If there is no base, leave blank.
 #
-site_url: "http://williamcanin.com" # the base hostname & protocol for your site
+# the base hostname & protocol for your site, e.g. https://yoursite.com
+site_url: "http://williamcanin.com"
 site_baseurl: "/chameleon-jek/" # the subpath of your site, e.g. /blog/
  # description: used by search engines
 description: >
@@ -32,7 +33,7 @@ enable_formspree: "yes" # ( yes | no)
 msg_disable_formspree: "Sorry! Sending message has been disabled."
 #
 # Your email registered in Formspree. Example: "your_email@domain.com"
-email_formspree:
+email_formspree: ""
 #
 # Texts Form Send
 subject_formspree: "New submission!"
@@ -55,14 +56,6 @@ theme:
 
   # Block - Menu
   #
-  # Recommended: "manual"
-  menu_type: "manual" # ( auto | manual )
-
-  # If manual, assign the title page
-  title_page_contact: "Contact"
-  title_page_about: "About"
-  title_page_portfolio: "Portfolio"
-
   navbar_collapse_icon: "nav-icon-white.svg"
   # Block - Menu
 
@@ -282,8 +275,8 @@ include: ['_pages']
 
 
 # Block - Build settings
-url: "http://williamcanin.com"
-baseurl: "/chameleon-jek/"
+url: "http://0.0.0.0:4000"
+baseurl: ""
 # Permalink Default: /:categories/:year/:month/:day/:title/
 # Permalink optional: /:title/
 permalink: /:title/

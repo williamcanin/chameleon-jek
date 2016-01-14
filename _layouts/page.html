@@ -1,40 +1,8 @@
 ---
 layout: default
 ---
-{% if page.categories == "about" %}
-<div  class="wrapper header-about" >
-    <header class="post-header" {% if site.theme.navbar_fixed == "no" %} id="post-header-static" {% endif %}>
-      <div class="image-about">
-        <h1 id="post-title">{{ page.title }}</h1>
-        {% if site.theme.gravatar_md5 %}
-        <img class="avatar-about" src="https://secure.gravatar.com/avatar/{{ site.theme.gravatar_md5 }}?s=100" alt=""/>
-        {% elsif site.theme.avatar %}
-        <img class="avatar-about" src="{{ "/assets/images/avatar"  | prepend: site.baseurl | prepend: site.url }}/{{ site.theme.avatar }}" alt=""/>
-        {% endif %}
-        <div id="parallax">
-          <a class="arrow" href="#stop-parallax-about"><span class="fa fa-chevron-down"></span></a>
-        </div>
-      </div>
-    </header>
-</div>
-<div class="wrapper arrow">
-  <div class="arrow-down-about"></div>
-</div>
-{% endif%}
-
 <div class="row page" >
   <div class="wrapper page" {% if site.theme.navbar_fixed == "yes" %} id="navbar-fixed-top" {% endif %}>
-    {% if page.categories == "about" %}
-    <div id="wrapper-post-content">
-      <div id="stop-parallax-about"></div>
-      <section id="post-content">
-      {% if !page.cover[''] %}
-        <img class="img-responsive img-cover" src="{{ "/assets/images/pages"  | prepend: site.baseurl | prepend: site.url }}/{{ page.cover }}">
-      {% endif %}
-        {{ content }}
-      </section>
-    </div>
-    {% elsif page.categories == "normal" %}
     <header class="post-header">
       <h1 class="post-title">{{ page.title }}</h1>
     </header>
@@ -44,16 +12,5 @@ layout: default
       {% endif %}
       {{ content }}
     </section>
-    {% elsif page.categories == "portfolio" %}
-    <header class="post-header">
-      <h1 class="post-title">{{ page.title }}</h1>
-      <div class="row content-portfolio">
-        {{ content }}
-      </div>
-    </header>
-    <section class="post-content" id="portfolio">
-      {% include html/portfolio.html %}
-    </section>
-  {% endif %}
- </div>  <!-- wrapper page -->
-</div> <!-- row page -->
+ </div>
+</div>

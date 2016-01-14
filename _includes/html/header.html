@@ -51,23 +51,6 @@
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav site-nav">
 
-    {% if site.theme.menu_type == "manual" %}
-      <li {% if site.theme.shake_menus_navbar == "yes" %} id="hover-links-texts" {% endif %}>
-            <a class="page-link" href="{{ "/portfolio/" | prepend: site.baseurl | prepend: site.url }}">
-              <span class="fa fa-circle-o"></span>&nbsp;{{ site.theme.title_page_portfolio }}
-            </a>
-      </li>
-      <li {% if site.theme.shake_menus_navbar == "yes" %} id="hover-links-texts" {% endif %}>
-            <a class="page-link" href="{{ "/contact/" | prepend: site.baseurl | prepend: site.url }}">
-              <span class="fa fa-circle-o"></span>&nbsp;{{ site.theme.title_page_contact }}
-            </a>
-      </li>
-      <li {% if site.theme.shake_menus_navbar == "yes" %} id="hover-links-texts" {% endif %}>
-            <a class="page-link" href="{{ "/about/" | prepend: site.baseurl | prepend: site.url }}">
-              <span class="fa fa-circle-o"></span>&nbsp;{{ site.theme.title_page_about }}
-            </a>
-      </li>
-    {% elsif site.theme.menu_type == "auto" %}
       {% assign pages_type = site.pages %}
       {% for page in pages_type %}
         {% if page.title %}
@@ -78,9 +61,6 @@
           </li>
         {% endif %}
       {% endfor %}
-    {% else %}
-      <h3>Error type menu in '_config.yml'</h3>
-    {% endif %}
 
       <!-- Social for Responsive - In Development -->
       <!-- <li class="dropdown social-responsive">

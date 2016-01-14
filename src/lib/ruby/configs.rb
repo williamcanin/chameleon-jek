@@ -195,14 +195,12 @@ class Main < Variables
 
 
   # Create page
-  def page_create(category, dir_page)
+  def page_create(type, dir_page)
     # system("rake gitignore")
     abort("rake aborted: '#{CONFIG['pages']}' directory not found.") unless FileTest.directory?(CONFIG['pages'])
     title = ENV["TITLE"] || "new-page"
     permalink = ENV["PERMALINK"] || "permalink-page"
     published = ENV["PUBLISHED"] || false
-    categories = ENV["CATEGORIES"] || ""
-    categories = "#{categories.gsub(/-/,' ')}" if !categories.empty?
     slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
     begin
       date_hour = (ENV['date'] ? Time.parse(ENV['date']) : Time.now).strftime('%Y-%m-%d %R:%S')
@@ -219,25 +217,25 @@ class Main < Variables
     puts "Creating new page: #{filename}"
     open(filename, 'w') do |file|
       file.puts("---")
-      file.puts("layout: page")
+      if type == 'normal'
+        file.puts("layout: page")
+      elsif type == 'about'
+        file.puts("layout: about")
+      elsif type == 'portfolio'
+        file.puts("layout: portfolio")
+      elsif type == 'contact'
+        file.puts("layout: contact")
+      end
       file.puts("title: #{title.gsub(/-/,' ')}")
       file.puts("date: #{date_hour}")
-      file.puts("comment: ")
-      file.puts("published: #{published}")
-      file.puts("cover: ''")
-      file.puts("permalink: /#{permalink}/")
-      if category == 'normal'
-        file.puts("categories: normal")
-      elsif category == 'about'
-        file.puts("categories: about")
-      elsif category == 'project'
-        file.puts("categories: project")
-      elsif category == 'portfolio'
-        file.puts("categories: portfolio")
+      if type == 'portfolio'
+        file.puts("comment: ")
       end
+      file.puts("published: #{published}")
+      file.puts("cover: ")
+      file.puts("permalink: /#{permalink}/")
       file.puts "---"
-
-      if category == "portfolio"
+      if type == "portfolio"
         file.puts ""
         file.puts "This is a page portfolio. For the menu, there's no need to write anything here."
       end
@@ -250,10 +248,10 @@ class Main < Variables
 
 
   def insecure_world_writable
-    # puts ("Set Insecure world writable ...")
-    # system("sudo chown -R william:william .")
-    # system("sudo chmod go-w -R .")
-    # puts ("Set Insecure world writable. Done!")
+    puts ("Set Insecure world writable ...")
+    system("sudo chown -R william:william .")
+    system("sudo chmod go-w -R .")
+    puts ("Set Insecure world writable. Done!")
   end
 
   # Deploy for GitHub
@@ -304,7 +302,7 @@ class Main < Variables
     elsif task == "help"
       system("gulp")
     elsif task == "serve"
-      insecure_world_writable
+      # insecure_world_writable
       system("gulp serve")
     elsif task == "jekyllbuild"
       system("gulp jekyll-build")
