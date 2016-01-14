@@ -36,6 +36,7 @@ msg_disable_formspree: "Sorry! Sending message has been disabled."
 email_formspree: "william.costa.canin@gmail.com"
 #
 # Texts Form Send
+btn_text_formspree: "Send"
 subject_formspree: "New submission!"
 send_by_formspree: "Send by"
 reply_to_formspree: "Reply To"

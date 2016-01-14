@@ -80,14 +80,9 @@ class Main < Variables
     title = ENV["TITLE"] || "new-post"
     author = ENV["AUTHOR"] || "author-post"
     tags = ENV["TAGS"] || '["tag1","tag2"]'
-    # article = ENV["ARTICLE"] || '#'
     article = next_number_post
     published = ENV["PUBLISHED"] || false
     comment = ENV["COMMENT"] || false
-
-
-
-
 
     # Variables for post/portfolio
     modal_id = ENV["MODAL_ID"] || ''
@@ -117,9 +112,6 @@ class Main < Variables
       file.puts("layout: post")
       file.puts("title: #{title.gsub(/-/,' ')}")
       file.puts("author: #{author}")
-      # file.puts("#")
-      # file.puts("# NOTE: Article must be in single quotation marks and start with # (hashtag)")
-      # file.puts("# and then immediately the number of his post.")
       file.puts("article: '##{article}'")
       file.puts("published: #{published}")
       file.puts("comment: #{comment}")
@@ -201,6 +193,8 @@ class Main < Variables
     title = ENV["TITLE"] || "new-page"
     permalink = ENV["PERMALINK"] || "permalink-page"
     published = ENV["PUBLISHED"] || false
+    comment = ENV["COMMENT"] || false
+    inmenu = ENV["INMENU"] || 'false'
     slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
     begin
       date_hour = (ENV['date'] ? Time.parse(ENV['date']) : Time.now).strftime('%Y-%m-%d %R:%S')
@@ -225,11 +219,14 @@ class Main < Variables
         file.puts("layout: portfolio")
       elsif type == 'contact'
         file.puts("layout: contact")
+      elsif type == 'thanks'
+        file.puts("layout: thanks")
       end
       file.puts("title: #{title.gsub(/-/,' ')}")
       file.puts("date: #{date_hour}")
+      file.puts("inmenu: '#{inmenu}'")
       if type == 'portfolio'
-        file.puts("comment: ")
+        file.puts("comment: #{comment}")
       end
       file.puts("published: #{published}")
       file.puts("cover: ")

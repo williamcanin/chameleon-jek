@@ -2,7 +2,8 @@
 layout: about
 title: About
 date: 2016-01-14 01:59:24
+inmenu: 'true'
 published: true
-cover: 
+cover:
 permalink: /about/
 ---

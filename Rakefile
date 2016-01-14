@@ -107,6 +107,10 @@ namespace :page do
     confs = Main.new
     confs.page_create('contact','pages')
   end
+  task :thanks do
+    confs = Main.new
+    confs.page_create('thanks','pages')
+  end
 end
 
  # Commands Gulp in Rakefile

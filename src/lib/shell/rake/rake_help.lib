@@ -79,14 +79,19 @@ Usage: rake [options] [attributes]
 $(tput setaf 3)NOTE: $(tput sgr0) Attributes are optional.
 
   Options:
-    page:normal     create header page for category 'normal'.
+    page:normal     create header for page 'normal'.
     page:about      create header for page 'about'.
     page:portfolio  create header for page 'portfolio'.
+    page:contact    create header for page 'contact'.
+    page:thanks     create header for page 'thanks'.
 
   Attributes:
     TITLE="<value>"     create page header with personalized title.
     PUBLISHED="<value>" if page will be published or not. Value { true | false }.
     PERMALINK="<value>" Indicates what the page the permalink.
+    COMMENT="<value>"   if post will be commented or not. Value { true | false }.
+                        Just to portfolio.
+    INMENU="<value>"    The page will be put on the menu or not.
 
 $(tput setaf 3)Example: $(tput sgr0) \$rake page:normal TITLE="First My Page" PUBLISHED="true" PERMALINK="/myfirstpage/"
 

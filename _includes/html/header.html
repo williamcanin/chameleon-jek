@@ -53,7 +53,7 @@
 
       {% assign pages_type = site.pages %}
       {% for page in pages_type %}
-        {% if page.title %}
+        {% if page.inmenu == 'true' %}
           <li {% if site.theme.shake_menus_navbar == "yes" %} id="hover-links-texts" {% endif %}>
             <a class="page-link" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
               <span class="fa fa-circle-o"></span>&nbsp;{{ page.title }}

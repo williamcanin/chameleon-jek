@@ -2,7 +2,8 @@
 layout: portfolio
 title: Portfolio
 date: 2016-01-14 01:58:31
-comment:
+inmenu: 'true'
+comment: false
 published: true
 cover:
 permalink: /portfolio/
