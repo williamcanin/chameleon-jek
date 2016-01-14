@@ -12,7 +12,7 @@ layout: default
 <div class="content-contact">{{ content }}</div>
 {% if site.enable_formspree == "yes" and site.email_formspree %}
 <div class="row wrapper formspree">
-  <form action="https://formspree.io/{{ site.email_formspree }}" method="POST">
+  <form id="formspree-contact" action="https://formspree.io/{{ site.email_formspree }}" method="POST">
       <div class="row name-fs">
         <input type="text" class="form-control" name="{{ site.send_by_formspree }}" placeholder="{{ site.placeholder_name_formspree }}">
       </div>
