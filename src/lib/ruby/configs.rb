@@ -33,27 +33,35 @@ class Main < Variables
     if color == 'green'
       system('sed -i \'s|^  fl_bgColor: .*|  fl_bgColor: "#2D4F25"|g\' _config.yml')
       system('sed -i \'s|^  fl_spinnerColor: .*|  fl_spinnerColor: "#fff"|g\' _config.yml')
+      system('sed -i \'s|^navbar_collapse_icon: .*|navbar_collapse_icon: "nav-icon-white.svg"|g\' _config.yml')
     elsif color == 'blue'
       system('sed -i \'s|^  fl_bgColor: .*|  fl_bgColor: "#414950"|g\' _config.yml')
       system('sed -i \'s|^  fl_spinnerColor: .*|  fl_spinnerColor: "#fff"|g\' _config.yml')
+      system('sed -i \'s|^navbar_collapse_icon: .*|navbar_collapse_icon: "nav-icon-white.svg"|g\' _config.yml')
      elsif color == 'pink'
       system('sed -i \'s|^  fl_bgColor: .*|  fl_bgColor: "#BF589D"|g\' _config.yml')
       system('sed -i \'s|^  fl_spinnerColor: .*|  fl_spinnerColor: "#fff"|g\' _config.yml')
+      system('sed -i \'s|^navbar_collapse_icon: .*|navbar_collapse_icon: "nav-icon-white.svg"|g\' _config.yml')
      elsif color == 'dark'
       system('sed -i \'s|^  fl_bgColor: .*|  fl_bgColor: "#000"|g\' _config.yml')
       system('sed -i \'s|^  fl_spinnerColor: .*|  fl_spinnerColor: "#fff"|g\' _config.yml')
+      system('sed -i \'s|^navbar_collapse_icon: .*|navbar_collapse_icon: "nav-icon-white.svg"|g\' _config.yml')
      elsif color == 'orange'
       system('sed -i \'s|^  fl_bgColor: .*|  fl_bgColor: "#BD3F15"|g\' _config.yml')
       system('sed -i \'s|^  fl_spinnerColor: .*|  fl_spinnerColor: "#fff"|g\' _config.yml')
+      system('sed -i \'s|^navbar_collapse_icon: .*|navbar_collapse_icon: "nav-icon-white.svg"|g\' _config.yml')
      elsif color == 'light'
       system('sed -i \'s|^  fl_bgColor: .*|  fl_bgColor: "#F1F1F1"|g\' _config.yml')
       system('sed -i \'s|^  fl_spinnerColor: .*|  fl_spinnerColor: "#333"|g\' _config.yml')
+      system('sed -i \'s|^navbar_collapse_icon: .*|navbar_collapse_icon: "nav-icon-dark.svg"|g\' _config.yml')
      elsif color == 'red'
       system('sed -i \'s|^  fl_bgColor: .*|  fl_bgColor: "#A9181A"|g\' _config.yml')
       system('sed -i \'s|^  fl_spinnerColor: .*|  fl_spinnerColor: "#fff"|g\' _config.yml')
+      system('sed -i \'s|^navbar_collapse_icon: .*|navbar_collapse_icon: "nav-icon-white.svg"|g\' _config.yml')
     elsif color == 'white'
       system('sed -i \'s|^  fl_bgColor: .*|  fl_bgColor: "#FFF"|g\' _config.yml')
       system('sed -i \'s|^  fl_spinnerColor: .*|  fl_spinnerColor: "#333"|g\' _config.yml')
+      system('sed -i \'s|^navbar_collapse_icon: .*|navbar_collapse_icon: "nav-icon-dark.svg"|g\' _config.yml')
      else
       puts
       puts ("\"Chameleon Jeky\" does not support this theme color.")
