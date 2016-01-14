@@ -1,0 +1,8 @@
+---
+layout: thanks
+title:
+date: 2016-01-14 01:59:24
+published: true
+cover:
+permalink: /thanks/
+---
