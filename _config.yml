@@ -33,7 +33,7 @@ enable_formspree: "yes" # ( yes | no)
 msg_disable_formspree: "Sorry! Sending message has been disabled."
 #
 # Your email registered in Formspree. Example: "your_email@domain.com"
-email_formspree:
+email_formspree: "william.costa.canin@gmail.com"
 #
 # Texts Form Send
 subject_formspree: "New submission!"
