@@ -29,7 +29,7 @@ language: "english"
 # Block - Formspree
 #
 # Enable/Disable Form Contact
-enable_formspree: "yes" # ( yes | no)
+enable_formspree: "no" # ( yes | no)
 msg_disable_formspree: "Sorry! Sending message has been disabled."
 #
 # Your email registered in Formspree. Example: "your_email@domain.com"
@@ -77,9 +77,9 @@ theme:
   fl_local: "all" # { all }
   fl_timeToHide: "1500" # milliseconds, default 1500
   # Default fl_bgColor: #2D4F25
-  fl_bgColor: "#FFF"
+  fl_bgColor: "#2D4F25"
   fl_spinner: "spinner4" # Default, spinner4
-  fl_spinnerColor: "#333"
+  fl_spinnerColor: "#fff"
   fl_hideNav: "yes" # Default yes
   # fl_textSpinner: "Please wait, loading page..." # construction
 # Block - FakeLoader
@@ -267,7 +267,7 @@ email_gravatar: ""
 #
 # Block - Menu
 #
-navbar_collapse_icon: "nav-icon-dark.svg"
+navbar_collapse_icon: "nav-icon-white.svg"
 # Block - Menu
 
 
