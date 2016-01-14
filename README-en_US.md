@@ -28,7 +28,7 @@
 
 The **Chameleon Jek** it has eight (8) different colors to customize:
 
-[![Demo Chameleon Jeky Colors](https://raw.githubusercontent.com/williamcanin/chameleon-jek/master/assets/images/preview/animation-no-border.gif)](https://raw.githubusercontent.com/williamcanin/chameleon-jek/master/assets/images/preview/demo-colors.gif)
+[![Demo Chameleon Jeky Colors](https://raw.githubusercontent.com/williamcanin/chameleon-jek/master/assets/images/preview/demo-colors.gif)](https://raw.githubusercontent.com/williamcanin/chameleon-jek/master/assets/images/preview/demo-colors.gif)
 
 **Chameleon Jek** use [Twitter Bootstrap](http://getbootstrap.com), that gives you greater practicalities when you open your page in a mobile device in responsive mode.
 
