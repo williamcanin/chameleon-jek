@@ -276,6 +276,7 @@ class Main < Variables
       system('gulp copys')
       system('gulp htmlminify')
       system('gulp imageminify')
+      system('gulp deploy')
     # system('gulp clean') # DISABLED
     elsif branch == "master"
       system("git add .")
