@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
 <div class="row post">
 
   <div class="wrapper post" {% if site.theme.navbar_fixed == "yes" %} id="navbar-fixed-top" {% endif %} >
@@ -11,17 +14,19 @@ layout: default
 
     <header class="post-header">
 
-     <article class="article">
-     <h1 class="post-title">{{ page.title }}</h1>
+     <article class="article" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog" itemprop="blogPost">
+     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
       <div class="row">
         <div class="col-sm-4">
           <p class="post-meta">
             <span class="fa fa-calendar"></span>
+             <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
             {% if site.language == "english" %}
                 {% include date/lang/en_US/en_US.jk %}
             {% else %}
                 {% include date/lang/pt_PT/pt_PT.jk %}
             {% endif %}
+            </time>
           </p>
         </div>
         <div class="col-sm-4">
@@ -41,7 +46,7 @@ layout: default
       </article>
     </header>
 
-    <article class="post-content">
+    <article class="post-content" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog" itemprop="blogPost">
 
       <div class="reading-time"><i class="fa fa-clock-o icon-reading-time"></i>{{ page.content | reading_time }}</div>
 
@@ -72,7 +77,7 @@ layout: default
 
     <div class="col-lg-10">
         <p class="post-by-title">{% if site.theme.str_post_by_title %}{{ site.theme.str_post_by_title }}{% endif %}</p>
-        <h1 class="name-author-post"> {{ page.author }}</h1>
+        <h1 class="name-author-post" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></h1>
         <div class="description">{% if site.theme.author_post_description %} {{ site.theme.author_post_description }} {% endif %}</div>
       </div>
     </div>
@@ -102,3 +107,5 @@ layout: default
 
 <!-- Count Disqus -->
 {% include scripts/disqus-count.html %}
+
+</article>
