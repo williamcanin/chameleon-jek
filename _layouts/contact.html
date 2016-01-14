@@ -9,6 +9,7 @@ layout: default
 </header>
 
 <section class="post-content">
+<div class="content-contact">{{ content }}</div>
 {% if site.enable_formspree == "yes" and site.email_formspree %}
 <div class="row wrapper formspree">
   <form action="https://formspree.io/{{ site.email_formspree }}" method="POST">
@@ -24,8 +25,8 @@ layout: default
       <div class="row wrapper btn-fs">
         <input class="btn btn-success btn-send-fs" type="submit" value="{{ site.btn_text_formspree }}">
       </div>
-      <input type="hidden" name="_next" value="{{ prepend: site.baseurl | prepend: site.url }}/thanks/"  data-toggle="modal"/>
-      <input type="hidden" name="_subject" value="{{ site.subject_formspree }} - {{ site.site_url }}{{ site.site_baseurl }}" />
+      <input type="hidden" name="_next" value="{{ prepend: site.baseurl | prepend: site.url }}{{ site.permalink_thanks_formspree }}"  data-toggle="modal"/>
+      <input type="hidden" name="_subject" value="{{ site.subject_formspree }} - {{ site.site_url }}{{ site.permalink_thanks_formspree }}" />
       <input type="text" name="_gotcha" style="display:none" />
   </form>
 </div>

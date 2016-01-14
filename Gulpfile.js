@@ -44,7 +44,7 @@ var port_serve = '4000';
 
 // CLEANS
 gulp.task('clean', function() {
- return gulp.src(['_site','gh-pages'], { read: false }) // much faster
+ return gulp.src(['_site/*','gh-pages/*'], { read: false }) // much faster
    .pipe(rimraf())
 });
 

@@ -1,3 +1,14 @@
+.content-contact{
+  margin-bottom: 30px;
+  h1,h3,h2,p,b,strong,i{
+    font-family: "Raleway",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+  }
+  p,b,strong,i{
+    font-size: 20px;
+  }
+}
  .wrapper.formspree{
   form{
       .row{

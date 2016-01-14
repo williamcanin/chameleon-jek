@@ -33,7 +33,7 @@ enable_formspree: "yes" # ( yes | no)
 msg_disable_formspree: "Sorry! Sending message has been disabled."
 #
 # Your email registered in Formspree. Example: "your_email@domain.com"
-email_formspree:
+email_formspree: ""
 #
 # Texts Form Send
 btn_text_formspree: "Send"
@@ -41,6 +41,7 @@ subject_formspree: "New submission!"
 send_by_formspree: "Send by"
 reply_to_formspree: "Reply To"
 content_formspree: "Content"
+permalink_thanks_formspree: "/thanks/"
 message_sent_formspree: "Thanks for contacting us. We will reply as soon as possible."
 #
 # Placeholder Form
@@ -76,9 +77,9 @@ theme:
   fl_local: "all" # { all }
   fl_timeToHide: "1500" # milliseconds, default 1500
   # Default fl_bgColor: #2D4F25
-  fl_bgColor: "#2D4F25"
+  fl_bgColor: "#FFF"
   fl_spinner: "spinner4" # Default, spinner4
-  fl_spinnerColor: "#fff"
+  fl_spinnerColor: "#333"
   fl_hideNav: "yes" # Default yes
   # fl_textSpinner: "Please wait, loading page..." # construction
 # Block - FakeLoader
@@ -266,7 +267,7 @@ email_gravatar: ""
 #
 # Block - Menu
 #
-navbar_collapse_icon: "nav-icon-white.svg"
+navbar_collapse_icon: "nav-icon-dark.svg"
 # Block - Menu
 
 
@@ -391,6 +392,9 @@ exclude: [
 'gh-pages',
 'CHANGELOG.md',
 'COPYING',
-'administration'
+'README-en_US.md',
+'METAS.txt',
+'administration',
+'linux.sh'
 ]
 # Block - Excludes files and folder build jekyll
