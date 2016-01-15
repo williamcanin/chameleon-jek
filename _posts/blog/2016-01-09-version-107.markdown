@@ -13,9 +13,9 @@ tags: ["release","1.0.7","stable"]
 categories: blog
 # An introduction is mandatory !!!
 introduction: >
-  <p>Version 1.0.7 released! New installation features, new process manager (Gulp), new way to deploy ... this are some new features of version 1.0.7. Use now!
+  <p>Version 1.0.7 released! New installation features, new automator tasks (Gulp), new way to deploy ... this are some new features of version 1.0.7. Use now!
   </p>
-  <p>Versão 1.0.7 lançada! Novos recursos de instalação, novo gerenciador de processo (Gulp),
+  <p>Versão 1.0.7 lançada! Novos recursos de instalação, novo automatizador de tarefas (Gulp),
       Nova forma de deploy...essa são algumas novidades da versão 1.0.7. Use agorá!
   </p>
 ---
