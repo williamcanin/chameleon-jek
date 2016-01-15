@@ -284,8 +284,8 @@ compress_html:
   profile: false
 
 # Block - Build settings
-url: "http://williamcanin.com"
-baseurl: "/chameleon-jek"
+url: "http://0.0.0.0:4000"
+baseurl: ""
 # Permalink Default: /:categories/:year/:month/:day/:title/
 # Permalink optional: /:title/
 permalink: /:title/
@@ -299,7 +299,7 @@ gravatar_md5:
 
 
 # Block - Markdown
-# highlighter: pygments
+highlighter: pygments
 # highlighter: true
 markdown: kramdown # { kramdown | redcarpet }
 kramdown:
