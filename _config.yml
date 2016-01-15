@@ -183,7 +183,7 @@ theme:
 
 
 # Block - Comments for Disqus
-  disqus_shortname: "williamcanin" # Your User of Disqus. ex: "williamcanin"
+  disqus_shortname: "your_user_disqus" # Your User of Disqus. ex: "williamcanin"
 # Block - Comments for Disqus
 
 
