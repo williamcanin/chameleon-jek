@@ -277,6 +277,7 @@ class Main < Variables
       # Dependences plugin: gulp-gh-pages
       system('gulp javascripts')
       system('gulp stylesheets')
+      system('gulp imageminify')
       # system('gulp url_deploy') # DISABLED
       system('sed -i \'s|^url: .*|url: "'+ $config_yml['site_url'] +'"|g\' _config.yml')
       system('sed -i \'s|^baseurl: .*|baseurl: "'+ $config_yml['site_baseurl'] +'"|g\' _config.yml')
@@ -285,7 +286,6 @@ class Main < Variables
       # Obsolte
       # system('gulp copys')
       # system('gulp htmlminify')
-      system('gulp imageminify')
       system('gulp deploy')
     # system('gulp clean') # DISABLED
     elsif branch == "master"

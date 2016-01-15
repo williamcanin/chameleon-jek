@@ -28,7 +28,7 @@ var paths = {
     images: 'assets/images',
     sass: ['src/sass'],
     stylesheets: ['assets/stylesheets'],
-    gh_pages: ['gh-pages'],
+    gh_pages: ['_site'],
     build_site: ['_site'],
     jekyll: [ '_config.yml' ,'index.html', './contact/**/*', './category/**/*', './tags/**/*', '_layouts/**/*.html', '_posts/**/*', '_pages/**/*', './_includes/**/*.html']
 
