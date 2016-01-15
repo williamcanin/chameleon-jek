@@ -284,8 +284,8 @@ compress_html:
   profile: false
 
 # Block - Build settings
-url: "http://0.0.0.0:4000"
-baseurl: ""
+url: "http://williamcanin.com"
+baseurl: "/chameleon-jek"
 # Permalink Default: /:categories/:year/:month/:day/:title/
 # Permalink optional: /:title/
 permalink: /:title/
