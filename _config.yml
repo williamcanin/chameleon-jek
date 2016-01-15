@@ -7,7 +7,7 @@
 #
 # the base hostname & protocol for your site, e.g. https://yoursite.com
 site_url: "http://williamcanin.com"
-site_baseurl: "/chameleon-jek" # the subpath of your site, e.g. /blog/
+site_baseurl: "/chameleon-jek" # the subpath of your site, e.g. /blog
  # description: used by search engines
 description: >
   Chameleon Jek - Blog & Portfolio for Jekyll
@@ -278,7 +278,7 @@ include: ['_pages']
 
 # Block - Build settings
 url: "http://williamcanin.com"
-baseurl: "/chameleon-jek/"
+baseurl: "/chameleon-jek"
 # Permalink Default: /:categories/:year/:month/:day/:title/
 # Permalink optional: /:title/
 permalink: /:title/
