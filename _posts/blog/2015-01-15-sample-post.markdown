@@ -127,7 +127,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla sunt optio magni
 
 ## Scripts with hightlight
 
-{% highlight ruby linenos %}
+{% highlight ruby %}
 # ===========================================================================================
 # Using:
 # -------------------------------------------------------------------------------------------

@@ -73,7 +73,7 @@ theme:
 
 # Block - FakeLoader
 # fakeLoader (yes/no)
-  fakeLoader: "yes"
+  fakeLoader: "no"
   fl_local: "all" # { all }
   fl_timeToHide: "1500" # milliseconds, default 1500
   # Default fl_bgColor: #2D4F25
@@ -183,7 +183,7 @@ theme:
 
 
 # Block - Comments for Disqus
-  disqus_shortname: "your_user_disqus" # Your User of Disqus. ex: "williamcanin"
+  disqus_shortname: "williamcanin" # Your User of Disqus. ex: "williamcanin"
 # Block - Comments for Disqus
 
 
@@ -284,8 +284,8 @@ compress_html:
   profile: false
 
 # Block - Build settings
-url: "http://williamcanin.com"
-baseurl: "/chameleon-jek"
+url: "http://0.0.0.0:4000"
+baseurl: ""
 # Permalink Default: /:categories/:year/:month/:day/:title/
 # Permalink optional: /:title/
 permalink: /:title/

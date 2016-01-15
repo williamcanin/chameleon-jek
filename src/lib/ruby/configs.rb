@@ -278,14 +278,21 @@ class Main < Variables
       system('gulp javascripts')
       system('gulp stylesheets')
       system('gulp imageminify')
-      # system('gulp url_deploy') # DISABLED
+      # Obsolete
+      #
+      # system('gulp url_deploy')
+      #
+      # Obsolete
       system('sed -i \'s|^url: .*|url: "'+ $config_yml['site_url'] +'"|g\' _config.yml')
       system('sed -i \'s|^baseurl: .*|baseurl: "'+ $config_yml['site_baseurl'] +'"|g\' _config.yml')
       system('gulp clean')
       system('gulp jekyll-build')
-      # Obsolte
+      # Obsolete
+      #
       # system('gulp copys')
       # system('gulp htmlminify')
+      #
+      # Obsolete
       system('gulp deploy')
     # system('gulp clean') # DISABLED
     elsif branch == "master"
