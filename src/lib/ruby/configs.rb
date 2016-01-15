@@ -282,8 +282,9 @@ class Main < Variables
       system('sed -i \'s|^baseurl: .*|baseurl: "'+ $config_yml['site_baseurl'] +'"|g\' _config.yml')
       system('gulp clean')
       system('gulp jekyll-build')
-      system('gulp copys')
-      system('gulp htmlminify')
+      # Obsolte
+      # system('gulp copys')
+      # system('gulp htmlminify')
       system('gulp imageminify')
       system('gulp deploy')
     # system('gulp clean') # DISABLED

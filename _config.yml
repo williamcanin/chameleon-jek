@@ -275,10 +275,17 @@ navbar_collapse_icon: "nav-icon-white.svg"
 include: ['_pages']
 # Block - Includes files and folder build jekyll
 
+# Jekyll layout that compresses HTML
+# http://jch.penibelst.de/
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
 
 # Block - Build settings
-url: "http://williamcanin.com"
-baseurl: "/chameleon-jek"
+url: "http://0.0.0.0:4000"
+baseurl: ""
 # Permalink Default: /:categories/:year/:month/:day/:title/
 # Permalink optional: /:title/
 permalink: /:title/
