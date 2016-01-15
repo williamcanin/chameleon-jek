@@ -42,7 +42,7 @@
 
       .post-number {
         text-align: center;
-        font-family: 'Raleway', arial, sans-serif;
+        font-family: $default-font;
         font-weight: 400;
         font-size: 15px;
         font-style: normal;
@@ -73,7 +73,7 @@
           }
 
           a{
-            font-family: 'Raleway', arial, sans-serif;
+            font-family: $default-font;
             font-weight: 400;
             font-style: normal;
             font-size: 16px;
@@ -108,7 +108,7 @@
           text-align: center;
           float: none;
         }
-        font-family: 'Raleway', arial, sans-serif;
+        font-family: $default-font;
         font-weight: 400;
         font-style: normal;
         color: $primary-color;
@@ -123,7 +123,7 @@
           margin-right: 10px;
         }
         margin: 20px 0px 20px 0px;
-        font-family: 'Raleway', arial, sans-serif;
+        font-family: $default-font;
         font-weight: 400;
         font-size: 22px;
         font-style: normal;
@@ -139,7 +139,7 @@
       @extend %font-content;
 
       .title-shares {
-        font-family: 'Raleway', sans-serif;
+        font-family: $default-font;
         font-size: 30px;
         font-weight: 300;
         font-style: normal;
@@ -206,7 +206,7 @@
         }
       }
       h1, h2, h3 {
-        font-family: 'Raleway', arial, sans-serif;
+        font-family: $default-font;
         font-weight: 700;
         font-style: normal
       }
@@ -246,7 +246,7 @@
         }
         .col-lg-10{
           p.post-by-title{
-            font-family: 'Raleway',arial,sans-serif;
+            font-family: $default-font;
             font-weight: 300;
             font-style: normal;
             font-size: 15px;
@@ -259,13 +259,13 @@
             text-align: center;
           }
           .name-author-post {
-              font-family: 'Raleway',arial,sans-serif;
+              font-family: $default-font;
               font-weight: 700;
               font-style: normal;
               text-transform: uppercase;
            }
           .description {
-              font-family: 'Raleway',arial,sans-serif;
+              font-family: $default-font;
               font-weight: 300;
               font-style: normal;
               font-size: 22px;
@@ -282,7 +282,7 @@
 
 
       h1.comments-title, h1.nocomments  {
-        font-family: 'Raleway', sans-serif;
+        font-family: $default-font;
         font-size: 30px;
         font-weight: 300;
         font-style: normal;

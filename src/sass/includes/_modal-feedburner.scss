@@ -29,7 +29,7 @@
 				}
 
 				span#modal-feed-title{
-						font-family: 'Raleway', arial, sans-serif;
+						font-family: $default-font;
 			            font-style: normal;
 			            font-weight: 400;
 			            font-size: 20px;
@@ -43,7 +43,7 @@
 			height: 120px;
 			margin: 15px auto;
 			clear: both;
-			
+
 			.feed-link-site{
 				img.avatar-modal-feed{
 					background-size: 120px;
@@ -66,7 +66,7 @@
 					border-radius: 0%;
 
 					.feedburner-title-subscribe{
-						text-align:center;	
+						text-align:center;
 					}
 					input.input-feedburner{
 					 border-style: none;
@@ -75,7 +75,7 @@
 		            -moz-border-style: none;
 		            border-bottom: 1px solid #505050;
 		            border-radius: 0%;
-		            font-family: 'Raleway', arial, sans-serif;
+		            font-family: $default-font;
 		            font-style: normal;
 		            font-weight: 400;
 		            font-size: 35px;
@@ -96,15 +96,15 @@
 		#wrapper-footer--feed{
 
 				p{
-					font-family: 'Raleway',arial,sans-serif;
+					font-family: $default-font;
      				font-size: 11px;
      				font-weight: 300;
     				font-style: normal;
 				a{
-					text-decoration: none; 
+					text-decoration: none;
 				}
 			}
-		}	
+		}
 		}
 	}
 }

@@ -57,7 +57,7 @@
 
         h3{
           font-size: 15px;
-          font-family: 'Raleway', arial, sans-serif;
+          font-family: $default-font;
           font-style: normal;
           font-weight: 400;
           font-size: 17px;
@@ -80,7 +80,7 @@
             -moz-border-style: none;
             border-bottom: 1px solid #fff;
             border-radius: 0%;
-            font-family: 'Raleway', arial, sans-serif;
+            font-family: $default-font;
             font-style: normal;
             font-weight: 400;
             font-size: 45px;
@@ -99,7 +99,7 @@
       .results-search {
         .col-lg-12 {
           .results-container {
-            font-family: 'Raleway', arial, sans-serif;
+            font-family: $default-font;
             font-style: normal;
             font-weight: 500;
             font-size: 35px;
@@ -129,7 +129,7 @@
         }
 
         h3 {
-            font-family: 'Raleway', arial, sans-serif;
+            font-family: $default-font;
             font-style: normal;
             font-weight: 300;
             font-size: 19px;

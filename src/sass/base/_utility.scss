@@ -16,9 +16,9 @@
   animation: rotate-in 1.25s
 }
 %font-content {
-  font-family: "Raleway","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: $default-font;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 2.1rem;
 
   @media only screen and (min-width:320px) and (max-width:480px) {
     font-size: 15px
@@ -28,9 +28,9 @@
   line-height: 1.7em
 }
 %font-title {
-  font-family: 'Raleway', arial, sans-serif;
+  font-family: $default-font;
   font-weight: 700;
-  font-size: 55px;
+  font-size: 6rem;
 
   @media only screen and (min-width:320px) and (max-width:480px) {
     font-size: 30px

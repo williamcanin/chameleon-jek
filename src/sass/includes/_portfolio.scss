@@ -136,7 +136,7 @@ body {
 .call-out-portfolio {
   padding: 2%;
   p{
-     font-family: 'Raleway', arial, sans-serif;
+     font-family: $default-font;
      font-weight: 300;
      font-size: 20px;
      font-style: normal;
@@ -149,7 +149,7 @@ body {
 
 .wrapper.portfolio {
     h1.comments-title,h1.nocomments {
-        font-family: 'Raleway', sans-serif;
+        font-family: $default-font;
         font-size: 30px;
         font-weight: 300;
         font-style: normal;

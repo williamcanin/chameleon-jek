@@ -4,7 +4,7 @@
   .wrapper {
     .adorned-header {
       text-align: center;
-      font-family: 'Raleway', arial, sans-serif;
+      font-family: $default-font;
       font-size: 25px;
       font-weight: 300;
       font-style: normal;
@@ -71,7 +71,7 @@
           list-style: none;
 
           span.post-meta {
-            font-family: 'Raleway', arial, sans-serif;
+            font-family: $default-font;
             font-weight: 400;
             font-style: normal;
             color: $primary-color;
@@ -82,7 +82,7 @@
             }
           }
           h2 {
-            font-family: 'Raleway', arial, sans-serif;
+            font-family: $default-font;
             font-size: 55px;
             font-weight: 700;
             font-style: normal;
@@ -111,7 +111,7 @@
           }
         }
         .post-introduction {
-          font-family: 'Raleway', arial, sans-serif;
+          font-family: $default-font;
           font-size: 16px;
           font-weight: 400;
           font-style: normal;
@@ -123,7 +123,7 @@
             margin-bottom: 10px;
             a,label{
               margin-right: 5px;
-              font-family: 'Raleway', arial, sans-serif;
+              font-family: $default-font;
               font-weight: 400;
               font-style: normal;
             }
