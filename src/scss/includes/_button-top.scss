@@ -1,0 +1,28 @@
+    .scroll-top {
+        z-index: 1049;
+        position: fixed;
+        right: 2%;
+        bottom: 2%;
+        width: 50px;
+        height: 50px;
+        display: none;
+        opacity: 0;
+
+        & .btn{
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          font-size: 20px;
+          line-height: 28px;
+          background-color: $bg-button-top-color;
+          color: $button-top-color;
+          border: 0.1rem solid #fff;
+
+
+          &:focus,&:active,&:visited{
+              outline: 0;
+              background-color: $bg-button-top-color;
+              border: 0.1rem solid #fff;
+          }
+      }
+  }

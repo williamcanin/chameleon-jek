@@ -1,0 +1,190 @@
+.wrapper.header-about{
+  // include here
+
+ .post-header#post-header-static {
+      background-color: $bg-title-about;
+      width: 100%;
+      min-height: 100vh - 20vh;
+ }
+
+ .post-header {
+      background-color: $bg-title-about;
+      width: 100%;
+      min-height: 100vh - 5vh;
+
+      @media only screen and (min-width:320px) and (max-width: 480px){
+        min-height: 100vh - 6vh;
+      }
+        @media only screen and (min-width:480px) and (max-width: 640px){
+        min-height: 100vh - 8vh;
+      }
+      @media only screen and (min-width:800px) and (max-width:980px) {
+        min-height: 100vh - 3vh;
+      }
+
+      .image-about {
+        $image-about-bottom: 10px;
+        $width-all: 280px;
+        position: absolute;
+        bottom: $image-about-bottom*4;
+        left: 5%;
+        right: 5%;
+        z-index: 9;
+        width: 280px;
+        height: 280px;
+        margin: 0 auto;
+        clear: both;
+
+        #post-title {
+          text-align: center;
+          color: #fff;
+          @extend  %font-title
+        }
+        img.avatar-about {
+          $avatar-about-width: 150px;
+          width: $avatar-about-width;
+          height: $avatar-about-width;
+          background-size: $avatar-about-width;
+          border-radius: 100%;
+          margin-left: $width-all/2- $avatar-about-width/2;
+          margin-bottom: 20px;
+
+        }
+        #parallax {
+          width: auto;
+          height: auto;
+          a.arrow {
+            width: 200px;
+            height: 70px;
+            color: $links-navbar-color;
+
+            &:active {
+              text-decoration: none;
+              outline: 0;
+            }
+            &:focus {
+              text-decoration: none;
+              outline: 0;
+            }
+            &:visited {
+              text-decoration: none;
+              outline: 0;
+            }
+            .fa-chevron-down {
+              width: 100px;
+              height: 70px;
+              color: #fff;
+              $font-size-arrow: 30px;
+              font-size: $font-size-arrow;
+              $width-all: 280px;
+              margin-left: $width-all/2 - $font-size-arrow/2;
+
+              -moz-animation: pulse 2.00s linear infinite;
+              -o-animation: pulse 2.00s linear infinite;
+              -webkit-animation: pulse 2.00s linear infinite;
+              animation: pulse 2.00s linear infinite;
+            }
+          }
+        }
+      }
+      .post-title {
+        @extend  %font-title;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 35px;
+      }
+
+    }
+
+}
+
+
+.wrapper.arrow{
+  $width-arrow: 60px;
+  $width-wrapper: 240px;
+  width: $width-wrapper;
+  margin-bottom: 20px;
+  height: auto;
+  margin: 0 auto;
+  clear: both;
+
+  .arrow-down-about {
+    margin-left: $width-wrapper/2 - $width-arrow/2;
+  }
+
+  .arrow-down-about:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: $width-arrow;
+    height: 0;
+    border-left: $width-arrow/2 solid transparent;
+    border-right: $width-arrow/2 solid transparent;
+    border-top: $width-arrow/2 solid $bg-title-about;
+
+  }
+}
+// end header
+
+
+.row.page {
+  .wrapper.page {
+    padding: 2% 15% 15%;
+
+    @media only screen and (min-width:768px) and (max-width:1024px) {
+      padding: 2% 7% 7%
+    }
+    @media only screen and (min-width:320px) and (max-width:670px) {
+      padding: 16% 7% 7%
+    }
+    // remove here
+
+    .post-title {
+        @extend  %font-title;
+        color: $primary-color;
+        text-align: center;
+        margin-bottom: 35px;
+      }
+
+
+
+    #wrapper-post-content {
+
+      #stop-parallax-about {
+        @media only screen and (min-width:320px) and (max-width:640px) {
+          padding-bottom: 100px;
+        }
+        @media only screen and (min-width:768px) {
+          padding-bottom: 97px;
+        }
+      }
+      #post-content {
+
+        @extend  %font-content;
+        .img-cover {
+            margin-bottom: 80px;
+        }
+
+      }
+    }
+    .post-content {
+      @extend  %font-content;
+       .img-cover {
+            margin-bottom: 80px;
+        }
+    }
+  }
+}
+
+
+.content-portfolio{
+  color: $primary-color;
+  font-family: $default-font;
+  font-size: 22px;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  color: $primary-color;
+  padding: 20px 0px;
+}

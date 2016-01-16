@@ -19,7 +19,7 @@ class Variables
     'posts_blog' => File.join(SOURCE, "_posts/blog"),
     'posts_portfolio' => File.join(SOURCE, "_posts/portfolio"),
     'pages' => File.join(SOURCE, "_pages"),
-    'theme_dir' => File.join(SOURCE, "/src/sass/layouts/themes/"),
+    'theme_dir' => File.join(SOURCE, "/src/scss/base/variables/to_color/"),
     'markdown_ext' => "markdown"
   }
 
@@ -70,8 +70,8 @@ class Main < Variables
     end
 
     if Dir.exists?(CONFIG['theme_dir'])
-      f = File.new(CONFIG['theme_dir'] + "_config.scss", "w+")
-      f.puts("$theme: \"#{color}\" !default;")
+      f = File.new(CONFIG['theme_dir'] + "_set.scss", "w+")
+      f.puts("$to_color: \"#{color}\" !default;")
       system("printf \"\n$(tput setaf 76)✔ Succesfully! Chameleon Jek changed to color: $(tput sgr0)" + color +"\n\n\"")
     end
   end

@@ -1,0 +1,65 @@
+$color_pink: #BF589D;
+$color_pink_rgba: rgba(224,70,173,.5);
+
+    /* Background color */
+$background-color: #fff !default;
+
+/* Primary color */
+$primary-color: $color_pink !default;
+$primary-color-hover: #484848 !default;
+
+/* Text color */
+$text-color: #333 !default;
+$text-color-hover: $color_pink !default;
+
+/* Title content color */
+$title-color: $color_pink !default;
+
+/* Links color */
+$links-color: #1e72f0 !default;
+$links-color-hover: #384047 !default;
+
+/* Links Navbar Color */
+$links-navbar-color: #fff !default;
+$links-navbar-color-hover: #fff !default;
+
+/* Background page About - default color */
+$bg-title-about: $color_pink !default;
+
+/* adorned-header */
+$adorned-header-background: $color_pink !default;
+$adorned-header-color: #fff !default;
+
+/* Background navbar color */
+$bg-navbar-color: $color_pink !default;
+
+/* Background navbar (Page About ) */
+$bg-navbar-color-about: $color_pink !default;
+
+/* Button top color */
+$bg-button-top-color: $color_pink !default;
+$button-top-color: #fff !default;
+
+/* Color Right and Left body Navbar Static */
+$body-right-left-color: #fff !default;
+
+/* Color menu responsive */
+$fill-nav-icon: #fff !default;
+
+/* Color Bg Search */
+$color-bg-search: lighten($color_pink, 12%) !important;
+
+/* Color border box posts */
+$color-border-box-posts: 0.1rem solid lighten($color_pink, 32%);
+
+/* Bg Box posts index */
+$bg-color-box-posts: #F6F6F6;
+
+/* Footer background  */
+$footer-background: $color_pink;
+
+/* Texts footer */
+$footer-text-color: #fff;
+
+/* Portfolio Capitan Bg */
+$portfolio-caption-bg: $color_pink_rgba;

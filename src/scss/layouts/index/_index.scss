@@ -1,0 +1,161 @@
+.home {
+  .wrapper {
+    .adorned-header {
+      text-align: center;
+      font-family: $default-font;
+      font-size: 25px;
+      font-weight: 300;
+      font-style: normal;
+      color: $adorned-header-color;
+      background-color: $adorned-header-background;
+      padding: 6rem;
+      .tag-title{
+        font-size: 60px;
+      }
+      .tag-description{
+        font-size: 40px;
+      }
+      img{
+        margin: 0 auto;
+        clear: both;
+      }
+    }
+
+    // img.img-responsive {
+    //   background-color: $adorned-header-background;
+    // }
+
+    .wrapper.arrow-adorned-header{
+      $wrapper-arrow-adorned-header-width: 150px;
+      $width-arrow-adorned-header: 60px;
+      width: $wrapper-arrow-adorned-header-width;
+      height: auto;
+      margin: 0 auto;
+      clear: both;
+      margin-top: -10px;
+
+      .arrow-adorned-header{
+        margin-left: $wrapper-arrow-adorned-header-width/2 - $width-arrow-adorned-header/2;
+      }
+
+      .arrow-adorned-header:after{
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+        width: $width-arrow-adorned-header;
+        height: 0;
+        border-left: $width-arrow-adorned-header/2 solid transparent;
+        border-right: $width-arrow-adorned-header/2 solid transparent;
+        border-top: $width-arrow-adorned-header/2 solid $adorned-header-background;
+      }
+    }
+    ul.post-list {
+
+      .wrapper.posts {
+        @media only screen and (min-width:768px) and (max-width:1024px) {
+          padding: 7% 5% 2%
+        }
+        @media only screen and (min-width:320px) and (max-width:670px) {
+          padding: 7% 5% 2%
+        }
+        padding:7% 15% 2%;
+        .box-posts{
+        border: $color-border-box-posts;
+        padding: 7%;
+        border-radius: 1%;
+        background-color: $bg-color-box-posts;
+        li.calendar-post-title {
+          list-style: none;
+
+          span.post-meta {
+            font-family: $default-font;
+            font-weight: 400;
+            font-style: normal;
+            color: $primary-color;
+            text-transform: uppercase;
+
+            span.fa.fa-calendar {
+              padding-right: 5px
+            }
+          }
+          h2 {
+            font-family: $default-font;
+            font-size: 55px;
+            font-weight: 700;
+            font-style: normal;
+            color: $title-color;
+            // text-align: center;
+
+            @media only screen and (min-width:320px) and (max-width:640px) {
+              font-weight: 700;
+              line-height: 32px
+            }
+            a.post-link {
+              color: $title-color;
+
+              @media only screen and (min-width:320px) and (max-width:640px) {
+                font-size: 30px
+              }
+              &:hover {
+                text-shadow: 4px 4px 4px #aaa;
+                color: $text-color-hover;
+              }
+            }
+          }
+          hr{
+            color: #D4D4D4 !important;
+            border-color: #D4D4D4 !important;
+          }
+        }
+        .post-introduction {
+          font-family: $default-font;
+          font-size: 2rem;
+          font-weight: 400;
+          font-style: normal;
+          color: $text-color;
+          margin-bottom: 20px;
+        }
+        .post-tags{
+            font-size: 15px;
+            margin-bottom: 10px;
+            a,label{
+              margin-right: 5px;
+              font-family: $default-font;
+              font-weight: 400;
+              font-style: normal;
+            }
+
+            .icon-tag{
+              margin-right: 5px;
+              font-size: 15px;
+            }
+          }
+
+        .qtd-comment-index{
+           a{
+            color: $primary-color;
+            text-decoration: underline;
+            &:hover{
+              text-decoration: none;
+            }
+            }
+          i{
+            color: $primary-color;
+          }
+        }
+        .btn-continue-reading{
+          @media (max-width: 480px) {
+            margin-top: 20px;
+          }
+          outline: none;
+          &:hover,&:active,&:focus{
+            outline: none;
+          }
+        }
+
+        }
+      }
+    }
+  }
+}

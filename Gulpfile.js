@@ -26,7 +26,7 @@ var gulp = require( 'gulp' ),
 var paths = {
     scripts: ['src/javascripts'],
     images: 'assets/images',
-    sass: ['src/sass'],
+    sass: ['src/scss'],
     stylesheets: ['assets/stylesheets'],
     gh_pages: ['_site'],
     build_site: ['_site'],

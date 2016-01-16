@@ -1,0 +1,67 @@
+$color_blue: #384047;
+$color_blue_rgba: rgba(56,64,71,.5);
+
+
+
+/* Background color */
+$background-color: #fff !default;
+
+/* Primary color */
+$primary-color: $color_blue !default;
+$primary-color-hover: #414950 !default;
+
+/* Text color */
+$text-color: #333 !default;
+$text-color-hover: #414950 !default;
+
+/* Title content color */
+$title-color: $color_blue !default;
+
+/* Links color */
+$links-color: #1e72f0 !default;
+$links-color-hover: $color_blue !default;
+
+/* Links Navbar Color */
+$links-navbar-color: #fff !default;
+$links-navbar-color-hover: #f1f1f1 !default;
+
+/* Background page About - default color */
+$bg-title-about: $color_blue !default;
+
+/* adorned-header */
+$adorned-header-background: $color_blue !default;
+$adorned-header-color: #fff !default;
+
+/* Background navbar color */
+$bg-navbar-color: $color_blue !default;
+
+/* Background navbar (Page About ) */
+$bg-navbar-color-about: #292D31 !default;
+
+/* Button top color */
+$bg-button-top-color: $color_blue !default;
+$button-top-color: #fff !default;
+
+/* Color Right and Left body Navbar Static */
+$body-right-left-color: #fff !default;
+
+/* Color menu responsive */
+$fill-nav-icon: #fff !default;
+
+/* Color Bg Search */
+$color-bg-search: lighten($color_blue, 15%) !important;
+
+/* Color border box posts */
+$color-border-box-posts: 0.1rem solid lighten($color_blue, 60%);
+
+/* Bg Box posts index */
+$bg-color-box-posts: #F6F6F6;
+
+/* Footer background  */
+$footer-background: $color_blue;
+
+/* Texts footer */
+$footer-text-color: #fff;
+
+/* Portfolio Capitan Bg */
+$portfolio-caption-bg: $color_blue_rgba;

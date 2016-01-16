@@ -1,0 +1,98 @@
+    /* Left, Right and Center the image alignment in markdown */
+    @media only screen and (min-width:320px)and(max-width: 479px) {
+        .basic-alignment {
+            width: 120px;
+            height: 120px;
+            &.left, &.right, &.center  { display:block; }
+        }
+    }
+
+    @media only screen and (min-width:480px)and(max-width: 640px) {
+        .basic-alignment {
+            width: 130px;
+            height: 130px;
+            &.left { float: left; margin-right: 1.5em; }
+            &.right { float: right; margin-left: 1.5em; }
+            &.center { display:block; margin: 0 auto 1.5em; }
+            &.left, &.right { margin-bottom: .8em; }
+        }
+    }
+
+    @media only screen and (min-width:767px) {
+        .basic-alignment {
+            width: 180px;
+            height: 180px;
+
+            &.left { float: left; margin-right: 1.5em; }
+            &.right { float: right; margin-left: 1.5em; }
+            &.center { display:block; margin: 0 auto 1.5em; }
+            &.left, &.right { margin-bottom: .8em; }
+        }
+    }
+
+/* Google Forms */
+.wrapper.google-form {
+  border-top: 1px solid #cecece;
+  text-shadow: 4px 4px 4px #aaa;
+  margin-top: 60px;
+  margin-bottom: 90px;
+  border-bottom: 1px solid #CECECE;
+  padding-bottom: 30px;
+  h1.title-gf {
+    font-family: $default-font;
+    font-size: 30px;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    color: $primary-color;
+    span.fa.fa-send{
+        text-align: center;
+    }
+    p{
+
+    }
+}
+
+.text-gf {
+
+}
+
+.wrapper.btn-google-form {
+    width: 250px;
+    margin: 0 auto;
+    clear: both;
+    a.btn-google-form {
+        text-shadow: none;
+        @media only screen and (min-width:320px)and(max-width:360px) {
+            margin-left: 15%;
+        }
+        background-color: #DF5151;
+        padding: 10px 42px 10px 35px;
+        color: #fff;
+        width: 100px;
+        margin: 0 auto;
+        clear: both;
+        text-decoration: none;
+        i.fa.fa-send{
+            font-size: 22px;
+        }
+        i.btn-text{
+            font-family: $default-font;
+            font-size: 20px;
+            font-weight: 300;
+            font-style: normal;
+            margin-left: 10px;
+        }
+
+        &:focus {
+            outline: 0;
+            text-decoration: none;
+        }
+
+        &:visited {
+            outline: 0;
+            text-decoration: none;
+        }
+    }
+}
+} /* Google Forms */
