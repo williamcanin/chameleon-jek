@@ -14,8 +14,29 @@ function _RESTORE_TERMINAL(){
       exit 1
     fi
 
-    msg_warning "Restart terminal \"$TERMINAL\". Wait ..."
-    sleep 2
-    nohup pkill $TERMINAL && nohup $TERMINAL -e /bin/bash &
+    printf "\n"
+    msg_restore_term
+    printf "\n"
+    msg_header "Which one do you choose? (Answer with the number)"
+    printf "\n"
+
+    PS3="Reply > "
+    select runner in "I want to restore the terminals !" "I will type the command !"
+    do
+      case $runner in
+        "I want to restore the terminals !" )
+            msg_warning "Restore terminal \"$TERMINAL\". Wait ..."
+            sleep 3
+            nohup pkill $TERMINAL
+            $TERMINAL -e /bin/bash &
+            break
+          ;;
+        "I will type the command !" )
+            printf "\n"
+            msg_header "Please run the command: \"source ~/.bashrc\""
+            break
+          ;;
+      esac
+    done
   fi
 }

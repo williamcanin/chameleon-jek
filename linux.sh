@@ -42,6 +42,7 @@
 PATH="$PATH:src/lib/shell:src/lib/shell/functions:src/lib/shell/cache"
 
 # Import Libs
+source "os_check.lib"
 source "set.lib"
 source "variables.lib"
 source "utils.lib"
@@ -51,6 +52,9 @@ source "insecure_world_writable.lib"
 source "requirements.lib"
 source "restore_terminal.lib"
 source "installs.lib"
+
+# Check OS Linux
+_OS_CHECK
 
 case "$1" in
   init )

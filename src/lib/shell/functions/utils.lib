@@ -16,4 +16,10 @@ function msg_error() {
     printf "$(tput setaf 1)✖ %s$(tput sgr0)\n" "$@"
 }
 
+function msg_restore_term(){
+  printf "$(tput setaf 6)(i) You need to restore the terminals to update\n"
+  printf "~/.bashrc, or run the command:\n"
+  printf "\$ source ~/.bashrc $(tput sgr0)\n"
+}
+
 
