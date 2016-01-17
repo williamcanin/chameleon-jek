@@ -1,8 +1,8 @@
 .wrapper.home{
   .fakeloader{}
   /* Adorned Header */
-  .row{
-    .adorned-header{
+  .adorned{
+    .title{
       text-align: center;
       font-family: $default-font;
       font-size: 25px;
@@ -13,7 +13,7 @@
       padding: 6rem;
       img{}
     }
-    .wrapper.arrow-adorned-header{
+    .arrow{
       $wrapper-arrow-adorned-header-width: 150px;
       $width-arrow-adorned-header: 60px;
       width: $wrapper-arrow-adorned-header-width;
@@ -21,10 +21,10 @@
       margin: 0 auto;
       clear: both;
       margin-top: -10px;
-      .arrow-adorned-header{
+      .down{
         margin-left: $wrapper-arrow-adorned-header-width/2 - $width-arrow-adorned-header/2;
       }
-      .arrow-adorned-header:after{
+      .down:after{
         content: "";
         display: inline-block;
         vertical-align: middle;

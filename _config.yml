@@ -28,11 +28,11 @@ language: "english"
 # Block - Formspree
 #
 # Enable/Disable Form Contact
-enable_formspree: "no" # ( yes | no)
+enable_formspree: "yes" # ( yes | no)
 msg_disable_formspree: "Sorry! Sending message has been disabled."
 #
 # Your email registered in Formspree. Example: "your_email@domain.com"
-email_formspree:
+email_formspree: "william.costa.canin@gmail.com"
 #
 # Texts Form Send
 btn_text_formspree: "Send"
@@ -158,10 +158,19 @@ theme:
 # Block - Socialize Icons Navbar
 
 
-# Block - Project posts
+# Block - Portfolio
 # Their projects '_posts/portfolio' will be for customers?
   client_yesno: "yes"
-# Block - Project posts
+# Comment for page portfolio ( yes | no )
+  comment_portfolio: "yes"
+  str_comments_portfolio: >
+    <p>
+      Comments
+    </p>
+    <p>
+      Leave your comment in portfolio
+    </p>
+# Block - Portfolio
 
 
 # Block - Scripts Google Abalytics
@@ -209,14 +218,8 @@ theme:
     <p>
       Leave your comment
     </p>
-  str_comments_portfolio: >
-    <p>
-      Comments
-    </p>
-    <p>
-      Leave your comment in portfolio
-    </p>
   str_follow_on: "Follow on"
+  str_email: "Send an email with an email client"
   str_modal_feed_title: "Follow RSS/Feed of"
   str_form_feed_input: "Enter your email address"
   str_form_feed_submit: "Subscribe"

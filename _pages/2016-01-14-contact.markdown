@@ -1,0 +1,14 @@
+---
+layout: contact
+title: Contact
+date: 2016-01-14 01:58:48
+inmenu: 'true'
+published: true
+cover:
+permalink: /contact/
+---
+
+
+# DETAILS
+
+### You can hire a predefined budget work or a new project.

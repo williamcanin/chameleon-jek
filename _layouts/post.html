@@ -92,17 +92,16 @@ layout: default
           </h1>
         {% endif %}
         <!-- Disqus Comments -->
-        {% include scripts/disqus-comments.html %}
+        {% include scripts/disqus_comments.html %}
       {% elsif page.comment == false %}
         <h1 class="nocomments"><span class="fa fa-comment"></span><p> {{site.theme.str_nocomment}}</p></h1>
       {% endif%}
     </div>
-
   <!-- </article>  -->
   </div>
 </div>
 
 <!-- Count Disqus -->
-{% include scripts/disqus-count.html %}
+{% include scripts/disqus_count.html %}
 
 </article>

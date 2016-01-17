@@ -4,8 +4,6 @@ layout: default
 
 <div class="wrapper portfolio">
 <!-- Header Portfolio -->
-  {% assign ckecked_project = site.categories['portfolio'] and site.published['true']%}
-  {% if ckecked_project.title %}
   <header class="portfolio-header">
     <h1 class="title">{{ page.title }}</h1>
     <div class="row content">
@@ -30,24 +28,14 @@ layout: default
     {% endfor %}
     </div>
   <!-- Comments -->
-    {% if page.comment == true %}
-      {% if site.theme.disqus_shortname %}
+     {% if site.theme.comment_portfolio == "yes" and site.theme.disqus_shortname %}
         <h1 class="comments-title">
           <span class="fa fa-comment"></span>
           {{ site.theme.str_comments_portfolio }}
         </h1>
-        <div id="comments" class="comments">
-          {% include scripts/disqus.html %}
-        </div>
+          <div class="comments-portfolio">
+            {% include scripts/disqus_comments.html %}
+          </div>
       {% endif %}
-    {% else %}
-      <h1 class="nocomments">
-        <span class="fa fa-comment"></span>
-        <p> {{site.theme.str_nocomment}}</p>
-      </h1>
-    {% endif %}
   </section>
-  {% else %}
-    <h3 style="text-align:center; font-size: 30px; color: #D98A00;">You have not created a project to be in the portfolio ...</h3>
-  {% endif %}
 </div>
