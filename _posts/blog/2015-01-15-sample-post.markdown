@@ -4,7 +4,7 @@ title:  Sample Post for example
 author: Chameleon Jek
 article: '#1'
 published: true
-filepath: 2015-01-15-sample-post.md
+filepath: 2015-01-15-sample-post.markdown
 comment: true
 cover: post-cover-chameleon.png
 date:   2015-01-15 18:07:21

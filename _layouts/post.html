@@ -1,107 +1,104 @@
 ---
 layout: default
 ---
-
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
-<div class="row post">
-
-  <div class="wrapper post" {% if site.theme.navbar_fixed == "yes" %} id="navbar-fixed-top" {% endif %} >
-
-  {% if page.cover != nil %}
-    <img class="img-responsive banner-post" src="{{ "/assets/images/covers"  | prepend: site.baseurl | prepend: site.url }}/{{ page.cover }}">
-  {% endif %}
-
-    <header class="post-header">
-
-     <article class="article" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog" itemprop="blogPost">
-     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-      <div class="row">
-        <div class="col-sm-4">
-          <p class="post-meta">
-            <span class="fa fa-calendar"></span>
-             <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-            {% if site.language == "english" %}
-                {% include date/lang/en_US/en_US.jk %}
-            {% else %}
-                {% include date/lang/pt_PT/pt_PT.jk %}
-            {% endif %}
-            </time>
-          </p>
-        </div>
-        <div class="col-sm-4">
-         <div class="post-number">{{ site.theme.str_article }}: {{ page.article }}</div>
-        </div>
-        <div class="col-sm-4">
-        {% if site.theme.disqus_shortname and page.comment == true %}
-          <div id="parallax">
-            <div class="comment-post">
-              <i class="fa fa-comments-o animated infinite wobble"></i><a href="#comments" data-disqus-identifier="{{page.url}}"></a>
-            </div>
+  <div class="row">
+    <div class="wrapper" {% if site.theme.navbar_fixed == "yes" %} id="navbar-fixed-top" {% endif %} >
+      {% if page.cover != nil %}
+      <img class="img-responsive banner-post" src="{{ "/assets/images/covers"  | prepend: site.baseurl | prepend: site.url }}/{{ page.cover }}">
+      {% endif %}
+      <!-- Header Post -->
+      <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+      <div class="post-meta">
+        <div class="row">
+          <div class="col-sm-4">
+              <span class="fa fa-calendar"></span>
+               <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                {% if site.language == "english" %}
+                  {% include date/lang/en_US/en_US.jk %}
+                {% else %}
+                  {% include date/lang/pt_PT/pt_PT.jk %}
+                {% endif %}
+              </time>
           </div>
-        {% endif %}
-        </div>
-      </div>
-
-      </article>
-    </header>
-
-    <article class="post-content" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog" itemprop="blogPost">
-
-      <div class="reading-time"><i class="fa fa-clock-o icon-reading-time"></i>{{ page.content | reading_time }}</div>
-
-        <!-- Include AdSense -->
-  {% if site.theme.Include_AdSense == "yes" %}
-    {% include scripts/google_adsense.html %}
-  {% endif %}
-
-      {{ content }}
-
-  <a href="{{ site.theme.directory_posts_github }}/{{ page.filepath }}" class="btn btn-default edit-this-post pull-right" title="Github" target="_blank"><i style="font-size: 25px;" class="fa fa-github"></i>&nbsp;&nbsp;{{site.theme.str_edit_this_post}}</a>
-
-  {% if site.theme.post_sharing == "yes" %}
-    {% include html/shares.html %}
-  {% endif %}
-
-
-    <div class="row wrapper-author">
-        <div class="col-sm-2">
-         <div class="image-author">
-          {% if site.theme.gravatar %}
-          <img class="avatar-about" src="https://secure.gravatar.com/avatar/{{ site.theme.gravatar }}?s=100" alt=""/>
-          {% else if site.theme.author_image %}
-          <img class="avatar-about" src="{{ "/assets/images/author"  | prepend: site.baseurl | prepend: site.url }}/{{ site.theme.author_image }}" alt=""/>
+          <div class="col-sm-4">
+            <div class="post-number">{{ site.theme.str_article }}: {{ page.article }}</div>
+          </div>
+          <div class="col-sm-4">
+          {% if site.theme.disqus_shortname and page.comment == true %}
+            <div id="smooth-scrolling">
+              <div class="comment-post">
+                <i class="fa fa-comments-o animated infinite wobble"></i>
+                <a href="#comments" data-disqus-identifier="{{page.url}}"></a>
+              </div>
+            </div>
           {% endif %}
+          </div>
         </div>
-    </div>
-
-    <div class="col-lg-10">
-        <p class="post-by-title">{% if site.theme.str_post_by_title %}{{ site.theme.str_post_by_title }}{% endif %}</p>
-        <h1 class="name-author-post" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></h1>
-        <div class="description">{% if site.theme.author_post_description %} {{ site.theme.author_post_description }} {% endif %}</div>
       </div>
+      <div class="reading-time">
+        <i class="fa fa-clock-o icon-reading-time"></i>{{ page.content | reading_time }}
+      </div>
+    </header>
+    <!-- Post Content -->
+    <div class="post-content" itemprop="articleBody">
+      <!-- Include AdSense -->
+      {% if site.theme.Include_AdSense == "yes" %}
+        {% include scripts/google_adsense.html %}
+      {% endif %}
+      {{ content }}
+    </div>
+    <!-- Bottom Post -->
+    <div class="post-bottom">
+      <a href="{{ site.theme.directory_posts_github }}/{{ page.filepath }}" class="btn btn-default edit-me pull-right" title="Github" target="_blank">
+        <i class="fa fa-github"></i>&nbsp;&nbsp;{{site.theme.str_edit_this_post}}&nbsp;&nbsp;<i class="fa fa-external-link"></i>
+      </a>
+      {% if site.theme.post_sharing == "yes" %}
+        {% include html/shares.html %}
+      {% endif %}
+      <div class="row wrapper-author">
+        <div class="col-sm-2">
+          <div class="image-author">
+            {% if site.theme.gravatar %}
+            <img class="avatar-about" src="https://secure.gravatar.com/avatar/{{ site.theme.gravatar }}?s=100" alt=""/>
+            {% else if site.theme.author_image %}
+            <img class="avatar-about" src="{{ "/assets/images/author"  | prepend: site.baseurl | prepend: site.url }}/{{ site.theme.author_image }}" alt=""/>
+            {% endif %}
+          </div>
+        </div>
+        <div class="col-lg-10">
+          <p class="post-by-title">
+            {% if site.theme.str_post_by_title %}{{ site.theme.str_post_by_title }}{% endif %}
+          </p>
+          <h1 class="name-author-post" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span itemprop="name">{{ page.author }}</span>
+          </h1>
+          <div class="description">
+            {% if site.theme.author_post_description %} {{ site.theme.author_post_description }} {% endif %}
+          </div>
+        </div>
+      </div>
+      <!-- Include AdSense -->
+      {% if site.theme.Include_AdSense == "yes" %}
+        {% include scripts/google_adsense.html %}
+      {% endif %}
+
+      {% if page.comment == true %}
+        {% if site.theme.disqus_shortname %}
+          <h1 id="comments" class="comments-title">
+            <span class="fa fa-comment"></span>
+            {{ site.theme.str_comments }}
+          </h1>
+        {% endif %}
+        <!-- Disqus Comments -->
+        {% include scripts/disqus-comments.html %}
+      {% elsif page.comment == false %}
+        <h1 class="nocomments"><span class="fa fa-comment"></span><p> {{site.theme.str_nocomment}}</p></h1>
+      {% endif%}
     </div>
 
-  <!-- Include AdSense -->
-  {% if site.theme.Include_AdSense == "yes" %}
-    {% include scripts/google_adsense.html %}
-  {% endif %}
-
-
-  {% if page.comment == true %}
-    {% if site.theme.disqus_shortname %}
-      <h1 class="comments-title">
-        <span class="fa fa-comment"></span>
-        {{ site.theme.str_comments }}
-      </h1>
-    {% endif %}
-    <!-- Disqus Comments -->
-    {% include scripts/disqus-comments.html %}
-  {% elsif page.comment == false %}
-    <h1 class="nocomments"><span class="fa fa-comment"></span><p> {{site.theme.str_nocomment}}</p></h1>
-  {% endif%}
-
-  </article>
+  <!-- </article>  -->
   </div>
 </div>
 

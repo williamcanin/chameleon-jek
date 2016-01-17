@@ -1,4 +1,69 @@
-    /* Left, Right and Center the image alignment in markdown */
+/* Vide Youtube */
+.video-posts {
+    @media (min-width: 320px) {
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        clear: both;
+        background-color: transparent;
+        padding: 0%;
+        iframe {
+            width: 280px;
+            height: auto;
+            margin: 0 auto;
+            clear: both;
+        }
+    }
+    @media (min-width: 360px) {
+       iframe {
+        width: 310px;
+       }
+    }
+    @media (min-width: 480px) {
+        padding: 8% 13% 8%;
+       iframe {
+        width: 420px;
+       }
+    }
+    @media (min-width: 640px) {
+        padding: 2% 5% 2%;
+       iframe {
+        width: 500px;
+        height: 470px;
+       }
+    }
+    @media (min-width: 768px) {
+      padding: 1% 3% 1%;
+       iframe {
+        width: 600px;
+        height: 400px;
+       }
+    }
+    @media (min-width: 800px) {
+        padding: 5%;
+    }
+    @media (min-width: 980px) {
+        padding: 4% 6% 4%;
+        iframe {
+            width: 700px;
+            height: 530px;
+            margin: 0 auto;
+            clear: both;
+        }
+    }
+}
+
+/* Blockquote */
+blockquote{
+    border: none;
+    border-left: 0.7rem solid rgba(45, 79, 37,0.4);
+    background-color: #f1f1f1;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    margin: 20px 0px;
+}
+
+/* Left, Right and Center the image alignment in markdown */
     @media only screen and (min-width:320px)and(max-width: 479px) {
         .basic-alignment {
             width: 120px;
@@ -29,70 +94,3 @@
             &.left, &.right { margin-bottom: .8em; }
         }
     }
-
-/* Google Forms */
-.wrapper.google-form {
-  border-top: 1px solid #cecece;
-  text-shadow: 4px 4px 4px #aaa;
-  margin-top: 60px;
-  margin-bottom: 90px;
-  border-bottom: 1px solid #CECECE;
-  padding-bottom: 30px;
-  h1.title-gf {
-    font-family: $default-font;
-    font-size: 30px;
-    font-weight: 300;
-    font-style: normal;
-    text-align: center;
-    color: $primary-color;
-    span.fa.fa-send{
-        text-align: center;
-    }
-    p{
-
-    }
-}
-
-.text-gf {
-
-}
-
-.wrapper.btn-google-form {
-    width: 250px;
-    margin: 0 auto;
-    clear: both;
-    a.btn-google-form {
-        text-shadow: none;
-        @media only screen and (min-width:320px)and(max-width:360px) {
-            margin-left: 15%;
-        }
-        background-color: #DF5151;
-        padding: 10px 42px 10px 35px;
-        color: #fff;
-        width: 100px;
-        margin: 0 auto;
-        clear: both;
-        text-decoration: none;
-        i.fa.fa-send{
-            font-size: 22px;
-        }
-        i.btn-text{
-            font-family: $default-font;
-            font-size: 20px;
-            font-weight: 300;
-            font-style: normal;
-            margin-left: 10px;
-        }
-
-        &:focus {
-            outline: 0;
-            text-decoration: none;
-        }
-
-        &:visited {
-            outline: 0;
-            text-decoration: none;
-        }
-    }
-}
-} /* Google Forms */

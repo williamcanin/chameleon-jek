@@ -55,8 +55,6 @@ theme:
   title: "Chameleon Jek"
   subtitle_site: "Blog & Portfolio for Jekyll"
 
-
-
   # Block - Config Effects
   # Navbar Fixed (yes/no)
   navbar_fixed: "yes"
@@ -73,7 +71,7 @@ theme:
 
 # Block - FakeLoader
 # fakeLoader (yes/no)
-  fakeLoader: "yes"
+  fakeLoader: "no"
   fl_local: "all" # { all }
   fl_timeToHide: "1500" # milliseconds, default 1500
   # Default fl_bgColor: #2D4F25
@@ -183,7 +181,7 @@ theme:
 
 
 # Block - Comments for Disqus
-  disqus_shortname: "your_user_disqus" # Your User of Disqus. ex: "williamcanin"
+  disqus_shortname: "williamcanin" # Your User of Disqus. ex: "williamcanin"
 # Block - Comments for Disqus
 
 
@@ -232,7 +230,7 @@ theme:
   str_shares_title: "<p>Share this post in</p>"
   str_article: "Article"
   str_nocomment: "Comment disabled"
-  str_edit_this_post: "Edit this post"
+  str_edit_this_post: "Edit me"
   # Block - Localization strings
 
 

@@ -1,28 +1,33 @@
-<h1 class="title-shares">
-   <span class="fa fa-share-alt"></span>
-   {{ site.theme.str_shares_title }}
-</h1>
-
-<div class="row sh-sn">
-    <div class="col-sm-3">
-        <a aria-label="Share Facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend:site.baseurl | prepend:site.url }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-            <i class="fa fa-facebook"></i>
-        </a>
+<div class="wrapper sh">
+    <!-- Heder share -->
+    <div class="row header-sh">
+        <h1><i class="fa fa-share-alt"></i></h1>
+        <h1 class="title-shares">
+            {{ site.theme.str_shares_title }}
+        </h1>
     </div>
-    <div class="col-sm-3">
-        <a href="https://twitter.com/intent/tweet?text=&quot;{{ page.title }}&quot;%20{{ page.url | prepend:site.baseurl | prepend:site.url }}{% if site.theme.twitter %}%20via%20&#64;{% endif %}{{ site.theme.twitter }}&hashtags={% for tag in page.tags %}{{tag}},{% endfor %}"onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-            <i class="fa fa-twitter"></i>
-        </a>
-    </div>
-    <div class="col-sm-3">
-        <a href="https://plus.google.com/share?url={{ page.url | prepend:site.baseurl | prepend:site.url }}"
-    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-            <i class="fa fa-google-plus"></i>
-        </a>
-    </div>
-    <div class="col-sm-3">
-        <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ page.url | prepend:site.baseurl | prepend:site.url }}&title={{ page.title }}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-            <i class="fa fa-linkedin"></i>
-        </a>
+    <!-- Content share -->
+    <div class="row content-sh">
+        <div class="col-sm-3">
+            <a aria-label="Share Facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend:site.baseurl | prepend:site.url }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fa fa-facebook"></i>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a href="https://twitter.com/intent/tweet?text=&quot;{{ page.title }}&quot;%20{{ page.url | prepend:site.baseurl | prepend:site.url }}{% if site.theme.twitter %}%20via%20&#64;{% endif %}{{ site.theme.twitter }}&hashtags={% for tag in page.tags %}{{tag}},{% endfor %}"onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a href="https://plus.google.com/share?url={{ page.url | prepend:site.baseurl | prepend:site.url }}"
+        onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ page.url | prepend:site.baseurl | prepend:site.url }}&title={{ page.title }}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                <i class="fa fa-linkedin"></i>
+            </a>
+        </div>
     </div>
 </div>

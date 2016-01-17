@@ -4,7 +4,7 @@ title:  Version v1.0.4 Beta
 author: Chameleon Jek
 article: '#2'
 published: true
-filepath: 2015-08-10-new-version-1.0.4.md
+filepath: 2015-08-10-new-version-1.0.4.markdown
 comment: false
 cover:
 date:   2015-08-10 23:00:00

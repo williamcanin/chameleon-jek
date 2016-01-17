@@ -36,9 +36,7 @@ def render(context)
 "
 <div class=\"row\">
     <div class=\"col-sm-12 video-posts\">
-
-<iframe src=\"http://www.youtube.com/embed/#{@id}?color=white&theme=light\" frameborder=\"0\"></iframe>
-
+      <iframe src=\"http://www.youtube.com/embed/#{@id}?color=white&theme=light\" frameborder=\"0\"></iframe>
     </div>
 </div>
 "
