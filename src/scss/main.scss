@@ -17,7 +17,6 @@
 /* Layouts */
 @import 'layouts/about/about';
 @import 'layouts/contact/contact';
-@import 'layouts/index/index';
 @import 'layouts/page/page';
 @import 'layouts/portfolio/portfolio';
 @import 'layouts/post/post';
@@ -26,6 +25,7 @@
  /* Includes */
 @import 'includes/header';
 @import 'includes/color_nav_icon';
+@import 'includes/home';
 @import 'includes/button_top';
 @import 'includes/footer';
 @import 'includes/modal_feedburner';
