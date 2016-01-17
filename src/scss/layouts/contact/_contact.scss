@@ -1,60 +1,83 @@
-.content-contact{
-  margin-bottom: 30px;
-  h1,h3,h2,p,b,strong,i{
-    font-family: $default-font;
-    font-style: normal;
-    font-weight: 300;
+.wrapper.contact{
+  height: 100%;
+  @media (min-width: 320px) {
+    padding: 1% 7% 1%;
   }
-  p,b,strong,i{
-    font-size: 20px;
+  @media (min-width: 1280px) {
+    padding: 5% 20% 5%;
   }
-}
- .wrapper.formspree{
-  form{
-      .row{
-        input[type=text],
-        input[type=email]{
-
-        }
-        padding: 10px 0px;
-      }
-      .form-control{
-        text-transform: uppercase;
-        font-size: 22px;
-        height:auto;
-      }
-      .name-fs{
-
-      }
-      .email-fs{
-
-      }
-      .content-fs{
-        .form-control{
-          text-transform: none;
-        }
-      }
-      .wrapper.btn-fs{
-        .btn-send-fs{
-          width: 100%;
-          font-size: 22px;
-          text-transform: uppercase;
-          box-sizing: border-box;
-        }
-      }
-  }
-}
-
-.wrapper.warning-disable-fs,.wrapper.thanks-formspree{
-    padding: 10%;
-    h3{
-      font-size: 45px;
-      font-family: "Raleway",sans-serif;
-      font-weight: 300;
-      font-style: normal;
-      i{
-        margin-right: 10px;
-      }
+  header.header{
+    h1.title{
+      @extend %font-title;
       text-align: center;
+      padding: 5%;
     }
+  }
+  .content{
+    background-color: #fff;
+    @media (min-width: 1280px) {
+      padding: 1% 1% 10%;
+    }
+    .c-content{
+      margin-bottom: 30px;
+      h1,h3,h2,p,b,strong,i{
+        font-family: $default-font;
+        font-style: normal;
+        font-weight: 300;
+      }
+      p,b,strong,i{
+        font-size: 20px;
+      }
+    }
+    .formspree{
+      form#formspree-contact{
+        .row{
+          padding: 10px 0px;
+        }
+        .form-control{
+          font-family: $default-font;
+          text-transform: uppercase;
+          font-size: 22px;
+          height:auto;
+        }
+        .name-fs{
+          input.form-control{}
+        }
+        .email-fs{
+          input.form-control{}
+        }
+        .content-fs{
+          textarea.form-control{}
+        }
+        .btn-fs{
+          input.btn-send-fs{
+            width: 100%;
+            font-size: 22px;
+            text-transform: uppercase;
+            box-sizing: border-box;
+            font-family: $default-font;
+          }
+        }
+      }
+    }
+    .warning-disable-fs{
+        padding: 10%;
+        h3{
+          font-family: $default-font;
+          font-weight: 300;
+          @media (min-width: 320px) {
+            font-size: 3rem;
+          }
+          @media (min-width: 768px) {
+            font-size: 4rem;
+          }
+          color: #FFA520;
+          text-shadow: 1px 1px 1px #393939;
+          i.fa-paper-plane{
+            margin-right: 10px;
+            color: #FFA520;
+          }
+        }
+    }
+  }
 }

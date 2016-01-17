@@ -1,40 +1,35 @@
 ---
 layout: default
 ---
-
-<div  class="wrapper header-about" >
-    <header class="post-header" {% if site.theme.navbar_fixed == "no" %} id="post-header-static" {% endif %}>
-      <div class="image-about">
-        <h1 id="post-title">{{ page.title }}</h1>
-        {% if site.theme.gravatar_md5 %}
-        <img class="avatar-about" src="https://secure.gravatar.com/avatar/{{ site.theme.gravatar_md5 }}?s=100" alt=""/>
-        {% elsif site.theme.avatar %}
-        <img class="avatar-about" src="{{ "/assets/images/avatar"  | prepend: site.baseurl | prepend: site.url }}/{{ site.theme.avatar }}" alt=""/>
-        {% endif %}
-        <div id="smooth-scrolling">
-          <a class="arrow" href="#stop-parallax-about"><span class="fa fa-chevron-down"></span></a>
-        </div>
+<!-- Header About -->
+<div class="wrapper about">
+  <header class="post-header" {% if site.theme.navbar_fixed == "no" %} id="post-header-static" {% endif %}>
+    <div class="box">
+          <h1 class="title">{{ page.title }}</h1>
+          {% if site.theme.gravatar_md5 %}
+          <img class="avatar-about" src="https://secure.gravatar.com/avatar/{{ site.theme.gravatar_md5 }}?s=100" alt=""/>
+          {% elsif site.theme.avatar %}
+          <img class="avatar-about" src="{{ "/assets/images/avatar"  | prepend: site.baseurl | prepend: site.url }}/{{ site.theme.avatar }}" alt=""/>
+          {% endif %}
+          <div id="smooth-scrolling">
+            <a class="arrow" href="#stop-parallax-about">
+              <span class="fa fa-chevron-down"></span>
+            </a>
+          </div>
+    </div>
+  </header>
+  <!-- Target Arrow -->
+  <div class="target arrow">
+    <div class="down"></div>
+  </div>
+  <!-- Content About -->
+  <div class="row" >
+    <div class="content" {% if site.theme.navbar_fixed == "yes" %} id="navbar-fixed-top" {% endif %}>
+        <div id="stop-parallax-about"></div>
+            {% if page.cover != null %}
+            <img class="img-responsive img-cover" src="{{ "/assets/images/pages"  | prepend: site.baseurl | prepend: site.url }}/{{ page.cover }}">
+            {% endif %}
+            {{ content }}
       </div>
-    </header>
-</div>
-<div class="wrapper arrow">
-  <div class="arrow-down-about"></div>
-</div>
-
-
-
-<div class="row page" >
-<div class="wrapper page" {% if site.theme.navbar_fixed == "yes" %} id="navbar-fixed-top" {% endif %}>
-
-<div id="wrapper-post-content">
-      <div id="stop-parallax-about"></div>
-      <section id="post-content">
-      {% if page.cover != null %}
-        <img class="img-responsive img-cover" src="{{ "/assets/images/pages"  | prepend: site.baseurl | prepend: site.url }}/{{ page.cover }}">
-      {% endif %}
-        {{ content }}
-      </section>
-</div>
-
-</div>
+  </div>
 </div>

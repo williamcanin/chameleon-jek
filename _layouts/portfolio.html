@@ -2,48 +2,52 @@
 layout: default
 ---
 
-<div class="row page" >
-<div class="wrapper page" {% if site.theme.navbar_fixed == "yes" %} id="navbar-fixed-top" {% endif %}>
-
-<header class="post-header">
-      <h1 class="post-title">{{ page.title }}</h1>
-      <div class="row content-portfolio">
-        {{ content }}
-      </div>
-</header>
-<section class="post-content" id="portfolio">
-
-  <div class="wrapper portfolio">
-      <div class="row">
-          {% for portfolio in site.categories['portfolio'] and site.published['true'] %}
-          <div class="col-sm-4 portfolio-item">
-              <a href="#portfolioModal-{{ portfolio.modal_id }}" class="portfolio-link" data-toggle="modal">
-                  <div class="caption">
-                      <div class="caption-content">
-                          <i class="fa fa-search-plus fa-3x"></i>
-                      </div>
-                  </div>
-                  <img src="{{ "/assets/images/portfolio" | prepend: site.baseurl | prepend: site.url }}/{{ portfolio.img }}" class="img-responsive" alt="{{ portfolio.alt }}">
-              </a>
+<div class="wrapper portfolio">
+<!-- Header Portfolio -->
+  {% assign ckecked_project = site.categories['portfolio'] and site.published['true']%}
+  {% if ckecked_project.title %}
+  <header class="portfolio-header">
+    <h1 class="title">{{ page.title }}</h1>
+    <div class="row content">
+      {{ content }}
+    </div>
+  </header>
+  <!-- Portfolio Content-->
+  <section class="content" id="portfolio">
+  <!-- Grid  -->
+    <div class="row">
+    {% for portfolio in site.categories['portfolio'] and site.published['true'] %}
+      <div class="col-sm-4 portfolio-item">
+        <a href="#portfolioModal-{{ portfolio.modal_id }}" class="portfolio-link" data-toggle="modal">
+          <div class="caption">
+            <div class="caption-content">
+              <i class="fa fa-search-plus fa-3x"></i>
+            </div>
           </div>
-          {% endfor %}
+          <img src="{{ "/assets/images/portfolio" | prepend: site.baseurl | prepend: site.url }}/{{ portfolio.img }}" class="img-responsive imgs-portfolio" alt="{{ portfolio.alt }}">
+        </a>
       </div>
-      {% if page.comment == true %}
+    {% endfor %}
+    </div>
+  <!-- Comments -->
+    {% if page.comment == true %}
       {% if site.theme.disqus_shortname %}
-      <h1 class="comments-title">
+        <h1 class="comments-title">
           <span class="fa fa-comment"></span>
           {{ site.theme.str_comments_portfolio }}
-      </h1>
-      <div id="comments" class="comments">
-        {% include scripts/disqus.html %}
-    </div>
-    {% endif %}
+        </h1>
+        <div id="comments" class="comments">
+          {% include scripts/disqus.html %}
+        </div>
+      {% endif %}
     {% else %}
-    <h1 class="nocomments"><span class="fa fa-comment"></span><p> {{site.theme.str_nocomment}}</p></h1>
+      <h1 class="nocomments">
+        <span class="fa fa-comment"></span>
+        <p> {{site.theme.str_nocomment}}</p>
+      </h1>
     {% endif %}
-  </div>
-
-</section>
-
-</div>
+  </section>
+  {% else %}
+    <h3 style="text-align:center; font-size: 30px; color: #D98A00;">You have not created a project to be in the portfolio ...</h3>
+  {% endif %}
 </div>

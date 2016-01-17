@@ -200,7 +200,9 @@ class Main < Variables
     abort("rake aborted: '#{CONFIG['pages']}' directory not found.") unless FileTest.directory?(CONFIG['pages'])
     title = ENV["TITLE"] || "new-page"
     permalink = ENV["PERMALINK"] || "permalink-page"
-    permalink_thanks = $config_yml['permalink_thanks_formspree']
+    if type == 'thanks'
+      permalink_thanks = $config_yml['permalink_thanks_formspree']
+    end
     published = ENV["PUBLISHED"] || false
     comment = ENV["COMMENT"] || false
     inmenu = ENV["INMENU"] || 'false'

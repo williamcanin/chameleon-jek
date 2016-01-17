@@ -76,6 +76,7 @@ article.post{
                     font-style: normal;
                     font-size: 16px;
                     text-decoration: underline;
+                    text-transform: none;
                     color: $primary-color;
                     &:focus,&:visited{
                       outline: 0;

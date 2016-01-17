@@ -9,7 +9,7 @@
 @import 'base/utilities/utility';
 
 /* Syntax  Highlighting */
-@import 'base/highlighting/syntax-highlighting-light';
+@import 'base/highlighting/syntax_highlighting_light';
 
 /* Markdowns */
 @import 'markdown/markdown';
@@ -25,12 +25,13 @@
 
  /* Includes */
 @import 'includes/header';
-@import 'includes/color-nav-icon';
-@import 'includes/button-top';
+@import 'includes/color_nav_icon';
+@import 'includes/button_top';
 @import 'includes/footer';
-@import 'includes/modal-feedburner';
+@import 'includes/modal_feedburner';
+@import 'includes/modal_portfolio';
 @import 'includes/share';
-@import 'includes/search';
+@import 'includes/modal_search';
 @import 'includes/adsense';
 @import 'includes/fakeLoader';
 @import 'includes/disqus';
