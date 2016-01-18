@@ -334,6 +334,7 @@ class Main < Variables
     puts "✔ Finished!"
   end
 
+# Maintenance Page / Or not
   def maintenance_enable_disable(status)
     if status == 'enable'
       system("bash src/lib/shell/rake/under_maintenance.lib enable")

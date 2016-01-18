@@ -72,7 +72,7 @@ theme:
 
 # Block - FakeLoader
 # fakeLoader (yes/no)
-  fakeLoader: "no"
+  fakeLoader: "yes"
   fl_local: "all" # { all }
   fl_timeToHide: "1500" # milliseconds, default 1500
   # Default fl_bgColor: #2D4F25
@@ -191,7 +191,7 @@ theme:
 
 
 # Block - Comments for Disqus
-  disqus_shortname:  # Your User of Disqus. ex: "williamcanin"
+  disqus_shortname: "your_username_disqus" # Your User of Disqus. ex: "williamcanin"
 # Block - Comments for Disqus
 
 
