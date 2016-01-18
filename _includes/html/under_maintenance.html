@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  {% include html/head.html%}
+<body>
+ <div style="padding: 60px;" class="container">
+   <div style="text-align:center;" class="row">
+     <i style="width: 50px; margin: 0 auto; font-size: 50px;" class="fa fa-wrench"></i>
+   </div>
+   <div class="row">
+     <h1 align="center">
+       {% if site.language == "portuguese" %}
+        <p style="margin: 30px 0px;">Desculpe :( </p> <p>Em manutenção ...</p>
+       {% else %}
+        <p style="margin: 30px 0px;">Sorry :(</p> <p>Under Maintenance ...</p>
+       {% endif %}
+     </h1>
+   </div>
+ </div>
+</body>
+</html>

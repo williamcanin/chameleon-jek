@@ -1,6 +1,9 @@
----
----
+#!/bin/bash
 
+function _under_maintenance_enable(){
+cat << EOF > index.html
+---
+---
 <!DOCTYPE html>
 <html>
   {% include html/head.html%}
@@ -21,3 +24,26 @@
  </div>
 </body>
 </html>
+EOF
+}
+
+function _under_maintenance_disable(){
+cat << EOF > index.html
+---
+layout: default
+---
+
+<!-- Home - Listed posts -->
+{% include html/home.html %}
+<!-- Count Disqus -->
+{% include scripts/disqus_count.html %}
+EOF
+}
+
+if [[ "$1" == "enable" ]]; then
+  _under_maintenance_enable
+elif [[ "$1" == "disable" ]]; then
+  _under_maintenance_disable
+else
+  printf "Wrong parameter for 'Under Maintenance'\n"
+fi

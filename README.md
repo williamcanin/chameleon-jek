@@ -15,6 +15,7 @@
 * [Configurações](https://github.com/williamcanin/chameleon-jek/blob/master/README-PtBr.md#configura%C3%A7%C3%B5es)
 * [Deploy - GitHub](https://github.com/williamcanin/chameleon-jek/tree/master/#deploy---github)
 * [Contacto](https://github.com/williamcanin/chameleon-jek/tree/master/#contacto)
+* [Em manutenção](https://github.com/williamcanin/chameleon-jek/tree/master/#em-manuten%C3%A7%C3%A3o)
 * [Demo](https://github.com/williamcanin/chameleon-jek/tree/master/#demo)
 * [Questões](https://github.com/williamcanin/chameleon-jek/tree/master/#quest%C3%B5es---issues)
 * [Versões](https://github.com/williamcanin/chameleon-jek/tree/master/#vers%C3%B5es)
@@ -261,6 +262,24 @@ A mensagem é enviada através do [Formspree](https://formspree.io/).
 Então se deseja utilizar este recurso, tem que se cadastrar no [Formspree](http://formspree.io/register).
 
 Após o cadastro, insira o E-Mail cadastrado no Bloco **"Formspree"** no arquivo **_config.yml** e também faça as demais configurações que lhe agradar nas variáveis.
+
+## Em manutenção 
+
+Caso queira deixar o seu website exibindo uma página de manutenção, o **Chameleon Jek** também disponibiliza essa função para você.
+
+Basta executar o comando:
+
+```
+$ rake maintenance:enable
+```
+
+Para sair da página de manutenção, execute o comando:
+
+```
+$ rake maintenance:disable
+```
+
+Você pode saber mais sobre os comando do *Chameleon Jek**, executando: `$ rake help`
 
 ## DEMO 
 

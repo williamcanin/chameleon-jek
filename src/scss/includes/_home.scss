@@ -2,6 +2,10 @@
   .fakeloader{}
   /* Adorned Header */
   .adorned{
+    @media (min-width: 1920px) {
+      margin-top: -27px !important;
+    }
+    #navbar-fixed-top{}
     .title{
       text-align: center;
       font-family: $default-font;

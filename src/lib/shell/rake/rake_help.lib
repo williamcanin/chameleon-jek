@@ -104,6 +104,14 @@ Usage: rake [options]
     gravatar:md5    generates the md5 email GRAVATAR
     gravatar:clean  clean the md5 email gravatar. This makes using the site avatar.
 
+$(tput setaf 38)→ LET THE WEBSITE SERVICE OR NOT: $(tput sgr0)
+
+Usage: rake [options]
+
+  Options:
+    maintenance:enable    shows maintenance page.
+    maintenance:disable   removing maintenance page.
+
 ------------------------------------------------------------------------------
 Copyright (c) William C. Canin
 Licensed under the MIT license.

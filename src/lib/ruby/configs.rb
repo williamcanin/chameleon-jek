@@ -334,9 +334,21 @@ class Main < Variables
     puts "✔ Finished!"
   end
 
+  def maintenance_enable_disable(status)
+    if status == 'enable'
+      system("bash src/lib/shell/rake/under_maintenance.lib enable")
+      system('sed -i \'s|^under_maintenance: .*|under_maintenance: "yes"|g\' _config.yml')
+    elsif status == 'disable'
+      system("bash src/lib/shell/rake/under_maintenance.lib disable")
+      system('sed -i \'s|^under_maintenance: .*|under_maintenance: "no"|g\' _config.yml')
+    else
+      puts "Error parameter 'maintenance_enable_disable'"
+    end
+  end
+
 
   def help
-    system("src/lib/shell/rake/rake_help.lib")
+    system("bash src/lib/shell/rake/rake_help.lib")
   end
 
 end # End Main

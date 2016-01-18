@@ -25,14 +25,15 @@ language: "english"
 #==========================================================
 
 
+
 # Block - Formspree
 #
 # Enable/Disable Form Contact
-enable_formspree: "yes" # ( yes | no)
+enable_formspree: "no" # ( yes | no)
 msg_disable_formspree: "Sorry! Sending message has been disabled."
 #
 # Your email registered in Formspree. Example: "your_email@domain.com"
-email_formspree: "william.costa.canin@gmail.com"
+email_formspree:
 #
 # Texts Form Send
 btn_text_formspree: "Send"
@@ -190,7 +191,7 @@ theme:
 
 
 # Block - Comments for Disqus
-  disqus_shortname: "williamcanin" # Your User of Disqus. ex: "williamcanin"
+  disqus_shortname:  # Your User of Disqus. ex: "williamcanin"
 # Block - Comments for Disqus
 
 
@@ -272,6 +273,9 @@ navbar_collapse_icon: "nav-icon-white.svg"
 # Block - Menu
 
 
+# Block - Under Maintenance
+under_maintenance: "no"
+# Block - Under Maintenance
 
 
 # Block - Includes files and folder build jekyll

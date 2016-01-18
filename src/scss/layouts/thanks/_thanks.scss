@@ -1,6 +1,20 @@
-.wrapper.thanks-formspree{
-  h3{
-    color: #56AE5D;
-    text-shadow: 1px 1px 1px #48834D;
+.wrapper.thanks{
+  padding: 5% 15% 5%;
+  .row{
+    section.content{
+      padding: 10% 0%;
+      @media (min-width: 1920px) {
+        padding: 20% 0%;
+      }
+      .msg{
+        h3{
+          @extend %font-title;
+          color: #49B84E;
+          i.fa-check{
+            padding: 2%;
+          }
+        }
+      }
+    }
   }
 }

@@ -152,6 +152,17 @@ namespace :gravatar do
   end
 end
 
+# Enable / Disable page Maintenance
+namespace :maintenance do
+  task :enable => [:load_config_yml] do
+    confs = Main.new
+    confs.maintenance_enable_disable("enable")
+  end
+  task :disable => [:load_config_yml] do
+    confs = Main.new
+    confs.maintenance_enable_disable("disable")
+  end
+end
 
 # Help
 desc "Help"

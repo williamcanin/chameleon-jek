@@ -2,6 +2,7 @@
 layout: compress
 ---
 
+{% if site.under_maintenance == "no" %}
 <!DOCTYPE html>
 <html class="no-js" lang="pt-br"  id="top">
 
@@ -48,3 +49,6 @@ layout: compress
   </body>
 
 </html>
+{% else %}
+  {% include html/under_maintenance.html %}
+{% endif %}
