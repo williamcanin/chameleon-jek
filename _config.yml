@@ -283,7 +283,7 @@ include: ['_pages']
 # Block - Includes files and folder build jekyll
 
 # Jekyll layout that compresses HTML
-# http://jch.penibelst.de/
+# Documentation: http://jch.penibelst.de/
 compress_html:
   clippings: all
   comments: all
@@ -291,8 +291,8 @@ compress_html:
   profile: false
 
 # Block - Build settings
-url: "http://0.0.0.0:4000"
-baseurl: ""
+url: "http://williamcanin.com"
+baseurl: "/chameleon-jek"
 # Permalink Default: /:categories/:year/:month/:day/:title/
 # Permalink optional: /:title/
 permalink: /:title/

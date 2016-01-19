@@ -45,15 +45,34 @@
   /* List Posts */
   .row{
     ul.wrapper-list{
-      padding:7% 15% 2%;
+        padding:7% 15% 2%;
+        @if $to_color == "white" {
+          margin-top: -10%;
+        }@else {
+          margin-top: -5%;
+        }
         @media (min-width:320px) and (max-width:670px) {
           padding: 7% 5% 2%
         }
         @media (min-width:768px) and (max-width:1024px) {
           padding: 7% 5% 2%
         }
+
+        .begin-line-posts{
+          margin-bottom: -1.1%;
+          @if $to_color == "white" {
+            border: 10px solid #fff;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+          } @else{
+            border: 10px solid lighten($primary-color, 60%);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+          }
+        }
         .box-list{
           border: $color-border-box-posts;
+          border-bottom: none;
           padding: 7%;
           background-color: $bg-color-box-posts;
           li.list{
@@ -85,9 +104,13 @@
               a.post-link{
                  color: $title-color;
                  @media only screen and (min-width:320px) and (max-width:640px) {
-                  font-size: 30px
+                  font-size: 30px;
+
                 }
               }
+              &:hover {
+                    opacity: 0.88;
+                  }
             }
             hr{
               @media (min-width:320px) and (max-width:480px) {
@@ -167,6 +190,18 @@
         }
       h3{
         p{}
+      }
+      .end-line-posts{
+        margin-top: -0.2%;
+         @if $to_color == "white" {
+          border: 6px solid #fff;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+        } @else{
+          border: 6px solid lighten($primary-color, 60%);
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }
       }
     }
   }

@@ -29,6 +29,7 @@
 
   <div class="row">
     <ul class="wrapper-list">
+    <hr class="begin-line-posts">
       <!-- Variable in Ruby 'assign index_home' -->
       {% assign index_home = site.categories['blog'] and site.published['true'] %}
       {% for posting in index_home %}
@@ -78,6 +79,7 @@
         </h3>
       {% endif %}
       {% endfor %}
+      <hr class="end-line-posts">
     </ul>
   </div>
 </div>

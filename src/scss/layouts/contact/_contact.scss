@@ -47,7 +47,9 @@
           input.form-control{}
         }
         .content-fs{
-          textarea.form-control{}
+          textarea.form-control{
+            text-transform: none;
+          }
         }
         .btn-fs{
           input.btn-send-fs{
