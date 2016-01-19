@@ -5,7 +5,7 @@ layout: default
   <div class="row">
     <div class="wrapper" {% if site.theme.navbar_fixed == "yes" %} id="navbar-fixed-top" {% endif %} >
       {% if page.cover != nil %}
-      <img class="img-responsive banner-post" src="{{ "/assets/images/covers"  | prepend: site.baseurl | prepend: site.url }}/{{ page.cover }}">
+      <img class="img-responsive center-block banner-post" src="{{ "/assets/images/covers"  | prepend: site.baseurl | prepend: site.url }}/{{ page.cover }}">
       {% endif %}
       <!-- Header Post -->
       <header class="post-header">

@@ -1,0 +1,29 @@
+.um-social-icons{
+  width: 330px;
+  @media (min-width: 320px)and (max-width: 360px) {
+    width: 300px;
+  }
+  margin: 0 auto;
+  clear: both;
+  padding: 1%;
+  margin-bottom: 10px;
+  #rss{
+    display: none;
+  }
+  li{
+    list-style: none;
+    float: left;
+    width: 25px;
+    @media (min-width: 320px)and (max-width: 360px) {
+      width: 22px;
+    }
+    margin: 5px;
+  }
+  a{
+    font-size: 25px;
+    @media (min-width: 320px)and (max-width: 360px) {
+      font-size: 22px;
+    }
+    color: #323232;
+  }
+}
