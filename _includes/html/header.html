@@ -5,7 +5,6 @@
   <nav class="banner navbar navbar-default navbar-static-top" role="banner" {% if page.permalink == "/about/" %} id="color-navbar" {% endif %}>
   {% endif %}
     <div class="navbar-header">
-      <!-- Insert drawer -->
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" role="menu-responsive" >
         <span class="sr-only">Toggle navigation</span>
         {% if page.permalink == "/about/" %}
@@ -50,13 +49,6 @@
             </li>
           {% endif %}
         {% endfor %}
-        <!-- Social for Responsive - In Development -->
-        <!-- <li class="dropdown social-responsive">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-comment"></span> Social<span class="caret"></span></a>
-            <ul class="dropdown-menu wrapper-icons-social">
-              { % include html/social_icons.html % }
-            </ul>
-        </li> -->
         <li class="btn-search-container">
           <a href="#searchModal" class="btn-search" data-toggle="modal">
             <span class="fa fa-search"></span>

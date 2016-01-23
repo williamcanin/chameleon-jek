@@ -1,8 +1,8 @@
 'use strict';
 
 // CONFIG VARIABLES FOR DEPLOY (DISABLED)
-// var url = 'http://williamcanin.com',
-//     baseurl = '/chameleon-jek/';
+/*var url = 'http://williamcanin.com',
+    baseurl = '/chameleon-jek/';*/
 
 // LOAD PLUGINS
 var gulp = require( 'gulp' ),
@@ -128,19 +128,19 @@ gulp.task('url_dev', shell.task([
 ]));
 
 // (DISABLED)
-// gulp.task('url_deploy', shell.task([
-//   'sed -i \'s|^url: .*|url: "'+ url +'"|g\' _config.yml',
-//   'sed -i \'s|^baseurl: .*|baseurl: "'+baseurl+'"|g\' _config.yml',
-//   'sleep 2'
-// ]));
+/*gulp.task('url_deploy', shell.task([
+  'sed -i \'s|^url: .*|url: "'+ url +'"|g\' _config.yml',
+  'sed -i \'s|^baseurl: .*|baseurl: "'+baseurl+'"|g\' _config.yml',
+  'sleep 2'
+]));*/
 
-// DEPLOY FOR GH-PAGES
-gulp.task('copys', function() {
+// DEPLOY FOR GH-PAGES (DISABLED)
+/*gulp.task('copys', function() {
     gulp.src('_site/assets/**')
     .pipe(gulp.dest('gh-pages/assets'))
     gulp.src('_site/*.xml')
     .pipe(gulp.dest('gh-pages'))
-});
+});*/
 
 gulp.task('deploy', function() {
   return gulp.src('./' + paths.gh_pages + '/**/*')

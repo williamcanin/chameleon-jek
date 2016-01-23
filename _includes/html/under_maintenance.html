@@ -8,28 +8,22 @@
            <i class="fa fa-wrench"></i>
          </div>
          <div align="center" class="row">
-             {% if site.language == "portuguese" %}
              <h1>
-                <p>Desculpe :( </p>
-                <p>A página do meu blog está em manutenção.</p>
+                {{ site.theme.msg_under_maintenance_h1 }}
              </h1>
               <h3>
-                <p>Enquanto isso, você pode entrar em contacto comigo nos links abaixo:</p>
+                {{ site.theme.msg_under_maintenance_h3 }}
               </h3>
-             {% else %}
-              <h1>
-                <p>Sorry :(</p>
-                <p>The page of my blog is down for maintenance.</p>
-              </h1>
-              <h3>
-                <p>Meanwhile, you can contact me on the following links:</p>
-              </h3>
-             {% endif %}
            <div class="row">
              <div class="um-social-icons">
               {% include html/social_icons.html %}
              </div>
            </div>
+           {% if site.theme.umain_button.enable == "yes" %}
+            <div class="row">
+             <a href="{{ site.theme.umain_button.href }}" class="btn btn-primary" target="_blank">{{ site.theme.umain_button.value }}</a>
+           </div>
+           {% endif %}
          </div>
        </div>
     </div>

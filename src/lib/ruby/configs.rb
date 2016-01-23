@@ -25,8 +25,6 @@ class Variables
 
 end
 
-
-
 class Main < Variables
 
   def theme_confs(color)
@@ -298,17 +296,17 @@ class Main < Variables
       system('gulp deploy')
     # system('gulp clean') # DISABLED
     elsif branch == "master"
+      system('gulp imageminify')
       system("git add .")
       system("git commit -m \"Deploy: $(date \"+%Y-%m-%dT%H:%M:%S\")\"")
-      system('gulp imageminify')
       system("git push origin -u master")
     elsif branch == "dev"
       # To deploy in a different branch, use: $ rake deploy:dev BRANCH="your_branch"
+      system('gulp imageminify')
       system("git branch -q -f #{branch_dev}")
       system("git checkout #{branch_dev}")
       system("git add .")
       system("git commit -m \"Deploy: $(date \"+%Y-%m-%dT%H:%M:%S\")\"")
-      system('gulp imageminify')
       system("git push origin -u #{branch_dev}")
     else
       puts "[ Error in parameter 'branch']"

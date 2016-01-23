@@ -69,6 +69,17 @@ theme:
   shake_title_posts: "yes"
  # Block - Config Effects
 
+# Block - Under Maintenance - Message / Button
+  msg_under_maintenance_h1: >
+    <p> Sorry :( </p>
+    My site is down for maintenance.
+  msg_under_maintenance_h3: >
+    <p> Meanwhile, you can contact me on the following links: </p>
+  umain_button:
+    enable: "yes"
+    value: "Button Redirect"
+    href: "http://localhost:4000"
+# Block - Under Maintenance - Message / Button
 
 # Block - FakeLoader
 # fakeLoader (yes/no)
@@ -291,8 +302,8 @@ compress_html:
   profile: false
 
 # Block - Build settings
-url: "http://williamcanin.com"
-baseurl: "/chameleon-jek"
+url: "http://0.0.0.0:4000"
+baseurl: ""
 # Permalink Default: /:categories/:year/:month/:day/:title/
 # Permalink optional: /:title/
 permalink: /:title/

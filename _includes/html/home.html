@@ -1,9 +1,7 @@
 <div class="wrapper home">
-
   {% if site.theme.fl_local == "home" %}
     <div class="fakeloader"></div>
   {% endif %}
-
   <!-- Adorned Header -->
   <div class="row adorned">
     {% if site.theme.adorned_header_enable == "yes" %}
@@ -21,12 +19,10 @@
       </div>
     {% endif %}
   </div>
-
   <!-- Include AdSense -->
   {% if site.theme.Include_AdSense == "yes" %}
     {% include scripts/google_adsense.html %}
   {% endif %}
-
   <div class="row">
     <ul class="wrapper-list">
     <hr class="begin-line-posts">

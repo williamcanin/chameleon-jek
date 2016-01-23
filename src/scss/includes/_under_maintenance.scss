@@ -16,6 +16,7 @@
       font-family: $default-font;
         h1{
           @extend %font-title;
+          color: #333;
         }
         h3{}
       .row{

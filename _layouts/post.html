@@ -83,7 +83,6 @@ layout: default
       {% if site.theme.Include_AdSense == "yes" %}
         {% include scripts/google_adsense.html %}
       {% endif %}
-
       {% if page.comment == true %}
         {% if site.theme.disqus_shortname %}
           <h1 id="comments" class="comments-title">
@@ -98,10 +97,8 @@ layout: default
       {% endif%}
     </div>
   <!-- </article>  -->
+    </div>
   </div>
-</div>
-
 <!-- Count Disqus -->
 {% include scripts/disqus_count.html %}
-
 </article>
