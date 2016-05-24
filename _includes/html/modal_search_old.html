@@ -1,13 +1,13 @@
  <!-- Search Modal -->
-  {% for post in site.categories.blog %}
+ {% for post in site.categories.blog %}
  <div class="search-modal modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true" >
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="btn btn-default navbar-btn btn-close pull-right" data-dismiss="modal">
-            <i class="fa fa-times"></i>
-        </div>
-    </nav>
-    <div class="wrapper">
     <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
             <div class="search-container">
                 <div class="field-search row">
 
@@ -31,7 +31,5 @@
                 </div>
             </div>
     </div>
-
- </div>
 </div>
 {% endfor %}

@@ -1,0 +1,73 @@
+@mixin modal_portfolio() {
+  .wrapper.modal-portfolio{
+    .modal-content{
+      padding: 100px 0;
+      min-height: 100%;
+      border: 0;
+      border-radius: 0;
+      text-align: center;
+      background-clip: border-box;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      background-color: #fff;
+      .close-modal{
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        width: 75px;
+        height: 75px;
+        background-color: transparent;
+        cursor: pointer;
+        &:hover{
+          opacity: .3;
+        }
+        .lr{
+          z-index: 1051;
+          width: 1px;
+          height: 75px;
+          margin-left: 35px;
+          background-color: #505050;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+          .rl{
+            z-index: 1052;
+            width: 1px;
+            height: 75px;
+            background-color: #505050;
+            -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+          }
+        }
+      }
+      .modal-body{
+        .row{
+          .box-project
+            h2{
+              margin: 0;
+              font-size: 3em;
+            }
+            h4.portfolio-description{}
+            hr.star-primary{}
+            img.img-project{
+               margin-bottom: 30px;
+            }
+            ul.item-details{
+              margin: 30px 0;
+              li{}
+              strong{
+                a{}
+              }
+            }
+          }
+        }
+        .row{
+          .box-btn-closed-bottom{
+            p{}
+            button.tn-close-bottom{}
+          }
+        }
+      }
+  }
+}

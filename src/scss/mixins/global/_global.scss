@@ -1,0 +1,204 @@
+@mixin global (
+  $background-color,
+  $body-right-left-color,
+  $bg-navbar-color,
+  $links-navbar-color,
+  $links-navbar-color-hover,
+  $primary-color-hover,
+  $bg-navbar-color-about,
+  $social-icons-navbar-color,
+  $brand-title-color,
+  $primary-color,
+  $drawer-text-links-pages){
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  a:hover {
+    text-decoration: none
+  }
+}
+html {
+  background: $background-color;
+
+  a:hover {
+    color: #8E8E8E;
+    text-decoration: none
+  }
+}
+*:focus {
+  outline: 0
+}
+*:active {
+  outline: 0
+}
+body {
+  a {
+    outline: none;
+
+    &:active {
+      outline: none
+    }
+    &:visited {
+      outline: none
+    }
+  }
+  a:hover {
+    color: #8E8E8E;
+    text-decoration: none
+  }
+}
+#body-color {
+  background-color: $body-right-left-color;
+
+  .container {
+    background-color: #fff
+  }
+}
+#navbar-fixed-top {
+  margin-top: 6%;
+
+  @media only screen and (min-width:800px) and (max-width:990px) {
+    margin-top:9%
+  }
+  @media only screen and (min-width:320px) and (max-width:420px) {
+    margin-top: 13%
+  }
+}
+
+#navbar-fixed-static {
+  margin-top: -4%;
+   @media only screen and (min-width:800px) and (max-width:990px) {
+    margin-top:-4%
+  }
+  @media only screen and (min-width:290px) and (max-width:480px) {
+    margin-top: -7%
+  }
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite
+}
+
+#bs-example-navbar-collapse-1.collapse.navbar-collapse {
+
+  li.btn-search-container {
+    background-color: $bg-navbar-color !important;
+  a.btn-search {
+    outline: 0;
+    background-color: $bg-navbar-color !important;
+    &:hover, &:focus, &:visited {
+      outline: 0;
+      background-color: $bg-navbar-color !important;
+    }
+    &:hover{
+      .fa.fa-search:before {
+        content: "\f00e";
+      }
+    }
+  }
+
+}
+
+  a {
+    font-family: $default-font;
+    font-size: 16px;
+    font-weight: 300;
+    color: $links-navbar-color;
+    @media only screen and (min-width:800px){
+        text-transform: uppercase;
+    }
+
+    &:hover {
+      color: $links-navbar-color-hover;
+    }
+  }
+
+}
+
+.wrapper.site-header {
+  a {
+    &:hover {
+      // text-shadow: 4px 4px 4px #aaa;
+      color: $primary-color-hover;
+    }
+    @extend  %outline-none
+  }
+  #rotate-avatar {
+    &:hover {
+      @extend %effect_rotate
+    }
+  }
+  #tramer-social-icons {
+    i.fa {
+      &:hover {
+        @extend %effect_fade-down-out_3s
+      }
+    }
+  }
+}
+h2, li {
+  a {
+    @extend  %outline-none;
+  }
+}
+
+/* Colors Navbar for page About */
+#color-navbar{
+  background-color: $bg-navbar-color-about;
+  margin-bottom: 0;
+  color: #fff;
+  a,.fa {
+    color: $drawer-text-links-pages !important;
+  }
+  .drawer-nav,.drawer-body{
+    a.btn-links{
+      &:hover{
+      color: $primary-color !important;
+        i{
+          color: $primary-color !important;
+        }
+      }
+    }
+  }
+  #bs-example-navbar-collapse-1.collapse.navbar-collapse {
+    li.btn-search-container {
+      background-color: $bg-navbar-color-about !important;
+    }
+    a.btn-search {
+      outline: 0;
+      background-color: $bg-navbar-color-about !important;
+      &:hover, &:focus, &:visited {
+        outline: 0;
+        background-color: $bg-navbar-color-about !important;
+      }
+    }
+
+    a {
+      font-family: $default-font;
+      font-size: 16px;
+      font-weight: 300;
+      color: #fff;
+      @media only screen and (min-width: 320px){
+        text-transform: uppercase;
+      }
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+
+/*Footer About Position*/
+#footer-about-position{
+  @media (min-width:768px) {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+}
+
+}

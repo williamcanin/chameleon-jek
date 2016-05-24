@@ -1,0 +1,88 @@
+@mixin utility ($spacing-unit,
+  $default-font,
+  $text-color,
+  $title-color){
+
+  %vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+  }
+  %effect_fade-down-out_3s {
+    -webkit-animation: fade-down-out 0.3s;
+    -moz-animation: fade-down-out 0.3s;
+    -o-animation: fade-down-out 0.3s;
+    animation: fade-down-out 0.3s
+  }
+  %effect_rotate {
+    -moz-animation: rotate-in 1.25s;
+    -o-animation: rotate-in 1.25s;
+    -webkit-animation: rotate-in 1.25s;
+    animation: rotate-in 1.25s
+  }
+%font-content {
+  font-family: $default-font;
+  font-weight: 400;
+  font-size: 2.1rem;
+  font-style:normal;
+  color: $text-color;
+  line-height: 1.7em;
+  @media (min-width:320px) and (max-width:480px) {
+    font-size: 1.9rem;
+  }
+}
+  %font-title {
+    font-family: $default-font;
+    font-weight: 700;
+    font-size: 6rem;
+
+    @media only screen and (min-width:320px) and (max-width:480px) {
+      font-size: 30px
+    }
+    font-style:normal;
+    color: $title-color;
+  }
+  %outline-none {
+    &:active {
+      outline: none;
+      text-decoration: none
+    }
+    &:focus {
+      outline: none;
+      text-decoration: none
+    }
+    &:visited {
+      outline: none;
+      text-decoration: none
+    }
+  }
+  #hover-avatar {
+    &:hover {
+      -moz-animation: rotate-in 1.25s linear;
+      -o-animation: rotate-in 1.25s linear;
+      -webkit-animation: rotate-in 1.25s linear;
+      animation: rotate-in 1.25s linear
+    }
+  }
+  #hover-social-icons {
+    @media only screen and (min-width:768px) {
+      .fa {
+        &:hover {
+          -moz-animation: fade-down-out 0.25s linear;
+          -o-animation: fade-down-out 0.25s linear;
+          -webkit-animation: fade-down-out 0.25s linear;
+          animation: fade-down-out 0.25s linear
+        }
+      }
+    }
+  }
+  #hover-links-texts {
+    @media only screen and (min-width:768px) {
+      &:hover {
+        -moz-animation: shake 1.25s linear;
+        -o-animation: shake 1.25s linear;
+        -webkit-animation: shake 0.25s linear;
+        animation: shake 1.25s linear
+      }
+    }
+  }
+
+}

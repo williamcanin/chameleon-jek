@@ -1,0 +1,115 @@
+@mixin share($primary-color,
+  $default-font
+  ) {
+  .wrapper.sh{
+    padding: 5% 0%;
+    .header-sh{
+      h1{
+        text-align: center;
+      }
+      .fa-share-alt{
+        width: 50px;
+        font-size: 40px;
+        margin: 0 auto;
+        clear: both;
+        color: $primary-color;
+      }
+      .title-shares {
+        font-family: $default-font;
+        font-size: 30px;
+        font-weight: 300;
+        font-style: normal;
+        text-align: center;
+        color: $primary-color;
+        // margin-top: 90px;
+      }
+    }
+
+     .content-sh{
+      width: 300px;
+      @media (min-width: 320px) and (max-width: 480px) {
+        width: 250px;
+      }
+      margin: 0 auto;
+      clear: both;
+      text-align: center;
+      .fa-facebook{
+        color: #3f5c9a;
+        border: 0.3rem solid #3f5c9a;
+        padding-right: 0.2rem;
+        padding-top: 0.7rem;
+        &:hover{
+          border: 0.3rem solid #3f5c9a;
+          color: #fff;
+          background-color: #3f5c9a;
+        }
+      }
+      .fa-google-plus{
+        padding-top: 0.9rem;
+        color: #C73131;
+        border: 0.3rem solid #C73131;
+        &:hover{
+          border: 0.3rem solid #C73131;
+          color: #fff;
+          background-color: #C73131;
+        }
+      }
+      .fa-twitter{
+        padding-top: 0.7rem;
+        color: #55acee;
+        border: 0.3rem solid #55acee;
+        &:hover{
+          border: 0.3rem solid #55acee;
+          color: #fff;
+          background-color: #55acee;
+        }
+      }
+      .fa-linkedin{
+        padding-top: 0.4rem;
+        color: #0077b5;
+        border: 0.3rem solid #0077b5;
+        &:hover{
+          border: 0.3rem solid #0077b5;
+          color: #fff;
+          background-color: #0077b5;
+        }
+      }
+      @media (min-width: 320px) {
+        i{
+          left: 0;
+          width: 40px;
+          height: 40px;
+          float: left;
+          margin: 3%;
+          font-size: 1.9rem;
+        }
+      }
+      @media (min-width: 360px) {
+        i{
+          float: left;
+          margin: 3%;
+        }
+      }
+      @media (min-width: 640px) {
+        i{
+          font-size: 3rem;
+          width: 50px;
+          height: 50px;
+          padding-top: 0.6rem;
+          border-radius: 50%;
+          -webkit-transition: all 0.5s cubic-bezier(0.19, 0, 0.19, 1.07) 0s;
+          -moz-transition: all 0.5s cubic-bezier(0.19, 0, 0.19, 1.07) 0s;
+          -o-transition: all 0.5s cubic-bezier(0.19, 0, 0.19, 1.07) 0s;
+          transition: all 0.5s cubic-bezier(0.19, 0, 0.19, 1.07) 0s;
+          &:hover{
+            -webkit-transition: all 0.3s cubic-bezier(0.79, 0.2, 1.29, 2.07) 0s;
+            -moz-transition: all 0.3s cubic-bezier(0.79, 0.2, 1.29, 2.07) 0s;
+            -o-transition: all 0.3s cubic-bezier(0.79, 0.2, 1.29, 2.07) 0s;
+            transition: all 0.3s cubic-bezier(0.79, 0.2, 1.29, 2.07) 0s;
+          }
+        }
+      }
+    }
+  }
+
+}

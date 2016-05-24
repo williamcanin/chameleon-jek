@@ -1,0 +1,34 @@
+@mixin page($primary-color) {
+  .wrapper.page{
+    padding: 2% 15% 15%;
+    @media (min-width:320px) and (max-width:670px) {
+      padding: 16% 7% 7%
+    }
+    @media (min-width:768px) and (max-width:1000px) {
+      padding: 14% 12% 7%
+    }
+    @media (min-width:1000px) and (max-width:1024px) {
+      padding: 2% 7% 7%
+    }
+    .row{
+      header.page-header{
+        h1.title{
+          @extend  %font-title;
+          color: $primary-color;
+          text-align: center;
+          margin-bottom: 35px;
+          span.fa-suitcase{
+            margin-right: 13px;
+          }
+        }
+      }
+      section.content{
+        @extend  %font-content;
+        img.img-cover{
+          margin-bottom: 80px;
+        }
+      }
+    }
+  }
+
+}

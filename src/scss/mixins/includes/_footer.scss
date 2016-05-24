@@ -1,0 +1,56 @@
+  @mixin footer($footer-text-color,
+    $current_color,
+    $primary-color,
+    $footer-background,
+    $default-font) {
+
+  .site-footer {
+    width: auto;
+    color: lighten($footer-text-color, 10%);
+    margin: 0 auto;
+    clear: both;
+    padding: 2%;
+    border: 1px solid transparent;
+    @if $current_color == "white" or $current_color == "light" {
+      border-top: 0.1rem solid #CECECE;
+    } @else {
+      border-top: 0.1rem solid $primary-color;
+    }
+    background-color: $footer-background;
+  .col-sm-3{
+      font-family: $default-font;
+      font-size: 12px;
+      text-align: center;
+      a {
+            color: $footer-text-color;
+            text-decoration: underline;
+
+            &:hover {
+                color: $footer-text-color;
+                text-decoration: none;
+            }
+      }
+      .fa.fa-heart {
+        font-size: 10px;
+        color: #C62C2C;
+      }
+    .str_text1{
+      font-style: normal;
+    }
+  }
+
+}
+
+   @media (min-width:768px) {
+    .site-footer {
+      @if $current_color == "white" or $current_color == "light" {
+        margin-left: 67px;
+        margin-right: 0px;
+      } @else {
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+    }
+  }
+
+}

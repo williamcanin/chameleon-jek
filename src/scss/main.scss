@@ -1,44 +1,52 @@
-/* Variables */
-@import 'base/variables/variables';
+/* Import Current Color */
+@import  "apply_theme/current_color";
 
-/* Resets */
-@import 'base/resets/reset_bootstrap';
-// @import 'base/resets/reset';
+/* -- Base Variables Global -- */
+@import "base/variables/variables";
 
-/* Utility */
-@import 'base/utilities/utility';
+/* -- Base Resets -- */
+@import "base/resets/reset_bootstrap";
 
-/* Syntax  Highlighting */
-@import 'base/highlighting/syntax_highlighting_light';
+/* xxxxxxxxxxx No matter RESET, or the settings back to normal. xxxxxxxxxxxxx */
+// @import "base/resets/reset";
 
-/* Markdowns */
-@import 'markdown/markdown';
+/* -- Base Markdowns --*/
+@import "base/markdown/markdown";
 
-/* Layouts */
-@import 'layouts/about/about';
-@import 'layouts/contact/contact';
-@import 'layouts/page/page';
-@import 'layouts/portfolio/portfolio';
-@import 'layouts/post/post';
-@import 'layouts/thanks/thanks';
+/* -- Mixins Utility -- */
+@import "mixins/utilities/utility";
 
+/* -- Mixins Syntax  Highlighting -- */
+@import "mixins/highlighting/syntax_highlighting_light";
+
+/* -- Mixins Layouts -- */
+@import "mixins/layouts/about/about";
+@import "mixins/layouts/contact/contact";
+@import "mixins/layouts/page/page";
+@import "mixins/layouts/portfolio/portfolio";
+@import "mixins/layouts/post/post";
+@import "mixins/layouts/thanks/thanks";
+
+/* -- Mixins Includes -- */
  /* Includes */
-@import 'includes/header';
-@import 'includes/color_nav_icon';
-@import 'includes/home';
-@import 'includes/go_up';
-@import 'includes/footer';
-@import 'includes/modal_feedburner';
-@import 'includes/modal_portfolio';
-@import 'includes/share';
-@import 'includes/modal_search';
-@import 'includes/adsense';
-@import 'includes/under_maintenance';
-@import 'includes/fakeLoader';
-@import 'includes/disqus';
+@import "mixins/includes/header";
+@import "mixins/includes/color_nav_icon";
+@import "mixins/includes/home";
+@import "mixins/includes/go_up";
+@import "mixins/includes/footer";
+@import "mixins/includes/modal_feedburner";
+@import "mixins/includes/modal_portfolio";
+@import "mixins/includes/share";
+@import "mixins/includes/followme";
+@import "mixins/includes/modal_search";
+@import "mixins/includes/adsense";
+@import "mixins/includes/under_maintenance";
+@import "mixins/includes/fakeLoader";
+@import "mixins/includes/disqus";
 
-/* Global */
-@import 'base/global/global';
+/* -- Mixins Global -- */
+@import "mixins/global/global";
 
-
+// /* Applying Theme */
+@import "apply_theme/apply";
 

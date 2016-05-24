@@ -1,0 +1,1981 @@
+
+/*
+| =============================== |
+|           COLOR GREEN           |
+===================================
+ */
+
+@if $current_color == "green" {
+
+    $color-green: #2D4F25;
+    $color-green-rgba: rgba(45,79,37,.5);
+
+           /* Background color */
+    $background-color: #fff !default;
+
+    /* Primary color */
+    $primary-color: $color-green !default;
+    $primary-color-hover: #484848 !default;
+
+    /* Text color */
+    $text-color: #333 !default;
+    $text-color-hover: $color-green !default;
+
+    /* Button Continue - Home Page*/
+    $btn-continue-text-color: #FFF !important;
+
+    /* Title content color */
+    $title-color: $color-green !default;
+   /* Brand title color - Site title*/
+    $brand-title-color: #fff !important;
+
+    /*Post Meta Color*/
+    $post-meta-color: $primary-color !important;
+
+    /*Social icons navbar - Color*/
+    $social-icons-navbar-color: #fff !important;
+
+    /* Links color */
+    $links-color: #1e72f0 !default;
+    $links-color-hover: #384047 !default;
+
+    /* Links Navbar Color */
+    $links-navbar-color: #fff !default;
+    $links-navbar-color-hover: #f1f1f1 !default;
+
+    /* Background page About - default color */
+    $bg-title-about: #2D4F25 !default;
+
+    /* Author Text Color*/
+    $author-text-color: #fff !important;
+
+    /* adorned-header */
+    $adorned-header-background: $color-green !default;
+    $adorned-header-color: #fff !default;
+
+    /* Background navbar color */
+    $bg-navbar-color: $color-green !default;
+
+    /* Background navbar (Page About ) */
+    $bg-navbar-color-about: #1C3017 !default;
+
+    /* Button top color */
+    $bg-button-top-color: $color-green !default;
+    $button-top-color: #fff !default;
+
+    /* Color Right and Left body Navbar Static */
+    $body-right-left-color: #fff !default;
+
+    /* Color menu responsive */
+    $fill-nav-icon: #fff !default;
+
+    /* Color Bg Search */
+    $color-bg-search: lighten($color-green, 15%) !important;
+
+    /* Color border box posts */
+    $color-border-box-posts: 0.1rem solid lighten($color-green, 47%);
+
+    /* Bg Box posts index */
+    $bg-color-box-posts: #EBFFE8;
+
+    /* Border top and bottom box posts - Percentage*/
+    $percentage-border-top-bottom-box: 3%;
+
+    /* PlaceHolder Color */
+    $placeholder-color-active: #fff !important;
+    $placeholder-color-inactive: #212121 !important;
+
+    /* Drawer Texts/icons - Info */
+    $drawer-texts-icons-info: #B9B9B9 !important;
+    /* Drawer Content Background */
+    $drawer-content-bg: #193612 !important;
+    /* Drawer Texts Links Pages*/
+    $drawer-text-links-pages: #fff !important;
+
+    /* Footer background  */
+    $footer-background: $color-green;
+
+    /* Texts footer */
+    $footer-text-color: #fff;
+
+    /* Portfolio Capitan Bg */
+    $portfolio-caption-bg: $color-green-rgba;
+
+
+    /* === Include Struture - Includes === */
+    /* Global */
+    @include global (
+          $background-color,
+          $body-right-left-color,
+          $bg-navbar-color,
+          $links-navbar-color,
+          $links-navbar-color-hover,
+          $primary-color-hover,
+          $bg-navbar-color-about,
+          $social-icons-navbar-color,
+          $brand-title-color,
+          $primary-color,
+          $drawer-text-links-pages);
+    /* Adsense */
+    @include adsense();
+    /* Color Nav Icon */
+    @include color_nav_icon($fill-nav-icon);
+    /* Disqus */
+    @include disqus();
+    /* FakeLoader */
+    @include fakeloader();
+    /* FollowMe */
+    @include followme();
+    /* Footer */
+    @include footer($footer-text-color,
+        $current_color,
+        $primary-color,
+        $footer-background,
+        $default-font);
+    /* Go Up */
+    @include go_up($bg-button-top-color,$button-top-color);
+    /* Header */
+    @include header($bg-navbar-color,
+        $default-font,
+        $primary-color,
+        $links-navbar-color,
+        $links-navbar-color-hover);
+    /* Home */
+    @include home($default-font,
+      $adorned-header-color,
+      $adorned-header-background,
+      $color-border-box-posts,
+      $bg-color-box-posts,
+      $primary-color,
+      $title-color,
+      $text-color,
+      $percentage-border-top-bottom-box,
+      $btn-continue-text-color,
+      $post-meta-color);
+    /* Modal Feedburner */
+    @include modal_feedburner($default-font);
+    /* Modal Portfolio */
+    @include modal_portfolio();
+    /* Modal Search */
+    @include modal_search($color-bg-search,
+      $default-font,
+      $placeholder-color-active,
+      $placeholder-color-inactive,
+      $primary-color);
+    /* Share */
+    @include share($primary-color,
+      $default-font);
+    /* Under Maintenance */
+    @include under_maintenance($default-font);
+
+    /* === Include Struture - Layouts === */
+
+    /* About */
+    @include about($bg-title-about,
+        $links-navbar-color);
+    /* Contact */
+    @include contact($default-font);
+    /* Page */
+    @include page($primary-color);
+    /* Portfolio */
+    @include portfolio($portfolio-caption-bg,
+        $default-font,
+        $primary-color);
+    /* Post */
+    @include post($default-font,
+      $primary-color,
+      $author-text-color,
+      $post-meta-color);
+    /* Thanks */
+    @include thanks();
+    /* Utilities */
+    @include utility ($spacing-unit,
+      $default-font,
+      $text-color,
+      $title-color);
+
+    /* === Include Struture - Highlighting === */
+    @include syntax_highlighting();
+
+}
+
+/*
+| =============================== |
+|           COLOR BLUE            |
+===================================
+ */
+
+@else if $current_color == "blue" {
+
+    $color-blue: #384047;
+    $color-blue-rgba: rgba(56,64,71,.5);
+
+    /* Background color */
+    $background-color: #fff !default;
+
+    /* Primary color */
+    $primary-color: $color-blue !default;
+    $primary-color-hover: #414950 !default;
+
+    /* Text color */
+    $text-color: #333 !default;
+    $text-color-hover: #414950 !default;
+
+    /* Button Continue - Home Page*/
+    $btn-continue-text-color: #FFF !important;
+
+    /* Title content color */
+    $title-color: $color-blue !default;
+   /* Brand title color - Site title*/
+    $brand-title-color: #fff !important;
+
+    /*Post Meta Color*/
+    $post-meta-color: $primary-color !important;
+
+    /*Social icons navbar - Color*/
+    $social-icons-navbar-color: #fff !important;
+
+    /* Links color */
+    $links-color: #1e72f0 !default;
+    $links-color-hover: $color-blue !default;
+
+    /* Links Navbar Color */
+    $links-navbar-color: #fff !default;
+    $links-navbar-color-hover: #f1f1f1 !default;
+
+    /* Background page About - default color */
+    $bg-title-about: $color-blue !default;
+
+    /* Author Text Color*/
+    $author-text-color: #fff !important;
+
+    /* adorned-header */
+    $adorned-header-background: $color-blue !default;
+    $adorned-header-color: #fff !default;
+
+    /* Background navbar color */
+    $bg-navbar-color: $color-blue !default;
+
+    /* Background navbar (Page About ) */
+    $bg-navbar-color-about: #292D31 !default;
+
+    /* Button top color */
+    $bg-button-top-color: $color-blue !default;
+    $button-top-color: #fff !default;
+
+    /* Color Right and Left body Navbar Static */
+    $body-right-left-color: #fff !default;
+
+    /* Color menu responsive */
+    $fill-nav-icon: #fff !default;
+
+    /* Color Bg Search */
+    $color-bg-search: lighten($color-blue, 15%) !important;
+
+    /* Color border box posts */
+    $color-border-box-posts: 0.1rem solid lighten($color-blue, 50%);
+
+    /* Bg Box posts index */
+    $bg-color-box-posts: #F6F6F6;
+
+    /* Border top and bottom box posts - Percentage*/
+    $percentage-border-top-bottom-box: 3%;
+
+    /* PlaceHolder Color */
+    $placeholder-color-active: #fff !important;
+    $placeholder-color-inactive: #B5B5B5 !important;
+
+    /* Drawer Texts/icons - Info */
+    $drawer-texts-icons-info: #BDBDBD !important;
+    /* Drawer Content Background */
+    $drawer-content-bg: #303438;
+    /* Drawer Texts Links Pages*/
+    $drawer-text-links-pages: #fff !important;
+
+    /* Footer background  */
+    $footer-background: $color-blue;
+
+    /* Texts footer */
+    $footer-text-color: #fff;
+
+    /* Portfolio Capitan Bg */
+    $portfolio-caption-bg: $color-blue-rgba;
+
+    /* === Include Struture - Includes === */
+    /* Global */
+    @include global (
+          $background-color,
+          $body-right-left-color,
+          $bg-navbar-color,
+          $links-navbar-color,
+          $links-navbar-color-hover,
+          $primary-color-hover,
+          $bg-navbar-color-about,
+          $social-icons-navbar-color,
+          $brand-title-color,
+          $primary-color,
+          $drawer-text-links-pages);
+    /* Adsense */
+    @include adsense();
+    /* Color Nav Icon */
+    @include color_nav_icon($fill-nav-icon);
+    /* Disqus */
+    @include disqus();
+    /* FakeLoader */
+    @include fakeloader();
+    /* FollowMe */
+    @include followme();
+    /* Footer */
+    @include footer($footer-text-color,
+        $current_color,
+        $primary-color,
+        $footer-background,
+        $default-font);
+    /* Go Up */
+    @include go_up($bg-button-top-color,$button-top-color);
+    /* Header */
+    @include header($bg-navbar-color,
+        $default-font,
+        $primary-color,
+        $links-navbar-color,
+        $links-navbar-color-hover);
+    /* Home */
+    @include home($default-font,
+      $adorned-header-color,
+      $adorned-header-background,
+      $color-border-box-posts,
+      $bg-color-box-posts,
+      $primary-color,
+      $title-color,
+      $text-color,
+      $percentage-border-top-bottom-box,
+      $btn-continue-text-color,
+      $post-meta-color);
+    /* Modal Feedburner */
+    @include modal_feedburner($default-font);
+    /* Modal Portfolio */
+    @include modal_portfolio();
+    /* Modal Search */
+    @include modal_search($color-bg-search,
+      $default-font,
+      $placeholder-color-active,
+      $placeholder-color-inactive,
+      $primary-color);
+    /* Share */
+    @include share($primary-color,
+      $default-font);
+    /* Under Maintenance */
+    @include under_maintenance($default-font);
+
+    /* === Include Struture - Layouts === */
+
+    /* About */
+    @include about($bg-title-about,
+        $links-navbar-color);
+    /* Contact */
+    @include contact($default-font);
+    /* Page */
+    @include page($primary-color);
+    /* Portfolio */
+    @include portfolio($portfolio-caption-bg,
+        $default-font,
+        $primary-color);
+    /* Post */
+    @include post($default-font,
+      $primary-color,
+      $author-text-color,
+      $post-meta-color);
+    /* Thanks */
+    @include thanks();
+    /* Utilities */
+    @include utility ($spacing-unit,
+      $default-font,
+      $text-color,
+      $title-color);
+
+    /* === Include Struture - Highlighting === */
+    @include syntax_highlighting();
+
+}
+/*
+| =============================== |
+|           COLOR DARK            |
+===================================
+ */
+
+@else if $current_color == "dark" {
+
+    $color-dark: #000;
+    $color-dark-rgba: rgba(0,0,0,.6);
+
+        /* Background color */
+    $background-color: #fff !default;
+
+    /* Primary color */
+    $primary-color: $color-dark !default;
+    $primary-color-hover: #484848 !default;
+
+    /* Text color */
+    $text-color: #333 !default;
+    $text-color-hover: #1D1D1D !default;
+
+    /* Button Continue - Home Page*/
+    $btn-continue-text-color: #FFF !important;
+
+    /* Title content color */
+    $title-color: $color-dark !default;
+   /* Brand title color - Site title*/
+    $brand-title-color: #fff !important;
+
+    /*Post Meta Color*/
+    $post-meta-color: $primary-color !important;
+
+    /*Social icons navbar - Color*/
+    $social-icons-navbar-color: #fff !important;
+
+    /* Links color */
+    $links-color: #1e72f0 !default;
+    $links-color-hover: #384047 !default;
+
+    /* Links Navbar Color */
+    $links-navbar-color: #fff !default;
+    $links-navbar-color-hover: #f1f1f1 !default;
+
+    /* Background page About - default color */
+    $bg-title-about: #141414 !default;
+
+    /* Author Text Color*/
+    $author-text-color: #fff !important;
+
+    /* adorned-header */
+    $adorned-header-background: $color-dark !default;
+    $adorned-header-color: #fff !default;
+
+    /* Background navbar color */
+    $bg-navbar-color: $color-dark !default;
+
+    /* Background navbar (Page About ) */
+    $bg-navbar-color-about: $color-dark !default;
+
+    /* Button top color */
+    $bg-button-top-color: $color-dark !default;
+    $button-top-color: #fff !default;
+
+    /* Color Right and Left body Navbar Static */
+    $body-right-left-color: #fff !default;
+
+    /* Color menu responsive */
+    $fill-nav-icon: #fff !default;
+
+    /* Color Bg Search */
+    $color-bg-search: lighten($color-dark, 8%) !important;
+
+    /* Color border box posts */
+    $color-border-box-posts: 0.1rem solid lighten($color-dark, 75%);
+
+    /* Bg Box posts index */
+    $bg-color-box-posts: #E1E1E1;
+
+    /* Border top and bottom box posts - Percentage*/
+    $percentage-border-top-bottom-box: 20%;
+
+    /* PlaceHolder Color */
+    $placeholder-color-active: #fff !important;
+    $placeholder-color-inactive: #B5B5B5 !important;
+
+    /* Drawer Texts/icons - Info */
+    $drawer-texts-icons-info: #A3A3A3 !important;
+    /* Drawer Content Background */
+    $drawer-content-bg: #282828 !important;
+    /* Drawer Texts Links Pages*/
+    $drawer-text-links-pages: #FFF !important;
+
+    /* Footer background  */
+    $footer-background: $color-dark;
+
+    /* Texts footer */
+    $footer-text-color: #fff;
+
+    /* Portfolio Capitan Bg */
+    $portfolio-caption-bg: $color-dark-rgba;
+
+    /* === Include Struture - Includes === */
+    /* Global */
+    @include global (
+          $background-color,
+          $body-right-left-color,
+          $bg-navbar-color,
+          $links-navbar-color,
+          $links-navbar-color-hover,
+          $primary-color-hover,
+          $bg-navbar-color-about,
+          $social-icons-navbar-color,
+          $brand-title-color,
+          $primary-color,
+          $drawer-text-links-pages);
+    /* Adsense */
+    @include adsense();
+    /* Color Nav Icon */
+    @include color_nav_icon($fill-nav-icon);
+    /* Disqus */
+    @include disqus();
+    /* FakeLoader */
+    @include fakeloader();
+    /* FollowMe */
+    @include followme();
+    /* Footer */
+    @include footer($footer-text-color,
+        $current_color,
+        $primary-color,
+        $footer-background,
+        $default-font);
+    /* Go Up */
+    @include go_up($bg-button-top-color,$button-top-color);
+    /* Header */
+    @include header($bg-navbar-color,
+        $default-font,
+        $primary-color,
+        $links-navbar-color,
+        $links-navbar-color-hover);
+    /* Home */
+    @include home($default-font,
+      $adorned-header-color,
+      $adorned-header-background,
+      $color-border-box-posts,
+      $bg-color-box-posts,
+      $primary-color,
+      $title-color,
+      $text-color,
+      $percentage-border-top-bottom-box,
+      $btn-continue-text-color,
+      $post-meta-color);
+    /* Modal Feedburner */
+    @include modal_feedburner($default-font);
+    /* Modal Portfolio */
+    @include modal_portfolio();
+    /* Modal Search */
+    @include modal_search($color-bg-search,
+      $default-font,
+      $placeholder-color-active,
+      $placeholder-color-inactive,
+      $primary-color);
+    /* Share */
+    @include share($primary-color,
+      $default-font);
+    /* Under Maintenance */
+    @include under_maintenance($default-font);
+
+    /* === Include Struture - Layouts === */
+
+    /* About */
+    @include about($bg-title-about,
+        $links-navbar-color);
+    /* Contact */
+    @include contact($default-font);
+    /* Page */
+    @include page($primary-color);
+    /* Portfolio */
+    @include portfolio($portfolio-caption-bg,
+        $default-font,
+        $primary-color);
+    /* Post */
+    @include post($default-font,
+      $primary-color,
+      $author-text-color,
+      $post-meta-color);
+    /* Thanks */
+    @include thanks();
+    /* Utilities */
+    @include utility ($spacing-unit,
+      $default-font,
+      $text-color,
+      $title-color);
+
+    /* === Include Struture - Highlighting === */
+    @include syntax_highlighting();
+
+}
+/*
+| =============================== |
+|           COLOR LIGHT           |
+===================================
+ */
+
+@else if $current_color == "light" {
+    $color-light: #F1F1F1;
+    $color-light-rgba: rgba(66,66,66,.5);
+
+    /* Background color */
+    $background-color: #fff !default;
+
+    /* Primary color */
+    $primary-color: #333 !default;
+    $primary-color-hover: #484848 !default;
+
+    /* Text color */
+    $text-color: #333 !default;
+    $text-color-hover: #484848 !default;
+
+    /* Button Continue - Home Page*/
+    $btn-continue-text-color: #FFF !important;
+
+    /* Title content color */
+    $title-color: #424242 !default;
+   /* Brand title color - Site title*/
+    $brand-title-color: $primary-color !important;
+
+    /*Post Meta Color*/
+    $post-meta-color: $primary-color !important;
+
+    /*Social icons navbar - Color*/
+    $social-icons-navbar-color: $primary-color !important;
+
+    /* Links color */
+    $links-color: #1e72f0 !default;
+    $links-color-hover: #fff !default;
+
+    /* Links Navbar Color */
+    $links-navbar-color: #424242 !default;
+    $links-navbar-color-hover: #484848 !default;
+
+    /* Background page About - default color */
+    $bg-title-about: #333 !default;
+
+    /* Author Text Color*/
+    $author-text-color: #fff !important;
+
+    /* adorned-header */
+    $adorned-header-background: $color-light !default;
+    $adorned-header-color: #424242 !default;
+
+    /* Background navbar color */
+    $bg-navbar-color: $color-light !default;
+
+    /* Background navbar (Page About ) */
+    $bg-navbar-color-about: #333 !default;
+
+    /* Button top color */
+    $bg-button-top-color: #505050 !default;
+    $button-top-color: #fff !default;
+
+    /* Color Right and Left body Navbar Static */
+    $body-right-left-color: #fff !default;
+
+    /* Color menu responsive */
+    $fill-nav-icon: #333 !default;
+
+    /* Color Bg Search */
+    $color-bg-search: lighten(#424242, 15%) !important;
+
+    /* Color border box posts */
+    $color-border-box-posts: 0.1rem solid lighten( #505050, 55%);
+
+    /* Bg Box posts index */
+    $bg-color-box-posts: #F6F6F6;
+
+    /* Border top and bottom box posts - Percentage*/
+    $percentage-border-top-bottom-box: 60%;
+
+    /* PlaceHolder Color */
+    $placeholder-color-active: #fff !important;
+    $placeholder-color-inactive: #E7E7E7 !important;
+
+    /* Drawer Texts/icons - Info */
+    $drawer-texts-icons-info: #8C8C8C !important;
+    /* Drawer Content Background */
+    $drawer-content-bg: $primary-color !important;
+    /* Drawer Texts Links Pages*/
+    $drawer-text-links-pages: #fff !important;
+
+    /* Footer background  */
+    $footer-background: $color-light;
+
+    /* Texts footer */
+    $footer-text-color: #505050;
+
+    /* Portfolio Capitan Bg */
+    $portfolio-caption-bg: $color-light-rgba;
+
+        /* === Include Struture - Includes === */
+    /* Global */
+    @include global (
+          $background-color,
+          $body-right-left-color,
+          $bg-navbar-color,
+          $links-navbar-color,
+          $links-navbar-color-hover,
+          $primary-color-hover,
+          $bg-navbar-color-about,
+          $social-icons-navbar-color,
+          $brand-title-color,
+          $primary-color,
+          $drawer-text-links-pages);
+    /* Adsense */
+    @include adsense();
+    /* Color Nav Icon */
+    @include color_nav_icon($fill-nav-icon);
+    /* Disqus */
+    @include disqus();
+    /* FakeLoader */
+    @include fakeloader();
+    /* FollowMe */
+    @include followme();
+    /* Footer */
+    @include footer($footer-text-color,
+        $current_color,
+        $primary-color,
+        $footer-background,
+        $default-font);
+    /* Go Up */
+    @include go_up($bg-button-top-color,$button-top-color);
+    /* Header */
+    @include header($bg-navbar-color,
+        $default-font,
+        $primary-color,
+        $links-navbar-color,
+        $links-navbar-color-hover);
+    /* Home */
+    @include home($default-font,
+      $adorned-header-color,
+      $adorned-header-background,
+      $color-border-box-posts,
+      $bg-color-box-posts,
+      $primary-color,
+      $title-color,
+      $text-color,
+      $percentage-border-top-bottom-box,
+      $btn-continue-text-color,
+      $post-meta-color);
+    /* Modal Feedburner */
+    @include modal_feedburner($default-font);
+    /* Modal Portfolio */
+    @include modal_portfolio();
+    /* Modal Search */
+    @include modal_search($color-bg-search,
+      $default-font,
+      $placeholder-color-active,
+      $placeholder-color-inactive,
+      $primary-color);
+    /* Share */
+    @include share($primary-color,
+      $default-font);
+    /* Under Maintenance */
+    @include under_maintenance($default-font);
+
+    /* === Include Struture - Layouts === */
+
+    /* About */
+    @include about($bg-title-about,
+        $links-navbar-color);
+    /* Contact */
+    @include contact($default-font);
+    /* Page */
+    @include page($primary-color);
+    /* Portfolio */
+    @include portfolio($portfolio-caption-bg,
+        $default-font,
+        $primary-color);
+    /* Post */
+    @include post($default-font,
+      $primary-color,
+      $author-text-color,
+      $post-meta-color);
+    /* Thanks */
+    @include thanks();
+    /* Utilities */
+    @include utility ($spacing-unit,
+      $default-font,
+      $text-color,
+      $title-color);
+
+    /* === Include Struture - Highlighting === */
+    @include syntax_highlighting();
+
+}
+/*
+| =============================== |
+|           COLOR ORANGE          |
+===================================
+ */
+
+@else if $current_color == "orange" {
+    $color-orange: #BD3F15;
+    $color-orange-rgba: rgba(189,63,21,.5);
+
+    /* Background color */
+    $background-color: #fff !default;
+
+    /* Primary color */
+    $primary-color: $color-orange !default;
+    $primary-color-hover: #484848 !default;
+
+    /* Text color */
+    $text-color: #333 !default;
+    $text-color-hover: #DC5C32 !default;
+
+    /* Button Continue - Home Page*/
+    $btn-continue-text-color: #FFF !important;
+
+    /* Title content color */
+    $title-color: $color-orange !default;
+   /* Brand title color - Site title*/
+    $brand-title-color: #fff !important;
+
+    /*Post Meta Color*/
+    $post-meta-color: $primary-color !important;
+
+    /*Social icons navbar - Color*/
+    $social-icons-navbar-color: #fff !important;
+
+    /* Links color */
+    $links-color: #1e72f0 !default;
+    $links-color-hover: #384047 !default;
+
+    /* Links Navbar Color */
+    $links-navbar-color: #fff !default;
+    $links-navbar-color-hover: #f1f1f1 !default;
+
+    /* Background page About - default color */
+    $bg-title-about: $color-orange!default;
+
+    /* Author Text Color*/
+    $author-text-color: #fff !important;
+
+    /* adorned-header */
+    $adorned-header-background: $color-orange !default;
+    $adorned-header-color: #fff !default;
+
+    /* Background navbar color */
+    $bg-navbar-color: $color-orange !default;
+
+    /* Background navbar (Page About ) */
+    $bg-navbar-color-about: $color-orange !default;
+
+    /* Button top color */
+    $bg-button-top-color: $color-orange !default;
+    $button-top-color: #fff !default;
+
+    /* Color Right and Left body Navbar Static */
+    $body-right-left-color: #fff !default;
+
+    /* Color menu responsive */
+    $fill-nav-icon: #fff !default;
+
+    /* Color Bg Search */
+    $color-bg-search: lighten($color-orange, 15%) !important;
+
+    /* Color border box posts */
+    $color-border-box-posts: 0.1rem solid lighten($color-orange, 38%);
+
+    /* Bg Box posts index */
+    $bg-color-box-posts: #F6F6F6;
+
+    /* Border top and bottom box posts - Percentage*/
+    $percentage-border-top-bottom-box: 3%;
+
+    /* PlaceHolder Color */
+    $placeholder-color-active: #fff !important;
+    $placeholder-color-inactive: #404040 !important;
+
+    /* Drawer Texts/icons - Info */
+    $drawer-texts-icons-info: #B7B7B7 !important;
+    /* Drawer Content Background */
+    $drawer-content-bg: #A53F1D !important;
+    /* Drawer Texts Links Pages*/
+    $drawer-text-links-pages: #fff !important;
+
+    /* Footer background  */
+    $footer-background: $color-orange;
+
+    /* Texts footer */
+    $footer-text-color: #fff;
+
+    /* Portfolio Capitan Bg */
+    $portfolio-caption-bg: $color-orange-rgba;
+
+    /* === Include Struture - Includes === */
+    /* Global */
+    @include global (
+          $background-color,
+          $body-right-left-color,
+          $bg-navbar-color,
+          $links-navbar-color,
+          $links-navbar-color-hover,
+          $primary-color-hover,
+          $bg-navbar-color-about,
+          $social-icons-navbar-color,
+          $brand-title-color,
+          $primary-color,
+          $drawer-text-links-pages);
+    /* Adsense */
+    @include adsense();
+    /* Color Nav Icon */
+    @include color_nav_icon($fill-nav-icon);
+    /* Disqus */
+    @include disqus();
+    /* FakeLoader */
+    @include fakeloader();
+    /* FollowMe */
+    @include followme();
+    /* Footer */
+    @include footer($footer-text-color,
+        $current_color,
+        $primary-color,
+        $footer-background,
+        $default-font);
+    /* Go Up */
+    @include go_up($bg-button-top-color,$button-top-color);
+    /* Header */
+    @include header($bg-navbar-color,
+        $default-font,
+        $primary-color,
+        $links-navbar-color,
+        $links-navbar-color-hover);
+    /* Home */
+    @include home($default-font,
+      $adorned-header-color,
+      $adorned-header-background,
+      $color-border-box-posts,
+      $bg-color-box-posts,
+      $primary-color,
+      $title-color,
+      $text-color,
+      $percentage-border-top-bottom-box,
+      $btn-continue-text-color,
+      $post-meta-color);
+    /* Modal Feedburner */
+    @include modal_feedburner($default-font);
+    /* Modal Portfolio */
+    @include modal_portfolio();
+    /* Modal Search */
+    @include modal_search($color-bg-search,
+      $default-font,
+      $placeholder-color-active,
+      $placeholder-color-inactive,
+      $primary-color);
+    /* Share */
+    @include share($primary-color,
+      $default-font);
+    /* Under Maintenance */
+    @include under_maintenance($default-font);
+
+    /* === Include Struture - Layouts === */
+
+    /* About */
+    @include about($bg-title-about,
+        $links-navbar-color);
+    /* Contact */
+    @include contact($default-font);
+    /* Page */
+    @include page($primary-color);
+    /* Portfolio */
+    @include portfolio($portfolio-caption-bg,
+        $default-font,
+        $primary-color);
+    /* Post */
+    @include post($default-font,
+      $primary-color,
+      $author-text-color,
+      $post-meta-color);
+    /* Thanks */
+    @include thanks();
+    /* Utilities */
+    @include utility ($spacing-unit,
+      $default-font,
+      $text-color,
+      $title-color);
+
+    /* === Include Struture - Highlighting === */
+    @include syntax_highlighting();
+
+}
+/*
+| =============================== |
+|           COLOR PINK            |
+===================================
+ */
+
+@else if $current_color == "pink" {
+
+    $color-pink: #BF589D;
+    $color-pink-rgba: rgba(224,70,173,.5);
+
+        /* Background color */
+    $background-color: #fff !default;
+
+    /* Primary color */
+    $primary-color: $color-pink !default;
+    $primary-color-hover: #484848 !default;
+
+    /* Text color */
+    $text-color: #333 !default;
+    $text-color-hover: $color-pink !default;
+
+    /* Button Continue - Home Page*/
+    $btn-continue-text-color: #FFF !important;
+
+    /* Title content color */
+    $title-color: $color-pink !default;
+   /* Brand title color - Site title*/
+    $brand-title-color: #fff !important;
+
+    /*Post Meta Color*/
+    $post-meta-color: #CB439E !important;
+
+    /*Social icons navbar - Color*/
+    $social-icons-navbar-color: #fff !important;
+
+    /* Links color */
+    $links-color: #1e72f0 !default;
+    $links-color-hover: #384047 !default;
+
+    /* Links Navbar Color */
+    $links-navbar-color: #fff !default;
+    $links-navbar-color-hover: #fff !default;
+
+    /* Background page About - default color */
+    $bg-title-about: $color-pink !default;
+
+    /* Author Text Color*/
+    $author-text-color: #232323 !important;
+
+    /* adorned-header */
+    $adorned-header-background: $color-pink !default;
+    $adorned-header-color: #fff !default;
+
+    /* Background navbar color */
+    $bg-navbar-color: $color-pink !default;
+
+    /* Background navbar (Page About ) */
+    $bg-navbar-color-about: $color-pink !default;
+
+    /* Button top color */
+    $bg-button-top-color: $color-pink !default;
+    $button-top-color: #fff !default;
+
+    /* Color Right and Left body Navbar Static */
+    $body-right-left-color: #fff !default;
+
+    /* Color menu responsive */
+    $fill-nav-icon: #fff !default;
+
+    /* Color Bg Search */
+    $color-bg-search: lighten($color-pink, 12%) !important;
+
+    /* Color border box posts */
+    $color-border-box-posts: 0.1rem solid lighten($color-pink, 27%);
+
+    /* Bg Box posts index */
+    $bg-color-box-posts: #FFE5F7;
+
+    /* Border top and bottom box posts - Percentage*/
+    $percentage-border-top-bottom-box: 3%;
+
+    /* PlaceHolder Color */
+    $placeholder-color-active: #fff !important;
+    $placeholder-color-inactive: #404040 !important;
+
+    /* Drawer Texts/icons - Info */
+    $drawer-texts-icons-info: #252525 !important;
+    /* Drawer Content Background */
+    $drawer-content-bg: #BB4293 !important;
+    /* Drawer Texts Links Pages*/
+    $drawer-text-links-pages: #fff !important;
+
+    /* Footer background  */
+    $footer-background: $color-pink;
+
+    /* Texts footer */
+    $footer-text-color: #fff;
+
+    /* Portfolio Capitan Bg */
+    $portfolio-caption-bg: $color-pink-rgba;
+
+    /* === Include Struture - Includes === */
+    /* Global */
+    @include global (
+          $background-color,
+          $body-right-left-color,
+          $bg-navbar-color,
+          $links-navbar-color,
+          $links-navbar-color-hover,
+          $primary-color-hover,
+          $bg-navbar-color-about,
+          $social-icons-navbar-color,
+          $brand-title-color,
+          $primary-color,
+          $drawer-text-links-pages);
+    /* Adsense */
+    @include adsense();
+    /* Color Nav Icon */
+    @include color_nav_icon($fill-nav-icon);
+    /* Disqus */
+    @include disqus();
+    /* FakeLoader */
+    @include fakeloader();
+    /* FollowMe */
+    @include followme();
+    /* Footer */
+    @include footer($footer-text-color,
+        $current_color,
+        $primary-color,
+        $footer-background,
+        $default-font);
+    /* Go Up */
+    @include go_up($bg-button-top-color,$button-top-color);
+    /* Header */
+    @include header($bg-navbar-color,
+        $default-font,
+        $primary-color,
+        $links-navbar-color,
+        $links-navbar-color-hover);
+    /* Home */
+    @include home($default-font,
+      $adorned-header-color,
+      $adorned-header-background,
+      $color-border-box-posts,
+      $bg-color-box-posts,
+      $primary-color,
+      $title-color,
+      $text-color,
+      $percentage-border-top-bottom-box,
+      $btn-continue-text-color,
+      $post-meta-color);
+    /* Modal Feedburner */
+    @include modal_feedburner($default-font);
+    /* Modal Portfolio */
+    @include modal_portfolio();
+    /* Modal Search */
+    @include modal_search($color-bg-search,
+      $default-font,
+      $placeholder-color-active,
+      $placeholder-color-inactive,
+      $primary-color);
+    /* Share */
+    @include share($primary-color,
+      $default-font);
+    /* Under Maintenance */
+    @include under_maintenance($default-font);
+
+    /* === Include Struture - Layouts === */
+
+    /* About */
+    @include about($bg-title-about,
+        $links-navbar-color);
+    /* Contact */
+    @include contact($default-font);
+    /* Page */
+    @include page($primary-color);
+    /* Portfolio */
+    @include portfolio($portfolio-caption-bg,
+        $default-font,
+        $primary-color);
+    /* Post */
+    @include post($default-font,
+      $primary-color,
+      $author-text-color,
+      $post-meta-color);
+    /* Thanks */
+    @include thanks();
+    /* Utilities */
+    @include utility ($spacing-unit,
+      $default-font,
+      $text-color,
+      $title-color);
+
+    /* === Include Struture - Highlighting === */
+    @include syntax_highlighting();
+
+}
+/*
+| =============================== |
+|           COLOR RED             |
+===================================
+ */
+
+@else if $current_color == "red" {
+
+    $color-red: #A9181A;
+    $color-red-rgba: rgba(168,24,26,.5);
+
+    /* Background color */
+    $background-color: #fff !default;
+
+    /* Primary color */
+    $primary-color: $color-red !default;
+    $primary-color-hover: #484848 !default;
+
+    /* Text color */
+    $text-color: #333 !default;
+    $text-color-hover: #BB3D3F !default;
+
+    /* Button Continue - Home Page*/
+    $btn-continue-text-color: #FFF !important;
+
+    /* Title content color */
+    $title-color: $color-red !default;
+   /* Brand title color - Site title*/
+    $brand-title-color: #fff !important;
+
+    /*Post Meta Color*/
+    $post-meta-color: $primary-color !important;
+
+    /*Social icons navbar - Color*/
+    $social-icons-navbar-color: #fff !important;
+
+    /* Links color */
+    $links-color: #1e72f0 !default;
+    $links-color-hover: #384047 !default;
+
+    /* Links Navbar Color */
+    $links-navbar-color: #fff !default;
+    $links-navbar-color-hover: #fff !default;
+
+    /* Background page About - default color */
+    $bg-title-about: $color-red !default;
+
+    /* Author Text Color*/
+    $author-text-color: #fff !important;
+
+    /* adorned-header */
+    $adorned-header-background: $color-red !default;
+    $adorned-header-color: #fff !default;
+
+    /* Background navbar color */
+    $bg-navbar-color: $color-red !default;
+
+    /* Background navbar (Page About ) */
+    $bg-navbar-color-about: $color-red !default;
+
+    /* Button top color */
+    $bg-button-top-color: $color-red !default;
+    $button-top-color: #fff !default;
+
+    /* Color Right and Left body Navbar Static */
+    $body-right-left-color: #fff !default;
+
+    /* Color menu responsive */
+    $fill-nav-icon: #fff !default;
+
+    /* Color Bg Search */
+    $color-bg-search: lighten($color-red, 10%) !important;
+
+    /* Color border box posts */
+    $color-border-box-posts: 0.1rem solid lighten($color-red, 47%);
+
+    /* Bg Box posts index */
+    $bg-color-box-posts: #FFEAEA;
+
+    /* PlaceHolder Color */
+    $placeholder-color-active: #fff !important;
+    $placeholder-color-inactive: #B7B7B7 !important;
+
+    /* Border top and bottom box posts - Percentage*/
+    $percentage-border-top-bottom-box: 3%;
+
+    /* Drawer Texts/icons - Info */
+    $drawer-texts-icons-info: #CCCCCC !important;
+    /* Drawer Content Background */
+    $drawer-content-bg: #821618 !important;
+    /* Drawer Texts Links Pages*/
+    $drawer-text-links-pages: #fff !important;
+
+    /* Footer background  */
+    $footer-background: $color-red;
+
+    /* Texts footer */
+    $footer-text-color: #fff;
+
+    /* Portfolio Capitan Bg */
+    $portfolio-caption-bg: $color-red-rgba;
+
+    /* === Include Struture - Includes === */
+    /* Global */
+    @include global (
+          $background-color,
+          $body-right-left-color,
+          $bg-navbar-color,
+          $links-navbar-color,
+          $links-navbar-color-hover,
+          $primary-color-hover,
+          $bg-navbar-color-about,
+          $social-icons-navbar-color,
+          $brand-title-color,
+          $primary-color,
+          $drawer-text-links-pages);
+    /* Adsense */
+    @include adsense();
+    /* Color Nav Icon */
+    @include color_nav_icon($fill-nav-icon);
+    /* Disqus */
+    @include disqus();
+    /* FakeLoader */
+    @include fakeloader();
+    /* FollowMe */
+    @include followme();
+    /* Footer */
+    @include footer($footer-text-color,
+        $current_color,
+        $primary-color,
+        $footer-background,
+        $default-font);
+    /* Go Up */
+    @include go_up($bg-button-top-color,$button-top-color);
+    /* Header */
+    @include header($bg-navbar-color,
+        $default-font,
+        $primary-color,
+        $links-navbar-color,
+        $links-navbar-color-hover);
+    /* Home */
+    @include home($default-font,
+      $adorned-header-color,
+      $adorned-header-background,
+      $color-border-box-posts,
+      $bg-color-box-posts,
+      $primary-color,
+      $title-color,
+      $text-color,
+      $percentage-border-top-bottom-box,
+      $btn-continue-text-color,
+      $post-meta-color);
+    /* Modal Feedburner */
+    @include modal_feedburner($default-font);
+    /* Modal Portfolio */
+    @include modal_portfolio();
+    /* Modal Search */
+    @include modal_search($color-bg-search,
+      $default-font,
+      $placeholder-color-active,
+      $placeholder-color-inactive,
+      $primary-color);
+    /* Share */
+    @include share($primary-color,
+      $default-font);
+    /* Under Maintenance */
+    @include under_maintenance($default-font);
+
+    /* === Include Struture - Layouts === */
+
+    /* About */
+    @include about($bg-title-about,
+        $links-navbar-color);
+    /* Contact */
+    @include contact($default-font);
+    /* Page */
+    @include page($primary-color);
+    /* Portfolio */
+    @include portfolio($portfolio-caption-bg,
+        $default-font,
+        $primary-color);
+    /* Post */
+    @include post($default-font,
+      $primary-color,
+      $author-text-color,
+      $post-meta-color);
+    /* Thanks */
+    @include thanks();
+    /* Utilities */
+    @include utility ($spacing-unit,
+      $default-font,
+      $text-color,
+      $title-color);
+
+    /* === Include Struture - Highlighting === */
+    @include syntax_highlighting();
+
+}
+/*
+| =============================== |
+|           COLOR WHITE           |
+===================================
+ */
+
+@else if $current_color == "white" {
+
+    $color-white: #fff;
+    $color-white-rgba: rgba(255,255,255,.5);
+
+    /* Background color */
+    $background-color: #fff !default;
+
+    /* Primary color */
+    $primary-color: #333 !default;
+    $primary-color-hover: #484848 !default;
+
+    /* Text color */
+    $text-color: #333 !default;
+    $text-color-hover: #484848 !default;
+
+    /* Button Continue - Home Page*/
+    $btn-continue-text-color: #FFF !important;
+
+    /* Title content color */
+    $title-color: #424242 !default;
+   /* Brand title color - Site title*/
+    $brand-title-color: $primary-color !important;
+
+    /*Post Meta Color*/
+    $post-meta-color: $primary-color !important;
+
+    /*Social icons navbar - Color*/
+    $social-icons-navbar-color: $primary-color !important;
+
+    /* Links color */
+    $links-color: #1e72f0 !default;
+    $links-color-hover: #fff !default;
+
+    /* Links Navbar Color */
+    $links-navbar-color: #424242 !default;
+    $links-navbar-color-hover: #484848 !default;
+
+    /* Background page About - default color */
+    $bg-title-about: #333 !default;
+
+    /* Author Text Color*/
+    $author-text-color: #fff !important;
+
+    /* adorned-header */
+    $adorned-header-background: $color-white !default;
+    $adorned-header-color: #424242 !default;
+
+    /* Background navbar color */
+    $bg-navbar-color: $color-white !default;
+
+    /* Background navbar (Page About ) */
+    $bg-navbar-color-about: #333 !default;
+
+    /* Button top color */
+    $bg-button-top-color: #505050 !default;
+    $button-top-color: #fff !default;
+
+    /* Color Right and Left body Navbar Static */
+    $body-right-left-color: #fff !default;
+
+    /* Color menu responsive */
+    $fill-nav-icon: #333 !default;
+
+    /* Color Bg Search */
+    $color-bg-search: lighten(#222222, 3%) !important;
+
+    /* Color border box posts */
+    $color-border-box-posts: 0.1rem solid lighten($color-white, 55%);
+
+    /* Bg Box posts index */
+    $bg-color-box-posts: $color-white;
+
+    /* Border top and bottom box posts - Percentage*/
+    $percentage-border-top-bottom-box: 60%;
+
+    /* PlaceHolder Color */
+    $placeholder-color-active: #fff !important;
+    $placeholder-color-inactive: #B7B7B7 !important;
+
+    /* Drawer Texts/icons - Info */
+    $drawer-texts-icons-info: #8C8C8C !important;
+    /* Drawer Content Background */
+    $drawer-content-bg: $primary-color !important;
+    /* Drawer Texts Links Pages*/
+    $drawer-text-links-pages: #fff !important;
+
+    /* Footer background  */
+    $footer-background: $color-white;
+
+    /* Texts footer */
+    $footer-text-color: #505050;
+
+    /* Portfolio Capitan Bg */
+    $portfolio-caption-bg: $color-white-rgba;
+
+    /* === Include Struture - Includes === */
+    /* Global */
+    @include global (
+          $background-color,
+          $body-right-left-color,
+          $bg-navbar-color,
+          $links-navbar-color,
+          $links-navbar-color-hover,
+          $primary-color-hover,
+          $bg-navbar-color-about,
+          $social-icons-navbar-color,
+          $brand-title-color,
+          $primary-color,
+          $drawer-text-links-pages);
+    /* Adsense */
+    @include adsense();
+    /* Color Nav Icon */
+    @include color_nav_icon($fill-nav-icon);
+    /* Disqus */
+    @include disqus();
+    /* FakeLoader */
+    @include fakeloader();
+    /* FollowMe */
+    @include followme();
+    /* Footer */
+    @include footer($footer-text-color,
+        $current_color,
+        $primary-color,
+        $footer-background,
+        $default-font);
+    /* Go Up */
+    @include go_up($bg-button-top-color,$button-top-color);
+    /* Header */
+    @include header($bg-navbar-color,
+        $default-font,
+        $primary-color,
+        $links-navbar-color,
+        $links-navbar-color-hover);
+    /* Home */
+    @include home($default-font,
+      $adorned-header-color,
+      $adorned-header-background,
+      $color-border-box-posts,
+      $bg-color-box-posts,
+      $primary-color,
+      $title-color,
+      $text-color,
+      $percentage-border-top-bottom-box,
+      $btn-continue-text-color,
+      $post-meta-color);
+    /* Modal Feedburner */
+    @include modal_feedburner($default-font);
+    /* Modal Portfolio */
+    @include modal_portfolio();
+    /* Modal Search */
+    @include modal_search($color-bg-search,
+      $default-font,
+      $placeholder-color-active,
+      $placeholder-color-inactive,
+      $primary-color);
+    /* Share */
+    @include share($primary-color,
+      $default-font);
+    /* Under Maintenance */
+    @include under_maintenance($default-font);
+
+    /* === Include Struture - Layouts === */
+
+    /* About */
+    @include about($bg-title-about,
+        $links-navbar-color);
+    /* Contact */
+    @include contact($default-font);
+    /* Page */
+    @include page($primary-color);
+    /* Portfolio */
+    @include portfolio($portfolio-caption-bg,
+        $default-font,
+        $primary-color);
+    /* Post */
+    @include post($default-font,
+      $primary-color,
+      $author-text-color,
+      $post-meta-color);
+    /* Thanks */
+    @include thanks();
+    /* Utilities */
+    @include utility ($spacing-unit,
+      $default-font,
+      $text-color,
+      $title-color);
+
+    /* === Include Struture - Highlighting === */
+    @include syntax_highlighting();
+
+}
+/*
+| =============================== |
+|           COLOR VIOLET          |
+===================================
+ */
+
+@else if $current_color == "violet" {
+
+    $color-violet: #613C72;
+    $color-violet-rgba: rgba(97,60,114,.5);
+
+   /* Background color */
+    $background-color: #fff !default;
+
+    /* Primary color */
+    $primary-color: $color-violet !default;
+    $primary-color-hover: #484848 !default;
+
+    /* Text color */
+    $text-color: #333 !default;
+    $text-color-hover: #613C72 !default;
+
+    /* Button Continue - Home Page*/
+    $btn-continue-text-color: #FFF !important;
+
+    /* Title content color */
+    $title-color: $color-violet !default;
+   /* Brand title color - Site title*/
+    $brand-title-color: #fff !important;
+
+    /*Post Meta Color*/
+    $post-meta-color: $primary-color !important;
+
+    /*Social icons navbar - Color*/
+    $social-icons-navbar-color: #fff !important;
+
+    /* Links color */
+    $links-color: #1e72f0 !default;
+    $links-color-hover: #384047 !default;
+
+    /* Links Navbar Color */
+    $links-navbar-color: #fff !default;
+    $links-navbar-color-hover: #fff !default;
+
+    /* Background page About - default color */
+    $bg-title-about: $color-violet !default;
+
+    /* Author Text Color*/
+    $author-text-color: #fff !important;
+
+    /* adorned-header */
+    $adorned-header-background: $color-violet !default;
+    $adorned-header-color: #fff !default;
+
+    /* Background navbar color */
+    $bg-navbar-color: $color-violet !default;
+
+    /* Background navbar (Page About ) */
+    $bg-navbar-color-about: $color-violet !default;
+
+    /* Button top color */
+    $bg-button-top-color: $color-violet !default;
+    $button-top-color: #fff !default;
+
+    /* Color Right and Left body Navbar Static */
+    $body-right-left-color: #fff !default;
+
+    /* Color menu responsive */
+    $fill-nav-icon: #fff !default;
+
+    /* Color Bg Search */
+    $color-bg-search: lighten($color-violet, 10%) !important;
+
+    /* Color border box posts */
+    $color-border-box-posts: 0.1rem solid lighten($color-violet, 45%);
+
+    /* Bg Box posts index */
+    $bg-color-box-posts: #FFEAEA;
+
+    /* PlaceHolder Color */
+    $placeholder-color-active: #fff !important;
+    $placeholder-color-inactive: #B7B7B7 !important;
+
+    /* Border top and bottom box posts - Percentage*/
+    $percentage-border-top-bottom-box: 3%;
+
+    /* Drawer Texts/icons - Info */
+    $drawer-texts-icons-info: #CDCDCD !important;
+    /* Drawer Content Background */
+    $drawer-content-bg: #4B2F58 !important;
+    /* Drawer Texts Links Pages*/
+    $drawer-text-links-pages: #fff !important;
+
+    /* Footer background  */
+    $footer-background: $color-violet;
+
+    /* Texts footer */
+    $footer-text-color: #fff;
+
+    /* Portfolio Capitan Bg */
+    $portfolio-caption-bg: $color-violet-rgba;
+
+    /* === Include Struture - Includes === */
+    /* Global */
+    @include global (
+          $background-color,
+          $body-right-left-color,
+          $bg-navbar-color,
+          $links-navbar-color,
+          $links-navbar-color-hover,
+          $primary-color-hover,
+          $bg-navbar-color-about,
+          $social-icons-navbar-color,
+          $brand-title-color,
+          $primary-color,
+          $drawer-text-links-pages);
+    /* Adsense */
+    @include adsense();
+    /* Color Nav Icon */
+    @include color_nav_icon($fill-nav-icon);
+    /* Disqus */
+    @include disqus();
+    /* FakeLoader */
+    @include fakeloader();
+    /* FollowMe */
+    @include followme();
+    /* Footer */
+    @include footer($footer-text-color,
+        $current_color,
+        $primary-color,
+        $footer-background,
+        $default-font);
+    /* Go Up */
+    @include go_up($bg-button-top-color,$button-top-color);
+    /* Header */
+    @include header($bg-navbar-color,
+        $default-font,
+        $primary-color,
+        $links-navbar-color,
+        $links-navbar-color-hover);
+    /* Home */
+    @include home($default-font,
+      $adorned-header-color,
+      $adorned-header-background,
+      $color-border-box-posts,
+      $bg-color-box-posts,
+      $primary-color,
+      $title-color,
+      $text-color,
+      $percentage-border-top-bottom-box,
+      $btn-continue-text-color,
+      $post-meta-color);
+    /* Modal Feedburner */
+    @include modal_feedburner($default-font);
+    /* Modal Portfolio */
+    @include modal_portfolio();
+    /* Modal Search */
+    @include modal_search($color-bg-search,
+      $default-font,
+      $placeholder-color-active,
+      $placeholder-color-inactive,
+      $primary-color);
+    /* Share */
+    @include share($primary-color,
+      $default-font);
+    /* Under Maintenance */
+    @include under_maintenance($default-font);
+
+    /* === Include Struture - Layouts === */
+
+    /* About */
+    @include about($bg-title-about,
+        $links-navbar-color);
+    /* Contact */
+    @include contact($default-font);
+    /* Page */
+    @include page($primary-color);
+    /* Portfolio */
+    @include portfolio($portfolio-caption-bg,
+        $default-font,
+        $primary-color);
+    /* Post */
+    @include post($default-font,
+      $primary-color,
+      $author-text-color,
+      $post-meta-color);
+    /* Thanks */
+    @include thanks();
+    /* Utilities */
+    @include utility ($spacing-unit,
+      $default-font,
+      $text-color,
+      $title-color);
+
+    /* === Include Struture - Highlighting === */
+    @include syntax_highlighting();
+
+}
+/*
+| =============================== |
+|           COLOR YELLOW          |
+===================================
+ */
+
+@else if $current_color == "yellow" {
+
+    $color-yellow:  #FFD133; /*#E1D30F; #FFD133*/
+    $color-yellow-rgba: rgba(215,205,64,.8);
+
+   /* Background color */
+    $background-color: #fff !default;
+
+    /* Primary color */
+    $primary-color: $color-yellow !default;
+    $primary-color-hover: #484848 !default;
+
+    /* Text color */
+    $text-color: #333 !default;
+    $text-color-hover: #333 !default;
+
+    /* Button Continue - Home Page*/
+    $btn-continue-text-color: #252525 !important;
+
+    /* Title content color */
+    $title-color: #272727 !default;
+   /* Brand title color - Site title*/
+    $brand-title-color: #333 !important;
+
+    /*Post Meta Color*/
+    $post-meta-color: #907518 !important;
+
+    /*Social icons navbar - Color*/
+    $social-icons-navbar-color: #333 !important;
+
+    /* Links color */
+    $links-color: #1e72f0 !default;
+    $links-color-hover: #384047 !default;
+
+    /* Links Navbar Color */
+    $links-navbar-color: #333 !default;
+    $links-navbar-color-hover: #333 !default;
+
+    /* Background page About - default color */
+    $bg-title-about: $color-yellow !default;
+
+    /* Author Text Color*/
+    $author-text-color: #292929 !important;
+
+    /* adorned-header */
+    $adorned-header-background: $color-yellow !default;
+    $adorned-header-color: #2B2B2B !default;
+
+    /* Background navbar color */
+    $bg-navbar-color: $color-yellow !default;
+
+    /* Background navbar (Page About ) */
+    $bg-navbar-color-about: $color-yellow !default;
+
+    /* Button top color */
+    $bg-button-top-color: $color-yellow !default;
+    $button-top-color: #fff !default;
+
+    /* Color Right and Left body Navbar Static */
+    $body-right-left-color: #fff !default;
+
+    /* Color menu responsive */
+    $fill-nav-icon: #fff !default;
+
+    /* Color Bg Search */
+    $color-bg-search: lighten($color-yellow, 10%) !important;
+
+    /* Color border box posts */
+    $color-border-box-posts: 0.1rem solid lighten($color-yellow, 20%);
+
+    /* Bg Box posts index */
+    $bg-color-box-posts: lighten(#FFD133, 30%);
+
+    /* PlaceHolder Color */
+    $placeholder-color-active: #333 !important;
+    $placeholder-color-inactive: #1A1A1A !important;
+
+    /* Border top and bottom box posts - Percentage*/
+    $percentage-border-top-bottom-box: 3%;
+
+    /* Drawer Texts/icons - Info */
+    $drawer-texts-icons-info: #1E1E1E !important;
+    /* Drawer Content Background */
+    $drawer-content-bg: #DDB428 !important;
+    /* Drawer Texts Links Pages*/
+    $drawer-text-links-pages: #212121 !important;
+
+    /* Footer background  */
+    $footer-background: $color-yellow;
+
+    /* Texts footer */
+    $footer-text-color: #1A1A1A;
+
+    /* Portfolio Capitan Bg */
+    $portfolio-caption-bg: $color-yellow-rgba;
+
+    /* === Include Struture - Includes === */
+    /* Global */
+    @include global (
+          $background-color,
+          $body-right-left-color,
+          $bg-navbar-color,
+          $links-navbar-color,
+          $links-navbar-color-hover,
+          $primary-color-hover,
+          $bg-navbar-color-about,
+          $social-icons-navbar-color,
+          $brand-title-color,
+          $primary-color,
+          $drawer-text-links-pages);
+    /* Adsense */
+    @include adsense();
+    /* Color Nav Icon */
+    @include color_nav_icon($fill-nav-icon);
+    /* Disqus */
+    @include disqus();
+    /* FakeLoader */
+    @include fakeloader();
+    /* FollowMe */
+    @include followme();
+    /* Footer */
+    @include footer($footer-text-color,
+        $current_color,
+        $primary-color,
+        $footer-background,
+        $default-font);
+    /* Go Up */
+    @include go_up($bg-button-top-color,$button-top-color);
+    /* Header */
+    @include header($bg-navbar-color,
+        $default-font,
+        $primary-color,
+        $links-navbar-color,
+        $links-navbar-color-hover);
+    /* Home */
+    @include home($default-font,
+      $adorned-header-color,
+      $adorned-header-background,
+      $color-border-box-posts,
+      $bg-color-box-posts,
+      $primary-color,
+      $title-color,
+      $text-color,
+      $percentage-border-top-bottom-box,
+      $btn-continue-text-color,
+      $post-meta-color);
+    /* Modal Feedburner */
+    @include modal_feedburner($default-font);
+    /* Modal Portfolio */
+    @include modal_portfolio();
+    /* Modal Search */
+    @include modal_search($color-bg-search,
+      $default-font,
+      $placeholder-color-active,
+      $placeholder-color-inactive,
+      $primary-color);
+    /* Share */
+    @include share($primary-color,
+      $default-font);
+    /* Under Maintenance */
+    @include under_maintenance($default-font);
+
+    /* === Include Struture - Layouts === */
+
+    /* About */
+    @include about($bg-title-about,
+        $links-navbar-color);
+    /* Contact */
+    @include contact($default-font);
+    /* Page */
+    @include page($primary-color);
+    /* Portfolio */
+    @include portfolio($portfolio-caption-bg,
+        $default-font,
+        $primary-color);
+    /* Post */
+    @include post($default-font,
+      $primary-color,
+      $author-text-color,
+      $post-meta-color);
+    /* Thanks */
+    @include thanks();
+    /* Utilities */
+    @include utility ($spacing-unit,
+      $default-font,
+      $text-color,
+      $title-color);
+
+    /* === Include Struture - Highlighting === */
+    @include syntax_highlighting();
+
+}

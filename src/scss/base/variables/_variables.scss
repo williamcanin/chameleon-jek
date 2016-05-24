@@ -1,26 +1,3 @@
 /* Defaults */
 $spacing-unit: 30px;
 $default-font: 'Raleway', "HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
-
-/* To Color */
-@import  'to_color/set';
-
-@if $to_color == "green" {
-  @import 'to_color/colors/green';
-} @else if $to_color == "blue"{
-   @import 'to_color/colors/blue';
-} @else if $to_color == "pink"{
-   @import 'to_color/colors/pink';
-} @else if $to_color == "dark"{
-   @import 'to_color/colors/dark';
-} @else if $to_color == "light"{
-   @import 'to_color/colors/light';
-} @else if $to_color == "white"{
-   @import 'to_color/colors/white';
-} @else if $to_color == "orange"{
-   @import 'to_color/colors/orange';
-} @else if $to_color == "red"{
-   @import 'to_color/colors/red';
-} @else {
-  @import 'to_color/colors/green';
-}
