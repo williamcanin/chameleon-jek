@@ -87,7 +87,7 @@ theme:
   fl_local: "all" # { all }
   fl_timeToHide: "1500" # milliseconds, default 1500
   # Default fl_bgColor: #2D4F25
-  fl_bgColor: "#414950"
+  fl_bgColor: "#2D4F25"
   fl_spinner: "spinner4" # Default, spinner4
   fl_spinnerColor: "#fff"
   fl_hideNav: "yes" # Default yes
@@ -302,8 +302,8 @@ compress_html:
   profile: false
 
 # Block - Build settings
-url: "http://0.0.0.0:4000"
-baseurl: ""
+url: "http://williamcanin.com"
+baseurl: "/chameleon-jek"
 # Permalink Default: /:categories/:year/:month/:day/:title/
 # Permalink optional: /:title/
 permalink: /:title/
