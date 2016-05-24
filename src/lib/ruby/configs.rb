@@ -260,12 +260,15 @@ class Main < Variables
   end # end Create page
 
 
-  def insecure_world_writable
-    puts ("Set Insecure world writable ...")
-    system("sudo chown -R william:william .")
-    system("sudo chmod go-w -R .")
-    puts ("Set Insecure world writable. Done!")
+  # Setup installer Config
+  #
+  def setup_installer_config
+    system('sed -i \'s|^REQUIREMENTS=.*|REQUIREMENTS="false"|g\' src/lib/shell/cache/set.lib')
+    system('sed -i \'s|^CONFIG=.*|CONFIG="false"|g\' src/lib/shell/cache/set.lib')
+    system('sed -i \'s|^INSTALLS=.*|INSTALLS="false"|g\' src/lib/shell/cache/set.lib')
+    puts("Installer Setup performed!")
   end
+
 
   # Deploy for GitHub
   #
@@ -274,6 +277,7 @@ class Main < Variables
   # git remote add [<options>] <name> <url>
   #
   def deploy(branch)
+    setup_installer_config
     branch_dev = ENV["BRANCH"] || "dev"
     if branch == "gh-pages"
       # Dependences plugin: gulp-gh-pages
@@ -323,7 +327,6 @@ class Main < Variables
     elsif task == "help"
       system("gulp")
     elsif task == "serve"
-      # insecure_world_writable
       system("gulp serve")
     elsif task == "jekyllbuild"
       system("gulp jekyll-build")
