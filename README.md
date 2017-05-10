@@ -3,7 +3,7 @@
 # Chameleon Jek <img src="https://raw.githubusercontent.com/williamcanin/chameleon-jek/master/assets/images/avatar/out.png" alt="Chameleon Jek Logotype" width="7%" height="7%"/>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/williamcanin/chameleon-jek/master/assets/images/preview/chameleon-jek-logotype.png" alt="Chameleon Jek Logotype" width="500px" height="55%"/>
+  <img src="https://raw.githubusercontent.com/williamcanin/chameleon-jek/master/assets/images/preview/chameleonjek-logotype.png" alt="Chameleon Jek Logotype" width="500px" height="55%"/>
 </p>
 
 ## Indíce
