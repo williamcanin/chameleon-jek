@@ -12,9 +12,9 @@
 
 ## Indíce
 
-* [Introdução](https://github.com/williamcanin/chameleon-jek/tree/master/#introdu%C3%A7%C3%A3o)
-* [Licença & Direitos Autorais](https://github.com/williamcanin/chameleon-jek/tree/master/#licen%C3%A7a--direitos-autorais)
-* [Créditos](https://github.com/williamcanin/chameleon-jek/tree/master/#cr%C3%89ditos)
+* [Introdução](#introdu%C3%A7%C3%A3o)
+* [Licença & Direitos Autorais](#licen%C3%A7a--direitos-autorais)
+* [Créditos](#cr%C3%89ditos)
 
 
 ## Introdução
