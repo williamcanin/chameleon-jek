@@ -1,0 +1,23 @@
+{
+  "name": "chameleon-jek",
+  "version": "1.0.8",
+  "description": "Chameleon Jeky - Blog & Portfolio for Jekyll",
+  "main": "gulpfile.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/williamcanin/chameleon-jek"
+  },
+  "keywords": [
+    "chameleon",
+    "blog",
+    "jekyll",
+    "portfolio"
+  ],
+  "ignore": [
+    "node_modules"
+  ],
+  "author": "William Canin <william.costa.canin@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {}
+}
