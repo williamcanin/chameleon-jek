@@ -6,6 +6,10 @@
   <img src="https://raw.githubusercontent.com/williamcanin/chameleon-jek/master/assets/images/preview/chameleonjek-logotype.png" alt="Chameleon Jek Logotype" width="500px" height="55%"/>
 </p>
 
+
+> Desculpe o transtorno :( O projeto foi removido devido a falta de 
+> consistência, mas alegre-se, pois em breve terá seu lançamento consistente.
+
 ## Indíce
 
 * [Introdução](https://github.com/williamcanin/chameleon-jek/tree/master/#introdu%C3%A7%C3%A3o)
