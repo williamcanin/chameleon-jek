@@ -1,8 +1,0 @@
-#!/bin/bash
-function _OS_CHECK(){
-if [[ "$(uname)" != "Linux" ]]; then
-  msg_error "The operating system is not Linux."
-  msg_warning "Aborted."
-  exit 1
-fi
-}
