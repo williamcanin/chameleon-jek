@@ -11,9 +11,9 @@
 
 ## Table of Contets
 
-* [Introduction](https://github.com/williamcanin/chameleon-jek/tree/master/#introduction)
-* [License & Copyright](https://github.com/williamcanin/chameleon-jek/tree/master/#license--copyright)
-* [Credits](https://github.com/williamcanin/chameleon-jek/tree/master/#credits)
+* [Introduction](#introduction)
+* [License & Copyright](#license--copyright)
+* [Credits](#credits)
 
 
 ## Introduction
