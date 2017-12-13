@@ -6,8 +6,8 @@
   <img src="https://raw.githubusercontent.com/williamcanin/chameleon-jek/master/assets/images/preview/chameleonjek-logotype.png" alt="Chameleon Jek Logotype" width="500px" height="55%"/>
 </p>
 
-> Sorry for the inconvenience :( The project was removed due to lack of 
-> consistency but cheer up, as its release will soon be consistent.
+> Sorry for the inconvenience :( The project was removed due to lack of consistency, but encouraged, 
+> in the future the project will continue and be consiste
 
 ## Table of Contets
 
@@ -40,4 +40,4 @@ Copyright by William C. Canin | © 2015 - 2017
 * Country: Brazil - SP
 * EMail: william.costa.canin@gmail.com    
 * GitHub: [williamcanin](http://github.com/williamcanin)
-* Home page: [http://williamcanin.com](http://williamcanin.com)
+* Home page: [http://williamcanin.me](http://williamcanin.me)
