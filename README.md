@@ -8,7 +8,7 @@
 
 
 > Desculpe o transtorno :( O projeto foi removido devido a falta de 
-> consistência, mas alegre-se, pois em breve terá seu lançamento consistente.
+> consistência, mas alegre-se, pois no futuro terá seu lançamento consistente.
 
 ## Indíce
 
@@ -41,4 +41,4 @@ Direitos Autorais de William C. Canin | © 2015 - 2017
 * Country: Brazil - SP
 * EMail: william.costa.canin@gmail.com    
 * GitHub: [williamcanin](http://github.com/williamcanin)
-* Home page: [http://williamcanin.com](http://williamcanin.com)
+* Home page: [http://williamcanin.me](http://williamcanin.me)
